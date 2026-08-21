@@ -25,7 +25,7 @@
     "provinces": ["浙江"],
     "start_date": "2026-08-11",
     "deadline": "2026-09-08",
-    "apply_url": "https://game.campus.163.com/position/index",
+    "apply_url": "https://campus.game.163.com/",
     "source": "企业官网",
     "industry": "游戏"
   },
@@ -40,7 +40,7 @@
     "provinces": ["浙江"],
     "start_date": null,
     "deadline": null,
-    "apply_url": "https://campus.163.com/app/index",
+    "apply_url": "https://campus.163.com",
     "source": "企业官网",
     "industry": "互联网"
   },
@@ -55,7 +55,7 @@
     "provinces": ["浙江"],
     "start_date": null,
     "deadline": null,
-    "apply_url": "https://talent.alibaba.com/campus/positions",
+    "apply_url": "https://campus-talent.alibaba.com/?lang=zh",
     "source": "企业官网",
     "industry": "互联网"
   },
@@ -70,7 +70,7 @@
     "provinces": ["浙江"],
     "start_date": "2026-08-10",
     "deadline": "2026-09-07",
-    "apply_url": "https://talent.antgroup.com/campus",
+    "apply_url": "https://talent.antgroup.com",
     "source": "企业官网",
     "industry": "互联网"
   },
@@ -265,7 +265,7 @@
     "provinces": ["江苏", "浙江"],
     "start_date": "2026-07-09",
     "deadline": "2027-06-01",
-    "apply_url": "https://talent.baidu.com/jobs/campus-list",
+    "apply_url": "https://talent.baidu.com",
     "source": "企业官网",
     "industry": "互联网"
   },
@@ -385,7 +385,7 @@
     "provinces": ["江苏"],
     "start_date": null,
     "deadline": "2026-12-31",
-    "apply_url": "https://hr.xiaomi.com/campus",
+    "apply_url": "https://campus.hr.xiaomi.com",
     "source": "企业官网",
     "industry": "半导体/硬件"
   },

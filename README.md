@@ -37,8 +37,8 @@ Boss / 智联需要登录，云端用不了登录态；要补爬只在自己电�
 | 速腾聚创 | 测试 | 上海 | 2026-07-01 | 2026-08-31 | [网申](https://www.robosense.ai/career) | 校招日历 |
 | 乐鑫科技 | 测试、测试工程师 | 苏州 | 2026-07-01 | 2026-09-01 | [网申](https://www.espressif.com/zh-hans/careers/jobs) | 企业官网 |
 | 地平线 | 测试 | 南京、杭州 | 2026-08-10 | 2026-09-07 | [网申](https://horizon.hotjob.cn) | 企业官网 |
-| 蚂蚁集团 | 质量保障、测试开发 | 杭州 | 2026-08-10 | 2026-09-07 | [网申](https://talent.antgroup.com/campus) | 企业官网 |
-| 网易游戏（互娱） | 游戏测试类 | 杭州 | 2026-08-11 | 2026-09-08 | [网申](https://game.campus.163.com/position/index) | 企业官网 |
+| 蚂蚁集团 | 质量保障、测试开发 | 杭州 | 2026-08-10 | 2026-09-07 | [网申](https://talent.antgroup.com) | 企业官网 |
+| 网易游戏（互娱） | 游戏测试类 | 杭州 | 2026-08-11 | 2026-09-08 | [网申](https://campus.game.163.com/) | 企业官网 |
 | 博世中国创新与软件开发中心 | 软件测试开发工程师、辅助驾驶自动化测试工程师 | 无锡 | 2026-08-12 | 2026-09-09 | [网申](https://www.bosch.com.cn/careers/students/) | 企业官网 |
 | 字节跳动 | 测试开发工程师、测开 | 杭州 | 2026-08-12 | 2026-09-09 | [网申](https://jobs.bytedance.com/campus/position?keywords=%E6%B5%8B%E8%AF%95) | 企业官网 |
 | 国仪量子 | 测试工程师 | 无锡、合肥、上海 | 2026-08-14 | 2026-09-11 | [网申](https://www.ciqtek.com/joinus) | 校招日历 |
@@ -63,8 +63,8 @@ Boss / 智联需要登录，云端用不了登录态；要补爬只在自己电�
 | 华泰证券 | 测试 | 南京 | 2026-04-20 | 2026-10-31 | [网申](https://job.htsc.com.cn) | 企业官网 |
 | 联想 | 测试 | 上海 | 2026-08-05 | 2026-11-14 | [网申](https://talent.lenovo.com.cn/campus) | 企业官网 |
 | 大疆 | 测试 | 上海 | 2026-06-25 | 2026-12-31 | [网申](https://we.dji.com/zh-CN/campus) | 企业官网 |
-| 小米 | 软件测试、测试开发 | 南京 | 以官网为准 | 2026-12-31 | [网申](https://hr.xiaomi.com/campus) | 企业官网 |
-| 百度 | 测试 | 南京、苏州、杭州 | 2026-07-09 | 2027-06-01 | [网申](https://talent.baidu.com/jobs/campus-list) | 企业官网 |
+| 小米 | 软件测试、测试开发 | 南京 | 以官网为准 | 2026-12-31 | [网申](https://campus.hr.xiaomi.com) | 企业官网 |
+| 百度 | 测试 | 南京、苏州、杭州 | 2026-07-09 | 2027-06-01 | [网申](https://talent.baidu.com) | 企业官网 |
 | 大普微电子 | 测试 | 南京、无锡、苏州 | 2026-08-18 | 2027-06-30 | [网申](https://www.dapustor.com/join) | 校招日历 |
 | 经纬恒润 | 测试开发工程师 | 南京 | 以官网为准 | 2027-06-30 | [网申](https://hire.hirain.com) | 企业官网 |
 | DeepSeek | 测试开发工程师 | 杭州 | 2026-07-07 | 招满即止 | [网申](https://app.mokahr.com/social-recruitment/high-flyer/140576#/) | 企业官网 |
@@ -116,7 +116,7 @@ Boss / 智联需要登录，云端用不了登录态；要补爬只在自己电�
 | 途牛 | 测试工程师、测试开发 | 南京 | 以官网为准 | 招满即止 | [网申](https://campus.tuniu.com) | 企业官网 |
 | 金蝶 | 软件测试工程师 | 苏州、杭州 | 以官网为准 | 招满即止 | [网申](https://campus.kingdee.com) | 企业官网 |
 | 阳光电源 | 软件测试工程师、测试 | 合肥 | 以官网为准 | 招满即止 | [网申](https://www.sungrowpower.com/join) | 企业官网 |
-| 阿里巴巴 | 测试开发工程师、质量保障 | 杭州 | 以官网为准 | 招满即止 | [网申](https://talent.alibaba.com/campus/positions) | 企业官网 |
+| 阿里巴巴 | 测试开发工程师、质量保障 | 杭州 | 以官网为准 | 招满即止 | [网申](https://campus-talent.alibaba.com/?lang=zh) | 企业官网 |
 
 ## 说明
 

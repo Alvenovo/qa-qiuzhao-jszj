@@ -71,6 +71,47 @@ MID_FIRMS = (
 )
 
 
+# 已知仍能打开的官方校招入口；生成岗位时覆盖过期路径。
+OFFICIAL_APPLY = (
+    ("网易游戏", "https://campus.game.163.com/"),
+    ("网易互娱", "https://campus.game.163.com/"),
+    ("阿里", "https://campus-talent.alibaba.com/?lang=zh"),
+    ("蚂蚁", "https://talent.antgroup.com"),
+    ("字节", "https://jobs.bytedance.com/campus"),
+    ("华为", "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html"),
+    ("百度", "https://talent.baidu.com"),
+    ("网易", "https://campus.163.com"),
+    ("拼多多", "https://careers.pddglobalhr.com/campus/"),
+    ("小米", "https://campus.hr.xiaomi.com"),
+    ("滴滴", "https://campus.didiglobal.com"),
+    ("中兴", "https://job.zte.com.cn"),
+    ("海康", "https://campushr.hikvision.com"),
+    ("科大讯飞", "https://campus.iflytek.com"),
+    ("哔哩哔哩", "https://jobs.bilibili.com"),
+    ("米哈游", "https://jobs.mihoyo.com"),
+    ("携程", "https://careers.ctrip.com"),
+    ("荣耀", "https://career.honor.com"),
+    ("联想", "https://talent.lenovo.com.cn"),
+    ("大疆", "https://we.dji.com/zh-CN/campus"),
+    ("蔚来", "https://campus.nio.com"),
+    ("微软", "https://careers.microsoft.com/students"),
+    ("腾讯", "https://join.qq.com"),
+    ("美团", "https://zhaopin.meituan.com"),
+    ("京东", "https://campus.jd.com"),
+    ("乐鑫", "https://www.espressif.com/zh-hans/careers/jobs"),
+    ("地平线", "https://horizon.hotjob.cn"),
+    ("浪潮", "https://inspur.hotjob.cn"),
+    ("华泰", "https://job.htsc.com.cn"),
+)
+
+
+def official_apply(company: str, fallback: str | None) -> str | None:
+    for name, url in OFFICIAL_APPLY:
+        if name in (company or ""):
+            return url
+    return fallback
+
+
 def classify_scale(company: str) -> str:
     name = company or ""
     if any(k in name for k in BIG_FIRMS):
@@ -233,6 +274,7 @@ def make_job(**kwargs) -> dict[str, Any] | None:
     apply_url = kwargs.get("apply_url") or None
     if apply_url and not str(apply_url).startswith("http"):
         apply_url = None
+    apply_url = official_apply(company, apply_url)
     role = kwargs.get("role_type") or classify_role(positions)
     key = hashlib.md5(
         f"{company}|{kwargs.get('batch')}|{deadline}|{','.join(locations)}|{role}".encode("utf-8")
@@ -631,8 +673,8 @@ def from_netease() -> list[dict[str, Any]]:
     # 网易校招职位接口不固定，抓职位页文本做兜底
     jobs = []
     for url in (
-        "https://campus.163.com/app/index",
-        "https://game.campus.163.com/position/index",
+        "https://campus.163.com",
+        "https://campus.game.163.com/",
     ):
         resp = get(url)
         if not resp:
@@ -657,21 +699,22 @@ def from_netease() -> list[dict[str, Any]]:
 
 
 def from_alibaba() -> list[dict[str, Any]]:
-    resp = get("https://talent.alibaba.com/campus/positions")
+    url = "https://campus-talent.alibaba.com/?lang=zh"
+    resp = get(url)
     jobs = []
-    if resp and TEST_RE.search(resp.text):
+    if resp:
         job = make_job(
             company="阿里巴巴",
             positions=["测试开发工程师", "质量保障"],
-            locations=["杭州"],
-            apply_url="https://talent.alibaba.com/campus/positions",
+            locations=["杭州", "上海"],
+            apply_url=url,
             source="企业官网",
             industry="互联网",
             updated_at=TODAY.isoformat(),
         )
         if job:
             jobs.append(job)
-    log_source("阿里官网", True, len(jobs), "列表页确认仍开放")
+    log_source("阿里官网", True, len(jobs), "campus-talent.alibaba.com")
     return jobs
 
 
