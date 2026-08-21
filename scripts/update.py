@@ -39,6 +39,14 @@ ZJ_CITIES = {
 CITY_TO_PROVINCE = {c: "江苏" for c in JS_CITIES}
 CITY_TO_PROVINCE.update({c: "浙江" for c in ZJ_CITIES})
 
+COMPANY_HQ = {
+    "杰华特": ["杭州"], "同花顺": ["杭州"], "海康威视": ["杭州"], "大华股份": ["杭州"],
+    "大华": ["杭州"], "新华三": ["杭州"], "中控技术": ["杭州"], "群核科技": ["杭州"],
+    "涂鸦智能": ["杭州"], "宇树科技": ["杭州"], "当虹科技": ["杭州"], "有赞": ["杭州"],
+    "满帮集团": ["南京", "苏州"], "中新赛克": ["南京"], "天锐星通": ["南京"],
+    "焦点科技": ["南京"], "途牛": ["南京"], "南瑞集团": ["南京"], "思必驰": ["苏州"],
+}
+
 TEST_RE = re.compile(
     r"测试开发|测开|软件测试|自动化测试|质量保障|质量工程|"
     r"测试工程师|测试类|测试岗|游戏测试|SDET|sdet|\bQA\b|\bQE\b|"
@@ -180,6 +188,10 @@ def make_job(**kwargs) -> dict[str, Any] | None:
 
     locations, provinces = js_zj_cities(split_locations(kwargs.get("locations") or []))
     if not locations and not provinces:
+        hq = COMPANY_HQ.get(company) or COMPANY_HQ.get(re.sub(r"(集团|股份|有限公司)$", "", company))
+        if hq:
+            locations, provinces = js_zj_cities(hq)
+    if not locations and not provinces:
         return None
     start = parse_date(kwargs.get("start_date"))
     deadline = parse_date(kwargs.get("deadline"))
@@ -243,17 +255,20 @@ def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 # ---------- sources ----------
 
 def from_seed() -> list[dict[str, Any]]:
-    path = ROOT / "seed_jobs.json"
-    data = json.loads(path.read_text(encoding="utf-8"))
     jobs = []
-    for row in data:
-        row = dict(row)
-        row["source"] = row.get("source") or "精选官网"
-        row["updated_at"] = TODAY.isoformat()
-        job = make_job(**row)
-        if job:
-            jobs.append(job)
-    log_source("seed_jobs", True, len(jobs))
+    for name in ("seed_jobs.json", "extra_jobs.json"):
+        path = ROOT / name
+        if not path.exists():
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for row in data:
+            row = dict(row)
+            row["source"] = row.get("source") or "公开招聘信息"
+            row["updated_at"] = TODAY.isoformat()
+            job = make_job(**row)
+            if job:
+                jobs.append(job)
+    log_source("本地岗位库", True, len(jobs), "含中小厂")
     return jobs
 
 
@@ -306,11 +321,12 @@ def _parse_niuqizp_text(text: str, page_city: str) -> list[dict[str, Any]]:
             continue
         title_m = re.search(r"###\s*(.+)", block)
         raw_title = (title_m.group(1) if title_m else "").strip()
-        parts = raw_title.split()
-        if not parts:
-            continue
-        company = re.sub(r"\d+.*$", "", parts[0]).strip(" -_|")
-        if not company:
+        company = re.sub(
+            r"\s*(27|26|2027|2026|届|秋招|校招|提前批|实习).*$",
+            "",
+            raw_title,
+        ).strip(" -_|")
+        if not company or len(company) < 2:
             continue
         rng = RANGE_RE.search(block)
         start = rng.group(1) if rng else None

@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-21 16:08",
-  "count": 35,
+  "updated_at": "2026-08-21 16:29",
+  "count": 65,
   "sources": [
-    "seed_jobs",
+    "本地岗位库",
     "xixicc2027",
     "niuqizp校招日历",
     "牛客",
@@ -11,15 +11,15 @@
   ],
   "source_log": [
     {
-      "name": "seed_jobs",
+      "name": "本地岗位库",
       "ok": true,
-      "count": 30,
-      "detail": ""
+      "count": 60,
+      "detail": "含中小厂"
     },
     {
       "name": "xixicc2027",
       "ok": true,
-      "count": 9,
+      "count": 10,
       "detail": ""
     },
     {
