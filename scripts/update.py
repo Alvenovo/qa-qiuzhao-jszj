@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""每天正午更新：多源抓取江苏/浙江仍在招的软件测试相关岗位。"""
+"""每天正午更新：多源抓取江苏/浙江/安徽/上海仍在招的软件测试相关岗位。"""
 from __future__ import annotations
 
 import hashlib
@@ -36,8 +36,18 @@ ZJ_CITIES = {
     "台州", "丽水", "余杭", "滨江", "西湖", "萧山", "余姚", "慈溪", "义乌",
     "海宁", "桐乡", "诸暨", "上虞", "临平", "钱塘", "浙江",
 }
+AH_CITIES = {
+    "合肥", "芜湖", "蚌埠", "淮南", "马鞍山", "淮北", "铜陵", "安庆", "黄山",
+    "滁州", "阜阳", "宿州", "六安", "亳州", "池州", "宣城", "安徽",
+}
+SH_CITIES = {
+    "上海", "浦东", "徐汇", "闵行", "松江", "嘉定", "杨浦", "静安", "黄浦",
+    "虹口", "宝山", "青浦", "奉贤", "金山", "崇明",
+}
 CITY_TO_PROVINCE = {c: "江苏" for c in JS_CITIES}
 CITY_TO_PROVINCE.update({c: "浙江" for c in ZJ_CITIES})
+CITY_TO_PROVINCE.update({c: "安徽" for c in AH_CITIES})
+CITY_TO_PROVINCE.update({c: "上海" for c in SH_CITIES})
 
 COMPANY_HQ = {
     "杰华特": ["杭州"], "同花顺": ["杭州"], "海康威视": ["杭州"], "大华股份": ["杭州"],
@@ -45,16 +55,19 @@ COMPANY_HQ = {
     "涂鸦智能": ["杭州"], "宇树科技": ["杭州"], "当虹科技": ["杭州"], "有赞": ["杭州"],
     "满帮集团": ["南京", "苏州"], "中新赛克": ["南京"], "天锐星通": ["南京"],
     "焦点科技": ["南京"], "途牛": ["南京"], "南瑞集团": ["南京"], "思必驰": ["苏州"],
+    "拼多多": ["上海"], "携程": ["上海"], "哔哩哔哩": ["上海"], "米哈游": ["上海"],
+    "科大讯飞": ["合肥"], "蔚来": ["合肥"], "阳光电源": ["合肥"],
 }
 
 BIG_FIRMS = (
     "阿里", "蚂蚁", "字节", "华为", "腾讯", "百度", "网易", "美团", "京东",
     "小米", "荣耀", "中兴", "海康", "大华", "DeepSeek", "滴滴", "微软", "三星", "博世",
+    "拼多多", "携程", "哔哩", "米哈游", "蔚来", "大疆", "联想",
 )
 MID_FIRMS = (
     "浪潮", "地平线", "招银", "海信", "讯飞", "华泰", "北方华创", "新华三", "中控",
     "南瑞", "同花顺", "宇视", "微步", "有赞", "涂鸦", "满帮", "苏宁", "金蝶", "歌尔",
-    "乐鑫", "Momenta", "思必驰", "新华三",
+    "乐鑫", "Momenta", "思必驰", "天翼", "星环", "商汤", "阳光电源", "奇瑞", "江淮",
 )
 
 
@@ -276,7 +289,7 @@ def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 def from_seed() -> list[dict[str, Any]]:
     jobs = []
-    for name in ("seed_jobs.json", "extra_jobs.json"):
+    for name in ("seed_jobs.json", "extra_jobs.json", "sh_ah_jobs.json"):
         path = ROOT / name
         if not path.exists():
             continue
@@ -329,7 +342,7 @@ def from_xixicc() -> list[dict[str, Any]]:
 NIUQIZP_CITIES = [
     "hangzhou", "ningbo", "wenzhou", "jiaxing", "huzhou", "shaoxing", "jinhua",
     "nanjing", "suzhou", "wuxi", "changzhou", "nantong", "yangzhou", "xuzhou",
-    "zhenjiang", "taizhou",
+    "zhenjiang", "taizhou", "shanghai", "hefei", "wuhu",
 ]
 
 
@@ -392,6 +405,7 @@ def from_niuqizp() -> list[dict[str, Any]]:
         "huzhou": "湖州", "shaoxing": "绍兴", "jinhua": "金华", "nanjing": "南京",
         "suzhou": "苏州", "wuxi": "无锡", "changzhou": "常州", "nantong": "南通",
         "yangzhou": "扬州", "xuzhou": "徐州", "zhenjiang": "镇江", "taizhou": "泰州",
+        "shanghai": "上海", "hefei": "合肥", "wuhu": "芜湖",
     }
     ok = 0
     fail = 0
@@ -664,11 +678,13 @@ def from_alibaba() -> list[dict[str, Any]]:
 def render_readme(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
     js = sum(1 for j in jobs if "江苏" in j["provinces"])
     zj = sum(1 for j in jobs if "浙江" in j["provinces"])
+    ah = sum(1 for j in jobs if "安徽" in j["provinces"])
+    sh = sum(1 for j in jobs if "上海" in j["provinces"])
     lines = [
-        "# 2027届秋招 · 江苏浙江测试岗",
+        "# 2027届秋招 · 江浙沪皖测试岗",
         "",
-        f"> 只收录**还在招**的软件测试 / 测试开发 / 质量保障等岗位 ｜ 地区：江苏、浙江 ｜ "
-        f"更新时间：{meta['updated_at']} ｜ 共 {len(jobs)} 条（江苏 {js} / 浙江 {zj}）",
+        f"> 只收录**还在招**的软件测试 / 测试开发 / 质量保障等岗位 ｜ 地区：江苏、浙江、安徽、上海 ｜ "
+        f"更新时间：{meta['updated_at']} ｜ 共 {len(jobs)} 条（江苏 {js} / 浙江 {zj} / 安徽 {ah} / 上海 {sh}）",
         ">",
         f"> 数据源：{'、'.join(meta['sources'])} ｜ [打开网站](./index.html)",
         "",
@@ -760,7 +776,7 @@ def main() -> int:
         "count": len(jobs),
         "sources": sources,
         "source_log": SOURCE_LOG,
-        "note": "仅江苏/浙江，仅软件测试相关，仅未截止",
+        "note": "江苏/浙江/安徽/上海，仅软件测试相关，仅未截止",
     }
     write_site(jobs, meta)
     render_readme(jobs, meta)

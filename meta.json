@@ -1,10 +1,9 @@
 {
-  "updated_at": "2026-08-21 16:29",
-  "count": 65,
+  "updated_at": "2026-08-21 16:51",
+  "count": 90,
   "sources": [
     "本地岗位库",
     "xixicc2027",
-    "niuqizp校招日历",
     "牛客",
     "网易官网",
     "阿里官网"
@@ -13,20 +12,20 @@
     {
       "name": "本地岗位库",
       "ok": true,
-      "count": 60,
+      "count": 85,
       "detail": "含中小厂"
     },
     {
       "name": "xixicc2027",
       "ok": true,
-      "count": 10,
+      "count": 12,
       "detail": ""
     },
     {
       "name": "niuqizp校招日历",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "detail": "成功页面 16/16"
+      "detail": "成功页面 0/19"
     },
     {
       "name": "牛客",
@@ -59,5 +58,5 @@
       "detail": "列表页确认仍开放"
     }
   ],
-  "note": "仅江苏/浙江，仅软件测试相关，仅未截止"
+  "note": "江苏/浙江/安徽/上海，仅软件测试相关，仅未截止"
 }

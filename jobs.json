@@ -1,5 +1,56 @@
 [
   {
+    "id": "b9afd1836a23",
+    "company": "乐元素",
+    "program": "2027届秋季校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-06-27",
+    "deadline": "2026-08-23",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.happyelements.com/jobs",
+    "source": "校招日历",
+    "industry": "游戏",
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "e4f82104f3ea",
+    "company": "拼多多",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试开发工程师",
+      "质量保障"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": null,
+    "deadline": "2026-08-23",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://careers.pddglobalhr.com/campus",
+    "source": "企业官网",
+    "industry": "互联网",
+    "scale": "大厂",
+    "status": "open"
+  },
+  {
     "id": "a0e62db01692",
     "company": "新凯来",
     "program": "2027届校园招聘",
@@ -21,8 +72,8 @@
     "apply_url": "https://www.sieracn.com",
     "source": "三方校招日历",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "cdafadfa9c13",
@@ -46,8 +97,8 @@
     "apply_url": "https://www.kujiale.com/join",
     "source": "校招日历",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "340257e05a5a",
@@ -73,8 +124,33 @@
     "apply_url": "https://job.zte.com.cn/cn/campus-recruitment",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
+  },
+  {
+    "id": "d18a3d85a0ad",
+    "company": "天翼云",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试开发工程师"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-08-03",
+    "deadline": "2026-08-31",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.ctyun.cn/career",
+    "source": "企业官网",
+    "industry": "央国企",
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "df64105bb56e",
@@ -98,8 +174,33 @@
     "apply_url": "https://inspur.hotjob.cn",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "a9206b8a8d0e",
+    "company": "速腾聚创",
+    "program": "2027届全球校园招聘提前批",
+    "cohort": "2027届",
+    "batch": "提前批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-07-01",
+    "deadline": "2026-08-31",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.robosense.ai/career",
+    "source": "校招日历",
+    "industry": "新能源车企",
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "9edcf1f05c85",
@@ -124,8 +225,8 @@
     "apply_url": "https://www.espressif.com/zh-hans/careers/jobs",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "3de3a776582a",
@@ -151,8 +252,8 @@
     "apply_url": "https://horizon.hotjob.cn",
     "source": "企业官网",
     "industry": "新能源车企",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "6a2456db70c3",
@@ -177,8 +278,8 @@
     "apply_url": "https://talent.antgroup.com/campus",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "b0f0604d7e5a",
@@ -202,8 +303,8 @@
     "apply_url": "https://game.campus.163.com/position/index",
     "source": "企业官网",
     "industry": "游戏",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "5b59e64fc013",
@@ -228,8 +329,8 @@
     "apply_url": "https://www.bosch.com.cn/careers/students/",
     "source": "企业官网",
     "industry": "外企",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "e395bb6b1c01",
@@ -254,8 +355,8 @@
     "apply_url": "https://jobs.bytedance.com/campus/position?keywords=%E6%B5%8B%E8%AF%95",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "d3e5547c0a5a",
@@ -268,10 +369,14 @@
       "测试工程师"
     ],
     "locations": [
-      "无锡"
+      "无锡",
+      "合肥",
+      "上海"
     ],
     "provinces": [
-      "江苏"
+      "江苏",
+      "安徽",
+      "上海"
     ],
     "start_date": "2026-08-14",
     "deadline": "2026-09-11",
@@ -279,8 +384,58 @@
     "apply_url": "https://www.ciqtek.com/joinus",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "2beded2523f6",
+    "company": "元戎启行",
+    "program": "2027秋季校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-07-15",
+    "deadline": "2026-09-15",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.deeproute.ai/join",
+    "source": "校招日历",
+    "industry": "新能源车企",
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "7b69deb7b22e",
+    "company": "星环科技",
+    "program": "2027届秋季校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "AI测试开发工程师"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-08-18",
+    "deadline": "2026-09-15",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.transwarp.cn/join",
+    "source": "企业官网",
+    "industry": "互联网",
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "cdbd1b16c36e",
@@ -304,8 +459,34 @@
     "apply_url": "https://www.edianyun.com/campus",
     "source": "三方校招日历",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "b9e4a5db863e",
+    "company": "启云方科技",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试工程师",
+      "渗透测试工程师"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-08-20",
+    "deadline": "2026-09-17",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.qycloud.com.cn",
+    "source": "校招日历",
+    "industry": "央国企",
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "a17edeabeea4",
@@ -329,8 +510,8 @@
     "apply_url": "https://www.inxhitek.com",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "e0ee7b000b1c",
@@ -354,8 +535,8 @@
     "apply_url": "https://cmbnt.cmbchina.com/",
     "source": "企业官网",
     "industry": "银行/金融",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "fe9ca290d3c1",
@@ -379,8 +560,8 @@
     "apply_url": "https://www.arrowuniverse.com",
     "source": "三方校招日历",
     "industry": "制造业",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "d2f91d4c8a5d",
@@ -404,8 +585,33 @@
     "apply_url": "https://www.momenta.cn/career",
     "source": "校招日历",
     "industry": "新能源车企",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "a686270f22aa",
+    "company": "经纬恒润",
+    "program": "2027校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-07-25",
+    "deadline": "2026-09-25",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://hire.hirain.com",
+    "source": "企业官网",
+    "industry": "新能源车企",
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "0e8d34e77a73",
@@ -432,8 +638,8 @@
     "apply_url": "https://hisense.zhiye.com/campus",
     "source": "企业官网",
     "industry": "制造业",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "179da2b4debc",
@@ -457,8 +663,8 @@
     "apply_url": "https://career.honor.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "6217e3373cc0",
@@ -483,8 +689,62 @@
     "apply_url": "https://cksic.zhiye.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "3cc5415870ed",
+    "company": "上海精测半导体",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "上海",
+      "合肥"
+    ],
+    "provinces": [
+      "上海",
+      "安徽"
+    ],
+    "start_date": "2026-08-04",
+    "deadline": "2026-10-04",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.semiconductor-test.com",
+    "source": "校招日历",
+    "industry": "半导体/硬件",
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "591286676968",
+    "company": "华芯程科技",
+    "program": "2027届应届生招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "合肥",
+      "上海"
+    ],
+    "provinces": [
+      "安徽",
+      "上海"
+    ],
+    "start_date": "2026-08-12",
+    "deadline": "2026-10-12",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.hxctech.com",
+    "source": "校招日历",
+    "industry": "半导体/硬件",
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "e37a8ec3c4c4",
@@ -508,8 +768,8 @@
     "apply_url": "https://campus.didiglobal.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "35bbee69a622",
@@ -524,11 +784,15 @@
     "locations": [
       "南京",
       "苏州",
-      "杭州"
+      "杭州",
+      "合肥",
+      "上海"
     ],
     "provinces": [
       "江苏",
-      "浙江"
+      "浙江",
+      "安徽",
+      "上海"
     ],
     "start_date": "2026-08-13",
     "deadline": "2026-10-13",
@@ -536,8 +800,8 @@
     "apply_url": "https://campus.iflytek.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "215a211e112a",
@@ -564,8 +828,8 @@
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "fa1318c0b7f7",
@@ -589,8 +853,8 @@
     "apply_url": "https://www.zh-jieli.com/join",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "7a91cfc2fb13",
@@ -614,8 +878,58 @@
     "apply_url": "https://job.htsc.com.cn",
     "source": "企业官网",
     "industry": "银行/金融",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "5101cafdd61a",
+    "company": "联想",
+    "program": "2027校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-08-05",
+    "deadline": "2026-11-14",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://talent.lenovo.com.cn/campus",
+    "source": "企业官网",
+    "industry": "半导体/硬件",
+    "scale": "大厂",
+    "status": "open"
+  },
+  {
+    "id": "3ff08637dcf3",
+    "company": "大疆",
+    "program": "2027拓疆者校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-06-25",
+    "deadline": "2026-12-31",
+    "updated_at": "2026-08-21",
+    "apply_url": "https://we.dji.com/zh-CN/campus",
+    "source": "企业官网",
+    "industry": "半导体/硬件",
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "b61ea5a51a25",
@@ -640,8 +954,8 @@
     "apply_url": "https://hr.xiaomi.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "9f0939d38894",
@@ -668,8 +982,8 @@
     "apply_url": "https://talent.baidu.com/jobs/campus-list",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "28c7e2e67ff6",
@@ -695,8 +1009,8 @@
     "apply_url": "https://www.dapustor.com/join",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "197e496a2718",
@@ -720,8 +1034,8 @@
     "apply_url": "https://hire.hirain.com",
     "source": "企业官网",
     "industry": "新能源车企",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "4bd8c9c4934a",
@@ -745,8 +1059,8 @@
     "apply_url": "https://app.mokahr.com/social-recruitment/high-flyer/140576#/",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "3e289ac567cc",
@@ -770,11 +1084,11 @@
     "apply_url": "https://www.samsungcareers.com",
     "source": "企业官网",
     "industry": "外企",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
-    "id": "7049c70382a7",
+    "id": "55879a6a1a93",
     "company": "中兴通讯",
     "program": null,
     "cohort": "2027届",
@@ -784,9 +1098,11 @@
       "测试类"
     ],
     "locations": [
+      "上海",
       "杭州"
     ],
     "provinces": [
+      "上海",
       "浙江"
     ],
     "start_date": "2026-07-02",
@@ -795,8 +1111,8 @@
     "apply_url": null,
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "483997b8da7b",
@@ -821,8 +1137,8 @@
     "apply_url": "https://www.supcon.com/join",
     "source": "企业官网",
     "industry": "制造业",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "c0b92794e3ed",
@@ -846,8 +1162,8 @@
     "apply_url": "https://recruit.sinovatio.com/home/student",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "74d1ebd4f864",
@@ -871,8 +1187,34 @@
     "apply_url": "https://recruit.sinovatio.com/home/student",
     "source": "xixicc2027",
     "industry": "其他",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "b6acee3c3444",
+    "company": "中芯国际",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试工程师",
+      "软件测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://campus.smics.com",
+    "source": "企业官网",
+    "industry": "半导体/硬件",
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "9011758506d0",
@@ -886,10 +1228,14 @@
       "技术类（电气/软件/机械/半导体工艺/射频/光学/系统/软件测试）"
     ],
     "locations": [
-      "苏州"
+      "苏州",
+      "上海",
+      "合肥"
     ],
     "provinces": [
-      "江苏"
+      "江苏",
+      "上海",
+      "安徽"
     ],
     "start_date": "2026-07-09",
     "deadline": null,
@@ -897,8 +1243,8 @@
     "apply_url": "https://naura.zhiye.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "9055115f100e",
@@ -926,8 +1272,8 @@
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "5aa82da2759a",
@@ -952,8 +1298,8 @@
     "apply_url": "https://www.sgepri.sgcc.com.cn",
     "source": "企业官网",
     "industry": "央国企",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "93e8dcae8f6d",
@@ -978,8 +1324,86 @@
     "apply_url": "https://job.10jqka.com.cn/campus.html",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "4ea0fbb9794f",
+    "company": "哔哩哔哩",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试开发",
+      "质量保障"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://jobs.bilibili.com/campus",
+    "source": "企业官网",
+    "industry": "互联网",
+    "scale": "大厂",
+    "status": "open"
+  },
+  {
+    "id": "19c19cb9c6b9",
+    "company": "商汤科技",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试开发",
+      "软件测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.sensetime.com/cn/join",
+    "source": "企业官网",
+    "industry": "互联网",
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "bd247b449355",
+    "company": "喜马拉雅",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试工程师",
+      "测试开发"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://job.ximalaya.com",
+    "source": "企业官网",
+    "industry": "互联网",
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "4898d57b8ce7",
@@ -1004,8 +1428,33 @@
     "apply_url": "https://www.dahuatech.com/about/join.html",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
+  },
+  {
+    "id": "3c9d74eafee2",
+    "company": "大疆",
+    "program": null,
+    "cohort": "不限",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试/工类"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-07-02",
+    "deadline": null,
+    "updated_at": "2026-07-02",
+    "apply_url": null,
+    "source": "xixicc2027",
+    "industry": "半导体/硬件",
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "1138f45e4c3e",
@@ -1029,11 +1478,11 @@
     "apply_url": null,
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
-    "id": "1877ddbef3b5",
+    "id": "86eeb296a585",
     "company": "天锐星通",
     "program": "星锐计划",
     "cohort": "2027届",
@@ -1043,10 +1492,12 @@
       "测试方法研究工程师"
     ],
     "locations": [
-      "南京"
+      "南京",
+      "上海"
     ],
     "provinces": [
-      "江苏"
+      "江苏",
+      "上海"
     ],
     "start_date": "2026-07-15",
     "deadline": null,
@@ -1054,8 +1505,35 @@
     "apply_url": null,
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "db554de1ea09",
+    "company": "奇瑞",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "软件测试",
+      "测试开发"
+    ],
+    "locations": [
+      "芜湖",
+      "合肥"
+    ],
+    "provinces": [
+      "安徽"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://campus.chery.cn",
+    "source": "企业官网",
+    "industry": "传统车企",
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "6f2503f6331c",
@@ -1083,8 +1561,33 @@
     "apply_url": "https://www.uniview.com/cn/about/join/",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "2ff41fd6a68c",
+    "company": "小鹏",
+    "program": null,
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "测试类"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-07-08",
+    "deadline": null,
+    "updated_at": "2026-07-11",
+    "apply_url": "https://xiaopeng.jobs.feishu.cn/campus/m/",
+    "source": "xixicc2027",
+    "industry": "新能源车企",
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "e4869df08cbd",
@@ -1108,8 +1611,8 @@
     "apply_url": "https://www.weiyi.com/join",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "56414b5510b8",
@@ -1123,11 +1626,13 @@
     ],
     "locations": [
       "苏州",
-      "杭州"
+      "杭州",
+      "上海"
     ],
     "provinces": [
       "江苏",
-      "浙江"
+      "浙江",
+      "上海"
     ],
     "start_date": "2026-07-07",
     "deadline": null,
@@ -1135,8 +1640,8 @@
     "apply_url": "https://www.threatbook.cn/about/joinus",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "6650f01824d9",
@@ -1160,8 +1665,8 @@
     "apply_url": "https://careers.microsoft.com/students",
     "source": "企业官网",
     "industry": "外企",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "0bda88cd4b30",
@@ -1186,8 +1691,8 @@
     "apply_url": "https://www.aispeech.com/join",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "5ffcbdfa6d0a",
@@ -1213,11 +1718,11 @@
     "apply_url": "https://app.mokahr.com/m/campus-recruitment/3peakic/67894?locale=zh-CN",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
-    "id": "cf14282e7b11",
+    "id": "1cc332906e29",
     "company": "思瑞浦",
     "program": null,
     "cohort": "2027届",
@@ -1227,10 +1732,12 @@
       "研发测试工程师"
     ],
     "locations": [
+      "上海",
       "杭州",
       "苏州"
     ],
     "provinces": [
+      "上海",
       "浙江",
       "江苏"
     ],
@@ -1240,8 +1747,34 @@
     "apply_url": "https://app.mokahr.com/m/campus-recruitment/3peakic/67894?locale=zh-CN",
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "c4845e67bbd1",
+    "company": "携程",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试开发工程师",
+      "软件测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://careers.ctrip.com",
+    "source": "企业官网",
+    "industry": "互联网",
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "720ffd269d73",
@@ -1268,8 +1801,8 @@
     "apply_url": "https://v.wjx.cn/vm/QN6R03l.aspx",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "79ea6e706102",
@@ -1294,8 +1827,8 @@
     "apply_url": "https://career.h3c.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "e5cf66e97191",
@@ -1320,8 +1853,8 @@
     "apply_url": "https://job.youzan.com/campus",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "5f42b045cfdf",
@@ -1346,8 +1879,8 @@
     "apply_url": "https://www.longshine.com/join",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "3fbe4b68c9bc",
@@ -1372,11 +1905,11 @@
     "apply_url": "https://joulwatt.zhiye.com/",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
-    "id": "9a00e1f378b0",
+    "id": "5cfa3a5b6983",
     "company": "歌尔",
     "program": "精英计划",
     "cohort": "2027届",
@@ -1386,10 +1919,12 @@
       "检测开发岗"
     ],
     "locations": [
+      "上海",
       "南京",
       "杭州"
     ],
     "provinces": [
+      "上海",
       "江苏",
       "浙江"
     ],
@@ -1399,8 +1934,33 @@
     "apply_url": "https://goertek.hotjob.cn/",
     "source": "xixicc2027",
     "industry": "制造业",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "04c7c1be34fd",
+    "company": "江淮汽车",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "软件测试工程师"
+    ],
+    "locations": [
+      "合肥"
+    ],
+    "provinces": [
+      "安徽"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.jac.com.cn/join",
+    "source": "企业官网",
+    "industry": "传统车企",
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "3418bbd0852e",
@@ -1425,8 +1985,8 @@
     "apply_url": "https://www.insigma.com.cn",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "c8f1232b469a",
@@ -1451,8 +2011,8 @@
     "apply_url": "https://campushr.hikvision.com",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "ac4227a59c01",
@@ -1476,8 +2036,8 @@
     "apply_url": "https://www.tuya.com/career",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "64df5447c808",
@@ -1503,8 +2063,8 @@
     "apply_url": "https://app.mokahr.com/campus-recruitment/manbang",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "e625e6017c74",
@@ -1529,8 +2089,60 @@
     "apply_url": "https://job.made-in-china.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "f6c1b13fd306",
+    "company": "科大国创",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "软件测试工程师",
+      "测试开发"
+    ],
+    "locations": [
+      "合肥"
+    ],
+    "provinces": [
+      "安徽"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.ustcinfo.com/join",
+    "source": "企业官网",
+    "industry": "互联网",
+    "scale": "小厂",
+    "status": "open"
+  },
+  {
+    "id": "65f3bb68455f",
+    "company": "米哈游",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试开发工程师",
+      "游戏测试"
+    ],
+    "locations": [
+      "上海"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://jobs.mihoyo.com",
+    "source": "企业官网",
+    "industry": "游戏",
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "d99901d774c7",
@@ -1556,8 +2168,8 @@
     "apply_url": "https://campus.163.com/app/index",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "d14d98215a93",
@@ -1582,8 +2194,35 @@
     "apply_url": "https://campus.suning.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "dde2dd0836ca",
+    "company": "蔚来",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "测试开发",
+    "positions": [
+      "测试开发",
+      "整车测试",
+      "软件测试"
+    ],
+    "locations": [
+      "合肥"
+    ],
+    "provinces": [
+      "安徽"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://campus.nio.com",
+    "source": "企业官网",
+    "industry": "新能源车企",
+    "scale": "大厂",
+    "status": "open"
   },
   {
     "id": "876eb7b6447f",
@@ -1608,8 +2247,8 @@
     "apply_url": "https://www.lianlianpay.com/join",
     "source": "企业官网",
     "industry": "银行/金融",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "c3bcabf51d33",
@@ -1634,8 +2273,8 @@
     "apply_url": "https://campus.tuniu.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "小厂"
+    "scale": "小厂",
+    "status": "open"
   },
   {
     "id": "914737f4b032",
@@ -1661,8 +2300,34 @@
     "apply_url": "https://campus.kingdee.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "中厂"
+    "scale": "中厂",
+    "status": "open"
+  },
+  {
+    "id": "7c8bf3c9ae18",
+    "company": "阳光电源",
+    "program": "2027届校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "role_type": "软件测试",
+    "positions": [
+      "软件测试工程师",
+      "测试"
+    ],
+    "locations": [
+      "合肥"
+    ],
+    "provinces": [
+      "安徽"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "updated_at": "2026-08-21",
+    "apply_url": "https://www.sungrowpower.com/join",
+    "source": "企业官网",
+    "industry": "制造业",
+    "scale": "中厂",
+    "status": "open"
   },
   {
     "id": "b86a01df0087",
@@ -1687,7 +2352,7 @@
     "apply_url": "https://talent.alibaba.com/campus/positions",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open",
-    "scale": "大厂"
+    "scale": "大厂",
+    "status": "open"
   }
 ]

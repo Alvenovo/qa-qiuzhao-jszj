@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>2027秋招 · 江苏浙江测试岗</title>
-  <meta name="description" content="江苏、浙江软件测试 / 测试开发岗位，每日中午12点更新，只展示仍在招的信息。" />
+  <title>2027秋招 · 江浙沪皖测试岗</title>
+  <meta name="description" content="江苏、浙江、安徽、上海软件测试 / 测试开发岗位，每日中午12点更新，只展示仍在招的信息。" />
   <style>
     :root{
       --paper:#fbfaf5; --ink:#161513; --grey:#8a887f; --faint:#c9c7bd;
@@ -64,7 +64,7 @@
 <body>
   <header>
     <div class="head-in">
-      <h1>秋招测试岗 · 江苏浙江</h1>
+      <h1>秋招测试岗 · 江浙沪皖</h1>
       <p class="sub" id="stats">正在载入…</p>
       <div class="controls">
         <label class="dd">地区
@@ -72,6 +72,8 @@
             <option value="全部">全部</option>
             <option value="江苏">江苏</option>
             <option value="浙江">浙江</option>
+            <option value="安徽">安徽</option>
+            <option value="上海">上海</option>
           </select>
         </label>
         <label class="dd">厂级
@@ -186,8 +188,10 @@
       const n = JOBS.length;
       const js = JOBS.filter(j=>(j.provinces||[]).includes("江苏")).length;
       const zj = JOBS.filter(j=>(j.provinces||[]).includes("浙江")).length;
+      const ah = JOBS.filter(j=>(j.provinces||[]).includes("安徽")).length;
+      const sh = JOBS.filter(j=>(j.provinces||[]).includes("上海")).length;
       $("#stats").innerHTML =
-        `共 <b>${n}</b> 条在招测试岗 · 江苏 ${js} · 浙江 ${zj} · 更新于 <b>${META.updated_at||"—"}</b><br>` +
+        `共 <b>${n}</b> 条在招测试岗 · 江苏 ${js} · 浙江 ${zj} · 安徽 ${ah} · 上海 ${sh} · 更新于 <b>${META.updated_at||"—"}</b><br>` +
         `数据源：${(META.sources||[]).join("、")||"本地精选"}`;
     }
 
