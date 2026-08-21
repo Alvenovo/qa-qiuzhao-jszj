@@ -47,6 +47,25 @@ COMPANY_HQ = {
     "焦点科技": ["南京"], "途牛": ["南京"], "南瑞集团": ["南京"], "思必驰": ["苏州"],
 }
 
+BIG_FIRMS = (
+    "阿里", "蚂蚁", "字节", "华为", "腾讯", "百度", "网易", "美团", "京东",
+    "小米", "荣耀", "中兴", "海康", "大华", "DeepSeek", "滴滴", "微软", "三星", "博世",
+)
+MID_FIRMS = (
+    "浪潮", "地平线", "招银", "海信", "讯飞", "华泰", "北方华创", "新华三", "中控",
+    "南瑞", "同花顺", "宇视", "微步", "有赞", "涂鸦", "满帮", "苏宁", "金蝶", "歌尔",
+    "乐鑫", "Momenta", "思必驰", "新华三",
+)
+
+
+def classify_scale(company: str) -> str:
+    name = company or ""
+    if any(k in name for k in BIG_FIRMS):
+        return "大厂"
+    if any(k in name for k in MID_FIRMS):
+        return "中厂"
+    return "小厂"
+
 TEST_RE = re.compile(
     r"测试开发|测开|软件测试|自动化测试|质量保障|质量工程|"
     r"测试工程师|测试类|测试岗|游戏测试|SDET|sdet|\bQA\b|\bQE\b|"
@@ -221,6 +240,7 @@ def make_job(**kwargs) -> dict[str, Any] | None:
         "apply_url": apply_url,
         "source": kwargs.get("source") or "未知",
         "industry": kwargs.get("industry") or "其他",
+        "scale": kwargs.get("scale") or classify_scale(company),
         "status": "open",
     }
 

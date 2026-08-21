@@ -21,7 +21,8 @@
     "apply_url": "https://www.sieracn.com",
     "source": "三方校招日历",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "cdafadfa9c13",
@@ -45,7 +46,8 @@
     "apply_url": "https://www.kujiale.com/join",
     "source": "校招日历",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "340257e05a5a",
@@ -71,7 +73,8 @@
     "apply_url": "https://job.zte.com.cn/cn/campus-recruitment",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "df64105bb56e",
@@ -95,7 +98,8 @@
     "apply_url": "https://inspur.hotjob.cn",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "9edcf1f05c85",
@@ -120,7 +124,8 @@
     "apply_url": "https://www.espressif.com/zh-hans/careers/jobs",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "3de3a776582a",
@@ -146,7 +151,8 @@
     "apply_url": "https://horizon.hotjob.cn",
     "source": "企业官网",
     "industry": "新能源车企",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "6a2456db70c3",
@@ -171,7 +177,8 @@
     "apply_url": "https://talent.antgroup.com/campus",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "b0f0604d7e5a",
@@ -195,7 +202,8 @@
     "apply_url": "https://game.campus.163.com/position/index",
     "source": "企业官网",
     "industry": "游戏",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "5b59e64fc013",
@@ -220,7 +228,8 @@
     "apply_url": "https://www.bosch.com.cn/careers/students/",
     "source": "企业官网",
     "industry": "外企",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "e395bb6b1c01",
@@ -245,7 +254,8 @@
     "apply_url": "https://jobs.bytedance.com/campus/position?keywords=%E6%B5%8B%E8%AF%95",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "d3e5547c0a5a",
@@ -269,7 +279,8 @@
     "apply_url": "https://www.ciqtek.com/joinus",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "cdbd1b16c36e",
@@ -293,7 +304,8 @@
     "apply_url": "https://www.edianyun.com/campus",
     "source": "三方校招日历",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "a17edeabeea4",
@@ -317,7 +329,8 @@
     "apply_url": "https://www.inxhitek.com",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "e0ee7b000b1c",
@@ -341,7 +354,8 @@
     "apply_url": "https://cmbnt.cmbchina.com/",
     "source": "企业官网",
     "industry": "银行/金融",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "fe9ca290d3c1",
@@ -365,7 +379,8 @@
     "apply_url": "https://www.arrowuniverse.com",
     "source": "三方校招日历",
     "industry": "制造业",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "d2f91d4c8a5d",
@@ -389,7 +404,8 @@
     "apply_url": "https://www.momenta.cn/career",
     "source": "校招日历",
     "industry": "新能源车企",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "0e8d34e77a73",
@@ -416,7 +432,8 @@
     "apply_url": "https://hisense.zhiye.com/campus",
     "source": "企业官网",
     "industry": "制造业",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "179da2b4debc",
@@ -440,7 +457,8 @@
     "apply_url": "https://career.honor.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "6217e3373cc0",
@@ -465,7 +483,8 @@
     "apply_url": "https://cksic.zhiye.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "e37a8ec3c4c4",
@@ -489,7 +508,8 @@
     "apply_url": "https://campus.didiglobal.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "35bbee69a622",
@@ -516,7 +536,8 @@
     "apply_url": "https://campus.iflytek.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "215a211e112a",
@@ -543,7 +564,8 @@
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "fa1318c0b7f7",
@@ -567,7 +589,8 @@
     "apply_url": "https://www.zh-jieli.com/join",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "7a91cfc2fb13",
@@ -591,7 +614,8 @@
     "apply_url": "https://job.htsc.com.cn",
     "source": "企业官网",
     "industry": "银行/金融",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "b61ea5a51a25",
@@ -616,7 +640,8 @@
     "apply_url": "https://hr.xiaomi.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "9f0939d38894",
@@ -643,7 +668,8 @@
     "apply_url": "https://talent.baidu.com/jobs/campus-list",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "28c7e2e67ff6",
@@ -669,7 +695,8 @@
     "apply_url": "https://www.dapustor.com/join",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "197e496a2718",
@@ -693,7 +720,8 @@
     "apply_url": "https://hire.hirain.com",
     "source": "企业官网",
     "industry": "新能源车企",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "4bd8c9c4934a",
@@ -717,7 +745,8 @@
     "apply_url": "https://app.mokahr.com/social-recruitment/high-flyer/140576#/",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "3e289ac567cc",
@@ -741,7 +770,8 @@
     "apply_url": "https://www.samsungcareers.com",
     "source": "企业官网",
     "industry": "外企",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "7049c70382a7",
@@ -765,7 +795,8 @@
     "apply_url": null,
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "483997b8da7b",
@@ -790,7 +821,8 @@
     "apply_url": "https://www.supcon.com/join",
     "source": "企业官网",
     "industry": "制造业",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "c0b92794e3ed",
@@ -814,7 +846,8 @@
     "apply_url": "https://recruit.sinovatio.com/home/student",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "74d1ebd4f864",
@@ -838,7 +871,8 @@
     "apply_url": "https://recruit.sinovatio.com/home/student",
     "source": "xixicc2027",
     "industry": "其他",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "9011758506d0",
@@ -863,7 +897,8 @@
     "apply_url": "https://naura.zhiye.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "9055115f100e",
@@ -891,7 +926,8 @@
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "5aa82da2759a",
@@ -916,7 +952,8 @@
     "apply_url": "https://www.sgepri.sgcc.com.cn",
     "source": "企业官网",
     "industry": "央国企",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "93e8dcae8f6d",
@@ -941,7 +978,8 @@
     "apply_url": "https://job.10jqka.com.cn/campus.html",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "4898d57b8ce7",
@@ -966,7 +1004,8 @@
     "apply_url": "https://www.dahuatech.com/about/join.html",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "1138f45e4c3e",
@@ -990,7 +1029,8 @@
     "apply_url": null,
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "1877ddbef3b5",
@@ -1014,7 +1054,8 @@
     "apply_url": null,
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "6f2503f6331c",
@@ -1042,7 +1083,8 @@
     "apply_url": "https://www.uniview.com/cn/about/join/",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "e4869df08cbd",
@@ -1066,7 +1108,8 @@
     "apply_url": "https://www.weiyi.com/join",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "56414b5510b8",
@@ -1092,7 +1135,8 @@
     "apply_url": "https://www.threatbook.cn/about/joinus",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "6650f01824d9",
@@ -1116,7 +1160,8 @@
     "apply_url": "https://careers.microsoft.com/students",
     "source": "企业官网",
     "industry": "外企",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "0bda88cd4b30",
@@ -1141,7 +1186,8 @@
     "apply_url": "https://www.aispeech.com/join",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "5ffcbdfa6d0a",
@@ -1167,7 +1213,8 @@
     "apply_url": "https://app.mokahr.com/m/campus-recruitment/3peakic/67894?locale=zh-CN",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "cf14282e7b11",
@@ -1193,7 +1240,8 @@
     "apply_url": "https://app.mokahr.com/m/campus-recruitment/3peakic/67894?locale=zh-CN",
     "source": "xixicc2027",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "720ffd269d73",
@@ -1220,7 +1268,8 @@
     "apply_url": "https://v.wjx.cn/vm/QN6R03l.aspx",
     "source": "校招日历",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "79ea6e706102",
@@ -1245,7 +1294,8 @@
     "apply_url": "https://career.h3c.com/campus",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "e5cf66e97191",
@@ -1270,7 +1320,8 @@
     "apply_url": "https://job.youzan.com/campus",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "5f42b045cfdf",
@@ -1295,7 +1346,8 @@
     "apply_url": "https://www.longshine.com/join",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "3fbe4b68c9bc",
@@ -1320,7 +1372,8 @@
     "apply_url": "https://joulwatt.zhiye.com/",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "9a00e1f378b0",
@@ -1346,7 +1399,8 @@
     "apply_url": "https://goertek.hotjob.cn/",
     "source": "xixicc2027",
     "industry": "制造业",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "3418bbd0852e",
@@ -1371,7 +1425,8 @@
     "apply_url": "https://www.insigma.com.cn",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "c8f1232b469a",
@@ -1396,7 +1451,8 @@
     "apply_url": "https://campushr.hikvision.com",
     "source": "企业官网",
     "industry": "半导体/硬件",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "ac4227a59c01",
@@ -1420,7 +1476,8 @@
     "apply_url": "https://www.tuya.com/career",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "64df5447c808",
@@ -1446,7 +1503,8 @@
     "apply_url": "https://app.mokahr.com/campus-recruitment/manbang",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "e625e6017c74",
@@ -1471,7 +1529,8 @@
     "apply_url": "https://job.made-in-china.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "d99901d774c7",
@@ -1497,7 +1556,8 @@
     "apply_url": "https://campus.163.com/app/index",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   },
   {
     "id": "d14d98215a93",
@@ -1522,7 +1582,8 @@
     "apply_url": "https://campus.suning.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "876eb7b6447f",
@@ -1547,7 +1608,8 @@
     "apply_url": "https://www.lianlianpay.com/join",
     "source": "企业官网",
     "industry": "银行/金融",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "c3bcabf51d33",
@@ -1572,7 +1634,8 @@
     "apply_url": "https://campus.tuniu.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "小厂"
   },
   {
     "id": "914737f4b032",
@@ -1598,7 +1661,8 @@
     "apply_url": "https://campus.kingdee.com",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "中厂"
   },
   {
     "id": "b86a01df0087",
@@ -1623,6 +1687,7 @@
     "apply_url": "https://talent.alibaba.com/campus/positions",
     "source": "企业官网",
     "industry": "互联网",
-    "status": "open"
+    "status": "open",
+    "scale": "大厂"
   }
 ]

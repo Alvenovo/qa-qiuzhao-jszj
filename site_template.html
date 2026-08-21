@@ -20,19 +20,13 @@
     h1{font-size:1.85rem;font-weight:800;letter-spacing:.04em;line-height:1.15}
     .sub{color:var(--grey);font-size:.82rem;font-weight:600;margin-top:8px;line-height:1.6}
     .sub b{color:var(--ink)}
-    .controls{display:flex;gap:10px;margin-top:14px;align-items:center;flex-wrap:wrap}
-    .seg{display:flex;gap:0}
-    .seg button{border:2px solid var(--ink);background:var(--paper);padding:7px 12px;
-      font-size:.8rem;font-weight:700;color:var(--ink);cursor:pointer;margin-left:-2px}
-    .seg button:first-child{margin-left:0;border-radius:255px 0 0 15px / 15px 0 0 255px}
-    .seg button:last-child{border-radius:0 15px 225px 0 / 0 225px 15px 0}
-    .seg button.on{background:var(--ink);color:var(--paper)}
+    .controls{display:flex;gap:8px;margin-top:14px;align-items:center;flex-wrap:wrap}
+    .dd{display:flex;align-items:center;gap:6px;font-size:.75rem;font-weight:700;color:var(--grey)}
+    .dd select{border:2px solid var(--ink);background:#fff;color:var(--ink);
+      padding:6px 8px;font-size:.8rem;font-weight:700;cursor:pointer;
+      border-radius:10px 16px 8px 14px;max-width:42vw}
     .search{border:2px solid var(--ink);background:#fff;border-radius:99px;
-      padding:7px 14px;font-size:.85rem;min-width:180px;flex:1;max-width:280px}
-    .chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0 8px;scrollbar-width:none}
-    .chip{flex:none;background:var(--paper);color:var(--ink);border:2px solid var(--ink);
-      border-radius:99px;padding:5px 13px;font-size:.78rem;font-weight:700;cursor:pointer}
-    .chip.on{background:var(--ink);color:var(--paper)}
+      padding:7px 14px;font-size:.85rem;min-width:140px;flex:1;max-width:240px}
     main{max-width:920px;margin:0 auto;padding:22px 20px 60px}
     .hint{font-size:.78rem;color:var(--grey);font-weight:600;margin-bottom:16px}
     .list{display:flex;flex-direction:column;gap:14px}
@@ -73,20 +67,40 @@
       <h1>秋招测试岗 · 江苏浙江</h1>
       <p class="sub" id="stats">正在载入…</p>
       <div class="controls">
-        <div class="seg" id="province">
-          <button class="on" data-p="全部">全部地区</button>
-          <button data-p="江苏">江苏</button>
-          <button data-p="浙江">浙江</button>
-        </div>
-        <div class="seg" id="sort">
-          <button class="on" data-s="deadline-asc">截止时间↑</button>
-          <button data-s="deadline-desc">截止时间↓</button>
-          <button data-s="updated-desc">更新时间↓</button>
-          <button data-s="updated-asc">更新时间↑</button>
-        </div>
+        <label class="dd">地区
+          <select id="province">
+            <option value="全部">全部</option>
+            <option value="江苏">江苏</option>
+            <option value="浙江">浙江</option>
+          </select>
+        </label>
+        <label class="dd">厂级
+          <select id="scale">
+            <option value="全部">全部</option>
+            <option value="大厂">大厂</option>
+            <option value="中厂">中厂</option>
+            <option value="小厂">小厂</option>
+          </select>
+        </label>
+        <label class="dd">岗位
+          <select id="role">
+            <option value="全部">全部</option>
+            <option value="软件测试">软件测试</option>
+            <option value="测试开发">测试开发</option>
+            <option value="质量保障">质量保障</option>
+            <option value="自动化测试">自动化测试</option>
+          </select>
+        </label>
+        <label class="dd">排序
+          <select id="sort">
+            <option value="deadline-asc">截止时间↑</option>
+            <option value="deadline-desc">截止时间↓</option>
+            <option value="updated-desc">更新时间↓</option>
+            <option value="updated-asc">更新时间↑</option>
+          </select>
+        </label>
         <input class="search" id="q" placeholder="搜公司 / 岗位" />
       </div>
-      <div class="chips" id="roles"></div>
     </div>
   </header>
   <main>
@@ -100,8 +114,7 @@
   <script>
     const JOBS = __JOBS__;
     const META = __META__;
-    const ROLES = ["全部", "软件测试", "测试开发", "质量保障", "自动化测试"];
-    let province = "全部", role = "全部", sort = "deadline-asc", q = "";
+    let province = "全部", scale = "全部", role = "全部", sort = "deadline-asc", q = "";
 
     const $ = s => document.querySelector(s);
     const today = new Date(new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"}));
@@ -113,14 +126,11 @@
     }
     function fmt(d, fallback){ return d || fallback; }
 
-    $("#roles").innerHTML = ROLES.map((r,i)=>
-      `<button class="chip${i===0?" on":""}" data-r="${r}">${r}</button>`
-    ).join("");
-
     function filtered(){
       const kw = q.trim();
       let list = JOBS.filter(j => {
         if (province !== "全部" && !(j.provinces||[]).includes(province)) return false;
+        if (scale !== "全部" && (j.scale||"小厂") !== scale) return false;
         if (role !== "全部" && j.role_type !== role) return false;
         if (kw){
           const blob = [j.company, j.program, ...(j.positions||[]), ...(j.locations||[])].join(" ");
@@ -150,7 +160,7 @@
         <div class="c-top">
           <div class="c-name">${j.company}</div>
           ${j.program?`<div class="c-prog">${j.program}</div>`:""}
-          <div class="c-badges">${days}<span class="pill src">${j.source}</span></div>
+          <div class="c-badges">${days}<span class="pill src">${j.scale||"小厂"}</span></div>
         </div>
         <div class="c-mid">
           <span class="tag ind">${j.role_type}</span>
@@ -181,24 +191,10 @@
         `数据源：${(META.sources||[]).join("、")||"本地精选"}`;
     }
 
-    $("#province").addEventListener("click", e=>{
-      const b=e.target.closest("button"); if(!b) return;
-      province=b.dataset.p;
-      [...$("#province").children].forEach(x=>x.classList.toggle("on",x===b));
-      render();
-    });
-    $("#sort").addEventListener("click", e=>{
-      const b=e.target.closest("button"); if(!b) return;
-      sort=b.dataset.s;
-      [...$("#sort").children].forEach(x=>x.classList.toggle("on",x===b));
-      render();
-    });
-    $("#roles").addEventListener("click", e=>{
-      const b=e.target.closest(".chip"); if(!b) return;
-      role=b.dataset.r;
-      [...$("#roles").children].forEach(x=>x.classList.toggle("on",x===b));
-      render();
-    });
+    $("#province").addEventListener("change", e=>{ province=e.target.value; render(); });
+    $("#scale").addEventListener("change", e=>{ scale=e.target.value; render(); });
+    $("#role").addEventListener("change", e=>{ role=e.target.value; render(); });
+    $("#sort").addEventListener("change", e=>{ sort=e.target.value; render(); });
     $("#q").addEventListener("input", e=>{ q=e.target.value; render(); });
     render();
   </script>
