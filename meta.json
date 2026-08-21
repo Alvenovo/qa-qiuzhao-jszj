@@ -1,0 +1,63 @@
+{
+  "updated_at": "2026-08-21 16:08",
+  "count": 35,
+  "sources": [
+    "seed_jobs",
+    "xixicc2027",
+    "niuqizp校招日历",
+    "牛客",
+    "网易官网",
+    "阿里官网"
+  ],
+  "source_log": [
+    {
+      "name": "seed_jobs",
+      "ok": true,
+      "count": 30,
+      "detail": ""
+    },
+    {
+      "name": "xixicc2027",
+      "ok": true,
+      "count": 9,
+      "detail": ""
+    },
+    {
+      "name": "niuqizp校招日历",
+      "ok": true,
+      "count": 0,
+      "detail": "成功页面 16/16"
+    },
+    {
+      "name": "牛客",
+      "ok": true,
+      "count": 0,
+      "detail": "接口可能被拦，已做 HTML 兜底"
+    },
+    {
+      "name": "字节官网",
+      "ok": false,
+      "count": 0,
+      "detail": "接口不可用"
+    },
+    {
+      "name": "华为官网",
+      "ok": false,
+      "count": 0,
+      "detail": ""
+    },
+    {
+      "name": "网易官网",
+      "ok": true,
+      "count": 0,
+      "detail": ""
+    },
+    {
+      "name": "阿里官网",
+      "ok": true,
+      "count": 0,
+      "detail": "列表页确认仍开放"
+    }
+  ],
+  "note": "仅江苏/浙江，仅软件测试相关，仅未截止"
+}
