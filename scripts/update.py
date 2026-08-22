@@ -56,59 +56,63 @@ COMPANY_HQ = {
     "满帮集团": ["南京", "苏州"], "中新赛克": ["南京"], "天锐星通": ["南京"],
     "焦点科技": ["南京"], "途牛": ["南京"], "南瑞集团": ["南京"], "思必驰": ["苏州"],
     "拼多多": ["上海"], "携程": ["上海"], "哔哩哔哩": ["上海"], "米哈游": ["上海"],
-    "科大讯飞": ["合肥"], "蔚来": ["合肥"], "阳光电源": ["合肥"],
+    "科大讯飞": ["合肥", "南京", "苏州", "杭州", "上海"],
+    "蔚来": ["合肥"], "阳光电源": ["合肥"],
+    "绿盟科技": ["南京"], "国家电网": ["南京"], "航天科工": ["南京", "上海"],
+    "中国电信": ["南京", "杭州", "上海"], "长鑫存储": ["合肥"], "零跑汽车": ["杭州"],
+    "帆软": ["南京"], "网易雷火": ["杭州"],
+    "恒生电子": ["杭州"], "医科达": ["上海"], "思特威": ["上海"], "声网": ["上海"],
+    "华勤技术": ["上海"], "微创医疗机器人": ["上海"], "术锐机器人": ["上海"],
+    "国睿信维": ["南京"], "姚记集团": ["上海"],
+    "南京熊猫电子": ["南京"], "龙旗集团": ["上海", "合肥", "苏州"], "快手": ["杭州"],
+    "宇视科技": ["杭州"],
 }
 
 BIG_FIRMS = (
     "阿里", "蚂蚁", "字节", "华为", "腾讯", "百度", "网易", "美团", "京东",
     "小米", "荣耀", "中兴", "海康", "大华", "DeepSeek", "滴滴", "微软", "三星", "博世",
     "拼多多", "携程", "哔哩", "米哈游", "蔚来", "大疆", "联想",
+    "国家电网", "中国电信", "工商银行", "农业银行", "航天科工", "Shopee", "网商银行", "中国移动",
 )
 MID_FIRMS = (
     "浪潮", "地平线", "招银", "海信", "讯飞", "华泰", "北方华创", "新华三", "中控",
     "南瑞", "同花顺", "宇视", "微步", "有赞", "涂鸦", "满帮", "苏宁", "金蝶", "歌尔",
     "乐鑫", "Momenta", "思必驰", "天翼", "星环", "商汤", "阳光电源", "奇瑞", "江淮",
+    "绿盟", "帆软", "零跑", "长鑫", "远景", "南京银行", "招商银行", "航发", "电科",
+    "恒生", "华勤", "思特威", "声网", "微创", "熊猫", "龙旗", "快手", "宇视",
 )
 
 
-# 已知仍能打开的官方校招入口；生成岗位时覆盖过期路径。
-OFFICIAL_APPLY = (
-    ("网易游戏", "https://campus.game.163.com/"),
-    ("网易互娱", "https://campus.game.163.com/"),
-    ("阿里", "https://campus-talent.alibaba.com/?lang=zh"),
-    ("蚂蚁", "https://talent.antgroup.com"),
-    ("字节", "https://jobs.bytedance.com/campus"),
-    ("华为", "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html"),
-    ("百度", "https://talent.baidu.com"),
-    ("网易", "https://campus.163.com"),
-    ("拼多多", "https://careers.pddglobalhr.com/campus/"),
-    ("小米", "https://campus.hr.xiaomi.com"),
-    ("滴滴", "https://campus.didiglobal.com"),
-    ("中兴", "https://job.zte.com.cn"),
-    ("海康", "https://campushr.hikvision.com"),
-    ("科大讯飞", "https://campus.iflytek.com"),
-    ("哔哩哔哩", "https://jobs.bilibili.com"),
-    ("米哈游", "https://jobs.mihoyo.com"),
-    ("携程", "https://careers.ctrip.com"),
-    ("荣耀", "https://career.honor.com"),
-    ("联想", "https://talent.lenovo.com.cn"),
-    ("大疆", "https://we.dji.com/zh-CN/campus"),
-    ("蔚来", "https://campus.nio.com"),
-    ("微软", "https://careers.microsoft.com/students"),
-    ("腾讯", "https://join.qq.com"),
-    ("美团", "https://zhaopin.meituan.com"),
-    ("京东", "https://campus.jd.com"),
-    ("乐鑫", "https://www.espressif.com/zh-hans/careers/jobs"),
-    ("地平线", "https://horizon.hotjob.cn"),
-    ("浪潮", "https://inspur.hotjob.cn"),
-    ("华泰", "https://job.htsc.com.cn"),
-)
+APPLY_CHANNELS: dict[str, dict[str, str]] = {}
+_channels_path = ROOT / "apply_channels.json"
+if _channels_path.exists():
+    raw_ch = json.loads(_channels_path.read_text(encoding="utf-8"))
+    APPLY_CHANNELS = {k: v for k, v in raw_ch.items() if not str(k).startswith("_") and isinstance(v, dict)}
+
+
+def default_search_hint(company: str) -> str:
+    name = (company or "公司").strip()
+    return (
+        f"百度搜「{name} 2027校招 测试」；微信搜「{name}招聘」；"
+        "国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥"
+    )
+
+
+def lookup_channel(company: str) -> dict[str, str]:
+    name = company or ""
+    for key, row in APPLY_CHANNELS.items():
+        if key and key in name:
+            return row
+    return {}
 
 
 def official_apply(company: str, fallback: str | None) -> str | None:
-    for name, url in OFFICIAL_APPLY:
-        if name in (company or ""):
-            return url
+    ch = lookup_channel(company)
+    url = (ch.get("url") or "").strip()
+    if url.startswith("http"):
+        return url
+    if ch and not url:
+        return None
     return fallback
 
 
@@ -275,6 +279,8 @@ def make_job(**kwargs) -> dict[str, Any] | None:
     if apply_url and not str(apply_url).startswith("http"):
         apply_url = None
     apply_url = official_apply(company, apply_url)
+    ch = lookup_channel(company)
+    search_hint = (kwargs.get("search_hint") or ch.get("hint") or "").strip() or default_search_hint(company)
     role = kwargs.get("role_type") or classify_role(positions)
     key = hashlib.md5(
         f"{company}|{kwargs.get('batch')}|{deadline}|{','.join(locations)}|{role}".encode("utf-8")
@@ -293,9 +299,11 @@ def make_job(**kwargs) -> dict[str, Any] | None:
         "deadline": deadline,
         "updated_at": updated,
         "apply_url": apply_url,
+        "search_hint": search_hint,
         "source": kwargs.get("source") or "未知",
         "industry": kwargs.get("industry") or "其他",
         "scale": kwargs.get("scale") or classify_scale(company),
+        "owner": kwargs.get("owner") or "",
         "status": "open",
     }
 
@@ -318,6 +326,12 @@ def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 old["apply_url"] = job["apply_url"]
                 if job["source"] == "企业官网":
                     old["source"] = "企业官网"
+        if job.get("search_hint") and (
+            not old.get("search_hint") or len(job["search_hint"]) > len(old.get("search_hint") or "")
+        ):
+            old["search_hint"] = job["search_hint"]
+        if job.get("owner") and not old.get("owner"):
+            old["owner"] = job["owner"]
         if job.get("start_date") and (not old.get("start_date") or job["start_date"] < old["start_date"]):
             old["start_date"] = job["start_date"]
         if job.get("updated_at") and job["updated_at"] > (old.get("updated_at") or ""):
@@ -331,7 +345,7 @@ def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 def from_seed() -> list[dict[str, Any]]:
     jobs = []
-    for name in ("seed_jobs.json", "extra_jobs.json", "sh_ah_jobs.json"):
+    for name in ("seed_jobs.json", "extra_jobs.json", "sh_ah_jobs.json", "crawled_jobs.json"):
         path = ROOT / name
         if not path.exists():
             continue
@@ -763,7 +777,8 @@ def render_readme(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
         if j.get("apply_url"):
             link = f"[网申]({j['apply_url']})"
         else:
-            link = "见官网"
+            hint = (j.get("search_hint") or "见搜法").split("；")[0]
+            link = hint
         lines.append(
             f"| {j['company']} | {pos} | {loc} | {start} | {end} | {link} | {j['source']} |"
         )
@@ -773,6 +788,7 @@ def render_readme(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
         "",
         "- 信息来自公开招聘页，投递前以企业官网为准。",
         "- 已过截止日期的岗位不会出现在本站。",
+        "- 投递栏能打开就给网址；打不开就写搜索方法，不再放 404 链接。",
         "- 不要把 Boss / 智联账号密码写进仓库。",
         "",
     ]

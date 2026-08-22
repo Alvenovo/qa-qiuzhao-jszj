@@ -4,61 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>2027秋招 · 江浙沪皖测试岗</title>
-  <meta name="description" content="江苏、浙江、安徽、上海软件测试 / 测试开发岗位，每日中午12点更新，只展示仍在招的信息。" />
+  <meta name="description" content="江苏、浙江、安徽、上海软件测试 / 测试开发岗位，只展示仍在招的信息。" />
   <style>
     :root{
       --paper:#fbfaf5; --ink:#161513; --grey:#8a887f; --faint:#c9c7bd;
-      --seal:#d23b2e; --wash:#f1efe8; --ok:#2c6e49;
+      --seal:#d23b2e; --wash:#f1efe8; --ok:#2c6e49; --card:#fff;
     }
     *{margin:0;padding:0;box-sizing:border-box}
     body{background:var(--paper);color:var(--ink);
       font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
       -webkit-font-smoothing:antialiased}
-    header{position:sticky;top:0;z-index:50;background:rgba(251,250,245,.95);
+    header{position:sticky;top:0;z-index:50;background:rgba(251,250,245,.94);
       backdrop-filter:blur(10px);border-bottom:2px solid var(--ink)}
-    .head-in{max-width:920px;margin:0 auto;padding:16px 20px 12px}
-    h1{font-size:1.85rem;font-weight:800;letter-spacing:.04em;line-height:1.15}
-    .sub{color:var(--grey);font-size:.82rem;font-weight:600;margin-top:8px;line-height:1.6}
+    .head-in{max-width:1240px;margin:0 auto;padding:14px 20px 12px}
+    h1{font-size:1.55rem;font-weight:800;letter-spacing:.04em;line-height:1.15}
+    .sub{color:var(--grey);font-size:.8rem;font-weight:600;margin-top:6px;line-height:1.55}
     .sub b{color:var(--ink)}
-    .controls{display:flex;gap:8px;margin-top:14px;align-items:center;flex-wrap:wrap}
+    .controls{display:flex;gap:8px;margin-top:12px;align-items:center;flex-wrap:wrap}
     .dd{display:flex;align-items:center;gap:6px;font-size:.75rem;font-weight:700;color:var(--grey)}
     .dd select{border:2px solid var(--ink);background:#fff;color:var(--ink);
       padding:6px 8px;font-size:.8rem;font-weight:700;cursor:pointer;
-      border-radius:10px 16px 8px 14px;max-width:42vw}
+      border-radius:10px;max-width:42vw}
     .search{border:2px solid var(--ink);background:#fff;border-radius:99px;
-      padding:7px 14px;font-size:.85rem;min-width:140px;flex:1;max-width:240px}
-    main{max-width:920px;margin:0 auto;padding:22px 20px 60px}
-    .hint{font-size:.78rem;color:var(--grey);font-weight:600;margin-bottom:16px}
-    .list{display:flex;flex-direction:column;gap:14px}
-    .card{display:block;text-decoration:none;color:inherit;background:#fff;
-      padding:16px 18px;border:2px solid var(--ink);
-      border-radius:255px 15px 225px 15px / 15px 225px 15px 255px}
-    .card:nth-child(even){border-radius:15px 225px 15px 255px / 255px 15px 225px 15px}
-    .card:hover{transform:translateY(-2px);box-shadow:5px 5px 0 var(--ink)}
-    .c-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-    .c-name{font-size:1.12rem;font-weight:800}
-    .c-prog{font-size:.82rem;font-weight:700;color:var(--grey)}
-    .c-badges{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
-    .pill{font-size:.7rem;font-weight:800;padding:3px 9px;border:2px solid var(--ink);
+      padding:7px 14px;font-size:.85rem;min-width:140px;flex:1;max-width:280px}
+    .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+    .chip{border:2px solid var(--ink);background:#fff;color:var(--ink);
+      font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:99px;cursor:pointer}
+    .chip.on{background:var(--ink);color:#fff}
+    .tog{display:flex;align-items:center;gap:6px;font-size:.75rem;font-weight:800;cursor:pointer}
+    .tog input{accent-color:var(--ink);width:14px;height:14px}
+    main{max-width:1240px;margin:0 auto;padding:16px 20px 56px}
+    .hint{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      font-size:.78rem;color:var(--grey);font-weight:600;margin-bottom:14px}
+    .hint b{color:var(--ink)}
+    .list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch}
+    .card{display:flex;flex-direction:column;background:var(--card);padding:14px 15px 12px;
+      border:2px solid var(--ink);border-radius:16px;min-width:0}
+    .card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink)}
+    .card.done{opacity:.48}
+    .c-head{display:flex;align-items:flex-start;gap:8px}
+    .c-name{font-size:1.02rem;font-weight:800;line-height:1.3;
+      display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .c-badges{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end;flex-shrink:0}
+    .pill{font-size:.66rem;font-weight:800;padding:2px 8px;border:2px solid var(--ink);
       border-radius:99px;white-space:nowrap}
     .pill.days{border-color:var(--seal);color:var(--seal)}
     .pill.hot{background:var(--seal);border-color:var(--seal);color:#fff}
     .pill.src{background:var(--wash)}
-    .c-mid{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
-    .tag{font-size:.73rem;font-weight:600;border:1.5px solid var(--faint);
-      border-radius:6px 10px 7px 11px;padding:2px 8px;background:var(--paper)}
+    .c-prog{margin-top:4px;font-size:.74rem;font-weight:700;color:var(--grey);
+      white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .c-mid{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+    .tag{font-size:.7rem;font-weight:600;border:1.5px solid var(--faint);
+      border-radius:7px;padding:2px 7px;background:var(--paper)}
     .tag.ind{border-color:var(--ink)}
-    .c-dates{margin-top:10px;display:flex;gap:16px;flex-wrap:wrap;
-      font-size:.8rem;font-weight:600;color:var(--grey)}
-    .c-dates b{color:var(--ink)}
-    .c-bot{display:flex;align-items:center;gap:10px;margin-top:10px;
-      font-size:.8rem;color:var(--grey);font-weight:600}
-    .c-go{margin-left:auto;color:var(--ink);font-weight:800;font-size:.82rem}
-    .c-go.muted{color:var(--grey);font-weight:600}
-    .empty{text-align:center;color:var(--grey);padding:70px 0;font-weight:600}
-    footer{max-width:920px;margin:0 auto;padding:20px 20px 44px;color:var(--grey);
+    .c-meta{margin-top:10px;font-size:.76rem;font-weight:600;color:var(--grey);line-height:1.55}
+    .c-meta b{color:var(--ink)}
+    .c-hint{margin-top:8px;font-size:.7rem;font-weight:600;color:var(--grey);line-height:1.45;
+      display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .c-act{margin-top:auto;padding-top:12px;display:flex;align-items:center;gap:8px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;
+      border:2px solid var(--ink);background:var(--ink);color:#fff;
+      font-size:.78rem;font-weight:800;padding:6px 12px;border-radius:10px;
+      text-decoration:none;white-space:nowrap}
+    .btn:hover{background:var(--seal);border-color:var(--seal)}
+    .btn.ghost{background:#fff;color:var(--ink)}
+    .mark{margin-left:auto;display:flex;align-items:center;gap:5px;
+      font-size:.74rem;font-weight:800;cursor:pointer;user-select:none}
+    .mark input{accent-color:var(--ok);width:14px;height:14px}
+    .empty{grid-column:1/-1;text-align:center;color:var(--grey);padding:70px 0;font-weight:600}
+    footer{max-width:1240px;margin:0 auto;padding:16px 20px 40px;color:var(--grey);
       font-size:.76rem;line-height:1.8;border-top:2px solid var(--ink)}
-    @media(max-width:560px){h1{font-size:1.4rem}.c-badges{margin-left:0;width:100%}}
+    @media(max-width:1100px){
+      .list{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:680px){
+      h1{font-size:1.28rem}
+      .list{grid-template-columns:1fr}
+      .search{max-width:none}
+    }
   </style>
 </head>
 <body>
@@ -101,22 +124,34 @@
             <option value="updated-asc">更新时间↑</option>
           </select>
         </label>
+        <label class="tog"><input type="checkbox" id="soon" /> 7天内截止</label>
+        <label class="tog"><input type="checkbox" id="unapplied" checked /> 只看未投</label>
         <input class="search" id="q" placeholder="搜公司 / 岗位" />
       </div>
+      <div class="chips" id="cities"></div>
     </div>
   </header>
   <main>
-    <p class="hint">只展示尚未截止的软件测试、测试开发、质量保障等岗位。日期以企业官网为准。</p>
+    <p class="hint">
+      <span>卡片点「投递」打开官网；没网申的只留搜法。日期以企业官网为准。</span>
+      <span id="count"></span>
+    </p>
     <div class="list" id="list"></div>
   </main>
   <footer>
-    数据由公开招聘信息每日中午 12 点（北京时间）自动聚合，来源含企业校招官网、校招日历、牛客等。
-    Boss / 智联等需登录的渠道不会出现在 GitHub 自动更新里。投递前请再确认官网。
+    投递链接已逐条核对：能打开的给出投递按钮，打不开的只留搜索方法。
+    数据含企业校招官网、国聘网、Boss、智联等公开页。「已投」只记在这台电脑的浏览器里，不会上传。
   </footer>
   <script>
     const JOBS = __JOBS__;
     const META = __META__;
-    let province = "全部", scale = "全部", role = "全部", sort = "deadline-asc", q = "";
+    const CITIES = ["南京","杭州","苏州","上海","合肥","无锡"];
+    const STORE = "qiuzhao-applied";
+    let province = "全部", scale = "全部", role = "全部", sort = "deadline-asc";
+    let city = "", q = "", soon = false, unapplied = true;
+    let applied = new Set();
+
+    try { applied = new Set(JSON.parse(localStorage.getItem(STORE) || "[]")); } catch(e) {}
 
     const $ = s => document.querySelector(s);
     const today = new Date(new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"}));
@@ -127,6 +162,9 @@
       return Math.round((new Date(d) - new Date(todayStr)) / 864e5);
     }
     function fmt(d, fallback){ return d || fallback; }
+    function saveApplied(){
+      localStorage.setItem(STORE, JSON.stringify([...applied]));
+    }
 
     function filtered(){
       const kw = q.trim();
@@ -134,6 +172,12 @@
         if (province !== "全部" && !(j.provinces||[]).includes(province)) return false;
         if (scale !== "全部" && (j.scale||"小厂") !== scale) return false;
         if (role !== "全部" && j.role_type !== role) return false;
+        if (city && !(j.locations||[]).some(loc => loc.includes(city))) return false;
+        if (soon){
+          const dl = daysLeft(j.deadline);
+          if (dl === null || dl > 7) return false;
+        }
+        if (unapplied && applied.has(j.id)) return false;
         if (kw){
           const blob = [j.company, j.program, ...(j.positions||[]), ...(j.locations||[])].join(" ");
           if (!blob.includes(kw)) return false;
@@ -156,29 +200,38 @@
       const days = dl===null ? `<span class="pill">招满即止</span>` :
         `<span class="pill days${dl<=7?" hot":""}">${dl===0?"今天截止":"剩 "+dl+" 天"}</span>`;
       const url = j.apply_url;
-      const open = url ? `href="${url}" target="_blank" rel="noopener"` : "";
-      const tag = url ? "a" : "div";
-      return `<${tag} class="card" ${open}>
-        <div class="c-top">
+      const hint = j.search_hint || "";
+      const done = applied.has(j.id);
+      const go = url
+        ? `<a class="btn" href="${url}" target="_blank" rel="noopener" title="${url}">投递</a>`
+        : `<span class="btn ghost">按搜法投</span>`;
+      const hintLine = (!url && hint) ? `<div class="c-hint">${hint}</div>` : "";
+      return `<article class="card${done?" done":""}" data-id="${j.id}">
+        <div class="c-head">
           <div class="c-name">${j.company}</div>
-          ${j.program?`<div class="c-prog">${j.program}</div>`:""}
           <div class="c-badges">${days}<span class="pill src">${j.scale||"小厂"}</span></div>
         </div>
+        ${j.program?`<div class="c-prog">${j.program}</div>`:""}
         <div class="c-mid">
           <span class="tag ind">${j.role_type}</span>
-          <span class="tag">${j.cohort||""} ${j.batch||""}</span>
-          ${(j.positions||[]).slice(0,4).map(p=>`<span class="tag">${p}</span>`).join("")}
+          ${(j.positions||[]).slice(0,3).map(p=>`<span class="tag">${p}</span>`).join("")}
         </div>
-        <div class="c-dates">
-          <span>开始 <b>${fmt(j.start_date,"以官网为准")}</b></span>
-          <span>截止 <b>${fmt(j.deadline,"招满即止")}</b></span>
-          <span>更新 <b>${fmt(j.updated_at,"—")}</b></span>
+        <div class="c-meta">
+          ${(j.locations||[]).join(" · ") || "地点以官网为准"}<br>
+          截止 <b>${fmt(j.deadline,"招满即止")}</b>
         </div>
-        <div class="c-bot">
-          <span>${(j.locations||[]).join(" · ")} · ${(j.provinces||[]).join("/")}</span>
-          <span class="c-go${url?"":" muted"}">${url?"去官网投递 →":"请搜官方渠道"}</span>
+        ${hintLine}
+        <div class="c-act">
+          ${go}
+          <label class="mark"><input type="checkbox" class="applied"${done?" checked":""} /> 已投</label>
         </div>
-      </${tag}>`;
+      </article>`;
+    }
+
+    function renderCities(){
+      $("#cities").innerHTML = CITIES.map(c =>
+        `<button type="button" class="chip${city===c?" on":""}" data-city="${c}">${c}</button>`
+      ).join("") + (city ? `<button type="button" class="chip" data-city="">清除城市</button>` : "");
     }
 
     function render(){
@@ -191,15 +244,32 @@
       const ah = JOBS.filter(j=>(j.provinces||[]).includes("安徽")).length;
       const sh = JOBS.filter(j=>(j.provinces||[]).includes("上海")).length;
       $("#stats").innerHTML =
-        `共 <b>${n}</b> 条在招测试岗 · 江苏 ${js} · 浙江 ${zj} · 安徽 ${ah} · 上海 ${sh} · 更新于 <b>${META.updated_at||"—"}</b><br>` +
-        `数据源：${(META.sources||[]).join("、")||"本地精选"}`;
+        `共 <b>${n}</b> 条在招测试岗 · 江苏 ${js} · 浙江 ${zj} · 安徽 ${ah} · 上海 ${sh} · 更新于 <b>${META.updated_at||"—"}</b>`;
+      $("#count").innerHTML = `当前显示 <b>${list.length}</b> 条 · 已标记 ${applied.size} 家`;
+      renderCities();
     }
 
     $("#province").addEventListener("change", e=>{ province=e.target.value; render(); });
     $("#scale").addEventListener("change", e=>{ scale=e.target.value; render(); });
     $("#role").addEventListener("change", e=>{ role=e.target.value; render(); });
     $("#sort").addEventListener("change", e=>{ sort=e.target.value; render(); });
+    $("#soon").addEventListener("change", e=>{ soon=e.target.checked; render(); });
+    $("#unapplied").addEventListener("change", e=>{ unapplied=e.target.checked; render(); });
     $("#q").addEventListener("input", e=>{ q=e.target.value; render(); });
+    $("#cities").addEventListener("click", e=>{
+      const btn = e.target.closest("[data-city]");
+      if(!btn) return;
+      city = city === btn.dataset.city ? "" : btn.dataset.city;
+      render();
+    });
+    $("#list").addEventListener("change", e=>{
+      const box = e.target.closest(".applied");
+      if(!box) return;
+      const id = e.target.closest(".card").dataset.id;
+      if(box.checked) applied.add(id); else applied.delete(id);
+      saveApplied();
+      render();
+    });
     render();
   </script>
 </body>

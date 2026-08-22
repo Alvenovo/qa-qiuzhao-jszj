@@ -1,0 +1,455 @@
+{
+  "_note": "投递入口与搜法。url 为空表示当前没有可打开的网申页，页面只展示 search_hint。",
+  "乐元素": {
+    "url": "https://www.happyelements.com/jobs",
+    "hint": "打开 happyelements.com/jobs；打不开就搜「乐元素 校招」"
+  },
+  "拼多多": {
+    "url": "https://careers.pddglobalhr.com/campus",
+    "hint": "打开 careers.pddglobalhr.com/campus，搜「测试」或「质量保障」"
+  },
+  "新凯来": {
+    "url": "https://career.sicarrier.com",
+    "hint": "打开 career.sicarrier.com → 校园招聘；或微信搜「新凯来招聘」"
+  },
+  "群核": {
+    "url": "",
+    "hint": "没有公开网申页。微信搜「群核科技招聘」→ 校园招聘 → 2027届校招"
+  },
+  "中兴": {
+    "url": "https://job.zte.com.cn",
+    "hint": "打开 job.zte.com.cn → 校园招聘，搜「测试」；微信搜「中兴通讯招聘」"
+  },
+  "天翼云": {
+    "url": "https://ctyun.hotjob.cn",
+    "hint": "打开 ctyun.hotjob.cn，应聘类型选「2027届校园招聘」，搜「测试开发」；微信搜「中国电信天翼云招聘」"
+  },
+  "浪潮": {
+    "url": "http://career.inspur.com/campus2026/campus.html",
+    "hint": "官网常打不开。微信搜「浪潮招聘」→ 热招职位 → 校园招聘；或搜「浪潮 2027校招」"
+  },
+  "速腾": {
+    "url": "https://www.robosense.ai/about/joinus",
+    "hint": "打开 robosense.ai/about/joinus；或搜「速腾聚创 mokahr」进入官方招聘系统"
+  },
+  "乐鑫": {
+    "url": "https://www.espressif.com.cn/zh-hans/careers",
+    "hint": "打开 espressif.com.cn → 加入我们；或搜「乐鑫科技 校招」"
+  },
+  "地平线": {
+    "url": "https://horizon.hotjob.cn",
+    "hint": "打开 horizon.hotjob.cn，搜「测试」"
+  },
+  "蚂蚁": {
+    "url": "https://talent.antgroup.com",
+    "hint": "打开 talent.antgroup.com，校招搜「质量保障」或「测试开发」"
+  },
+  "网易游戏": {
+    "url": "https://campus.game.163.com/",
+    "hint": "打开 campus.game.163.com，搜「测试」"
+  },
+  "网易互娱": {
+    "url": "https://campus.game.163.com/",
+    "hint": "打开 campus.game.163.com，搜「测试」"
+  },
+  "博世": {
+    "url": "https://www.bosch.com.cn/careers/",
+    "hint": "打开 bosch.com.cn/careers；搜「博世中国 校招 无锡 测试」"
+  },
+  "字节": {
+    "url": "https://jobs.bytedance.com/campus/position?keywords=%E6%B5%8B%E8%AF%95",
+    "hint": "打开 jobs.bytedance.com/campus，关键词「测试」"
+  },
+  "国仪": {
+    "url": "https://www.ciqtek.com",
+    "hint": "网申页 404。简历发 hr@ciqtek.com（无锡 hr-wx@ciqtek.com）；微信搜「国仪量子招聘」"
+  },
+  "元戎": {
+    "url": "https://campus.deeproute.cn",
+    "hint": "打开 campus.deeproute.cn；或微信搜「元戎启行招聘」"
+  },
+  "星环": {
+    "url": "https://www.transwarp.cn",
+    "hint": "「/join」是 404。搜「星环科技 2027校招」或微信「星环科技招聘」"
+  },
+  "易点云": {
+    "url": "https://www.edianyun.com",
+    "hint": "「/campus」是 404。搜「易点云 2027校招 测试」；微信搜「易点云招聘」"
+  },
+  "启云方": {
+    "url": "https://www.qycloud.com.cn",
+    "hint": "官网没有独立校招页。搜「启云方 2027校招」或微信「启云方招聘」"
+  },
+  "芯动": {
+    "url": "",
+    "hint": "域名打不开。搜「武汉芯动科技 校招」或「INXHITEK 招聘」"
+  },
+  "招银": {
+    "url": "https://cmbnt.cmbchina.com/",
+    "hint": "打开 cmbnt.cmbchina.com，搜「测试技术开发」"
+  },
+  "箭元": {
+    "url": "",
+    "hint": "域名打不开。邮箱 hr@sepoch.cn；微信搜「箭元科技招聘」；搜「箭元 2027校招」"
+  },
+  "Momenta": {
+    "url": "https://momenta.jobs.feishu.cn",
+    "hint": "打开 momenta.jobs.feishu.cn；官网 /career 是 404"
+  },
+  "经纬恒润": {
+    "url": "https://www.hirain.com",
+    "hint": "hire.hirain.com 解析失败。搜「经纬恒润 校招」或微信「经纬恒润招聘」；国聘也能搜到"
+  },
+  "海信": {
+    "url": "https://jobs.hisense.com",
+    "hint": "打开 jobs.hisense.com → 校园招聘-信动力计划；微信「海信集团招聘」。旧链接 hisense.zhiye.com/campus 是 404"
+  },
+  "荣耀": {
+    "url": "https://career.honor.com",
+    "hint": "打开 career.honor.com，切到校园招聘搜「测试」"
+  },
+  "中科芯": {
+    "url": "https://cksic.zhiye.com/campus",
+    "hint": "打开 cksic.zhiye.com/campus，搜「测试」"
+  },
+  "精测": {
+    "url": "",
+    "hint": "semiconductor-test.com 不是招聘站。搜「上海精测半导体 校招」或「精测电子 招聘」"
+  },
+  "华芯程": {
+    "url": "",
+    "hint": "官网 403。搜「华芯程科技 校招」或微信「华芯程招聘」"
+  },
+  "滴滴": {
+    "url": "https://campus.didiglobal.com",
+    "hint": "打开 campus.didiglobal.com，搜「测试」"
+  },
+  "讯飞": {
+    "url": "https://campus.iflytek.com",
+    "hint": "打开 campus.iflytek.com 或 iflytek.zhiye.com，搜「测试」"
+  },
+  "华为": {
+    "url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
+    "hint": "打开 career.huawei.com 校园招聘，搜「测试」"
+  },
+  "杰理": {
+    "url": "https://www.zh-jieli.com",
+    "hint": "「/join」是 404。搜「杰理科技 校招」；微信「杰理科技招聘」"
+  },
+  "华泰": {
+    "url": "https://job.htsc.com.cn",
+    "hint": "打开 job.htsc.com.cn（证书可能报警，仍是官网）；搜「华泰证券 Fintech 校招 测试」"
+  },
+  "联想": {
+    "url": "https://talent.lenovo.com.cn/campus",
+    "hint": "打开 talent.lenovo.com.cn/campus，搜「测试」"
+  },
+  "大疆": {
+    "url": "https://we.dji.com/zh-CN/campus",
+    "hint": "打开 we.dji.com/zh-CN/campus 或 careers.dji.com，搜「测试」"
+  },
+  "小米": {
+    "url": "https://campus.hr.xiaomi.com",
+    "hint": "打开 campus.hr.xiaomi.com，搜「测试」"
+  },
+  "百度": {
+    "url": "https://talent.baidu.com",
+    "hint": "打开 talent.baidu.com，切校园招聘搜「测试」"
+  },
+  "大普微": {
+    "url": "https://www.dapustor.com",
+    "hint": "搜「大普微电子 校招」；微信「大普微招聘」"
+  },
+  "DeepSeek": {
+    "url": "https://app.mokahr.com/social-recruitment/high-flyer/140576",
+    "hint": "打开 mokahr 高飞招聘页，搜「测试开发」"
+  },
+  "三星": {
+    "url": "https://www.samsungcareers.com",
+    "hint": "打开 samsungcareers.com，地区选中国/苏州，搜 Test 或「测试」"
+  },
+  "中控": {
+    "url": "https://www.supcon.com",
+    "hint": "「/join」不一定能进职位。搜「中控技术 2027校招」；微信「中控招聘」"
+  },
+  "中新赛克": {
+    "url": "https://recruit.sinovatio.com",
+    "hint": "打开 recruit.sinovatio.com，找校园招聘/学生通道"
+  },
+  "中芯": {
+    "url": "https://smics.zhiye.com/campus",
+    "hint": "打开 smics.zhiye.com/campus；微信「中芯国际微招聘」。旧域名 campus.smics.com 打不开"
+  },
+  "北方华创": {
+    "url": "https://naura.zhiye.com",
+    "hint": "打开 naura.zhiye.com（不要加 /campus，那是 404），搜「测试」"
+  },
+  "南瑞": {
+    "url": "https://zhaopin.sgcc.com.cn",
+    "hint": "南瑞官网经常进不去。走国家电网招聘 zhaopin.sgcc.com.cn 选南瑞；或微信「南瑞招聘」"
+  },
+  "同花顺": {
+    "url": "https://job.10jqka.com.cn/campus.html",
+    "hint": "打开 job.10jqka.com.cn/campus.html，搜「测试」"
+  },
+  "哔哩": {
+    "url": "https://jobs.bilibili.com/campus",
+    "hint": "打开 jobs.bilibili.com/campus，搜「测试」"
+  },
+  "商汤": {
+    "url": "https://www.sensetime.com/cn",
+    "hint": "「/join」是 404。搜「商汤科技 校招」；微信「商汤招聘」"
+  },
+  "喜马拉雅": {
+    "url": "",
+    "hint": "job.ximalaya.com 打不开。搜「喜马拉雅 校招」；微信「喜马拉雅招聘」"
+  },
+  "大华": {
+    "url": "https://www.dahuatech.com/about/join.html",
+    "hint": "打开 dahuatech.com/about/join.html，搜「测试」"
+  },
+  "奇瑞": {
+    "url": "",
+    "hint": "campus.chery.cn 打不开。搜「奇瑞 2027校招」；微信「奇瑞招聘」"
+  },
+  "宇视": {
+    "url": "https://www.uniview.com/cn/about/join/",
+    "hint": "打开 uniview.com/cn/about/join/，搜「测试」"
+  },
+  "小鹏": {
+    "url": "https://xiaopeng.jobs.feishu.cn/campus/m/",
+    "hint": "打开 xiaopeng.jobs.feishu.cn，搜「测试」"
+  },
+  "微医": {
+    "url": "",
+    "hint": "「/join」打不开。搜「微医 校招 杭州 测试」"
+  },
+  "微步": {
+    "url": "https://www.threatbook.cn",
+    "hint": "「/about/joinus」是 404。搜「微步在线 校招」；微信「微步在线招聘」"
+  },
+  "微软": {
+    "url": "https://careers.microsoft.com/students",
+    "hint": "打开 careers.microsoft.com/students，地点苏州，搜 SDET / Software Engineer"
+  },
+  "思必驰": {
+    "url": "https://www.aispeech.com",
+    "hint": "「/join」会跳回首页。搜「思必驰 校招」；微信「思必驰招聘」"
+  },
+  "思瑞浦": {
+    "url": "https://app.mokahr.com/campus-recruitment/3peakic/67894?locale=zh-CN",
+    "hint": "打开 mokahr 思瑞浦校招页，搜「研发测试」"
+  },
+  "携程": {
+    "url": "https://careers.ctrip.com",
+    "hint": "打开 careers.ctrip.com，搜「测试」"
+  },
+  "斯达": {
+    "url": "https://v.wjx.cn/vm/QN6R03l.aspx",
+    "hint": "目前是问卷星收集表。失效就搜「斯达半导体 校招」"
+  },
+  "新华三": {
+    "url": "https://career.h3c.com/campus",
+    "hint": "打开 career.h3c.com/campus，搜「测试」"
+  },
+  "有赞": {
+    "url": "https://job.youzan.com/campus",
+    "hint": "打开 job.youzan.com/campus，搜「测试」"
+  },
+  "朗新": {
+    "url": "https://www.longshine.com",
+    "hint": "搜「朗新集团 校招」；微信「朗新招聘」"
+  },
+  "杰华特": {
+    "url": "https://joulwatt.zhiye.com/",
+    "hint": "打开 joulwatt.zhiye.com，搜「测试开发」"
+  },
+  "歌尔": {
+    "url": "https://goertek.hotjob.cn/",
+    "hint": "打开 goertek.hotjob.cn，搜「检测」或「测试」"
+  },
+  "江淮": {
+    "url": "https://www.jac.com.cn",
+    "hint": "「/join」是错误页。搜「江淮汽车 校招」；微信「江淮招聘」"
+  },
+  "网新": {
+    "url": "https://www.insigma.com.cn",
+    "hint": "官网没有独立校招入口。搜「浙大网新 校招」"
+  },
+  "海康": {
+    "url": "https://campushr.hikvision.com",
+    "hint": "打开 campushr.hikvision.com，搜「测试」"
+  },
+  "涂鸦": {
+    "url": "https://job.tuya.com",
+    "hint": "打开 job.tuya.com → 校园招聘；官网 /career 是 404。微信「涂鸦招聘」"
+  },
+  "满帮": {
+    "url": "https://app.mokahr.com/campus-recruitment/manbang",
+    "hint": "打开 mokahr 满帮校招页，搜「测试」"
+  },
+  "焦点": {
+    "url": "",
+    "hint": "job.made-in-china.com 打不开。搜「焦点科技 校招 南京」；微信「焦点科技招聘」"
+  },
+  "国创": {
+    "url": "https://www.ustcinfo.com",
+    "hint": "「/join」证书报错。搜「科大国创 校招」；微信「科大国创招聘」"
+  },
+  "米哈游": {
+    "url": "https://jobs.mihoyo.com",
+    "hint": "打开 jobs.mihoyo.com 或 campus.mihoyo.com，搜「测试」"
+  },
+  "网易": {
+    "url": "https://campus.163.com",
+    "hint": "打开 campus.163.com，搜「测试」；雷火另见 leihuo.163.com/campus"
+  },
+  "苏宁": {
+    "url": "https://campus.suning.com",
+    "hint": "官网可能 403。搜「苏宁易购 校招」；微信「苏宁招聘」"
+  },
+  "蔚来": {
+    "url": "https://campus.nio.com",
+    "hint": "打开 campus.nio.com，搜「测试」"
+  },
+  "连连": {
+    "url": "https://www.lianlianpay.com",
+    "hint": "「/join」是 404。搜「连连数字 校招」；微信「连连招聘」"
+  },
+  "途牛": {
+    "url": "",
+    "hint": "campus.tuniu.com 打不开。搜「途牛 校招 南京」"
+  },
+  "金蝶": {
+    "url": "https://campus.kingdee.com",
+    "hint": "打开 campus.kingdee.com，搜「测试」"
+  },
+  "阳光电源": {
+    "url": "https://jobs.sungrowpower.com",
+    "hint": "打开 jobs.sungrowpower.com；官网 /join 是 404"
+  },
+  "阿里": {
+    "url": "https://campus-talent.alibaba.com/?lang=zh",
+    "hint": "打开 campus-talent.alibaba.com，搜「测试开发」或「质量保障」"
+  },
+  "腾讯": {
+    "url": "https://join.qq.com",
+    "hint": "打开 join.qq.com，搜「测试」"
+  },
+  "美团": {
+    "url": "https://zhaopin.meituan.com",
+    "hint": "打开 zhaopin.meituan.com，搜「测试」"
+  },
+  "京东": {
+    "url": "https://campus.jd.com",
+    "hint": "打开 campus.jd.com，搜「测试」"
+  },
+  "绿盟": {
+    "url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91",
+    "hint": "国聘已挂「秋招测试开发工程师-南京」。也可搜「绿盟科技 2027校招」；微信「绿盟招聘」"
+  },
+  "国家电网": {
+    "url": "https://zhaopin.sgcc.com.cn",
+    "hint": "打开 zhaopin.sgcc.com.cn，单位选江苏/浙江/南瑞，关键词「测试」"
+  },
+  "中国电科": {
+    "url": "https://www.iguopin.com/job?keyword=%E4%B8%AD%E5%9B%BD%E7%94%B5%E7%A7%91",
+    "hint": "国聘/Boss 搜「中国电科 测试 南京」。28所在 Boss 有软件测试员；50所校招在国聘"
+  },
+  "中国航发": {
+    "url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF",
+    "hint": "国聘搜「中国航发商用航空发动机 测试技术岗」；或搜「航发商发 2027校招」"
+  },
+  "国聘": {
+    "url": "https://www.iguopin.com",
+    "hint": "打开 iguopin.com，关键词「软件测试」，城市选南京/杭州/上海/苏州/合肥，性质选校招"
+  },
+  "恒生": {
+    "url": "https://campus.hundsun.com",
+    "hint": "打开 campus.hundsun.com，搜「测试」或「测试开发」；微信搜「恒生电子招聘」"
+  },
+  "医科达": {
+    "url": "https://elekta.cn/jobs/",
+    "hint": "打开 elekta.cn/jobs；或搜「医科达 软件测试 应届」"
+  },
+  "思特威": {
+    "url": "https://campus.smartsenstech.com/",
+    "hint": "打开 campus.smartsenstech.com → 校招职位，搜「系统软件测试」；微信搜「思特威招聘」"
+  },
+  "华勤": {
+    "url": "https://jobs.huaqin.com",
+    "hint": "打开 jobs.huaqin.com；微信搜「华勤招聘」→ 校园招聘"
+  },
+  "声网": {
+    "url": "https://www.agora.io/cn/careers",
+    "hint": "打开 agora.io/cn/careers；打不开就搜「声网 Agora 校招 测试」"
+  },
+  "微创医疗机器人": {
+    "url": "",
+    "hint": "没有稳定公开网申。搜「微创医疗机器人 2027校招 测试」；微信搜「微创机器人招聘」"
+  },
+  "术锐": {
+    "url": "",
+    "hint": "没有稳定公开网申。搜「术锐机器人 校招 测试」；微信搜「术锐招聘」"
+  },
+  "国睿": {
+    "url": "",
+    "hint": "往年网申 2026guorui.zhaopin.com。搜「国睿科技 2027校招」或微信「国睿科技招聘」；邮箱 hr@glarun.com"
+  },
+  "麦科田": {
+    "url": "",
+    "hint": "搜「麦科田 2027校招 软件测试」；微信搜「麦科田招聘」。南京江宁有校招软件测试岗"
+  },
+  "姚记": {
+    "url": "",
+    "hint": "搜「姚记集团 2027校招 游戏测试」；微信搜「姚记招聘」"
+  },
+  "Garena": {
+    "url": "https://careers.garena.com",
+    "hint": "打开 careers.garena.com，搜 QA / 游戏测试；或走牛客「Garena 2027秋季校园招聘」"
+  },
+  "易思维": {
+    "url": "",
+    "hint": "搜「易思维 2027校招 算法测试」；微信搜「易思维招聘」"
+  },
+  "云合智网": {
+    "url": "",
+    "hint": "搜「云合智网 校招 嵌入式软件测试」；微信搜「云合智网招聘」"
+  },
+  "集益威": {
+    "url": "",
+    "hint": "搜「集益威半导体 2027校招 软件测试」；微信搜「集益威招聘」"
+  },
+  "超云": {
+    "url": "",
+    "hint": "搜「超云数字 南京 测试」；微信搜「超云招聘」"
+  },
+  "瑞迪水利": {
+    "url": "",
+    "hint": "国企。搜「南京瑞迪水利 测试工程师」；微信搜「瑞迪水利招聘」"
+  },
+  "熊猫": {
+    "url": "https://www.panda.cn",
+    "hint": "官网 panda.cn 没有独立网申。搜「南京熊猫 2027校招 测试」；微信搜「熊猫电子招聘」或「CEC中电熊猫」"
+  },
+  "龙旗": {
+    "url": "",
+    "hint": "搜「龙旗科技 2027校招 软件测试」；微信搜「龙旗招聘」→ 校园招聘"
+  },
+  "上交所技术": {
+    "url": "",
+    "hint": "国企。搜「上交所技术 校招 测试」；微信搜「上交所技术招聘」"
+  },
+  "快手": {
+    "url": "https://campus.kuaishou.com",
+    "hint": "打开 campus.kuaishou.com，搜「测试开发」；杭州有测开岗"
+  },
+  "民泰": {
+    "url": "",
+    "hint": "搜「浙江民泰商业银行 校招 测试」；微信搜「民泰银行招聘」"
+  },
+  "兆华电子": {
+    "url": "",
+    "hint": "搜「杭州兆华电子 校招 软件测试」；微信搜「兆华电子招聘」"
+  }
+}
