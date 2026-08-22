@@ -3,241 +3,2843 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>2027秋招 · 江浙沪皖测试岗</title>
-  <meta name="description" content="江苏、浙江、安徽、上海软件测试 / 测试开发岗位，只展示仍在招的信息。" />
+  <title>2027秋招 · 测试开发作战系统</title>
+  <meta name="description" content="2027届个人秋招岗位管理、投递管理与进度系统。只收录江苏、浙江、安徽、上海软件测试相关在招岗位。" />
   <style>
     :root{
-      --paper:#fbfaf5; --ink:#161513; --grey:#8a887f; --faint:#c9c7bd;
-      --seal:#d23b2e; --wash:#f1efe8; --ok:#2c6e49; --card:#fff;
+      --bg:#f3f5f8; --card:#fff; --ink:#1c2430; --muted:#667085;
+      --line:#e6e9ee; --soft:#f7f8fa; --primary:#2563eb; --primary-soft:#eff4ff;
+      --ok:#16a34a; --ok-soft:#ecfdf3; --warn:#ca8a04; --warn-soft:#fefce8;
+      --soon:#ea580c; --soon-soft:#fff7ed; --danger:#dc2626; --danger-soft:#fef2f2;
+      --grey:#94a3b8; --radius:10px; --shadow:0 1px 2px rgba(16,24,40,.06);
+      --max:1160px;
     }
     *{margin:0;padding:0;box-sizing:border-box}
-    body{background:var(--paper);color:var(--ink);
+    body{background:var(--bg);color:var(--ink);
       font-family:-apple-system,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
-      -webkit-font-smoothing:antialiased}
-    header{position:sticky;top:0;z-index:50;background:rgba(251,250,245,.94);
-      backdrop-filter:blur(10px);border-bottom:2px solid var(--ink)}
-    .head-in{max-width:1240px;margin:0 auto;padding:14px 20px 12px}
-    h1{font-size:1.55rem;font-weight:800;letter-spacing:.04em;line-height:1.15}
-    .sub{color:var(--grey);font-size:.8rem;font-weight:600;margin-top:6px;line-height:1.55}
-    .sub b{color:var(--ink)}
-    .controls{display:flex;gap:8px;margin-top:12px;align-items:center;flex-wrap:wrap}
-    .dd{display:flex;align-items:center;gap:6px;font-size:.75rem;font-weight:700;color:var(--grey)}
-    .dd select{border:2px solid var(--ink);background:#fff;color:var(--ink);
-      padding:6px 8px;font-size:.8rem;font-weight:700;cursor:pointer;
-      border-radius:10px;max-width:42vw}
-    .search{border:2px solid var(--ink);background:#fff;border-radius:99px;
-      padding:7px 14px;font-size:.85rem;min-width:140px;flex:1;max-width:280px}
-    .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-    .chip{border:2px solid var(--ink);background:#fff;color:var(--ink);
-      font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:99px;cursor:pointer}
-    .chip.on{background:var(--ink);color:#fff}
-    .tog{display:flex;align-items:center;gap:6px;font-size:.75rem;font-weight:800;cursor:pointer}
-    .tog input{accent-color:var(--ink);width:14px;height:14px}
-    main{max-width:1240px;margin:0 auto;padding:16px 20px 56px}
-    .hint{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
-      font-size:.78rem;color:var(--grey);font-weight:600;margin-bottom:14px}
-    .hint b{color:var(--ink)}
-    .list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch}
-    .card{display:flex;flex-direction:column;background:var(--card);padding:14px 15px 12px;
-      border:2px solid var(--ink);border-radius:16px;min-width:0}
-    .card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--ink)}
-    .card.done{opacity:.48}
-    .c-head{display:flex;align-items:flex-start;gap:8px}
-    .c-name{font-size:1.02rem;font-weight:800;line-height:1.3;
-      display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-    .c-badges{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end;flex-shrink:0}
-    .pill{font-size:.66rem;font-weight:800;padding:2px 8px;border:2px solid var(--ink);
-      border-radius:99px;white-space:nowrap}
-    .pill.days{border-color:var(--seal);color:var(--seal)}
-    .pill.hot{background:var(--seal);border-color:var(--seal);color:#fff}
-    .pill.src{background:var(--wash)}
-    .c-prog{margin-top:4px;font-size:.74rem;font-weight:700;color:var(--grey);
+      font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+    button,select,input,textarea{font:inherit}
+    button{cursor:pointer}
+    a{color:var(--primary);text-decoration:none}
+    .app{max-width:var(--max);margin:0 auto;padding:18px 18px 108px}
+    .top{margin-bottom:14px}
+    .kicker{color:var(--primary);font-size:12px;font-weight:700;letter-spacing:.04em}
+    h1{font-size:22px;font-weight:750;letter-spacing:.01em;margin-top:2px}
+    .sub{color:var(--muted);font-size:13px;margin-top:4px}
+    .sub b{color:var(--ink);font-weight:650}
+    .page{display:none}
+    .page.on{display:block}
+    .dash{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:14px 0}
+    .d-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      padding:12px 14px;box-shadow:var(--shadow);cursor:pointer;text-align:left}
+    .d-card:hover{border-color:#c7d7fe}
+    .d-card.on{border-color:var(--primary);background:var(--primary-soft)}
+    .d-num{font-size:24px;font-weight:750;line-height:1.15}
+    .d-lab{color:var(--muted);font-size:12px;margin-top:4px}
+    .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:14px 16px;margin-bottom:12px}
+    .panel h2{font-size:15px;font-weight:700;margin-bottom:10px}
+    .today-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .mini{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--soft);cursor:pointer;text-align:left;width:100%}
+    .mini:hover{border-color:#c7d7fe}
+    .mini .co{font-weight:700;font-size:13px}
+    .mini .po{color:var(--muted);font-size:12px;margin-top:2px;
       white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .c-mid{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-    .tag{font-size:.7rem;font-weight:600;border:1.5px solid var(--faint);
-      border-radius:7px;padding:2px 7px;background:var(--paper)}
-    .tag.ind{border-color:var(--ink)}
-    .c-meta{margin-top:10px;font-size:.76rem;font-weight:600;color:var(--grey);line-height:1.55}
-    .c-meta b{color:var(--ink)}
-    .c-hint{margin-top:8px;font-size:.7rem;font-weight:600;color:var(--grey);line-height:1.45;
-      display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-    .c-act{margin-top:auto;padding-top:12px;display:flex;align-items:center;gap:8px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;
-      border:2px solid var(--ink);background:var(--ink);color:#fff;
-      font-size:.78rem;font-weight:800;padding:6px 12px;border-radius:10px;
-      text-decoration:none;white-space:nowrap}
-    .btn:hover{background:var(--seal);border-color:var(--seal)}
-    .btn.ghost{background:#fff;color:var(--ink)}
-    .mark{margin-left:auto;display:flex;align-items:center;gap:5px;
-      font-size:.74rem;font-weight:800;cursor:pointer;user-select:none}
-    .mark input{accent-color:var(--ok);width:14px;height:14px}
-    .empty{grid-column:1/-1;text-align:center;color:var(--grey);padding:70px 0;font-weight:600}
-    footer{max-width:1240px;margin:0 auto;padding:16px 20px 40px;color:var(--grey);
-      font-size:.76rem;line-height:1.8;border-top:2px solid var(--ink)}
-    @media(max-width:1100px){
-      .list{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .mini .meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+    .filters{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .dd{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:12px;font-weight:650}
+    .dd select,.search,input[type=text],input[type=date],textarea,select.inp{
+      border:1px solid var(--line);background:#fff;color:var(--ink);
+      padding:7px 10px;border-radius:8px}
+    .search{min-width:160px;flex:1;max-width:280px}
+    .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+    .chip{border:1px solid var(--line);background:#fff;color:var(--ink);
+      font-size:12px;font-weight:650;padding:4px 10px;border-radius:999px}
+    .chip.on{background:var(--primary);border-color:var(--primary);color:#fff}
+    .tog{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:650;cursor:pointer;color:var(--muted)}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:14px;align-items:start}
+    .list{display:flex;flex-direction:column;gap:12px;scroll-margin-top:12px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:12px 14px;min-width:0}
+    .card.done{opacity:.72}
+    .card.skipped{opacity:.55}
+    .l1{display:flex;align-items:flex-start;gap:10px}
+    .co-name{font-size:16px;font-weight:750;line-height:1.3}
+    .pos{color:var(--muted);font-size:13px;margin-top:2px}
+    .l1-right{margin-left:auto;text-align:right;flex-shrink:0}
+    .match-box{font-size:12px;font-weight:700;color:var(--primary);background:var(--primary-soft);
+      border-radius:8px;padding:4px 8px;white-space:nowrap}
+    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+    .pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;
+      background:var(--soft);color:var(--muted);border:1px solid var(--line);white-space:nowrap}
+    .pill.ok{background:var(--ok-soft);color:#15803d;border-color:#bbf7d0}
+    .pill.warn{background:var(--warn-soft);color:#a16207;border-color:#fde68a}
+    .pill.soon{background:var(--soon-soft);color:#c2410c;border-color:#fdba74}
+    .pill.danger{background:var(--danger-soft);color:var(--danger);border-color:#fecaca}
+    .layer{margin-top:8px;font-size:13px}
+    .layer .k{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:4px}
+    .jd{color:#334155;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    .need-box{max-height:4.6em;overflow:hidden}
+    .roi-item{border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0;background:#fff}
+    .roi-item .row{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center}
+    .map-col{font-size:12px;margin:8px 0}
+    .map-col b{display:block;margin-bottom:4px}
+    .muted{color:var(--muted)}
+    .skills{display:flex;gap:6px;flex-wrap:wrap}
+    .sk{font-size:12px;background:var(--primary-soft);color:#1d4ed8;
+      padding:2px 8px;border-radius:6px}
+    .sk.hit{background:var(--ok-soft);color:#15803d}
+    .sk.miss{background:var(--danger-soft);color:var(--danger)}
+    .sk.rel{background:var(--warn-soft);color:#a16207}
+    .match-box.hi{background:var(--ok-soft);color:#15803d}
+    .match-box.mid{background:var(--warn-soft);color:#a16207}
+    .match-box.lo{background:var(--danger-soft);color:var(--danger)}
+    .grade{font-size:11px;font-weight:700;margin-top:4px;color:var(--muted)}
+    .heat{display:flex;align-items:center;gap:8px;font-size:12px;margin:6px 0}
+    .heat b{width:72px;flex-shrink:0;font-weight:650}
+    .heat .bar{flex:1;height:8px;background:var(--soft);border-radius:99px;overflow:hidden}
+    .heat .bar i{display:block;height:100%;background:var(--primary)}
+    .heat .pct{width:40px;text-align:right;color:var(--muted)}
+    .gap-line{font-size:12px;margin:3px 0}
+    .explain{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+    .explain th,.explain td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--soft)}
+    .task .meta{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.55}
+    .dl-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .c-act{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:4px;
+      border:1px solid var(--line);background:#fff;color:var(--ink);
+      font-size:13px;font-weight:700;padding:7px 12px;border-radius:8px}
+    .btn:hover{border-color:#c7d7fe;background:var(--primary-soft)}
+    .btn.primary{background:var(--primary);border-color:var(--primary);color:#fff}
+    .btn.primary:hover{filter:brightness(.96)}
+    .btn.ghost{background:#fff}
+    .btn.danger{color:var(--danger);border-color:#fecaca}
+    .btn.on{background:var(--warn-soft);border-color:#fde68a;color:#a16207}
+    .hint{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      font-size:12px;color:var(--muted);margin:4px 0 10px}
+    .hint b{color:var(--ink)}
+    .empty{text-align:center;color:var(--muted);padding:48px 12px}
+    .pager{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;margin-top:14px}
+    .pager[hidden]{display:none}
+    .pager button{border:1px solid var(--line);background:#fff;min-width:34px;height:34px;
+      padding:0 10px;border-radius:8px;font-weight:700}
+    .pager button.on{background:var(--primary);border-color:var(--primary);color:#fff}
+    .pager button:disabled{opacity:.35;cursor:not-allowed}
+    .side .stat{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;border-bottom:1px solid var(--soft)}
+    .funnel{display:flex;flex-direction:column;gap:6px}
+    .fun-row{display:flex;align-items:center;gap:8px;font-size:12px}
+    .fun-bar{height:8px;background:var(--primary-soft);border-radius:99px;flex:1;overflow:hidden}
+    .fun-bar i{display:block;height:100%;background:var(--primary);border-radius:99px}
+    .tabbar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff;
+      border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr 64px 1fr 1fr;
+      max-width:var(--max);margin:0 auto;height:64px;padding:0 8px env(safe-area-inset-bottom)}
+    .tab{display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:2px;color:var(--muted);font-size:11px;font-weight:700;background:none;border:0}
+    .tab.on{color:var(--primary)}
+    .tab-plus{position:relative}
+    .plus{position:absolute;left:50%;top:-18px;transform:translateX(-50%);
+      width:52px;height:52px;border-radius:50%;background:var(--primary);color:#fff;
+      border:4px solid var(--bg);font-size:28px;line-height:1;font-weight:500;
+      box-shadow:0 6px 16px rgba(37,99,235,.28)}
+    .modal{position:fixed;inset:0;z-index:200;background:rgba(15,23,42,.45);
+      display:none;align-items:flex-start;justify-content:center;padding:24px 12px}
+    .modal.on{display:flex}
+    .modal-in{background:#fff;border-radius:12px;width:min(720px,100%);max-height:calc(100vh - 48px);
+      overflow:auto;padding:18px 18px 16px}
+    .modal h3{font-size:18px;margin-bottom:4px}
+    .kv{display:grid;grid-template-columns:88px 1fr;gap:6px 10px;font-size:13px;margin:12px 0}
+    .kv b{color:var(--muted);font-weight:650}
+    .sec{margin-top:14px}
+    .sec h4{font-size:13px;margin-bottom:6px}
+    textarea{width:100%;min-height:72px;resize:vertical}
+    .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .task{display:flex;align-items:flex-start;gap:8px;padding:8px 0;border-bottom:1px solid var(--soft)}
+    .task.done span{text-decoration:line-through;color:var(--muted)}
+    .task.cancelled span{color:var(--grey);text-decoration:line-through}
+    .reason{margin:4px 0 8px 18px}
+    .progress{height:8px;background:var(--soft);border-radius:99px;overflow:hidden;margin-top:6px}
+    .progress i{display:block;height:100%;background:var(--ok)}
+    .ver{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:8px;display:flex;gap:10px;align-items:center}
+    .ver.cur{border-color:var(--primary);background:var(--primary-soft)}
+    .iv-stage{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start;margin-bottom:12px}
+    .iv-q{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+    .iv-q .who{font-size:12px;font-weight:700;color:var(--primary);margin-bottom:6px}
+    .iv-q p{font-size:15px;font-weight:650;line-height:1.6}
+    .dims{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:8px 0}
+    .dim{background:var(--soft);border-radius:8px;padding:8px 10px;font-size:12px}
+    .dim b{display:block;font-size:16px}
+    .pick-card{border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0;background:#fff;text-align:left;width:100%}
+    .pick-card:hover{border-color:#c7d7fe}
+    .fb{margin-top:10px;font-size:13px;line-height:1.6}
+    @media(max-width:680px){ .dims{grid-template-columns:1fr 1fr} }
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .me-stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+    footer.note{color:var(--muted);font-size:12px;line-height:1.7;margin-top:18px}
+    @media(max-width:980px){
+      .dash{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .layout{grid-template-columns:1fr}
+      .today-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .me-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
     }
     @media(max-width:680px){
-      h1{font-size:1.28rem}
-      .list{grid-template-columns:1fr}
+      .app{padding:12px 12px 96px}
+      h1{font-size:20px}
+      .dash{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .today-list,.grid-2,.kv{grid-template-columns:1fr}
       .search{max-width:none}
+      .l1{flex-wrap:wrap}
+      .l1-right{margin-left:0;text-align:left}
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="head-in">
-      <h1>秋招测试岗 · 江浙沪皖</h1>
+  <div class="app">
+    <header class="top">
+      <div class="kicker">2027 秋招 · 测试开发作战系统</div>
+      <h1>个人岗位管理台</h1>
       <p class="sub" id="stats">正在载入…</p>
-      <div class="controls">
-        <label class="dd">地区
-          <select id="province">
-            <option value="全部">全部</option>
-            <option value="江苏">江苏</option>
-            <option value="浙江">浙江</option>
-            <option value="安徽">安徽</option>
-            <option value="上海">上海</option>
-          </select>
-        </label>
-        <label class="dd">厂级
-          <select id="scale">
-            <option value="全部">全部</option>
-            <option value="大厂">大厂</option>
-            <option value="中厂">中厂</option>
-            <option value="小厂">小厂</option>
-          </select>
-        </label>
-        <label class="dd">岗位
-          <select id="role">
-            <option value="全部">全部</option>
-            <option value="软件测试">软件测试</option>
-            <option value="测试开发">测试开发</option>
-            <option value="质量保障">质量保障</option>
-            <option value="自动化测试">自动化测试</option>
-          </select>
-        </label>
-        <label class="dd">排序
-          <select id="sort">
-            <option value="deadline-asc">截止时间↑</option>
-            <option value="deadline-desc">截止时间↓</option>
-            <option value="updated-desc">更新时间↓</option>
-            <option value="updated-asc">更新时间↑</option>
-          </select>
-        </label>
-        <label class="tog"><input type="checkbox" id="soon" /> 7天内截止</label>
-        <label class="tog"><input type="checkbox" id="unapplied" checked /> 只看未投</label>
-        <input class="search" id="q" placeholder="搜公司 / 岗位" />
+    </header>
+
+    <section id="view-home" class="page on">
+      <div class="dash" id="dash"></div>
+      <div class="panel">
+        <h2>🔥 今日优先投递</h2>
+        <div class="today-list" id="today"></div>
       </div>
-      <div class="chips" id="cities"></div>
-    </div>
-  </header>
-  <main>
-    <p class="hint">
-      <span>卡片点「投递」打开官网；没网申的只留搜法。日期以企业官网为准。</span>
-      <span id="count"></span>
-    </p>
-    <div class="list" id="list"></div>
-  </main>
-  <footer>
-    投递链接已逐条核对：能打开的给出投递按钮，打不开的只留搜索方法。
-    数据含企业校招官网、国聘网、Boss、智联等公开页。「已投」只记在这台电脑的浏览器里，不会上传。
-  </footer>
+      <div class="panel">
+        <div class="filters">
+          <label class="dd">地区
+            <select id="province">
+              <option value="全部">全部</option>
+              <option value="江苏">江苏</option>
+              <option value="浙江">浙江</option>
+              <option value="安徽">安徽</option>
+              <option value="上海">上海</option>
+            </select>
+          </label>
+          <label class="dd">厂级
+            <select id="scale">
+              <option value="全部">全部</option>
+              <option value="大厂">大厂</option>
+              <option value="中厂">中厂</option>
+              <option value="小厂">小厂</option>
+            </select>
+          </label>
+          <label class="dd">岗位方向
+            <select id="role">
+              <option value="全部">全部</option>
+              <option value="测试开发">测试开发</option>
+              <option value="自动化测试">自动化测试</option>
+              <option value="软件测试">软件测试</option>
+              <option value="测试工程师">测试工程师</option>
+              <option value="质量保障">质量保障</option>
+            </select>
+          </label>
+          <label class="dd">城市
+            <select id="citySel">
+              <option value="">全部</option>
+              <option value="南京">南京</option>
+              <option value="杭州">杭州</option>
+              <option value="苏州">苏州</option>
+              <option value="无锡">无锡</option>
+              <option value="上海">上海</option>
+              <option value="宁波">宁波</option>
+              <option value="合肥">合肥</option>
+              <option value="其他">其他</option>
+            </select>
+          </label>
+          <label class="dd">排序
+            <select id="sort">
+              <option value="match">匹配度优先</option>
+              <option value="deadline-asc">截止时间优先</option>
+              <option value="updated-desc">最新发布</option>
+              <option value="company">公司优先级</option>
+              <option value="recommend">综合推荐</option>
+            </select>
+          </label>
+          <label class="tog"><input type="checkbox" id="soon" /> 7天内截止</label>
+          <label class="tog"><input type="checkbox" id="unapplied" checked /> 只看未投</label>
+          <label class="tog"><input type="checkbox" id="showSkipped" /> 暂时不投</label>
+          <input class="search" id="q" placeholder="搜公司 / 岗位" />
+        </div>
+        <div class="chips" id="cities"></div>
+      </div>
+      <div class="layout">
+        <div>
+          <p class="hint">
+            <span>点「立即投递」打开官网；没有网申页的会显示搜法。日期以企业官网为准。</span>
+            <span id="count"></span>
+          </p>
+          <div class="list" id="list"></div>
+          <nav class="pager" id="pager" aria-label="分页" hidden></nav>
+        </div>
+        <aside class="side panel" id="sidebar"></aside>
+      </div>
+    </section>
+
+    <section id="view-fav" class="page" hidden>
+      <div class="panel">
+        <h2>收藏岗位</h2>
+        <div class="chips" id="favChips"></div>
+      </div>
+      <div class="list" id="favList"></div>
+    </section>
+
+    <section id="view-apps" class="page" hidden>
+      <div class="panel">
+        <h2>投递记录</h2>
+        <div class="chips" id="appChips"></div>
+      </div>
+      <div class="list" id="appList"></div>
+    </section>
+
+    <section id="view-me" class="page" hidden>
+      <div class="panel">
+        <h2>秋招总览</h2>
+        <div class="me-stats" id="meStats"></div>
+      </div>
+      <div class="panel">
+        <h2>投递漏斗</h2>
+        <div class="funnel" id="funnel"></div>
+      </div>
+      <div class="panel">
+        <h2>🎯 当前最高 ROI 学习方向</h2>
+        <p class="muted" id="roiNote"></p>
+        <div id="roiBox"></div>
+      </div>
+      <div class="panel">
+        <h2>📊 秋招技能需求热度</h2>
+        <p class="muted" id="heatNote"></p>
+        <div id="heatBox"></div>
+      </div>
+      <div class="panel">
+        <h2>🧩 我的技能缺口 / 技能地图</h2>
+        <div id="mapBox"></div>
+      </div>
+      <div class="panel">
+        <h2>今日任务 <span class="muted" id="taskStat"></span></h2>
+        <div class="progress"><i id="taskBar" style="width:0"></i></div>
+        <div id="tasks"></div>
+        <div class="row" style="margin-top:10px">
+          <input type="text" id="taskInput" placeholder="新增今日任务" style="flex:1;min-width:160px" />
+          <button class="btn primary" type="button" id="taskAdd">添加</button>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>🎤 模拟面试</h2>
+        <div id="mockMeBox"></div>
+      </div>
+      <div class="panel">
+        <h2>面试复盘 / 重点问题</h2>
+        <div id="mockFocusBox"></div>
+      </div>
+      <div class="panel">
+        <h2>面试记录</h2>
+        <div class="grid-2">
+          <input type="text" id="ivCompany" placeholder="公司" />
+          <input type="text" id="ivPosition" placeholder="岗位" />
+          <input type="date" id="ivTime" />
+          <select class="inp" id="ivRound">
+            <option>笔试</option><option>一面</option><option>二面</option><option>HR面</option><option>其他</option>
+          </select>
+          <select class="inp" id="ivResult">
+            <option>进行中</option><option>通过</option><option>未通过</option><option>待定</option>
+          </select>
+          <input type="text" id="ivQuestions" placeholder="面试题（选填）" />
+        </div>
+        <textarea id="ivNotes" placeholder="备注" style="margin-top:8px"></textarea>
+        <div class="row" style="margin-top:8px">
+          <button class="btn primary" type="button" id="ivAdd">添加面试记录</button>
+        </div>
+        <div id="ivList"></div>
+      </div>
+      <div class="panel">
+        <h2>分状态岗位</h2>
+        <div class="chips" id="meStageChips"></div>
+        <div class="list" id="meStageList"></div>
+      </div>
+    </section>
+
+    <section id="view-mock" class="page" hidden>
+      <div class="panel">
+        <div class="row" style="justify-content:space-between">
+          <h2 style="margin:0">🎤 岗位定向模拟面试</h2>
+          <button class="btn ghost" type="button" data-act="mock-exit">返回</button>
+        </div>
+        <p class="muted" id="mockLead" style="margin-top:6px"></p>
+        <div id="mockBody"></div>
+      </div>
+    </section>
+
+    <section id="view-resume" class="page" hidden>
+      <div class="panel">
+        <h2>我的简历</h2>
+        <p class="muted">上传 PDF / DOCX 后会在本地解析并计算岗位匹配度，文件不会上传到服务器。</p>
+        <div id="resumeCur" style="margin-top:10px"></div>
+        <div class="row" style="margin-top:12px">
+          <button class="btn primary" type="button" id="resumeUploadBtn">上传新版简历</button>
+          <button class="btn" type="button" id="resumeReparseBtn">重新解析当前简历</button>
+          <input type="file" id="resumeFile" accept=".pdf,.docx,.txt,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" hidden />
+        </div>
+        <p class="muted" id="parseMsg" style="margin-top:8px"></p>
+        <div id="profileBox"></div>
+        <div class="sec">
+          <h4>或粘贴简历文本</h4>
+          <textarea id="resumePaste" placeholder="解析库加载失败时，可把简历文本粘贴到这里"></textarea>
+          <div class="row" style="margin-top:8px">
+            <button class="btn" type="button" id="resumePasteBtn">从文本解析</button>
+          </div>
+        </div>
+        <div id="resumeVers"></div>
+      </div>
+    </section>
+
+    <footer class="note">
+      投递链接已逐条核对：能打开的给出投递按钮，打不开的只留搜索方法。
+      「已投 / 收藏 / 状态 / 任务」只记在这台电脑的浏览器里，不会上传。
+    </footer>
+  </div>
+
+  <nav class="tabbar" aria-label="底部导航">
+    <button class="tab on" type="button" data-view="home">首页</button>
+    <button class="tab" type="button" data-view="fav">收藏</button>
+    <div class="tab-plus"><button class="plus" type="button" data-view="resume" aria-label="简历管理">+</button></div>
+    <button class="tab" type="button" data-view="apps">投递</button>
+    <button class="tab" type="button" data-view="me">我的秋招</button>
+  </nav>
+
+  <div class="modal" id="modal">
+    <div class="modal-in" id="modalIn"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
   <script>
     const JOBS = __JOBS__;
     const META = __META__;
-    const CITIES = ["南京","杭州","苏州","上海","合肥","无锡"];
-    const STORE = "qiuzhao-applied";
-    let province = "全部", scale = "全部", role = "全部", sort = "deadline-asc";
-    let city = "", q = "", soon = false, unapplied = true;
-    let applied = new Set();
+    const CITIES = ["南京","杭州","苏州","无锡","上海","宁波","合肥"];
+    const NAMED_CITIES = ["南京","杭州","苏州","无锡","上海","宁波","合肥"];
+    const TARGET_CITIES = ["南京","杭州","苏州","无锡","上海","宁波"];
+    const STORE_APPLIED = "qiuzhao-applied";
+    const STORE_JOBS = "qiuzhao-jobs-state";
+    const STORE_RESUME = "qiuzhao-resume-state";
+    const STORE_TASKS = "qiuzhao-task-state";
+    const STORE_IV = "qiuzhao-interview-state";
+    const STORE_PROFILE = "qiuzhao-candidate-profile";
+    const MATCH_MODEL = "v3";
+    const PAGE_SIZE = 12;
+    const STATUSES = ["未投","已投","笔试","一面","二面","HR面","Offer","淘汰","暂时不投"];
+    const APPLIED_STATUSES = ["已投","笔试","一面","二面","HR面","Offer","淘汰"];
+    const INTERVIEW_STATUSES = ["一面","二面","HR面"];
+    const SCALE_RANK = { "大厂": 3, "中厂": 2, "小厂": 1 };
 
-    try { applied = new Set(JSON.parse(localStorage.getItem(STORE) || "[]")); } catch(e) {}
+    const DEFAULT_TASKS = [
+      "投递3个岗位",
+      "完成2道算法题",
+      "复习TCP三次握手",
+      "复习SQL JOIN",
+      "完成1道测试用例设计题",
+      "模拟一次测试开发面试"
+    ];
+
+    let province = "全部", scale = "全部", role = "全部", sort = "match";
+    let city = "", q = "", soon = false, unapplied = true, showSkipped = false, page = 1;
+    let view = "home", dashKey = "", favMode = "all", appMode = "all", meStage = "全部";
+    let mockPhase = "pick", mockJobQ = "", mockTimer = null;
+    let applied = new Set();
+    let jobsState = {};
+    let resumeState = { currentId: "", versions: [] };
+    let taskState = { inited: false, items: [] };
+    let interviewState = { records: [], sessions: [], active: null, savedQuestions: [], knowledge: {}, weaknesses: [], lastViewed: [] };
+    let candidateProfile = {
+      education: { school: "", major: "", degree: "", graduationYear: "" },
+      skills: [],
+      projects: [],
+      internships: [],
+      targetPositions: [],
+      targetCities: [],
+      keywords: [],
+      resumeVersion: "",
+      updatedAt: ""
+    };
+
+    try { applied = new Set(JSON.parse(localStorage.getItem(STORE_APPLIED) || "[]")); } catch(e) {}
+    try { jobsState = JSON.parse(localStorage.getItem(STORE_JOBS) || "{}") || {}; } catch(e) {}
+    try { resumeState = Object.assign(resumeState, JSON.parse(localStorage.getItem(STORE_RESUME) || "{}")); } catch(e) {}
+    try { taskState = Object.assign(taskState, JSON.parse(localStorage.getItem(STORE_TASKS) || "{}")); } catch(e) {}
+    try { interviewState = Object.assign(interviewState, JSON.parse(localStorage.getItem(STORE_IV) || "{}")); } catch(e) {}
+    if (!Array.isArray(interviewState.records)) interviewState.records = [];
+    if (!Array.isArray(interviewState.sessions)) interviewState.sessions = [];
+    if (!Array.isArray(interviewState.savedQuestions)) interviewState.savedQuestions = [];
+    if (!Array.isArray(interviewState.weaknesses)) interviewState.weaknesses = [];
+    if (!Array.isArray(interviewState.lastViewed)) interviewState.lastViewed = [];
+    if (!interviewState.knowledge || typeof interviewState.knowledge !== "object") interviewState.knowledge = {};
+    try { candidateProfile = Object.assign(candidateProfile, JSON.parse(localStorage.getItem(STORE_PROFILE) || "{}")); } catch(e) {}
+
+    applied.forEach(id => {
+      if (!jobsState[id]) jobsState[id] = {};
+      if (!jobsState[id].status || jobsState[id].status === "未投") jobsState[id].status = "已投";
+    });
 
     const $ = s => document.querySelector(s);
     const today = new Date(new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"}));
     const todayStr = today.toISOString().slice(0,10);
 
+    function uid(){ return Math.random().toString(36).slice(2,10) + Date.now().toString(36).slice(-4); }
+    function esc(s){
+      return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+    }
     function daysLeft(d){
       if(!d) return null;
       return Math.round((new Date(d) - new Date(todayStr)) / 864e5);
     }
     function fmt(d, fallback){ return d || fallback; }
-    function saveApplied(){
-      localStorage.setItem(STORE, JSON.stringify([...applied]));
+    function saveApplied(){ localStorage.setItem(STORE_APPLIED, JSON.stringify([...applied])); }
+    function saveJobsState(){ localStorage.setItem(STORE_JOBS, JSON.stringify(jobsState)); }
+    function saveResume(){ localStorage.setItem(STORE_RESUME, JSON.stringify(resumeState)); }
+    function saveTasks(){ localStorage.setItem(STORE_TASKS, JSON.stringify(taskState)); }
+    function saveIv(){ localStorage.setItem(STORE_IV, JSON.stringify(interviewState)); }
+    function saveProfile(){ localStorage.setItem(STORE_PROFILE, JSON.stringify(candidateProfile)); }
+
+    function st(id){
+      if (!jobsState[id]) jobsState[id] = {};
+      return jobsState[id];
+    }
+    function peek(id){ return jobsState[id] || {}; }
+    function getStatus(j){
+      const s = peek(j.id);
+      if (s.status) return s.status;
+      if (applied.has(j.id)) return "已投";
+      return "未投";
+    }
+    function isFav(id){ return !!peek(id).favorite; }
+    function setStatus(id, status){
+      const s = st(id);
+      s.status = status;
+      s.updatedAt = todayStr;
+      if (APPLIED_STATUSES.includes(status)) applied.add(id);
+      else applied.delete(id);
+      saveApplied();
+      saveJobsState();
+    }
+    function toggleFav(id){
+      const s = st(id);
+      s.favorite = !s.favorite;
+      s.updatedAt = todayStr;
+      saveJobsState();
+    }
+    function setSkip(id){
+      const cur = getStatus({id});
+      setStatus(id, cur === "暂时不投" ? "未投" : "暂时不投");
+    }
+
+    function arr(v){ return Array.isArray(v) ? v : []; }
+    function text(v){ return typeof v === "string" ? v : ""; }
+    function jobDesc(j){
+      const d = text(j.description).trim();
+      if (d) return d;
+      const resp = arr(j.responsibilities).filter(Boolean);
+      if (resp.length) return resp.join("；");
+      return "";
+    }
+    function jobSkills(j){
+      const explicit = arr(j.skills).filter(Boolean);
+      if (explicit.length) return uniq(explicit).slice(0, 8);
+      const blob = [text(j.description), arr(j.responsibilities).join(" "), arr(j.requirements).join(" ")].join(" ");
+      if (!blob.trim()) return [];
+      return extractSkillsFromText(blob).filter(s => !ROLE_NAMES.includes(s)).slice(0, 8);
+    }
+    function jobSalary(j){ return text(j.salary).trim(); }
+    function companyType(j){ return text(j.companyType) || text(j.industry) || ""; }
+
+    function sourceTrust(j){
+      if (text(j.sourceTrust)) return { label: j.sourceTrust, cls: "warn" };
+      const src = text(j.source);
+      const url = text(j.apply_url);
+      const third = /Boss|智联|猎聘|前程无忧|国聘|牛客/.test(src);
+      const cal = /校招日历|xixicc/.test(src);
+      const thirdUrl = /zhipin|zhaopin|liepin|51job|iguopin|nowcoder/.test(url);
+      if (src === "企业官网" && url && !thirdUrl) return { label: "官方招聘页", cls: "ok", icon: "🟢" };
+      if (src === "企业官网" && (!url || thirdUrl)) return { label: "官方信息 + 第三方入口", cls: "warn", icon: "🟡" };
+      if ((cal || src === "三方校招日历") && url && !thirdUrl) return { label: "官方信息 + 第三方入口", cls: "warn", icon: "🟡" };
+      if (third || thirdUrl || cal || src === "三方校招日历") return { label: "第三方招聘平台", cls: "soon", icon: "🟠" };
+      return { label: "来源待确认", cls: "danger", icon: "🔴" };
+    }
+
+    function deadlineMeta(j){
+      const dl = daysLeft(j.deadline);
+      if (dl === null) return { cls: "", icon: "⚪", text: "截止时间未知", date: "招满即止" };
+      if (dl < 0) return { cls: "danger", icon: "🔴", text: "已截止", date: j.deadline };
+      if (dl <= 1) return { cls: "danger", icon: "🔴", text: dl === 0 ? "今天截止" : "1天后截止", date: j.deadline };
+      if (dl <= 3) return { cls: "soon", icon: "🟠", text: dl + "天后截止", date: j.deadline };
+      if (dl <= 7) return { cls: "warn", icon: "🟡", text: dl + "天后截止", date: j.deadline };
+      return { cls: "ok", icon: "🟢", text: dl + "天后截止", date: j.deadline };
+    }
+
+    const ROLE_NAMES = ["测试开发", "自动化测试", "软件测试", "质量保障", "测试工程师"];
+    const SKILL_CATALOG = [
+      { name: "测试开发", alias: ["测开", "SDET", "sdet"] },
+      { name: "自动化测试", alias: ["自动化测试脚本", "test automation"] },
+      { name: "接口测试", alias: ["API测试", "api测试", "接口自动化", "API Test"] },
+      { name: "软件测试", alias: ["功能测试", "手工测试"] },
+      { name: "质量保障", alias: ["质量工程"] },
+      { name: "pytest", alias: ["py.test"] },
+      { name: "unittest", alias: [] },
+      { name: "JUnit", alias: [] },
+      { name: "TestNG", alias: [] },
+      { name: "Python", alias: ["python3", "Python 开发"] },
+      { name: "Selenium", alias: ["seleium"] },
+      { name: "Appium", alias: [] },
+      { name: "Playwright", alias: [] },
+      { name: "JMeter", alias: ["jmeter"] },
+      { name: "Postman", alias: [] },
+      { name: "requests", alias: ["python-requests"] },
+      { name: "Allure", alias: [] },
+      { name: "MySQL", alias: ["mysql数据库"] },
+      { name: "PostgreSQL", alias: ["postgres"] },
+      { name: "SQL", alias: ["结构化查询"] },
+      { name: "Linux", alias: ["unix"] },
+      { name: "Git", alias: [] },
+      { name: "GitHub", alias: [] },
+      { name: "GitLab", alias: [] },
+      { name: "HTTP/HTTPS", alias: ["HTTP", "HTTPS", "http协议"] },
+      { name: "Java", alias: ["jdk"] },
+      { name: "Jenkins", alias: [] },
+      { name: "CI/CD", alias: ["cicd"] },
+      { name: "Docker", alias: ["容器化"] },
+      { name: "Charles", alias: [] },
+      { name: "Fiddler", alias: [] },
+      { name: "用例设计", alias: ["测试用例"] },
+      { name: "缺陷跟踪", alias: ["禅道", "Jira", "bug管理"] },
+      { name: "性能测试", alias: ["performance test"] },
+      { name: "YAML", alias: [] }
+    ];
+    const SKILL_RELATED = {
+      "SQL": ["MySQL", "PostgreSQL"],
+      "MySQL": ["SQL", "PostgreSQL"],
+      "PostgreSQL": ["SQL", "MySQL"],
+      "pytest": ["unittest", "JUnit", "TestNG"],
+      "unittest": ["pytest"],
+      "JUnit": ["pytest", "TestNG"],
+      "TestNG": ["JUnit", "pytest"],
+      "Selenium": ["Playwright", "Appium"],
+      "Playwright": ["Selenium", "Appium"],
+      "Appium": ["Selenium", "Playwright"],
+      "接口测试": ["requests", "Postman", "HTTP/HTTPS"],
+      "requests": ["接口测试", "HTTP/HTTPS", "Postman"],
+      "Postman": ["接口测试", "requests"],
+      "HTTP/HTTPS": ["接口测试", "requests"],
+      "JMeter": ["性能测试"],
+      "性能测试": ["JMeter"],
+      "Git": ["GitHub", "GitLab"],
+      "GitHub": ["Git"],
+      "GitLab": ["Git"],
+      "Jenkins": ["CI/CD"],
+      "CI/CD": ["Jenkins"],
+      "Docker": ["CI/CD"]
+    };
+    const RELATED_CREDIT = 0.6;
+    const SKILL_META = {
+      "Python": { cat: "编程语言", cost: 0.55, interview: 0.95 },
+      "Java": { cat: "编程语言", cost: 0.8, interview: 0.85 },
+      "pytest": { cat: "测试框架", cost: 0.35, interview: 0.9 },
+      "unittest": { cat: "测试框架", cost: 0.3, interview: 0.55 },
+      "JUnit": { cat: "测试框架", cost: 0.45, interview: 0.5 },
+      "TestNG": { cat: "测试框架", cost: 0.45, interview: 0.45 },
+      "接口测试": { cat: "接口测试", cost: 0.4, interview: 0.95 },
+      "requests": { cat: "接口测试", cost: 0.3, interview: 0.85 },
+      "Postman": { cat: "接口测试", cost: 0.25, interview: 0.75 },
+      "HTTP/HTTPS": { cat: "计算机网络", cost: 0.35, interview: 0.95 },
+      "Selenium": { cat: "UI自动化", cost: 0.4, interview: 0.8 },
+      "Playwright": { cat: "UI自动化", cost: 0.4, interview: 0.7 },
+      "Appium": { cat: "UI自动化", cost: 0.55, interview: 0.55 },
+      "SQL": { cat: "数据库", cost: 0.35, interview: 0.9 },
+      "MySQL": { cat: "数据库", cost: 0.35, interview: 0.85 },
+      "PostgreSQL": { cat: "数据库", cost: 0.4, interview: 0.45 },
+      "Linux": { cat: "Linux", cost: 0.3, interview: 0.9 },
+      "Git": { cat: "工具", cost: 0.25, interview: 0.8 },
+      "GitHub": { cat: "工具", cost: 0.2, interview: 0.4 },
+      "GitLab": { cat: "工具", cost: 0.25, interview: 0.4 },
+      "Jenkins": { cat: "CI/CD", cost: 0.45, interview: 0.7 },
+      "CI/CD": { cat: "CI/CD", cost: 0.45, interview: 0.7 },
+      "Docker": { cat: "DevOps", cost: 0.5, interview: 0.6 },
+      "JMeter": { cat: "性能测试", cost: 0.45, interview: 0.65 },
+      "性能测试": { cat: "性能测试", cost: 0.5, interview: 0.7 },
+      "用例设计": { cat: "测试理论", cost: 0.3, interview: 0.95 },
+      "缺陷跟踪": { cat: "工具", cost: 0.2, interview: 0.7 },
+      "Allure": { cat: "工具", cost: 0.25, interview: 0.5 },
+      "自动化测试": { cat: "测试框架", cost: 0.45, interview: 0.8 },
+      "YAML": { cat: "工具", cost: 0.2, interview: 0.45 },
+      "Charles": { cat: "工具", cost: 0.25, interview: 0.4 },
+      "Fiddler": { cat: "工具", cost: 0.25, interview: 0.4 }
+    };
+    const ROLE_TYPICAL = {
+      "测试开发": {
+        core: ["Python", "pytest", "接口测试"],
+        important: ["SQL", "Git", "Linux"],
+        bonus: ["Selenium", "Java", "Docker", "Jenkins"]
+      },
+      "自动化测试": {
+        core: ["Python", "pytest", "自动化测试"],
+        important: ["接口测试", "Selenium", "Git"],
+        bonus: ["Jenkins", "Docker", "Linux"]
+      },
+      "软件测试": {
+        core: ["用例设计", "接口测试", "缺陷跟踪"],
+        important: ["SQL", "Python", "Git"],
+        bonus: ["Linux", "Java", "Selenium"]
+      },
+      "质量保障": {
+        core: ["用例设计", "缺陷跟踪", "接口测试"],
+        important: ["Python", "SQL", "Git"],
+        bonus: ["Linux", "Jenkins"]
+      },
+      "测试工程师": {
+        core: ["用例设计", "接口测试", "缺陷跟踪"],
+        important: ["SQL", "Python", "Git"],
+        bonus: ["Linux", "Selenium"]
+      }
+    };
+    const ROLE_RELATED = {
+      "测试开发": ["自动化测试", "软件测试", "质量保障", "测试工程师"],
+      "自动化测试": ["测试开发", "软件测试"],
+      "软件测试": ["测试工程师", "质量保障", "测试开发"],
+      "质量保障": ["测试开发", "软件测试"],
+      "测试工程师": ["软件测试", "测试开发"]
+    };
+    const IMP_WEIGHT = { core: 1, important: 0.8, bonus: 0.35 };
+
+    function uniq(list){
+      const seen = new Set(), out = [];
+      (list || []).forEach(x => {
+        const k = String(x || "").trim();
+        if (!k || seen.has(k.toLowerCase())) return;
+        seen.add(k.toLowerCase());
+        out.push(k);
+      });
+      return out;
+    }
+    function hitTerm(text, term){
+      const t = String(text || "");
+      const n = String(term || "");
+      if (!n) return false;
+      if (/[\u4e00-\u9fa5]/.test(n)) return t.includes(n);
+      const safe = n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp("(?:^|[^a-zA-Z0-9/+])" + safe + "(?:[^a-zA-Z0-9/+]|$)", "i").test(t);
+    }
+    function extractSkillsFromText(raw){
+      const t = String(raw || "");
+      if (!t.trim()) return [];
+      return SKILL_CATALOG.filter(item => [item.name, ...(item.alias || [])].some(n => hitTerm(t, n))).map(item => item.name);
+    }
+    function relatedTo(skill){ return SKILL_RELATED[skill] || []; }
+    function skillOwned(owned, name){
+      const low = owned.map(s => s.toLowerCase());
+      return low.includes(String(name).toLowerCase());
+    }
+    function familyMate(owned, name){
+      const rel = relatedTo(name);
+      return rel.find(r => skillOwned(owned, r)) || owned.find(s => relatedTo(s).includes(name)) || "";
+    }
+    function skillRelatedHit(owned, name){ return !!familyMate(owned, name); }
+    function skillCredit(owned, name){
+      if (skillOwned(owned, name)) return { level: "exact", credit: 1, via: "" };
+      const via = familyMate(owned, name);
+      if (via) return { level: "related", credit: RELATED_CREDIT, via };
+      if (name === "Python" && (skillOwned(owned, "pytest") || skillOwned(owned, "requests"))) {
+        const src = skillOwned(owned, "pytest") ? "pytest" : "requests";
+        return { level: "related", credit: 0.75, via: src };
+      }
+      return { level: "miss", credit: 0, via: "" };
+    }
+    function typicalOf(role){
+      return ROLE_TYPICAL[role] || ROLE_TYPICAL["软件测试"];
+    }
+    function jdBlobOf(job){
+      return [
+        text(job.description),
+        arr(job.responsibilities).join(" "),
+        arr(job.requirements).join(" "),
+        arr(job.skills).join(" ")
+      ].join(" ");
+    }
+    function classifyImportance(skill, jdText, typical){
+      const n = String(skill);
+      const t = String(jdText || "");
+      let ctx = t;
+      const idx = t.toLowerCase().indexOf(n.toLowerCase());
+      if (idx >= 0) ctx = t.slice(Math.max(0, idx - 18), idx + n.length + 18);
+      if (/加分|优先|有相关经验优先|熟悉优先|可选/.test(ctx)) return "bonus";
+      if (/了解/.test(ctx) && !/了解并掌握|了解并熟练/.test(ctx)) return "bonus";
+      if (/必须|熟练掌握|精通|要求|负责/.test(ctx)) return "core";
+      if ((typical.core || []).includes(n)) return "core";
+      if ((typical.important || []).includes(n)) return "important";
+      if ((typical.bonus || []).includes(n)) return "bonus";
+      return "important";
+    }
+    function profileReady(p){
+      p = p || candidateProfile;
+      if (!p) return false;
+      const edu = p.education || {};
+      return !!(arr(p.skills).length || arr(p.internships).length || arr(p.projects).length || edu.school || edu.major || arr(p.targetPositions).length);
+    }
+    function itemBlob(item){
+      if (!item) return "";
+      if (typeof item === "string") return item;
+      return [item.company, item.title, item.name, item.desc, ...(item.skills || [])].filter(Boolean).join(" ");
+    }
+    function ownedSkills(p){
+      p = p || candidateProfile;
+      const parts = [arr(p.skills).join(" "), arr(p.keywords).join(" ")];
+      arr(p.internships).forEach(i => parts.push(itemBlob(i)));
+      arr(p.projects).forEach(i => parts.push(itemBlob(i)));
+      return uniq(extractSkillsFromText(parts.join("\n")).concat(arr(p.skills)));
+    }
+    function analyzeJob(job){
+      const typical = typicalOf(text(job.role_type));
+      const jdText = jdBlobOf(job);
+      const hasJd = !!(jdText.trim());
+      const extracted = uniq(arr(job.skills).concat(extractSkillsFromText(jdText)))
+        .filter(s => !ROLE_NAMES.includes(s));
+      const coreSkills = [], importantSkills = [], bonusSkills = [];
+      extracted.forEach(s => {
+        const imp = classifyImportance(s, jdText, typical);
+        if (imp === "core") coreSkills.push(s);
+        else if (imp === "bonus") bonusSkills.push(s);
+        else importantSkills.push(s);
+      });
+      return {
+        hasJd,
+        jdText,
+        typical,
+        jdSkills: extracted,
+        coreSkills,
+        importantSkills,
+        bonusSkills,
+        keywords: uniq(extracted.concat([job.role_type].filter(Boolean))),
+        edu: /博士/.test(jdText + text(job.program)) ? "博士" : /硕士|研究生/.test(jdText + text(job.program)) ? "硕士" : /本科|学士/.test(jdText + text(job.program)) ? "本科" : "",
+        cities: arr(job.locations),
+        role: text(job.role_type)
+      };
+    }
+    function blobHasRole(blob, role){
+      if (!role) return false;
+      if (blob.includes(role)) return true;
+      return arr(ROLE_RELATED[role]).some(r => blob.includes(r));
+    }
+    function ratio(hit, total, empty){
+      if (!total) return empty;
+      return Math.max(0, Math.min(1, hit / total));
+    }
+
+    function computeMatch(job, profile){
+      profile = profile || candidateProfile;
+      if (!profileReady(profile)) return null;
+      const jobA = analyzeJob(job);
+      const mine = ownedSkills(profile);
+      const internBlob = arr(profile.internships).map(itemBlob).join("\n");
+      const projBlob = arr(profile.projects).map(itemBlob).join("\n");
+      const internSkills = extractSkillsFromText(internBlob);
+      const projSkills = extractSkillsFromText(projBlob);
+      const targets = arr(profile.targetPositions);
+      const cities = arr(profile.targetCities);
+      const refSkills = jobA.hasJd
+        ? jobA.coreSkills.concat(jobA.importantSkills)
+        : jobA.typical.core.concat(jobA.typical.important);
+
+      function bucketScore(list){
+        if (!list.length) return null;
+        let wsum = 0, got = 0;
+        list.forEach(s => {
+          const w = IMP_WEIGHT[classifyImportance(s, jobA.jdText, jobA.typical)] || 0.8;
+          wsum += w;
+          got += w * skillCredit(mine, s).credit;
+        });
+        return wsum ? got / wsum : null;
+      }
+      const coreRatio = jobA.hasJd ? bucketScore(jobA.coreSkills) : null;
+      const importantRatio = jobA.hasJd ? bucketScore(jobA.importantSkills) : null;
+      const bonusRatio = jobA.hasJd ? bucketScore(jobA.bonusSkills) : null;
+
+      const matched = [], related = [], missing = [];
+      const gaps = [];
+      const skillRows = [];
+      (jobA.hasJd ? jobA.jdSkills : []).forEach(s => {
+        const c = skillCredit(mine, s);
+        const importance = classifyImportance(s, jobA.jdText, jobA.typical);
+        const row = { skill: s, importance, level: c.level, credit: c.credit, via: c.via, inferred: false };
+        skillRows.push(row);
+        if (c.level === "exact") matched.push(s);
+        else if (c.level === "related") related.push(s);
+        else missing.push(s);
+        if (c.level !== "exact"){
+          gaps.push({
+            skill: s,
+            importance,
+            gap: importance === "core" ? "high" : importance === "important" ? "mid" : "low",
+            level: c.level,
+            via: c.via,
+            note: c.via ? ("已有 " + c.via + "，可迁移到 " + s) : ""
+          });
+        }
+      });
+      if (!jobA.hasJd){
+        [["core", jobA.typical.core], ["important", jobA.typical.important], ["bonus", jobA.typical.bonus]].forEach(([importance, list]) => {
+          (list || []).forEach(s => {
+            const c = skillCredit(mine, s);
+            skillRows.push({ skill: s, importance, level: c.level, credit: c.credit, via: c.via, inferred: true });
+            if (c.level === "exact") matched.push(s);
+            else if (c.level === "related") related.push(s);
+            else missing.push(s);
+            if (c.level !== "exact"){
+              gaps.push({
+                skill: s,
+                importance,
+                gap: importance === "core" ? "high" : importance === "important" ? "mid" : "low",
+                level: c.level,
+                via: c.via,
+                inferred: true,
+                note: c.via ? ("已有 " + c.via + "，可迁移") : "该方向常见要求，非本岗位原文"
+              });
+            }
+          });
+        });
+      }
+
+      let roleScore = 0.35;
+      const role = jobA.role;
+      if (targets.includes(role)) roleScore = 1;
+      else if (targets.some(t => arr(ROLE_RELATED[t]).includes(role) || arr(ROLE_RELATED[role]).includes(t))) roleScore = 0.78;
+      else if (blobHasRole(internBlob + projBlob, role)) roleScore = 0.86;
+      else if (/测试/.test(role || "") && (targets.some(t => /测试/.test(t)) || /测试/.test(internBlob + projBlob))) roleScore = 0.7;
+      else if (targets.length && !targets.some(t => /测试/.test(t))) roleScore = 0.28;
+
+      function expScore(blob, skills, empty){
+        if (!blob.trim()) return empty;
+        let hit = 0, tot = Math.max(refSkills.length, 1);
+        refSkills.forEach(s => { hit += skillCredit(skills, s).credit; });
+        if (blobHasRole(blob, role)) hit += 1.2;
+        return Math.max(0, Math.min(1, 0.28 + hit / (tot + 1.2)));
+      }
+      const internScore = arr(profile.internships).length ? expScore(internBlob, internSkills, 0.15) : 0.15;
+      const projScore = arr(profile.projects).length ? expScore(projBlob, projSkills, 0.18) : 0.18;
+
+      const jobCities = jobA.cities;
+      const cityScore = !cities.length ? 0.5
+        : !jobCities.length ? 0.5
+        : jobCities.some(loc => cities.some(c => loc.includes(c))) ? 1
+        : 0.2;
+
+      const degree = text((profile.education || {}).degree);
+      let eduScore = 0.55;
+      if (!jobA.edu) eduScore = degree ? 0.85 : 0.6;
+      else if (!degree) eduScore = 0.45;
+      else if (jobA.edu === "本科" && /本科|学士|硕士|博士|研究生/.test(degree)) eduScore = 1;
+      else if (jobA.edu === "硕士" && /硕士|研究生|博士/.test(degree)) eduScore = 1;
+      else if (jobA.edu === "硕士" && /本科/.test(degree)) eduScore = 0.42;
+      else if (jobA.edu === "博士") eduScore = /博士/.test(degree) ? 1 : 0.3;
+      else eduScore = 0.65;
+
+      const parts = {
+        core: coreRatio == null ? null : Math.round(coreRatio * 100),
+        important: importantRatio == null ? null : Math.round(importantRatio * 100),
+        bonus: bonusRatio == null ? null : Math.round(bonusRatio * 100),
+        role: Math.round(roleScore * 100),
+        proj: Math.round(projScore * 100),
+        intern: Math.round(internScore * 100),
+        edu: Math.round(eduScore * 100),
+        city: Math.round(cityScore * 100)
+      };
+      let weighted = 0, wsum = 0;
+      const weights = {};
+      function addW(key, val, w){
+        if (val == null) return;
+        weights[key] = w;
+        weighted += val * w;
+        wsum += w;
+      }
+      if (jobA.hasJd){
+        addW("core", coreRatio, 35);
+        addW("important", importantRatio, 20);
+        addW("role", roleScore, 15);
+        addW("proj", projScore, 10);
+        addW("intern", internScore, 10);
+        addW("edu", eduScore, 5);
+        addW("city", cityScore, 5);
+      } else {
+        addW("role", roleScore, 15);
+        addW("proj", projScore, 10);
+        addW("intern", internScore, 10);
+        addW("edu", eduScore, 5);
+        addW("city", cityScore, 5);
+      }
+      let score = wsum ? (weighted / wsum) * 100 : 0;
+      if (jobA.hasJd && bonusRatio != null) score += Math.min(4, bonusRatio * 4);
+      if (!jobA.hasJd) score = Math.min(score, 82);
+      score = Math.round(Math.max(0, Math.min(100, score)));
+
+      const reasons = [];
+      const needs = [];
+      if (roleScore >= 0.85) reasons.push("求职方向与" + (role || "该岗位") + "高度匹配");
+      else if (roleScore >= 0.7) reasons.push("求职方向与岗位相关");
+      else if (roleScore < 0.45) reasons.push("岗位方向与当前求职方向差异较大");
+      matched.slice(0, 5).forEach(s => reasons.push(s + " 完全匹配"));
+      related.slice(0, 3).forEach(s => {
+        const via = familyMate(mine, s);
+        reasons.push(s + " 为相关能力" + (via ? "（已有 " + via + "）" : ""));
+      });
+      if (internScore >= 0.7) reasons.push("实习经历与岗位方向匹配");
+      if (projScore >= 0.7) reasons.push("项目经历覆盖岗位关键词");
+      if (cityScore >= 1) reasons.push("目标城市匹配");
+      if (!jobA.hasJd) reasons.push("该岗位暂无详细 JD，分数按方向/经历估算，不是技能逐项对账");
+      gaps.forEach(g => {
+        if (g.level === "related") needs.push(g.skill + "（相关可迁移" + (g.via ? "：" + g.via : "") + "）");
+        else needs.push(g.skill + (g.importance === "bonus" ? "（加分项）" : g.importance === "core" ? "（核心）" : "（重要）"));
+      });
+
+      const rec = recommendGrade(score, coreRatio, roleScore, jobA);
+      return {
+        score,
+        parts,
+        weights,
+        hasJd: jobA.hasJd,
+        coreSkills: jobA.coreSkills,
+        importantSkills: jobA.importantSkills,
+        bonusSkills: jobA.bonusSkills,
+        skillRows,
+        matched, related, missing, gaps, reasons, needs,
+        grade: rec.grade,
+        stars: rec.stars,
+        recommendNote: rec.note,
+        resumeVersion: profile.resumeVersion || "",
+        matchModel: MATCH_MODEL
+      };
+    }
+    function recommendGrade(score, coreRatio, roleScore, jobA){
+      if (roleScore < 0.45) return { grade: "谨慎投递", stars: "★★", note: "岗位方向与求职方向差异较大，分数高也不等于适合投。" };
+      if (coreRatio != null && coreRatio >= 0.85 && score >= 60) {
+        if (score >= 80) return { grade: "强烈推荐", stars: "★★★★★", note: "核心技能高度匹配。" };
+        return { grade: "推荐投递", stars: "★★★★", note: "核心能力匹配，存在可补足技能。" };
+      }
+      if (score >= 90) return { grade: "强烈推荐", stars: "★★★★★", note: "" };
+      if (score >= 80) return { grade: "推荐投递", stars: "★★★★", note: "" };
+      if (score >= 70) return { grade: "可以投递", stars: "★★★", note: "" };
+      if (coreRatio != null && coreRatio >= 0.75 && score >= 55) return { grade: "可以投递", stars: "★★★", note: "核心能力匹配，存在可补足技能。" };
+      if (score >= 60) return { grade: "谨慎投递", stars: "★★", note: jobA.hasJd ? "有真实技能缺口，投递同时补齐更稳。" : "缺少原文 JD，建议先核对官网要求。" };
+      return { grade: "匹配度较低", stars: "★", note: "分数反映当前简历与该岗位要求的差距，不是投递禁令。" };
+    }
+
+    function getCachedMatch(job, profile){
+      profile = profile || candidateProfile;
+      if (!profileReady(profile)){
+        if (typeof job.matchScore === "number") {
+          return { score: job.matchScore, matched: arr(job.matchedSkills), missing: arr(job.missingSkills), related: [], reasons: text(job.matchReason) ? [job.matchReason] : [], needs: arr(job.missingSkills), grade: "", stars: "", resumeVersion: "" };
+        }
+        return null;
+      }
+      const cached = peek(job.id).match;
+      if (cached && typeof cached.score === "number" && cached.resumeVersion === (profile.resumeVersion || "") && cached.matchModel === MATCH_MODEL) return cached;
+      const m = computeMatch(job, profile);
+      if (m) st(job.id).match = m;
+      return m;
+    }
+    function recalculateAllMatches(){
+      if (!profileReady()){
+        Object.keys(jobsState).forEach(id => { if (jobsState[id] && jobsState[id].match) delete jobsState[id].match; });
+        saveJobsState();
+        return;
+      }
+      JOBS.forEach(j => {
+        const m = computeMatch(j, candidateProfile);
+        if (m) st(j.id).match = m;
+      });
+      saveJobsState();
+    }
+
+    function recScore(j){
+      const m = getCachedMatch(j, candidateProfile);
+      if (m && typeof m.score === "number"){
+        let s = m.score * 10;
+        if (getStatus(j) === "暂时不投") s -= 2000;
+        return s;
+      }
+      let s = Number(j.priority) || 0;
+      const status = getStatus(j);
+      if (status === "未投") s += 40;
+      if (status === "暂时不投") s -= 200;
+      const dl = daysLeft(j.deadline);
+      if (dl !== null && dl >= 0){
+        if (dl <= 1) s += 32;
+        else if (dl <= 3) s += 24;
+        else if (dl <= 7) s += 16;
+        else if (dl <= 15) s += 8;
+      }
+      if (j.role_type === "测试开发") s += 20;
+      else if (j.role_type === "自动化测试") s += 16;
+      else if (j.role_type === "软件测试") s += 12;
+      else if (j.role_type === "质量保障") s += 8;
+      if ((j.locations||[]).some(loc => TARGET_CITIES.some(c => loc.includes(c)))) s += 10;
+      s += (SCALE_RANK[j.scale] || 0) * 6;
+      if (isFav(j.id)) s += 8;
+      return s;
+    }
+    function todayScore(j){
+      let s = 0;
+      const m = getCachedMatch(j, candidateProfile);
+      if (m && typeof m.score === "number") s += m.score * 2;
+      else s += recScore(j);
+      const dl = daysLeft(j.deadline);
+      if (dl !== null && dl >= 0){
+        if (dl <= 1) s += 40;
+        else if (dl <= 3) s += 28;
+        else if (dl <= 7) s += 16;
+      }
+      const targets = arr(candidateProfile.targetPositions);
+      if (targets.includes(j.role_type)) s += 22;
+      else if (j.role_type === "测试开发") s += 14;
+      else if (j.role_type === "自动化测试") s += 12;
+      const cities = arr(candidateProfile.targetCities).length ? candidateProfile.targetCities : TARGET_CITIES;
+      if ((j.locations||[]).some(loc => cities.some(c => loc.includes(c)))) s += 12;
+      s += (SCALE_RANK[j.scale] || 0) * 8;
+      if (isFav(j.id)) s += 20;
+      if (getStatus(j) !== "未投") s -= 80;
+      return s;
+    }
+
+    async function parseResume(input){
+      if (!input) return { text: "", error: "没有可解析的简历" };
+      if (typeof input === "string") return { text: input, error: input.trim() ? "" : "文本为空" };
+      let buf = null, name = "", mime = "";
+      if (input instanceof ArrayBuffer) buf = input;
+      else if (input && input.arrayBuffer){
+        name = input.name || "";
+        mime = input.type || "";
+        buf = await input.arrayBuffer();
+      } else if (input.dataUrl){
+        const m = String(input.dataUrl).split(",");
+        const bin = atob(m[1] || "");
+        const bytes = new Uint8Array(bin.length);
+        for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+        buf = bytes.buffer;
+        name = input.fileName || "";
+      }
+      if (!buf) return { text: "", error: "无法读取文件" };
+      const lower = (name || "").toLowerCase();
+      try {
+        if (lower.endsWith(".docx") || /wordprocessingml/.test(mime)){
+          if (!window.mammoth) return { text: "", error: "DOCX 解析库未加载，请联网后重试，或改用粘贴文本" };
+          const out = await window.mammoth.extractRawText({ arrayBuffer: buf });
+          return { text: out.value || "", error: "" };
+        }
+        if (lower.endsWith(".pdf") || mime === "application/pdf"){
+          if (!window.pdfjsLib) return { text: "", error: "PDF 解析库未加载，请联网后重试，或改用粘贴文本" };
+          window.pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+          const pdf = await window.pdfjsLib.getDocument({ data: buf }).promise;
+          let text = "";
+          for (let i = 1; i <= pdf.numPages; i++){
+            const page = await pdf.getPage(i);
+            const content = await page.getTextContent();
+            text += content.items.map(it => it.str).join(" ") + "\n";
+          }
+          return { text, error: "" };
+        }
+        const dec = new TextDecoder("utf-8");
+        return { text: dec.decode(buf), error: "" };
+      } catch (err){
+        return { text: "", error: "解析失败：" + (err && err.message ? err.message : "未知错误") };
+      }
+    }
+
+    function extractCandidateProfile(raw, version){
+      const textIn = String(raw || "");
+      const skills = extractSkillsFromText(textIn);
+      const school = (textIn.match(/([\u4e00-\u9fa5A-Za-z]{2,20}(?:大学|学院|职业技术学院))/) || [])[1] || "";
+      const major = (textIn.match(/(计算机科学与技术|软件工程|网络工程|信息管理与信息系统|数据科学与大数据技术|人工智能|电子信息|物联网工程|计算机[^\s，。]{0,8})/) || [])[1] || "";
+      const degree = (textIn.match(/(博士|硕士|研究生|本科|学士|专科|大专)/) || [])[1] || "";
+      const year = (textIn.match(/(20\d{2})\s*届/) || textIn.match(/毕业\s*(?:时间|年份)?\s*[:：]?\s*(20\d{2})/) || [])[1] || "";
+      const cities = uniq(["南京","杭州","苏州","无锡","上海","宁波","合肥","北京","深圳","广州"].filter(c => textIn.includes(c)));
+      const targetPositions = uniq(["测试开发","自动化测试","软件测试","测试工程师","质量保障"].filter(r => textIn.includes(r) || skills.includes(r)));
+      const keywords = uniq(skills.concat(targetPositions).concat(cities));
+      const internships = [];
+      const internBlock = (textIn.split(/实习经历|实习经验|工作经历/)[1] || "").split(/项目经历|项目经验|教育经历|专业技能|自我评价/)[0] || "";
+      if (internBlock.trim()){
+        internships.push({
+          title: (internBlock.match(/测试[^\s，。]{0,10}|实习生|实习/) || ["实习"])[0],
+          company: (internBlock.match(/([\u4e00-\u9fa5A-Za-z]{2,16}(?:公司|科技|网络|集团|银行|大学))/) || [])[1] || "",
+          desc: internBlock.replace(/\s+/g, " ").trim().slice(0, 400),
+          skills: extractSkillsFromText(internBlock)
+        });
+      } else if (/实习/.test(textIn)){
+        internships.push({
+          title: "实习",
+          company: "",
+          desc: textIn.split(/实习/).slice(1).join("实习").replace(/\s+/g, " ").trim().slice(0, 400),
+          skills: extractSkillsFromText(textIn)
+        });
+      }
+      const projects = [];
+      const projBlock = (textIn.split(/项目经历|项目经验|个人项目/)[1] || "").split(/实习经历|教育经历|专业技能|自我评价/)[0] || "";
+      if (projBlock.trim()){
+        projects.push({
+          name: (projBlock.match(/[\u4e00-\u9fa5A-Za-z0-9]{2,20}(?:系统|平台|项目|网站)/) || ["项目"])[0],
+          desc: projBlock.replace(/\s+/g, " ").trim().slice(0, 400),
+          skills: extractSkillsFromText(projBlock)
+        });
+      }
+      return {
+        education: { school, major, degree, graduationYear: year },
+        skills,
+        projects,
+        internships,
+        targetPositions,
+        targetCities: cities,
+        keywords,
+        resumeVersion: version || "",
+        updatedAt: todayStr
+      };
+    }
+
+    function calculateMatchScore(job, profile){
+      const m = getCachedMatch(job, profile);
+      return m && typeof m.score === "number" ? m.score : null;
+    }
+    function getMatchedSkills(job, profile){
+      const m = getCachedMatch(job, profile);
+      return m ? arr(m.matched) : [];
+    }
+    function getMissingSkills(job, profile){
+      const m = getCachedMatch(job, profile);
+      return m ? arr(m.missing) : [];
+    }
+    function getMatchReason(job, profile){
+      const m = getCachedMatch(job, profile);
+      return m ? arr(m.reasons).join("；") : "";
+    }
+    function matchLabel(j){
+      const score = calculateMatchScore(j, candidateProfile);
+      if (typeof score === "number") return score + "%";
+      return "待简历分析";
+    }
+    function matchView(j){
+      const m = getCachedMatch(j, candidateProfile);
+      if (!m || typeof m.score !== "number") return null;
+      return m;
+    }
+    function skillPills(m, limit){
+      if (!m) return "";
+      const hits = arr(m.matched).slice(0, limit || 4).map(s => `<span class="sk hit">✓ ${esc(s)}</span>`);
+      const rels = arr(m.related).slice(0, 2).map(s => {
+        const g = arr(m.gaps).find(x => x.skill === s);
+        const via = g && g.via ? "←" + g.via : "";
+        return `<span class="sk rel">△ ${esc(s)}${esc(via)}</span>`;
+      });
+      const miss = arr(m.missing).slice(0, 2).map(s => `<span class="sk miss">✗ ${esc(s)}</span>`);
+      const all = hits.concat(rels, miss).slice(0, 8);
+      return all.length ? `<div class="skills" style="margin-top:6px">${all.join("")}</div>` : "";
+    }
+    function gapHtml(m, compact){
+      if (!m) return `<div class="muted">待简历分析</div>`;
+      const core = arr(m.gaps).filter(g => g.importance === "core" && g.level === "miss");
+      const important = arr(m.gaps).filter(g => g.importance === "important" && g.level === "miss");
+      const bonus = arr(m.gaps).filter(g => g.importance === "bonus" && g.level === "miss");
+      const rel = arr(m.gaps).filter(g => g.level === "related");
+      if (!core.length && !important.length && !bonus.length && !rel.length) {
+        return m.hasJd ? `<div class="muted">当前可见技能缺口较少</div>` : `<div class="muted">暂无原文技能清单。</div>`;
+      }
+      const infer = arr(m.gaps).some(g => g.inferred) ? `<div class="muted">对照该方向常见要求，非本岗位原文</div>` : "";
+      const line = (icon, title, list) => list.length
+        ? `<div class="gap-line">${icon} ${title}：${list.slice(0, compact ? 4 : 8).map(g => esc(g.skill)).join(" · ")}</div>`
+        : "";
+      return `<div class="need-box">${infer}${line("🔴", "核心缺口", core)}${line("🟠", "重要缺口", important)}${line("🟡", "加分项", bonus)}${rel.length ? `<div class="gap-line">△ 可迁移：${rel.slice(0, 3).map(g => esc(g.skill) + (g.via ? "←" + esc(g.via) : "")).join(" · ")}</div>` : ""}</div>`;
+    }
+    function explainTable(m){
+      if (!m || !m.parts) return "";
+      const labels = [
+        ["core", "核心技能"],
+        ["important", "重要技能"],
+        ["role", "岗位方向"],
+        ["proj", "项目经历"],
+        ["intern", "实习经历"],
+        ["edu", "学历"],
+        ["city", "城市"]
+      ];
+      const rows = labels.filter(([k]) => m.parts[k] != null).map(([k, lab]) => {
+        const w = m.weights && m.weights[k] != null ? m.weights[k] + "%" : "—";
+        return `<tr><td>${lab}</td><td>${m.parts[k]}%</td><td>${w}</td></tr>`;
+      }).join("");
+      return `<table class="explain"><thead><tr><th>维度</th><th>得分</th><th>权重</th></tr></thead><tbody>${rows}<tr><td>最终匹配度</td><td colspan="2"><b>${m.score}%</b></td></tr></tbody></table>
+        ${m.hasJd ? "" : `<p class="muted">该岗位暂无详细 JD。分数按方向/经历估算，上限 82%，避免把「不知道要求」当成「完全匹配」。</p>`}
+        ${m.recommendNote ? `<p class="muted">${esc(m.recommendNote)}</p>` : ""}`;
+    }
+
+    function jobDemandItems(j){
+      const a = analyzeJob(j);
+      if (a.hasJd) {
+        return a.coreSkills.map(s => ({ skill: s, importance: "core", inferred: false }))
+          .concat(a.importantSkills.map(s => ({ skill: s, importance: "important", inferred: false })))
+          .concat(a.bonusSkills.map(s => ({ skill: s, importance: "bonus", inferred: false })));
+      }
+      return a.typical.core.map(s => ({ skill: s, importance: "core", inferred: true }))
+        .concat(a.typical.important.map(s => ({ skill: s, importance: "important", inferred: true })));
+    }
+    function knowledgeLevel(skill, profile){
+      profile = profile || candidateProfile;
+      const mine = ownedSkills(profile);
+      const intern = extractSkillsFromText(arr(profile.internships).map(itemBlob).join("\n"));
+      const proj = extractSkillsFromText(arr(profile.projects).map(itemBlob).join("\n"));
+      const c = skillCredit(mine, skill);
+      if (c.level === "miss") return 1;
+      if (c.level === "related") return 2;
+      let lv = 3;
+      if (skillOwned(proj, skill) || skillRelatedHit(proj, skill)) lv = 4;
+      if (skillOwned(intern, skill) || skillRelatedHit(intern, skill)) lv = Math.max(lv, 4);
+      if (skillOwned(proj, skill) && skillOwned(intern, skill)) lv = 5;
+      const rec = interviewState.knowledge && interviewState.knowledge[skill];
+      if (rec && rec.n){
+        const ivLv = Math.max(1, Math.min(5, rec.level || Math.round((rec.lastScore || 0) / 20)));
+        lv = Math.round(lv * 0.55 + ivLv * 0.45);
+      }
+      return Math.max(1, Math.min(5, lv));
+    }
+    function buildSkillDemand(){
+      const total = JOBS.length;
+      const jdJobs = JOBS.filter(j => analyzeJob(j).hasJd).length;
+      const map = {};
+      JOBS.forEach(j => {
+        const role = j.role_type || "";
+        const seen = new Set();
+        jobDemandItems(j).forEach(it => {
+          if (ROLE_NAMES.includes(it.skill) || seen.has(it.skill)) return;
+          seen.add(it.skill);
+          if (!map[it.skill]) map[it.skill] = { skill: it.skill, jobCount: 0, jdCount: 0, inferredCount: 0, coreCount: 0, cat: (SKILL_META[it.skill] || {}).cat || "其他" };
+          const row = map[it.skill];
+          row.jobCount++;
+          if (it.inferred) row.inferredCount++; else row.jdCount++;
+          if (it.importance === "core") row.coreCount++;
+        });
+      });
+      const list = Object.values(map).map(r => Object.assign(r, {
+        totalJobs: total,
+        demandRate: total ? r.jobCount / total : 0,
+        importance: r.jobCount ? r.coreCount / r.jobCount : 0
+      })).sort((a,b) => b.demandRate - a.demandRate);
+      return { total, jdJobs, list };
+    }
+    function unionCover(skills){
+      if (!skills.length) return 0;
+      let n = 0;
+      JOBS.forEach(j => {
+        const set = new Set(jobDemandItems(j).map(x => x.skill));
+        if (skills.some(s => set.has(s))) n++;
+      });
+      return JOBS.length ? n / JOBS.length : 0;
+    }
+    function buildSkillROI(profile){
+      profile = profile || candidateProfile;
+      const demand = buildSkillDemand();
+      const mine = ownedSkills(profile);
+      const rows = demand.list.map(d => {
+        const lv = knowledgeLevel(d.skill, profile);
+        const gap = Math.max(0, (4 - lv) / 4);
+        const meta = SKILL_META[d.skill] || { cost: 0.45, interview: 0.5, cat: "其他" };
+        const rec = interviewState.knowledge && interviewState.knowledge[d.skill];
+        const ivScore = rec && rec.n ? rec.lastScore : null;
+        const ivGap = ivScore == null ? 1 : Math.max(0.25, (100 - ivScore) / 100);
+        const raw = d.demandRate * gap * Math.max(0.3, d.importance) * meta.interview * ivGap / Math.max(0.2, meta.cost);
+        return {
+          skill: d.skill, demandRate: d.demandRate, jobCount: d.jobCount, mastery: Math.round(lv / 5 * 100),
+          knowledgeLevel: lv, gap, cat: meta.cat, cost: meta.cost, interview: meta.interview, raw, ivScore,
+          owned: skillOwned(mine, d.skill), related: !skillOwned(mine, d.skill) && skillRelatedHit(mine, d.skill)
+        };
+      });
+      const maxRaw = Math.max(0.0001, ...rows.map(r => r.raw));
+      rows.forEach(r => { r.roi = Math.round(r.raw / maxRaw * 100); });
+      rows.sort((a,b) => b.roi - a.roi);
+      const n = demand.total;
+      rows.forEach(r => {
+        r.why = `当前收集的 ${n} 个目标岗位中，${r.jobCount} 个岗位的方向常见要求或原文 JD 包含 ${r.skill}。`
+          + (r.knowledgeLevel >= 4
+            ? "你的简历已较充分体现该能力。"
+            : `你当前掌握约 ${r.mastery}%，补足后预计可改善 ${Math.round(r.demandRate * 100)}% 岗位的技能匹配。`)
+          + (r.ivScore != null ? ` 最近模拟面试该技能约 ${Math.round(r.ivScore)} 分，因此优先补这块。` : "");
+      });
+      const gapRows = rows.filter(r => r.gap >= 0.25);
+      const picked = [];
+      gapRows.slice(0, 8).forEach(r => {
+        if (picked.length >= 3) return;
+        const trial = picked.map(p => p.skill).concat(r.skill);
+        const cover = unionCover(trial);
+        const prev = picked.length ? unionCover(picked.map(p => p.skill)) : 0;
+        picked.push({ skill: r.skill, coverPct: Math.round(cover * 100), extra: Math.round((cover - prev) * 100) });
+      });
+      return { demand, rows, cover: picked };
+    }
+    const TASK_BANK = {
+      "Linux": [
+        { title: "Linux进程与端口排查", learn: "ps / top / netstat / ss / lsof", practice: "找到本机一个监听端口对应的进程，并结束该进程（或解释为什么不能结束）", interview: "如何查看端口占用？netstat 和 ss 有什么区别？如何杀掉指定进程？一个服务启动失败如何排查？", accept: "能不看资料完成一次端口-进程排查，并说出排查顺序" },
+        { title: "Linux文件权限", learn: "chmod / chown / rwx / 755 / 644", practice: "解释 755 与 644，并写出修改文件权限的命令", interview: "Linux 中 755 是什么意思？如何修改文件权限？常用查看进程命令有哪些？", accept: "能独立判断 5 组权限数字并回答面试题" }
+      ],
+      "Selenium": [
+        { title: "UI自动化迁移：从已有框架到 Selenium", learn: "元素定位 / 等待 / 浏览器驱动。若已有 Playwright，对照 API 差异即可", practice: "写出打开页面、定位元素、点击、断言的最小脚本步骤", interview: "Selenium 和 Playwright 怎么选？如何处理元素等待？自动化脚本不稳定常见原因？", accept: "能讲清迁移路径，并手写一套最小操作步骤" }
+      ],
+      "Java": [
+        { title: "测试开发需要的 Java 最小集", learn: "基础语法、集合、异常、Maven 概念。不要从 Spring 全家桶开始", practice: "写出一个 JUnit 风格的断言示例，并解释和 pytest 的对应关系", interview: "测试开发为什么有的岗位要 Java？你如何用 Python 经验迁移？", accept: "能用 2 分钟说明「我能补到什么程度、补不到什么」" }
+      ],
+      "Docker": [
+        { title: "测试环境里的 Docker 最小集", learn: "镜像 / 容器 / 端口映射。先会跑起来，再谈编排", practice: "解释如何用容器启动一个测试依赖服务", interview: "Docker 和虚拟机区别？测试为什么用容器？", accept: "能讲清测试场景下为什么用 Docker，而不是背命令大全" }
+      ],
+      "Jenkins": [
+        { title: "Jenkins 与持续集成最小集", learn: "Job / 构建触发 / 测试报告。结合你已有的 pytest+Allure", practice: "画出「提交代码 → 跑测试 → 看报告」的流水线", interview: "CI 里测试任务失败你怎么排查？Allure 报告怎么接入？", accept: "能把现有接口自动化接到一条虚拟流水线里讲清楚" }
+      ],
+      "SQL": [
+        { title: "测试常用 SQL：JOIN 与校验", learn: "SELECT / WHERE / JOIN / GROUP BY。服务接口返回 vs 数据库", practice: "写 3 条用于接口结果校验的 SQL", interview: "INNER JOIN 和 LEFT JOIN 区别？如何查重复数据？", accept: "能对着一张表设计接口数据校验 SQL" }
+      ],
+      "Git": [
+        { title: "Git 日常与冲突处理", learn: "clone / branch / commit / merge / log", practice: "说明一次功能分支开发和冲突处理流程", interview: "git rebase 和 merge 区别？如何回退一次错误提交？", accept: "能讲清测试开发日常怎么用 Git" }
+      ],
+      "HTTP/HTTPS": [
+        { title: "接口测试必问的 HTTP", learn: "方法 / 状态码 / Header / Cookie / Token", practice: "用自己的话区分 401 / 403 / 500，并设计 4 个异常用例", interview: "GET 和 POST 区别？什么情况用 401？HTTPS 比 HTTP 多了什么？", accept: "能不看资料答完 4 道 HTTP 面试题" }
+      ],
+      "pytest": [
+        { title: "pytest fixture 与数据驱动", learn: "fixture 作用域 / conftest / YAML 数据驱动", practice: "画出你项目里 Token fixture 的生命周期", interview: "fixture 作用域有哪些？为什么不用每个用例登录一次？YAML 数据驱动解决了什么？", accept: "能对着自己的项目讲清 fixture 设计" }
+      ],
+      "用例设计": [
+        { title: "测试用例设计：等价类与异常", learn: "等价类 / 边界值 / 异常流 / 接口异常", practice: "给登录或下单接口写出 6 条用例，含正常和异常", interview: "如何设计接口异常场景？返回 200 但业务失败怎么测？", accept: "能独立给出一套可执行用例，而不是只写「测试一下」" }
+      ],
+      "接口测试": [
+        { title: "接口关联与断言策略", learn: "Token 提取 / 接口依赖 / 数据库校验", practice: "写一段「登录→带 Token 调业务接口→查库」的测试路径", interview: "requests 和 Postman 区别？如何保证接口返回和数据库一致？", accept: "能完整讲一条业务链路测试" }
+      ],
+      "Python": [
+        { title: "测试开发用的 Python 表达", learn: "函数 / 异常 / 装饰器概念（点到能讲）", practice: "解释你封装 RequestUtil 时为什么这样分层", interview: "Python 里如何处理超时和异常？为什么测试框架要用封装？", accept: "能把项目代码讲成设计，而不是背语法" }
+      ]
+    };
+    function projectDeepTasks(profile){
+      const blob = arr(profile.projects).map(itemBlob).join("\n") + "\n" + arr(profile.internships).map(itemBlob).join("\n");
+      const out = [];
+      if (/pytest|requests|接口自动化|自动化测试平台/.test(blob)){
+        out.push({ title: "项目深挖：接口自动化框架怎么讲", learn: "把 pytest + requests 的分层讲成「问题→方案」", practice: "用自己的话写出：RequestUtil、fixture 管 Token、YAML 数据驱动、Allure 各解决什么", interview: "为什么使用 pytest+requests？fixture 如何管理 Token？如果让你从零设计接口自动化框架，你怎么设计？", accept: "能在 3 分钟内讲完架构，并回答追问" });
+        out.push({ title: "项目深挖：200 成功但业务失败", learn: "状态码断言不够，要有业务断言和数据库校验", practice: "从你的项目里举一个「接口成功但数据不对」的例子", interview: "如何保证接口返回和数据库数据一致？如何设计接口异常场景？", accept: "能讲清断言分层：协议层 / 业务层 / 数据层" });
+      }
+      if (/智能健身|背词|Allure|禅道/.test(blob)){
+        out.push({ title: "项目深挖：业务项目如何测", learn: "从真实项目抽测试点，不要空谈理论", practice: "选一个你简历里的业务项目，列出 5 个高风险测试点", interview: "这个项目最容易出 bug 的链路是什么？你怎么回归？", accept: "能把业务项目讲成测试方案" });
+      }
+      if (!out.length && arr(profile.projects).length){
+        out.push({ title: "项目深挖：用测试语言讲你的项目", learn: "功能、风险、用例、缺陷、回归", practice: "把其中一个项目改写成「我测了什么、怎么测、结果如何」", interview: "这个项目你最有价值的测试工作是什么？", accept: "能不看简历讲 2 分钟" });
+      }
+      return out;
+    }
+    function generateDailyPlan(profile){
+      profile = profile || candidateProfile;
+      const roi = buildSkillROI(profile);
+      const tasks = [];
+      const weakSkill = (interviewState.weaknesses || []).slice(-6).map(w => w.skill).reverse().find(s => TASK_BANK[s]);
+      const top = (weakSkill && TASK_BANK[weakSkill] ? { skill: weakSkill } : null)
+        || roi.rows.find(r => r.gap >= 0.25 && TASK_BANK[r.skill])
+        || roi.rows.find(r => TASK_BANK[r.skill]);
+      if (top && TASK_BANK[top.skill]) {
+        const bank = TASK_BANK[top.skill];
+        const doneTitles = new Set((taskState.items || []).filter(t => t.done && t.skill === top.skill).map(t => t.title));
+        const item = bank.find(x => !doneTitles.has(x.title)) || bank[Math.min(bank.length - 1, doneTitles.size ? 1 : 0)] || bank[0];
+        tasks.push(Object.assign({ source: "roi", skill: top.skill, priority: "P0", relatedJobs: (roi.rows.find(r => r.skill === top.skill) || {}).jobCount || 0, eta: "40分钟" }, item));
+      }
+      const p1 = ["HTTP/HTTPS", "用例设计", "SQL", "pytest"].map(s => roi.rows.find(r => r.skill === s && r.gap >= 0.15 && TASK_BANK[s])).find(Boolean);
+      if (p1 && !tasks.some(t => t.skill === p1.skill)) {
+        tasks.push(Object.assign({ source: "roi", skill: p1.skill, priority: "P1", relatedJobs: p1.jobCount, eta: "30分钟" }, TASK_BANK[p1.skill][0]));
+      }
+      const proj = projectDeepTasks(profile)[0];
+      if (proj) tasks.push(Object.assign({ source: "roi", skill: "项目面试", priority: "P2", relatedJobs: JOBS.length, eta: "25分钟" }, proj));
+      const extraWeak = (interviewState.weaknesses || []).slice(-4).reverse().find(w => TASK_BANK[w.skill] && !tasks.some(t => t.skill === w.skill));
+      if (extraWeak && tasks.length < 4) {
+        const bank = TASK_BANK[extraWeak.skill];
+        tasks.push(Object.assign({ source: "roi", skill: extraWeak.skill, priority: "P3", relatedJobs: (roi.rows.find(r => r.skill === extraWeak.skill) || {}).jobCount || 0, eta: "25分钟" }, bank[Math.min(1, bank.length - 1)] || bank[0]));
+      }
+      if (top && TASK_BANK[top.skill] && TASK_BANK[top.skill][1] && tasks.length < 4) {
+        tasks.push(Object.assign({ source: "roi", skill: top.skill, priority: "P0", eta: "30分钟" }, TASK_BANK[top.skill][1]));
+      }
+      return tasks.slice(0, 5);
+    }
+    function renderSkillPanels(){
+      const note = n => `基于当前 ${n} 个已收集岗位，不是全国秋招统计。多数岗位暂无原文 JD 时，热度含该岗位方向的常见要求。`;
+      if (!profileReady()){
+        const d = buildSkillDemand();
+        $("#roiNote").textContent = "上传简历后，会按你的缺口计算 ROI 和今日任务。";
+        $("#roiBox").innerHTML = `<div class="muted">待简历分析</div>`;
+        $("#heatNote").textContent = note(d.total) + (d.jdJobs ? ` 其中 ${d.jdJobs} 个岗位有原文职责/技能。` : " 当前岗位大多没有原文 JD。");
+        $("#heatBox").innerHTML = d.list.slice(0, 10).map(r => heatRow(r.skill, r.demandRate, "")).join("") || `<div class="muted">暂无可统计技能</div>`;
+        $("#mapBox").innerHTML = `<div class="muted">上传简历后生成技能地图和缺口。</div>`;
+        return;
+      }
+      const roi = buildSkillROI();
+      const d = roi.demand;
+      $("#roiNote").textContent = note(d.total) + (d.jdJobs ? ` 其中 ${d.jdJobs} 个岗位有原文职责/技能。` : " 当前岗位大多没有原文 JD。");
+      const top = roi.rows.filter(r => r.gap >= 0.15).slice(0, 3);
+      $("#roiBox").innerHTML = (top.length ? top.map((r, i) => {
+        const stars = r.roi >= 80 ? "★★★★★" : r.roi >= 60 ? "★★★★" : r.roi >= 40 ? "★★★" : "★★";
+        return `<div class="roi-item">
+          <div class="row"><b>TOP ${i+1} ${esc(r.skill)}</b><span>ROI ${stars}（${r.roi}）</span></div>
+          <div class="muted">岗位覆盖 ${Math.round(r.demandRate*100)}%（${r.jobCount}/${d.total}） · 当前掌握 ${r.mastery}% · 类别 ${esc(r.cat)}</div>
+          <p style="margin:8px 0 0;font-size:13px">${esc(r.why)}</p>
+          ${i===0 ? `<div class="c-act"><button class="btn primary" type="button" data-act="start-plan">开始今日任务</button></div>` : ""}
+        </div>`;
+      }).join("") : `<div class="muted">当前高频技能在简历中已较充分，优先做项目深挖面试。</div>`)
+        + (roi.cover.length ? `<p class="muted">少量技能组合：${roi.cover.map(c => esc(c.skill)).join(" + ")}，合计触及约 ${roi.cover[roi.cover.length-1].coverPct}% 岗位的常见要求。</p>` : "");
+      $("#heatNote").textContent = note(d.total);
+      const mine = ownedSkills();
+      $("#heatBox").innerHTML = d.list.slice(0, 12).map(r => {
+        const lv = knowledgeLevel(r.skill);
+        const mark = lv >= 4 ? "✓" : lv >= 2 ? "△" : "✗";
+        return heatRow(r.skill, r.demandRate, mark);
+      }).join("");
+      const mastered = roi.rows.filter(r => r.knowledgeLevel >= 4).slice(0, 16);
+      const learning = roi.rows.filter(r => r.gap >= 0.25 && r.demandRate >= 0.25).slice(0, 8);
+      const next = roi.rows.filter(r => r.gap >= 0.25 && r.demandRate < 0.25 && r.demandRate >= 0.12).slice(0, 8);
+      const later = roi.rows.filter(r => r.demandRate < 0.12 || (r.cost >= 0.7 && r.demandRate < 0.35)).slice(0, 8);
+      const focus = roi.rows.filter(r => r.demandRate >= 0.2).slice(0, 10);
+      const ready = focus.length ? Math.round(focus.reduce((s, r) => s + r.knowledgeLevel, 0) / focus.length / 5 * 100) : 0;
+      $("#mapBox").innerHTML = `
+        <p>高频技能面试准备度：<b>${ready}%</b>（目标至少 Level 3~4，不是背概念）</p>
+        <div class="map-col"><b>🟢 已掌握</b><div class="skills">${mastered.map(r => `<span class="sk hit">${esc(r.skill)} ${r.knowledgeLevel}/5</span>`).join("") || `<span class="muted">暂无</span>`}</div></div>
+        <div class="map-col"><b>🟡 正在补足</b><div class="skills">${learning.map(r => `<span class="sk rel">${esc(r.skill)}</span>`).join("") || `<span class="muted">暂无</span>`}</div></div>
+        <div class="map-col"><b>🟠 下一阶段</b><div class="skills">${next.map(r => `<span class="sk">${esc(r.skill)}</span>`).join("") || `<span class="muted">暂无</span>`}</div></div>
+        <div class="map-col"><b>🔵 暂不重点</b><div class="skills">${later.map(r => `<span class="sk miss">${esc(r.skill)}</span>`).join("") || `<span class="muted">暂无</span>`}</div></div>
+        <p class="muted">原则：不会不等于今天要学。优先补「覆盖岗位多、学习成本低、面试常问」的技能。</p>`;
+    }
+    function heatRow(name, rate, mark){
+      const pct = Math.round(rate * 100);
+      return `<div class="heat"><b>${esc(name)}</b><div class="bar"><i style="width:${pct}%"></i></div><span class="pct">${pct}%</span><span>${esc(mark)}</span></div>`;
+    }
+
+    const MOCK_TYPES = ["综合面试","测试基础","Python","接口测试","自动化测试","SQL / MySQL","Linux","计算机基础","项目深挖","HR 面"];
+    const MOCK_STAGES = ["一面","二面","HR 面","综合"];
+    const MOCK_DIFFS = ["基础","秋招","进阶"];
+    const MOCK_MINS = [10, 15, 20, 30];
+    const MOCK_BANK = [
+      { id:"proj-intro", skill:"项目面试", type:"项目深挖", stage:["一面","二面","综合"], diff:["基础","秋招","进阶"], p:"P1",
+        q:"请介绍一下你的{项目}。不要背简历，按背景、你的职责、方案、结果来说。",
+        keys:["pytest","requests","接口","自动化","测试","职责","框架"],
+        fu:["你在这个项目里具体负责哪一层？","为什么当时要做自动化，而不是继续纯手工？","如果面试官说自动化投入产出不高，你怎么回答？"],
+        hint:"按：背景 → 职责 → 方案 → 结果。", project:true, tags:["简历项目"] },
+      { id:"pytest-why", skill:"pytest", type:"自动化测试", stage:["一面","二面","综合"], diff:["基础","秋招"], p:"P0",
+        q:"你的接口自动化为什么选择 pytest + requests，而不是 unittest 或 Postman 集合？",
+        keys:["fixture","断言","参数化","插件","Allure","封装","分层"],
+        fu:["RequestUtil 这种封装解决了什么重复问题？","fixture 的 scope 有哪些？session 级适合管什么？","如果接口数量到 1000，你怎么组织用例和公共参数？"],
+        hint:"对比：夹具、断言、插件、分层，不要只说「流行」。", project:true, tags:["简历项目","高频面试"] },
+      { id:"fixture-token", skill:"pytest", type:"接口测试", stage:["一面","二面","综合"], diff:["秋招","进阶"], p:"P1",
+        q:"你为什么用 fixture 管理 Token？Token 是怎么提取、传递和失效处理的？",
+        keys:["fixture","token","过期","请求头","依赖","session","登录"],
+        fu:["Token 过期你会怎么处理？","接口关联时，上一个接口的返回如何传给下一个？","如果登录接口本身不稳定，fixture 怎么设计更稳？"],
+        hint:"讲清：提取位置、存放、注入 Header、过期重登。", project:true, tags:["简历项目"] },
+      { id:"yaml-ddt", skill:"pytest", type:"自动化测试", stage:["一面","二面","综合"], diff:["秋招"], p:"P1",
+        q:"为什么用 YAML 做数据驱动？它解决了什么，又带来什么维护成本？",
+        keys:["数据驱动","yaml","维护","参数","用例","分离"],
+        fu:["数据和脚本分离之后，新增一条用例要改几处？","环境切换（测试/预发）你放在哪一层？"],
+        hint:"数据和脚本分离，但要说到维护约定。", project:true, tags:["简历项目"] },
+      { id:"db-check", skill:"SQL", type:"接口测试", stage:["一面","二面","综合"], diff:["秋招","进阶"], p:"P0",
+        q:"接口返回 200，但业务结果可能是错的。你怎么测？要不要做数据库校验？",
+        keys:["业务断言","数据库","状态码","校验","异常","200"],
+        fu:["PyMySQL 在你的框架里承担什么角色？","如何保证接口返回和数据库一致？","异常场景你怎么设计，只测正常流够不够？"],
+        hint:"协议层、业务层、数据层三层断言。", project:true, tags:["简历项目","高频面试"] },
+      { id:"allure", skill:"Allure", type:"自动化测试", stage:["一面","综合"], diff:["基础","秋招"], p:"P3",
+        q:"Allure 报告在你的项目里解决了什么问题？失败时你怎么快速定位？",
+        keys:["报告","失败","日志","步骤","定位","截图"],
+        fu:["自动化失败你的排查顺序是什么？","如果失败是环境问题而不是脚本问题，你怎么判断？"],
+        hint:"报告不是装饰，是定位失败的入口。", project:true, tags:["简历项目"] },
+      { id:"http-code", skill:"HTTP/HTTPS", type:"接口测试", stage:["一面","综合"], diff:["基础","秋招"], p:"P0",
+        q:"GET 和 POST 有什么区别？401 和 403 分别代表什么？",
+        keys:["get","post","401","403","幂等","缓存","权限"],
+        fu:["什么时候用 PUT / PATCH / DELETE？","HTTPS 比 HTTP 多了什么，测试时要注意证书吗？"],
+        hint:"方法语义 + 状态码含义，最好举接口例子。", tags:["高频面试"] },
+      { id:"case-design", skill:"用例设计", type:"测试基础", stage:["一面","综合"], diff:["基础","秋招"], p:"P0",
+        q:"请给登录或下单接口设计用例。正常流之外，异常场景怎么覆盖？",
+        keys:["等价类","边界","异常","空","超时","权限","幂等"],
+        fu:["返回 200 但业务失败的用例怎么写预期？","你会怎么安排优先级，哪些必须先测？"],
+        hint:"等价类、边界值、异常流，不要只写「测试一下」。", tags:["高频面试"] },
+      { id:"python-req", skill:"Python", type:"Python", stage:["一面","综合"], diff:["基础","秋招"], p:"P0",
+        q:"用 Python 做接口测试时，超时、异常和重试你怎么处理？",
+        keys:["timeout","异常","重试","封装","session","requests"],
+        fu:["为什么要把请求封装成 RequestUtil，而不是每个用例直接 requests.get？","装饰器或统一异常处理你用过吗？"],
+        hint:"结合你的封装讲，不要背语法。", project:true, tags:["简历项目"] },
+      { id:"sql-join", skill:"SQL", type:"SQL / MySQL", stage:["一面","二面","综合"], diff:["基础","秋招"], p:"P2",
+        q:"INNER JOIN 和 LEFT JOIN 有什么区别？测数据一致性时你更常用哪个？",
+        keys:["inner","left","join","null","关联","主键"],
+        fu:["怎么查一张表里的重复数据？","GROUP BY 之后还能用 WHERE 过滤聚合结果吗？该用什么？"],
+        hint:"用两张表示意，不要只背定义。", tags:["高频面试","薄弱项"] },
+      { id:"linux-port", skill:"Linux", type:"Linux", stage:["一面","二面","综合"], diff:["基础","秋招"], p:"P2",
+        q:"Linux 里如何查看端口占用？如何找到对应进程并结束它？",
+        keys:["ss","netstat","lsof","ps","kill","端口","进程"],
+        fu:["netstat 和 ss 有什么区别？","服务启动失败你的排查顺序是什么？","端口被占用时怎么处理？"],
+        hint:"命令要能落到：查端口 → 查进程 → 结束/换端口。", tags:["高频面试","薄弱项"] },
+      { id:"linux-perm", skill:"Linux", type:"Linux", stage:["一面","综合"], diff:["基础","秋招"], p:"P3",
+        q:"Linux 中 755 和 644 是什么意思？如何修改文件权限？",
+        keys:["chmod","755","644","rwx","权限","chown"],
+        fu:["目录和文件的权限为什么常常不一样？","测试环境突然没权限读日志，你怎么查？"],
+        hint:"rwx 对应数字，分所有者和组。", tags:["高频面试"] },
+      { id:"git-flow", skill:"Git", type:"计算机基础", stage:["一面","综合"], diff:["基础","秋招"], p:"P3",
+        q:"测试开发日常怎么用 Git？冲突了你怎么处理？",
+        keys:["branch","merge","冲突","commit","rebase","回退"],
+        fu:["如何回退一次错误提交？","rebase 和 merge 你会怎么选？"],
+        hint:"讲分支策略，不要只说会 git clone。", tags:["高频面试"] },
+      { id:"tcp", skill:"HTTP/HTTPS", type:"计算机基础", stage:["一面","二面","综合"], diff:["秋招","进阶"], p:"P3",
+        q:"TCP 三次握手是什么？和接口超时、连接失败有什么关系？",
+        keys:["三次","握手","syn","ack","超时","连接"],
+        fu:["四次挥手为什么是四次？","TIME_WAIT 对压测有影响吗？"],
+        hint:"能连到测试现象：连不上、超时。", tags:["高频面试"] },
+      { id:"selenium", skill:"Selenium", type:"自动化测试", stage:["一面","综合"], diff:["基础","秋招"], p:"P4",
+        q:"Selenium 和 Playwright 怎么选？UI 自动化不稳定常见原因是什么？",
+        keys:["等待","定位","不稳定","playwright","selenium","driver"],
+        fu:["强制 sleep 和显式等待有什么差别？","如果你只会 Playwright，如何向要求 Selenium 的岗位说明可迁移？"],
+        hint:"等待和定位，不要假装已经熟练不会的工具。", tags:["岗位相关推测"] },
+      { id:"java-min", skill:"Java", type:"Python", stage:["一面","综合"], diff:["基础"], p:"P4",
+        q:"有的测试开发岗要求 Java。你目前的准备程度是什么？Python 经验怎么迁移？",
+        keys:["junit","pytest","集合","maven","迁移","基础"],
+        fu:["JUnit 和 pytest 有什么对应关系？","如果岗位必须写 Java 接口自动化，你 1 个月内能补到哪一层？"],
+        hint:"诚实边界：会什么、补什么、不装会。", tags:["薄弱项"] },
+      { id:"auto-value", skill:"自动化测试", type:"自动化测试", stage:["二面","综合"], diff:["秋招","进阶"], p:"P1",
+        q:"什么用例该自动化，什么不该？你怎么衡量自动化的价值？",
+        keys:["回归","稳定","投入","产出","手工","优先级"],
+        fu:["冒烟、回归、探索性测试分别怎么配自动化？","失败率很高的脚本你是修还是删？"],
+        hint:"稳定性 × 执行频率 × 手工成本。", tags:["高频面试"] },
+      { id:"hr-intro", skill:"项目面试", type:"HR 面", stage:["HR 面","综合"], diff:["基础","秋招"], p:"P1",
+        q:"请做一分钟自我介绍，重点放在为什么适合测试开发。",
+        keys:["测试","项目","实习","学校","求职","开发"],
+        fu:["为什么选择测试开发而不是开发或纯功能测试？","你的三个可验证成果是什么？"],
+        hint:"身份 → 证据 → 求职方向，控制 1 分钟。", tags:["高频面试"] },
+      { id:"hr-why", skill:"项目面试", type:"HR 面", stage:["HR 面","综合"], diff:["基础","秋招"], p:"P1",
+        q:"为什么投我们这家公司的这个岗位？",
+        keys:["岗位","测试开发","业务","城市","匹配","成长"],
+        fu:["如果同时有功能测试 offer，你会怎么选？","你能接受加班和测试值班吗？"],
+        hint:"结合该公司岗位方向，不要套模板。", tags:["岗位相关推测"] }
+    ];
+
+    function rememberJob(id){
+      if (!id) return;
+      interviewState.lastViewed = [id].concat((interviewState.lastViewed || []).filter(x => x !== id)).slice(0, 12);
+      saveIv();
+    }
+    function mockSessions(jobId){
+      return (interviewState.sessions || []).filter(s => (!jobId || s.jobId === jobId) && s.status === "completed");
+    }
+    function jobReadiness(jobId){
+      const list = mockSessions(jobId).slice(-3);
+      if (!list.length) return null;
+      const score = Math.round(list.reduce((s, x) => s + (x.score || 0), 0) / list.length);
+      const skillScores = {};
+      list.forEach(s => Object.keys(s.skillScores || {}).forEach(k => {
+        skillScores[k] = skillScores[k] || [];
+        skillScores[k].push(s.skillScores[k]);
+      }));
+      Object.keys(skillScores).forEach(k => {
+        const a = skillScores[k];
+        skillScores[k] = Math.round(a.reduce((x,y)=>x+y,0) / a.length);
+      });
+      const last = list[list.length - 1];
+      return { score, n: list.length, skillScores, lastId: last.id, lastAt: last.endTime || last.startTime, weaknesses: last.weaknesses || [], strengths: last.strengths || [] };
+    }
+    function readinessStars(score){
+      if (score >= 90) return "★★★★★";
+      if (score >= 80) return "★★★★";
+      if (score >= 70) return "★★★";
+      if (score >= 60) return "★★";
+      return "★";
+    }
+    function projectName(){
+      const p = arr(candidateProfile.projects)[0];
+      if (!p) return "你的测试项目";
+      return p.name || p.title || "你的测试项目";
+    }
+    function internBlob(){
+      return arr(candidateProfile.internships).map(itemBlob).join(" ");
+    }
+    function personalizeQ(s){
+      return String(s || "").replace(/\{项目\}/g, projectName());
+    }
+    function mockStemCount(mins){
+      if (mins <= 10) return 4;
+      if (mins <= 15) return 6;
+      if (mins <= 20) return 8;
+      return 10;
+    }
+    function jobSkillContext(job){
+      const a = analyzeJob(job);
+      const m = matchView(job);
+      return {
+        hasJd: a.hasJd,
+        core: a.hasJd ? a.coreSkills : a.typical.core,
+        important: a.hasJd ? a.importantSkills : a.typical.important,
+        bonus: a.hasJd ? a.bonusSkills : a.typical.bonus,
+        jd: a.jdSkills,
+        missing: m ? arr(m.missing) : [],
+        matched: m ? arr(m.matched) : [],
+        typical: a.typical
+      };
+    }
+    function sourceTags(item, ctx, isFollow, isWeak){
+      const tags = [];
+      if (isFollow) tags.push("🔍 AI追问");
+      if (item.project) tags.push("📄 简历项目");
+      if (item.intern) tags.push("💼 实习经历");
+      if (ctx.hasJd && ctx.jd.includes(item.skill)) tags.push("🏢 岗位要求");
+      else if ((ctx.core || []).concat(ctx.important || []).includes(item.skill)) tags.push("岗位相关推测");
+      if ((item.tags || []).includes("高频面试") || item.type === "测试基础") tags.push("🔥 高频面试");
+      if (isWeak || (ctx.missing || []).includes(item.skill)) tags.push("⚠️ 我的薄弱项");
+      if (!ctx.hasJd && tags.includes("🏢 岗位要求")) tags.splice(tags.indexOf("🏢 岗位要求"), 1);
+      return uniq(tags);
+    }
+    function resumeBoost(item){
+      const blob = arr(candidateProfile.projects).map(itemBlob).join(" ") + internBlob() + arr(candidateProfile.skills).join(" ");
+      let n = 0;
+      if (item.project && /pytest|requests|接口自动化|自动化/.test(blob)) n += 24;
+      if (item.skill && hitTerm(blob, item.skill)) n += 12;
+      if (item.id === "hr-why") n += 8;
+      return n;
+    }
+    function pickMockStem(session){
+      const job = jobById(session.jobId);
+      const ctx = jobSkillContext(job);
+      const asked = new Set((session.questions || []).map(q => q.bankId).filter(Boolean));
+      const lastSkills = (session.questions || []).filter(q => q.kind === "stem").slice(-2).map(q => q.skill);
+      const weak = uniq((session.retryWeak ? mockSessions(session.jobId).slice(-1).flatMap(s => s.weaknesses || []) : []).concat(arr(interviewState.weaknesses).slice(-8).map(w => w.skill)));
+      const typeOk = (item) => {
+        if (session.stage === "HR 面" || session.type === "HR 面") return item.type === "HR 面";
+        if (session.type === "综合面试") return item.type !== "HR 面" || session.stage === "综合";
+        if (session.type === "项目深挖") return item.type === "项目深挖" || item.project;
+        return item.type === session.type || item.skill === session.type.replace(" / MySQL","");
+      };
+      const stageOk = (item) => (item.stage || []).includes(session.stage) || session.stage === "综合" || (item.stage || []).includes("综合");
+      const diffRank = { "基础": 1, "秋招": 2, "进阶": 3 };
+      const want = diffRank[session.difficulty] || 2;
+      let gapStreak = session.gapStreak || 0;
+      const scored = MOCK_BANK.filter(item => typeOk(item) && stageOk(item) && !asked.has(item.id)).map(item => {
+        let s = 10;
+        if ((item.diff || []).some(d => Math.abs((diffRank[d] || 2) - want) <= (session.raiseDiff ? 1 : 0))) s += 8;
+        if ((ctx.core || []).includes(item.skill)) s += 50;
+        if ((ctx.important || []).includes(item.skill)) s += 28;
+        if ((ctx.missing || []).includes(item.skill)) s += (gapStreak >= 2 ? 4 : 22);
+        if (weak.includes(item.skill) || weak.includes(item.q)) s += 36;
+        if (item.p === "P0") s += 16;
+        if (item.p === "P1") s += 12;
+        s += resumeBoost(item);
+        if (lastSkills.includes(item.skill)) s -= 18;
+        if (!ctx.hasJd && item.tags && item.tags.includes("岗位要求")) s -= 8;
+        return { item, s };
+      }).sort((a,b) => b.s - a.s);
+      const hit = scored[0];
+      if (!hit) return null;
+      const item = hit.item;
+      const isWeak = weak.includes(item.skill) || (ctx.missing || []).includes(item.skill);
+      if (isWeak) session.gapStreak = gapStreak + 1; else session.gapStreak = 0;
+      const reason = (ctx.core || []).includes(item.skill)
+        ? "优先考察该岗位核心技能"
+        : isWeak ? "针对你上次/当前的薄弱点"
+        : item.project ? "结合你的真实项目深挖"
+        : "测试开发高频面试题";
+      return makeLiveQ(session, item, null, reason, isWeak);
+    }
+    function makeLiveQ(session, item, follow, reason, isWeak){
+      const job = jobById(session.jobId);
+      const ctx = jobSkillContext(job);
+      const qtext = personalizeQ(follow || item.q);
+      return {
+        id: uid(),
+        bankId: item.id,
+        kind: follow ? "follow" : "stem",
+        source: (sourceTags(item, ctx, !!follow, isWeak) || []).join(" · "),
+        tags: sourceTags(item, ctx, !!follow, isWeak),
+        type: item.type,
+        skill: item.skill,
+        question: qtext,
+        keys: item.keys,
+        fu: item.fu || [],
+        hint: item.hint || "",
+        structure: "问题背景 → 方案 → 技术原因 → 异常情况",
+        nextQuestionReason: reason,
+        followIndex: follow ? 1 : 0,
+        answer: "",
+        score: null,
+        dims: null,
+        strengths: [],
+        weaknesses: [],
+        followUps: [],
+        saved: false,
+        retry: 0
+      };
+    }
+    function evalAnswer(q, text){
+      const raw = String(text || "").trim();
+      const keys = arr(q.keys);
+      const hit = keys.filter(k => hitTerm(raw, k) || raw.toLowerCase().includes(String(k).toLowerCase()));
+      const miss = keys.filter(k => !hit.includes(k));
+      const cover = keys.length ? hit.length / keys.length : (raw.length > 40 ? 0.6 : 0.3);
+      const len = Math.max(0, Math.min(1, (raw.length - 12) / 220));
+      const logic = /因为|所以|首先|然后|例如|如果|否则|因此|一方面/.test(raw) ? 0.88 : (raw.length > 80 ? 0.62 : 0.45);
+      const proj = /项目|平台|框架|我做|我们|fixture|封装|校验/.test(raw) ? 0.9 : 0.55;
+      const jobRel = q.skill && hitTerm(raw, q.skill) ? 0.92 : 0.7;
+      const expr = /[。！？.!?；;]/.test(raw) && raw.length > 40 ? 0.82 : 0.58;
+      if (raw.length < 10) {
+        return { overall: 18, dims: { accuracy: 15, complete: 10, logic: 20, job: 20, project: 15, expr: 20 }, hit, miss: keys, shallow: true };
+      }
+      const accuracy = Math.round(cover * 100);
+      const complete = Math.round((cover * 0.7 + len * 0.3) * 100);
+      const dims = {
+        accuracy,
+        complete,
+        logic: Math.round(logic * 100),
+        job: Math.round(jobRel * 100),
+        project: Math.round(proj * 100),
+        expr: Math.round(expr * 100)
+      };
+      const overall = Math.round(dims.accuracy * 0.28 + dims.complete * 0.18 + dims.logic * 0.16 + dims.job * 0.14 + dims.project * 0.14 + dims.expr * 0.1);
+      return { overall: Math.max(8, Math.min(98, overall)), dims, hit, miss, shallow: cover < 0.35 || raw.length < 40 };
+    }
+    function feedbackOf(q, ev){
+      const good = [];
+      const bad = [];
+      if (ev.dims.project >= 80) good.push("能结合实际项目来说");
+      if (ev.dims.logic >= 75) good.push("有因果和层次");
+      if (ev.hit.length) good.push("覆盖了：" + ev.hit.slice(0, 4).join("、"));
+      if (ev.dims.job >= 80) good.push("和岗位技能相关");
+      if (ev.shallow) bad.push("信息偏少，面试官会继续追问细节");
+      if (ev.miss.length) bad.push("还没讲清：" + ev.miss.slice(0, 4).join("、"));
+      if (ev.dims.complete < 70) bad.push("完整性不够，缺异常/落地步骤");
+      if (!good.length) good.push("有作答，但还需要落到具体技术点");
+      return { good, bad, next: "建议按「问题背景 → 方案 → 技术原因 → 异常情况」再说一遍。" };
+    }
+    function applyEvalToQ(q, ev){
+      const fb = feedbackOf(q, ev);
+      q.score = ev.overall;
+      q.dims = ev.dims;
+      q.strengths = fb.good;
+      q.weaknesses = fb.bad;
+      q.hintShown = q.retry >= 1 ? q.hint : "";
+      q.nextAsk = fb.next;
+    }
+    function decideAfterAnswer(session, q, ev){
+      const usedFu = (session.questions || []).filter(x => x.bankId === q.bankId && x.kind === "follow").length;
+      const fuList = arr(q.fu);
+      if (ev.overall >= 82) session.raiseDiff = true;
+      if (ev.overall < 55) session.raiseDiff = false;
+      if (q.kind !== "follow" && usedFu < 2 && fuList.length && (ev.shallow || ev.overall < 78)) {
+        const idx = Math.min(usedFu, fuList.length - 1);
+        const bank = MOCK_BANK.find(b => b.id === q.bankId);
+        const followQ = makeLiveQ(session, bank, fuList[idx], ev.overall < 55 ? "回答偏浅，针对缺口追问" : "顺着你的回答继续深挖", ev.overall < 60);
+        followQ.followIndex = usedFu + 1;
+        return { action: "follow", next: followQ };
+      }
+      return { action: "next" };
+    }
+    function startMockTimer(){
+      if (mockTimer) clearInterval(mockTimer);
+      mockTimer = setInterval(() => {
+        const s = interviewState.active;
+        if (!s || s.status !== "in_progress") { clearInterval(mockTimer); mockTimer = null; return; }
+        const el = $("#mockRemain");
+        if (el) el.textContent = remainLabel(s);
+        if (Date.now() >= (s.endsAt || 0)) finishMockSession("timeout");
+      }, 500);
+    }
+    function remainLabel(s){
+      const ms = Math.max(0, (s.endsAt || 0) - Date.now());
+      const sec = Math.floor(ms / 1000);
+      const m = String(Math.floor(sec / 60)).padStart(2, "0");
+      const r = String(sec % 60).padStart(2, "0");
+      return m + ":" + r;
+    }
+    function openMockPick(){
+      mockPhase = "pick";
+      setView("mock");
+    }
+    function openMockForJob(jobId, opts){
+      const j = jobById(jobId);
+      if (!j) return;
+      rememberJob(jobId);
+      $("#modal").classList.remove("on");
+      interviewState.pendingJobId = jobId;
+      interviewState.pendingRetry = !!(opts && opts.retryWeak);
+      saveIv();
+      mockPhase = "config";
+      setView("mock");
+    }
+    function createMockSession(cfg){
+      const job = jobById(cfg.jobId);
+      if (!job) return;
+      const mins = Number(cfg.minutes) || 20;
+      const session = {
+        id: uid(),
+        jobId: job.id,
+        company: job.company,
+        position: (job.positions || []).join(" / ") || job.role_type,
+        startTime: new Date().toISOString(),
+        endTime: "",
+        type: cfg.type || "综合面试",
+        stage: cfg.stage || "一面",
+        difficulty: cfg.difficulty || "秋招",
+        minutes: mins,
+        questionCount: mockStemCount(mins),
+        questions: [],
+        score: null,
+        skillScores: {},
+        weaknesses: [],
+        strengths: [],
+        focusSkills: [],
+        savedQuestions: [],
+        status: "in_progress",
+        stemDone: 0,
+        raiseDiff: false,
+        gapStreak: 0,
+        retryWeak: !!cfg.retryWeak,
+        endsAt: Date.now() + mins * 60 * 1000,
+        jdNote: jobDesc(job) ? "" : "当前岗位 JD 信息不足。技术题来自你的简历、方向常见要求与测试开发高频题，不是该公司原题。"
+      };
+      const first = pickMockStem(session);
+      if (first) session.questions.push(first);
+      interviewState.active = session;
+      session.phase = "ask";
+      saveIv();
+      mockPhase = "live";
+      startMockTimer();
+      renderMock();
+    }
+    function currentLiveQ(){
+      const s = interviewState.active;
+      if (!s || !s.questions.length) return null;
+      return s.questions[s.questions.length - 1];
+    }
+    function submitMockAnswer(text, skipped){
+      const s = interviewState.active;
+      const q = currentLiveQ();
+      if (!s || !q) return;
+      q.answer = skipped ? "（跳过）" : String(text || "");
+      const ev = skipped ? { overall: 0, dims: { accuracy: 0, complete: 0, logic: 0, job: 0, project: 0, expr: 0 }, hit: [], miss: arr(q.keys), shallow: true } : evalAnswer(q, q.answer);
+      applyEvalToQ(q, ev);
+      q.skipped = !!skipped;
+      s.phase = "feedback";
+      saveIv();
+      renderMock();
+    }
+    function continueAfterFeedback(){
+      const s = interviewState.active;
+      const q = currentLiveQ();
+      if (!s || !q) return;
+      const stemCountNow = (s.questions || []).filter(x => x.kind === "stem").length;
+      const ev = { overall: q.score || 0, dims: q.dims || {}, hit: [], miss: [], shallow: (q.score || 0) < 60 };
+      const dec = q.skipped ? { action: "next" } : decideAfterAnswer(s, q, ev);
+      s.phase = "ask";
+      if (dec.action === "follow") {
+        s.questions.push(dec.next);
+      } else if (stemCountNow >= s.questionCount || Date.now() >= (s.endsAt || 0)) {
+        finishMockSession("done");
+        return;
+      } else {
+        const next = pickMockStem(s);
+        if (!next) { finishMockSession("done"); return; }
+        s.questions.push(next);
+      }
+      saveIv();
+      renderMock();
+    }
+    function retryMockAnswer(){
+      const q = currentLiveQ();
+      const s = interviewState.active;
+      if (!q || !s) return;
+      q.retry = (q.retry || 0) + 1;
+      q.answer = "";
+      q.score = null;
+      s.phase = "ask";
+      saveIv();
+      renderMock();
+    }
+    function finishMockSession(why){
+      const s = interviewState.active;
+      if (!s) return;
+      if (mockTimer) { clearInterval(mockTimer); mockTimer = null; }
+      const answered = (s.questions || []).filter(q => q.score != null);
+      const score = answered.length ? Math.round(answered.reduce((a, q) => a + q.score, 0) / answered.length) : 0;
+      const skillMap = {};
+      answered.forEach(q => {
+        if (!q.skill) return;
+        skillMap[q.skill] = skillMap[q.skill] || [];
+        skillMap[q.skill].push(q.score);
+      });
+      const skillScores = {};
+      Object.keys(skillMap).forEach(k => {
+        const a = skillMap[k];
+        skillScores[k] = Math.round(a.reduce((x,y)=>x+y,0) / a.length);
+      });
+      const strengths = Object.keys(skillScores).filter(k => skillScores[k] >= 78);
+      const weaknesses = Object.keys(skillScores).filter(k => skillScores[k] < 70);
+      answered.filter(q => q.score < 65 && q.skill).forEach(q => {
+        if (!weaknesses.includes(q.skill)) weaknesses.push(q.skill);
+      });
+      s.score = score;
+      s.skillScores = skillScores;
+      s.strengths = strengths;
+      s.weaknesses = weaknesses;
+      s.focusSkills = weaknesses.slice(0, 4);
+      s.status = "completed";
+      s.endTime = new Date().toISOString();
+      s.finishWhy = why || "done";
+      Object.keys(skillScores).forEach(skill => {
+        const prev = interviewState.knowledge[skill] || { n: 0, lastScore: 60, level: 3 };
+        const lastScore = Math.round(prev.lastScore * 0.4 + skillScores[skill] * 0.6);
+        interviewState.knowledge[skill] = {
+          n: (prev.n || 0) + 1,
+          lastScore,
+          level: Math.max(1, Math.min(5, Math.round(lastScore / 20))),
+          at: todayStr
+        };
+      });
+      weaknesses.forEach(skill => {
+        interviewState.weaknesses.push({ skill, topic: skill, score: skillScores[skill], at: todayStr, jobId: s.jobId });
+      });
+      interviewState.weaknesses = interviewState.weaknesses.slice(-40);
+      const exist = (interviewState.sessions || []).findIndex(x => x.id === s.id);
+      if (exist >= 0) interviewState.sessions[exist] = s;
+      else interviewState.sessions.push(s);
+      interviewState.active = null;
+      interviewState.lastSessionId = s.id;
+      saveIv();
+      taskState.planKey = "";
+      saveTasks();
+      mockPhase = "review";
+      interviewState.reviewId = s.id;
+      if (view !== "mock") setView("mock");
+      else renderMock();
+    }
+    function pauseMock(){
+      saveIv();
+      if (mockTimer) { clearInterval(mockTimer); mockTimer = null; }
+      mockPhase = "pick";
+      setView("me");
+    }
+    function resumeMock(){
+      if (!interviewState.active || interviewState.active.status !== "in_progress") return;
+      mockPhase = "live";
+      setView("mock");
+      startMockTimer();
+    }
+    function mockPickJobs(){
+      const kw = mockJobQ.trim();
+      const rank = (j) => {
+        const s = getStatus(j);
+        let n = 0;
+        if (INTERVIEW_STATUSES.includes(s)) n += 500;
+        if (APPLIED_STATUSES.includes(s)) n += 300;
+        if (isFav(j.id)) n += 200;
+        const m = matchView(j);
+        if (m) n += m.score;
+        const idx = (interviewState.lastViewed || []).indexOf(j.id);
+        if (idx >= 0) n += 80 - idx;
+        return n;
+      };
+      return JOBS.filter(j => {
+        if (!kw) return true;
+        const blob = [j.company, j.role_type, ...(j.positions || [])].join(" ");
+        return blob.includes(kw);
+      }).sort((a,b) => rank(b) - rank(a)).slice(0, 30);
+    }
+    function renderMockPick(){
+      $("#mockLead").textContent = "先选一个真实岗位，再开始定向模拟。不会随机抽无关公司。";
+      const active = interviewState.active && interviewState.active.status === "in_progress";
+      $("#mockBody").innerHTML = `
+        ${active ? `<div class="roi-item"><div class="row"><b>继续上次面试</b><span>${esc(interviewState.active.company)}</span></div>
+          <div class="muted">${esc(interviewState.active.position)} · ${esc(interviewState.active.stage)} · 已进行 ${(interviewState.active.questions||[]).length} 题</div>
+          <div class="c-act"><button class="btn primary" type="button" data-act="mock-resume">继续上次面试</button></div></div>` : ""}
+        <div class="row"><input class="search" id="mockJobSearch" placeholder="搜索公司 / 岗位" value="${esc(mockJobQ)}" style="max-width:none;flex:1" /></div>
+        <p class="muted" style="margin-top:8px">优先：即将面试 / 已投递 / 收藏 / 高匹配 / 最近浏览</p>
+        <div id="mockPickList"></div>`;
+      const box = $("#mockPickList");
+      const list = mockPickJobs();
+      box.innerHTML = list.length ? list.map(j => {
+        const m = matchView(j);
+        const r = jobReadiness(j.id);
+        const skills = (m && m.matched && m.matched.length ? m.matched : (typicalOf(j.role_type).core || [])).slice(0, 6);
+        const miss = (m ? arr(m.missing) : typicalOf(j.role_type).important).slice(0, 4);
+        return `<button class="pick-card" type="button" data-act="mock-cfg" data-id="${j.id}">
+          <div class="row"><b>${esc(j.company)}</b><span>${m ? m.score + "% 匹配" : "待简历分析"}</span></div>
+          <div>${esc((j.positions||[]).join(" / ") || j.role_type || "")}</div>
+          <div class="muted">📍 ${esc((j.locations||[]).join(" · ") || "地点以官网为准")} · 状态：${esc(getStatus(j))} · ${esc(deadlineMeta(j).text)}</div>
+          <div class="muted" style="margin-top:4px">🛠 ${skills.length ? skills.map(esc).join(" · ") : "暂无详细技能要求"}</div>
+          <div class="muted">📚 缺口：${miss.length ? miss.map(esc).join(" · ") : "暂无明显缺口"}</div>
+          ${r ? `<div class="muted">面试准备度 ${r.score}%（基于最近 ${r.n} 次模拟）</div>` : `<div class="muted">面试准备度暂无法准确评估</div>`}
+        </button>`;
+      }).join("") : `<div class="empty">没有匹配的岗位</div>`;
+        const inp = $("#mockJobSearch");
+      if (inp && document.activeElement !== inp) { /* keep typing */ }
+      if (inp) {
+        inp.oninput = (e) => {
+          mockJobQ = e.target.value;
+          const box = $("#mockPickList");
+          if (!box) return;
+          const list = mockPickJobs();
+          box.innerHTML = list.length ? list.map(j => {
+            const m = matchView(j);
+            const r = jobReadiness(j.id);
+            const skills = (m && m.matched && m.matched.length ? m.matched : (typicalOf(j.role_type).core || [])).slice(0, 6);
+            const miss = (m ? arr(m.missing) : typicalOf(j.role_type).important).slice(0, 4);
+            return `<button class="pick-card" type="button" data-act="mock-cfg" data-id="${j.id}">
+          <div class="row"><b>${esc(j.company)}</b><span>${m ? m.score + "% 匹配" : "待简历分析"}</span></div>
+          <div>${esc((j.positions||[]).join(" / ") || j.role_type || "")}</div>
+          <div class="muted">📍 ${esc((j.locations||[]).join(" · ") || "地点以官网为准")} · 状态：${esc(getStatus(j))} · ${esc(deadlineMeta(j).text)}</div>
+          <div class="muted" style="margin-top:4px">🛠 ${skills.length ? skills.map(esc).join(" · ") : "暂无详细技能要求"}</div>
+          <div class="muted">📚 缺口：${miss.length ? miss.map(esc).join(" · ") : "暂无明显缺口"}</div>
+          ${r ? `<div class="muted">面试准备度 ${r.score}%（基于最近 ${r.n} 次模拟）</div>` : `<div class="muted">面试准备度暂无法准确评估</div>`}
+        </button>`;
+          }).join("") : `<div class="empty">没有匹配的岗位</div>`;
+        };
+      }
+    }
+    function renderMockConfig(){
+      const j = jobById(interviewState.pendingJobId);
+      if (!j) { mockPhase = "pick"; renderMockPick(); return; }
+      const m = matchView(j);
+      const r = jobReadiness(j.id);
+      const desc = jobDesc(j);
+      $("#mockLead").textContent = "配置本场面试。题目会按该岗位、你的简历和缺口动态生成，不是题库随机抽。";
+      $("#mockBody").innerHTML = `
+        <div class="roi-item">
+          <div class="row"><b>${esc(j.company)}</b><span>${m ? m.score + "% 匹配" : "待简历分析"}</span></div>
+          <div>${esc((j.positions||[]).join(" / ") || j.role_type || "")}</div>
+          <div class="muted">${esc((j.locations||[]).join(" · ") || "")} · ${esc(getStatus(j))}</div>
+          <div class="${desc?"":"muted"}" style="margin-top:6px">${esc(desc || "当前岗位 JD 信息不足，将使用简历 + 测试开发高频题，并标记来源。")}</div>
+          ${r ? `<div class="muted">最近模拟 ${esc(r.lastAt||"")} · ${r.score} 分 · 薄弱：${(r.weaknesses||[]).map(esc).join("、") || "无"}</div>` : `<div class="muted">尚无该岗位模拟记录，面试准备度暂无法准确评估。</div>`}
+        </div>
+        <div class="grid-2" style="margin-top:10px">
+          <label class="dd">面试类型<select id="mockType">${MOCK_TYPES.map(t=>`<option>${t}</option>`).join("")}</select></label>
+          <label class="dd">面试阶段<select id="mockStage">${MOCK_STAGES.map(t=>`<option>${t}</option>`).join("")}</select></label>
+          <label class="dd">难度<select id="mockDiff">${MOCK_DIFFS.map(t=>`<option${t==="秋招"?" selected":""}>${t}</option>`).join("")}</select></label>
+          <label class="dd">时长<select id="mockMin">${MOCK_MINS.map(t=>`<option${t===20?" selected":""}>${t}</option>`).join("")}</select></label>
+        </div>
+        <p class="muted" style="margin-top:8px">问题数量由时长决定（10分钟约4题，20分钟约8题）。一次只问一题，会根据回答追问。</p>
+        <div class="c-act">
+          <button class="btn primary" type="button" data-act="mock-go">开始模拟面试</button>
+          ${r ? `<button class="btn" type="button" data-act="mock-go-weak">再次模拟（优先复测薄弱点）</button>` : ""}
+          <button class="btn ghost" type="button" data-act="mock-pick">换岗位</button>
+        </div>`;
+    }
+    function renderMockLive(){
+      const s = interviewState.active;
+      if (!s) { mockPhase = "pick"; renderMockPick(); return; }
+      const q = currentLiveQ();
+      const job = jobById(s.jobId);
+      const stemN = (s.questions || []).filter(x => x.kind === "stem").length;
+      const feedback = s.phase === "feedback" && q && q.score != null;
+      $("#mockLead").textContent = s.jdNote || "题目来源已在标签中标明，不会冒充该公司原题。";
+      $("#mockBody").innerHTML = `
+        <div class="iv-stage">
+          <div>
+            <div class="co-name">${esc(s.company)}</div>
+            <div class="muted">${esc(s.position)} · ${esc(s.stage)} · ${esc(s.type)} · ${esc(s.difficulty)}</div>
+          </div>
+          <div style="text-align:right">
+            <div>当前题目 <b>${stemN}</b> / ${s.questionCount}</div>
+            <div>剩余 <b id="mockRemain">${remainLabel(s)}</b></div>
+          </div>
+        </div>
+        ${!feedback ? `<div class="iv-q"><div class="who">面试官</div><p>${esc(q.question)}</p>
+          <div class="skills" style="margin-top:8px">${(q.tags||[]).map(t=>`<span class="sk">${esc(t)}</span>`).join("")}<span class="sk">${esc(q.skill||"")}</span></div>
+          ${q.nextQuestionReason ? `<div class="muted" style="margin-top:6px">出题原因：${esc(q.nextQuestionReason)}</div>` : ""}
+          ${q.retry && q.hint ? `<div class="muted" style="margin-top:6px">提示：${esc(q.hint)} 先不要翻完整答案，再答一次。</div>` : ""}
+        </div>
+        <textarea id="mockAns" placeholder="用面试口吻回答，尽量结合你的真实项目。">${esc(q.answer||"")}</textarea>
+        <div class="c-act">
+          <button class="btn primary" type="button" data-act="mock-submit">提交回答</button>
+          <button class="btn" type="button" data-act="mock-skip">跳过</button>
+          <button class="btn ghost" type="button" data-act="mock-pause">退出并保存</button>
+        </div>` : `<div class="iv-q"><div class="who">本题点评（要点覆盖评估，不是大模型瞎打分）</div>
+          <p>${esc(q.question)}</p>
+          <div><b>${q.score}</b> 分</div>
+          <div class="dims">
+            <div class="dim">知识准确性<b>${q.dims.accuracy}</b></div>
+            <div class="dim">完整性<b>${q.dims.complete}</b></div>
+            <div class="dim">逻辑性<b>${q.dims.logic}</b></div>
+            <div class="dim">岗位相关<b>${q.dims.job}</b></div>
+            <div class="dim">项目结合<b>${q.dims.project}</b></div>
+            <div class="dim">表达<b>${q.dims.expr}</b></div>
+          </div>
+          <div class="fb"><b>回答得好的地方</b><ul class="reason">${(q.strengths||[]).map(x=>`<li>✓ ${esc(x)}</li>`).join("")}</ul>
+            <b>回答不足</b><ul class="reason">${(q.weaknesses||[]).map(x=>`<li>△ ${esc(x)}</li>`).join("")}</ul>
+            <div class="muted">${esc(q.nextAsk||"")}</div>
+          </div>
+        </div>
+        <div class="c-act">
+          <button class="btn primary" type="button" data-act="mock-next">继续</button>
+          <button class="btn" type="button" data-act="mock-retry">重新回答</button>
+          <button class="btn" type="button" data-act="mock-star" data-id="${q.id}">${q.saved?"★ 已加入重点":"⭐ 加入重点复习"}</button>
+          <button class="btn ghost" type="button" data-act="mock-pause">退出并保存</button>
+        </div>`}
+        ${job && daysLeft(job.deadline)!=null && daysLeft(job.deadline)<=7 && getStatus(job)==="未投" ? `<p class="muted">投递前可以先练一次，不是强制。</p>` : ""}`;
+    }
+    function renderMockReview(){
+      const s = (interviewState.sessions || []).find(x => x.id === interviewState.reviewId) || mockSessions().slice(-1)[0];
+      if (!s) { mockPhase = "pick"; renderMockPick(); return; }
+      const prev = mockSessions(s.jobId).filter(x => x.id !== s.id).slice(-1)[0];
+      const r = jobReadiness(s.jobId);
+      const m = matchView(jobById(s.jobId) || { id: s.jobId });
+      const dims = Object.keys(s.skillScores || {});
+      $("#mockLead").textContent = "复盘会写入技能等级、ROI 和今日任务。匹配度不变，变的是面试准备度。";
+      $("#mockBody").innerHTML = `
+        <div class="roi-item">
+          <div class="row"><b>${esc(s.company)} · ${esc(s.position)}</b><span>综合 ${s.score} / 100</span></div>
+          <div class="muted">${esc(s.stage)} · ${esc(s.type)} · ${esc((s.endTime||"").slice(0,10))}</div>
+          <div>岗位匹配 ${m && m.score != null ? m.score + "%" : "—"}　面试准备度 ${r ? r.score + "%（最近 " + r.n + " 次）" : "暂无法准确评估"}</div>
+        </div>
+        <div class="dims">${dims.map(k => `<div class="dim">${esc(k)}<b>${s.skillScores[k]}</b></div>`).join("") || `<div class="muted">本题未形成技能分</div>`}</div>
+        ${prev ? `<p>与上次比较：综合 ${prev.score} → ${s.score}${dims.map(k => prev.skillScores && prev.skillScores[k] != null ? `；${k} ${prev.skillScores[k]} → ${s.skillScores[k]}` : "").join("")}</p>` : `<p class="muted">这是该岗位首次模拟，暂无对比。</p>`}
+        <div class="sec"><h4>表现较好</h4><div>${(s.strengths||[]).map(x=>`<span class="sk hit">✓ ${esc(x)}</span>`).join(" ") || `<span class="muted">本场优势还不稳</span>`}</div></div>
+        <div class="sec"><h4>暴露的问题</h4><div>${(s.weaknesses||[]).map(x=>`<span class="sk miss">✗ ${esc(x)}</span>`).join(" ") || `<span class="muted">没有明显薄弱项</span>`}</div></div>
+        <div class="sec"><h4>建议补强</h4><p class="muted">已按薄弱点重算技能 ROI，并刷新今日任务（3~5 条，具体到实操和面试题）。</p></div>
+        <div class="sec"><h4>题目与回答</h4>${(s.questions||[]).map(q => `
+          <div class="iv">
+            <div><b>${esc(q.question)}</b></div>
+            <div class="muted">${esc((q.tags||[]).join(" · "))} · ${q.score == null ? "未评分" : q.score + " 分"} · ${esc(q.skill||"")}</div>
+            <div style="margin-top:4px">${esc(q.answer||"")}</div>
+            <div class="c-act">
+              <button class="btn" type="button" data-act="mock-star" data-id="${q.id}" data-sid="${s.id}">${q.saved?"★ 已重点":"⭐ 加入重点复习"}</button>
+            </div>
+          </div>`).join("")}
+        </div>
+        <div class="c-act">
+          <button class="btn primary" type="button" data-act="mock-again" data-id="${s.jobId}">再次模拟本岗位</button>
+          <button class="btn" type="button" data-act="start-plan">去做今日任务</button>
+          <button class="btn ghost" type="button" data-act="mock-pick">选择其他岗位</button>
+        </div>`;
+    }
+    function toggleStarQuestion(qid, sid){
+      const s = sid ? (interviewState.sessions || []).find(x => x.id === sid) : (interviewState.active || (interviewState.sessions || []).find(x => x.id === interviewState.reviewId));
+      if (!s) return;
+      const q = (s.questions || []).find(x => x.id === qid);
+      if (!q) return;
+      q.saved = !q.saved;
+      if (q.saved) {
+        if (!(interviewState.savedQuestions || []).some(x => x.id === q.id)) {
+          interviewState.savedQuestions = (interviewState.savedQuestions || []).concat([{ id: q.id, jobId: s.jobId, company: s.company, question: q.question, answer: q.answer, score: q.score, skill: q.skill, weaknesses: q.weaknesses, hint: q.hint, at: todayStr }]);
+        }
+      } else {
+        interviewState.savedQuestions = (interviewState.savedQuestions || []).filter(x => x.id !== q.id);
+      }
+      saveIv();
+      renderMock();
+      if (view === "me") renderMe();
+    }
+    function renderMock(){
+      if (mockPhase === "config") return renderMockConfig();
+      if (mockPhase === "live") return renderMockLive();
+      if (mockPhase === "review") return renderMockReview();
+      return renderMockPick();
+    }
+    function renderMockMe(){
+      const last = (interviewState.sessions || []).filter(s => s.status === "completed").slice(-1)[0];
+      const active = interviewState.active && interviewState.active.status === "in_progress";
+      const r = last ? jobReadiness(last.jobId) : null;
+      $("#mockMeBox").innerHTML = `
+        ${active ? `<div class="roi-item"><div class="row"><b>未完成的模拟</b><span>${esc(interviewState.active.company)}</span></div>
+          <div class="c-act"><button class="btn primary" type="button" data-act="mock-resume">继续</button></div></div>` : ""}
+        ${last ? `<div class="roi-item">
+          <div class="row"><b>${esc(last.company)} · ${esc(last.position)}</b><span>${last.score} 分</span></div>
+          <div class="muted">面试准备度：${r ? r.score + "%" : "暂无法准确评估"} · 薄弱：${(last.weaknesses||[]).map(esc).join("、") || "无"}</div>
+          <div class="c-act">
+            <button class="btn primary" type="button" data-act="mock-review" data-id="${last.id}">查看面试复盘</button>
+            <button class="btn" type="button" data-act="mock-again" data-id="${last.jobId}">再次模拟</button>
+            <button class="btn" type="button" data-act="mock-pick">选择其他岗位</button>
+          </div>
+        </div>` : `<div class="muted">还没有岗位定向模拟。从岗位卡片或下方选择岗位开始。</div>
+          <div class="c-act"><button class="btn primary" type="button" data-act="mock-pick">选择一个岗位</button></div>`}`;
+      const saved = interviewState.savedQuestions || [];
+      $("#mockFocusBox").innerHTML = saved.length ? saved.slice().reverse().map(q => `
+        <div class="iv">
+          <div><b>${esc(q.question)}</b></div>
+          <div class="muted">${esc(q.company||"")} · ${esc(q.skill||"")} · ${q.score == null ? "" : q.score + " 分"}</div>
+          <div>${esc(q.answer||"")}</div>
+          ${(q.weaknesses||[]).length ? `<div class="muted">薄弱：${q.weaknesses.map(esc).join("；")}</div>` : ""}
+          ${q.hint ? `<div class="muted">参考思路：${esc(q.hint)}</div>` : ""}
+          <div class="c-act"><button class="btn" type="button" data-act="mock-drill" data-id="${q.jobId}" data-qid="${q.id}">再次练习</button></div>
+        </div>`).join("") : `<div class="muted">把模拟里答得不稳的题标成重点，会汇总在这里。</div>`;
+    }
+    function mockRecommend(j){
+      const s = getStatus(j);
+      const m = matchView(j);
+      if (INTERVIEW_STATUSES.includes(s) || APPLIED_STATUSES.includes(s) || isFav(j.id) || (m && m.score >= 80)) return true;
+      return false;
+    }
+
+    function cityHit(j, name){
+      if (!name) return true;
+      const locs = j.locations || [];
+      if (name === "其他") return !locs.some(loc => NAMED_CITIES.some(c => loc.includes(c)));
+      return locs.some(loc => loc.includes(name));
+    }
+    function roleHit(j, name){
+      if (name === "全部") return true;
+      if (j.role_type === name) return true;
+      if (name === "测试工程师") {
+        return (j.positions||[]).some(p => p.includes("测试工程师"));
+      }
+      return false;
     }
 
     function filtered(){
       const kw = q.trim();
       let list = JOBS.filter(j => {
+        const status = getStatus(j);
         if (province !== "全部" && !(j.provinces||[]).includes(province)) return false;
         if (scale !== "全部" && (j.scale||"小厂") !== scale) return false;
-        if (role !== "全部" && j.role_type !== role) return false;
-        if (city && !(j.locations||[]).some(loc => loc.includes(city))) return false;
+        if (!roleHit(j, role)) return false;
+        if (!cityHit(j, city)) return false;
         if (soon){
           const dl = daysLeft(j.deadline);
           if (dl === null || dl > 7) return false;
         }
-        if (unapplied && applied.has(j.id)) return false;
+        if (unapplied && APPLIED_STATUSES.includes(status)) return false;
+        if (!showSkipped && status === "暂时不投") return false;
+        if (showSkipped && status !== "暂时不投") return false;
         if (kw){
           const blob = [j.company, j.program, ...(j.positions||[]), ...(j.locations||[])].join(" ");
           if (!blob.includes(kw)) return false;
         }
         return true;
       });
-      const [field, dir] = sort.split("-");
-      const key = field === "updated" ? "updated_at" : "deadline";
-      list.sort((a,b)=>{
-        const av = a[key] || (dir==="asc" ? "9999" : "0000");
-        const bv = b[key] || (dir==="asc" ? "9999" : "0000");
-        if (av === bv) return a.company.localeCompare(b.company, "zh");
-        return dir==="asc" ? (av<bv?-1:1) : (av>bv?-1:1);
-      });
+      list.sort((a,b) => compareJobs(a,b,sort));
       return list;
     }
 
+    function compareJobs(a,b,mode){
+      if (mode === "match" || mode === "recommend"){
+        const d = recScore(b) - recScore(a);
+        if (d) return d;
+        const ad = a.deadline || "9999", bd = b.deadline || "9999";
+        if (ad !== bd) return ad < bd ? -1 : 1;
+        return a.company.localeCompare(b.company, "zh");
+      }
+      if (mode === "company"){
+        const d = (SCALE_RANK[b.scale]||0) - (SCALE_RANK[a.scale]||0);
+        if (d) return d;
+        return recScore(b) - recScore(a);
+      }
+      const [field, dir] = (mode || "deadline-asc").split("-");
+      const key = field === "updated" ? "updated_at" : "deadline";
+      const av = a[key] || (dir==="asc" ? "9999" : "0000");
+      const bv = b[key] || (dir==="asc" ? "9999" : "0000");
+      if (av === bv) return a.company.localeCompare(b.company, "zh");
+      return dir==="asc" ? (av<bv?-1:1) : (av>bv?-1:1);
+    }
+
+    function todayPriorityJobs(){
+      return JOBS.filter(j => getStatus(j) === "未投")
+        .sort((a,b) => todayScore(b) - todayScore(a))
+        .slice(0, 9);
+    }
+
+    function dashData(){
+      const open = JOBS.filter(j => getStatus(j) === "未投");
+      const soonN = open.filter(j => {
+        const dl = daysLeft(j.deadline);
+        return dl !== null && dl >= 0 && dl <= 7;
+      }).length;
+      const focusN = open.filter(j => j.scale === "大厂").length;
+      const appliedN = JOBS.filter(j => APPLIED_STATUSES.includes(getStatus(j))).length;
+      return [
+        { key: "open", num: open.length, lab: "可投岗位" },
+        { key: "soon", num: soonN, lab: "7天内截止" },
+        { key: "focus", num: focusN, lab: "重点公司" },
+        { key: "today", num: todayPriorityJobs().length, lab: "今日优先" },
+        { key: "applied", num: appliedN, lab: "已投递" }
+      ];
+    }
+
+    function applyDash(key){
+      dashKey = dashKey === key ? "" : key;
+      province = "全部"; scale = "全部"; role = "全部"; city = ""; q = "";
+      soon = false; unapplied = true; showSkipped = false; sort = "match";
+      $("#province").value = province;
+      $("#scale").value = scale;
+      $("#role").value = role;
+      $("#citySel").value = city;
+      $("#sort").value = sort;
+      $("#soon").checked = false;
+      $("#unapplied").checked = true;
+      $("#showSkipped").checked = false;
+      $("#q").value = "";
+      if (dashKey === "soon"){ soon = true; $("#soon").checked = true; }
+      if (dashKey === "focus"){ scale = "大厂"; $("#scale").value = "大厂"; }
+      if (dashKey === "applied"){ unapplied = false; $("#unapplied").checked = false; setView("apps"); return; }
+      if (dashKey === "today"){ sort = "recommend"; $("#sort").value = "recommend"; }
+      setView("home");
+      render({resetPage:true});
+      if (dashKey === "today") $("#today").scrollIntoView({behavior:"smooth", block:"start"});
+    }
+
     function card(j){
-      const dl = daysLeft(j.deadline);
-      const days = dl===null ? `<span class="pill">招满即止</span>` :
-        `<span class="pill days${dl<=7?" hot":""}">${dl===0?"今天截止":"剩 "+dl+" 天"}</span>`;
+      const status = getStatus(j);
+      const dl = deadlineMeta(j);
+      const trust = sourceTrust(j);
+      const desc = jobDesc(j);
+      const skills = jobSkills(j);
+      const ctype = companyType(j);
       const url = j.apply_url;
-      const hint = j.search_hint || "";
-      const done = applied.has(j.id);
+      const fav = isFav(j.id);
+      const skipped = status === "暂时不投";
+      const m = matchView(j);
+      const rec = mockRecommend(j);
+      const rdy = jobReadiness(j.id);
       const go = url
-        ? `<a class="btn" href="${url}" target="_blank" rel="noopener" title="${url}">投递</a>`
-        : `<span class="btn ghost">按搜法投</span>`;
-      const hintLine = (!url && hint) ? `<div class="c-hint">${hint}</div>` : "";
-      return `<article class="card${done?" done":""}" data-id="${j.id}">
-        <div class="c-head">
-          <div class="c-name">${j.company}</div>
-          <div class="c-badges">${days}<span class="pill src">${j.scale||"小厂"}</span></div>
+        ? `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener" data-act="apply" data-id="${j.id}">立即投递</a>`
+        : `<button class="btn ghost" type="button" data-act="detail" data-id="${j.id}">按搜法投</button>`;
+      const boxCls = !m ? "" : m.score >= 80 ? " hi" : m.score >= 55 ? " mid" : " lo";
+      return `<article class="card${APPLIED_STATUSES.includes(status)?" done":""}${skipped?" skipped":""}" data-id="${j.id}">
+        <div class="l1">
+          <div>
+            <div class="co-name">${esc(j.company)}</div>
+            <div class="pos">${esc((j.positions||[]).join(" / ") || j.role_type || "")}</div>
+          </div>
+          <div class="l1-right">
+            <div class="match-box${boxCls}">${esc(matchLabel(j))}${m ? " 匹配" : ""}</div>
+            ${m ? `<div class="grade">${esc(m.stars)} ${esc(m.grade)}</div>` : ""}
+            ${rdy ? `<div class="grade">面试准备 ${esc(readinessStars(rdy.score))} ${rdy.score}%</div>` : ""}
+          </div>
         </div>
-        ${j.program?`<div class="c-prog">${j.program}</div>`:""}
-        <div class="c-mid">
-          <span class="tag ind">${j.role_type}</span>
-          ${(j.positions||[]).slice(0,3).map(p=>`<span class="tag">${p}</span>`).join("")}
+        <div class="badges">
+          <span class="pill">${esc((j.locations||[]).join(" · ") || "地点以官网为准")}</span>
+          ${jobSalary(j) ? `<span class="pill ok">💰 ${esc(jobSalary(j))}</span>` : ""}
+          <span class="pill">${esc(j.role_type || "测试")}</span>
+          <span class="pill">${esc(ctype || j.scale || "公司类型未知")}</span>
+          <span class="pill ${trust.cls}">${trust.icon} ${esc(trust.label)}</span>
+          <span class="pill">${esc(status)}</span>
         </div>
-        <div class="c-meta">
-          ${(j.locations||[]).join(" · ") || "地点以官网为准"}<br>
-          截止 <b>${fmt(j.deadline,"招满即止")}</b>
+        <div class="layer">
+          <div class="k">💼 岗位职责</div>
+          <div class="jd ${desc?"":"muted"}">${esc(desc || "暂无详细 JD")}</div>
         </div>
-        ${hintLine}
+        <div class="layer">
+          <div class="k">🛠 技能要求</div>
+          ${skills.length ? `<div class="skills">${skills.map(s=>`<span class="sk">${esc(s)}</span>`).join("")}</div>` : `<div class="muted">暂无详细技能要求</div>`}
+        </div>
+        <div class="layer">
+          <div class="k">🎯 我的匹配</div>
+          ${m ? `<div>${esc(m.score)}% · ${esc(m.stars)} ${esc(m.grade)}</div>${m.hasJd ? "" : `<div class="muted">对照该方向常见要求，非本岗位原文</div>`}${skillPills(m, 6)}` : `<div class="muted">待简历分析 · 上传简历后计算匹配度</div>`}
+        </div>
+        <div class="layer">
+          <div class="k">📚 我需要补足</div>
+          ${gapHtml(m, true)}
+        </div>
+        <div class="layer">
+          <div class="k">截止日期</div>
+          <div class="dl-row"><span class="pill ${dl.cls}">${dl.icon} ${esc(dl.text)}</span><span class="muted">${esc(dl.date)}</span></div>
+        </div>
         <div class="c-act">
+          <button class="btn${fav?" on":""}" type="button" data-act="fav" data-id="${j.id}">${fav?"★ 已收藏":"☆ 收藏"}</button>
+          <button class="btn${skipped?" on":""}" type="button" data-act="skip" data-id="${j.id}">${skipped?"取消不投":"暂时不投"}</button>
+          <button class="btn ghost" type="button" data-act="detail" data-id="${j.id}">查看详情</button>
+          <button class="btn" type="button" data-act="mock-start" data-id="${j.id}">🎤 ${rec ? "推荐现在模拟" : "针对该岗位模拟面试"}</button>
           ${go}
-          <label class="mark"><input type="checkbox" class="applied"${done?" checked":""} /> 已投</label>
         </div>
       </article>`;
+    }
+
+    function jobById(id){ return JOBS.find(j => j.id === id); }
+
+    function renderDetail(j){
+      rememberJob(j.id);
+      const status = getStatus(j);
+      const dl = deadlineMeta(j);
+      const trust = sourceTrust(j);
+      const desc = jobDesc(j);
+      const skills = jobSkills(j);
+      const req = arr(j.requirements).filter(Boolean);
+      const resp = arr(j.responsibilities).filter(Boolean);
+      const notes = text(peek(j.id).notes);
+      const url = j.apply_url;
+      const fav = isFav(j.id);
+      const opts = STATUSES.map(s => `<option${s===status?" selected":""}>${s}</option>`).join("");
+      const go = url
+        ? `<a class="btn primary" href="${esc(url)}" target="_blank" rel="noopener" data-act="apply" data-id="${j.id}">立即投递</a>`
+        : `<span class="btn ghost">无直接网申链接</span>`;
+      $("#modalIn").innerHTML = `
+        <h3>${esc(j.company)}</h3>
+        <div class="muted">${esc((j.positions||[]).join(" / ") || j.role_type || "")}</div>
+        <div class="kv">
+          <b>城市</b><span>${esc((j.locations||[]).join(" · ") || "以官网为准")}</span>
+          <b>岗位方向</b><span>${esc(j.role_type || "—")}</span>
+          <b>公司类型</b><span>${esc(companyType(j) || j.scale || "暂无")}</span>
+          <b>薪资待遇</b><span>${jobSalary(j) ? esc(jobSalary(j)) : "暂未公布"}</span>
+          <b>截止日期</b><span>${dl.icon} ${esc(dl.text)} · ${esc(dl.date)}</span>
+          <b>招聘来源</b><span>${trust.icon} ${esc(trust.label)} · ${esc(j.source || "未知")}</span>
+          <b>投递状态</b><span>${esc(status)}</span>
+          <b>收藏状态</b><span>${fav ? "已收藏" : "未收藏"}</span>
+          <b>投递链接</b><span>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(url)}</a>` : esc(j.search_hint || "暂无链接，见搜法")}</span>
+        </div>
+        <div class="sec"><h4>岗位职责</h4><div class="${desc||resp.length?"":"muted"}">${esc(resp.length?resp.join("；"):(desc || "暂无详细 JD"))}</div></div>
+        <div class="sec"><h4>招聘信息</h4><div class="muted">${esc(j.program || "暂无更多招聘信息")}${j.batch ? " · " + esc(j.batch) : ""}</div></div>
+        <div class="sec"><h4>任职要求</h4><div class="${req.length?"":"muted"}">${esc(req.length?req.join("；"):"暂无详细任职要求")}</div></div>
+        <div class="sec"><h4>技能要求</h4>${skills.length?`<div class="skills">${skills.map(s=>`<span class="sk">${esc(s)}</span>`).join("")}</div>`:`<div class="muted">暂无详细技能要求</div>`}</div>
+        <div class="sec"><h4>我的匹配</h4>${(() => {
+          const m = matchView(j);
+          if (!m) return `<div class="muted">待简历分析。上传简历后计算匹配度、匹配技能和推荐理由。</div>`;
+          const miss = arr(m.missing).map(s => `<span class="sk miss">✗ ${esc(s)}</span>`).join("");
+          const hits = arr(m.matched).map(s => `<span class="sk hit">✓ ${esc(s)}</span>`).join("");
+          const rels = arr(m.related).map(s => `<span class="sk rel">△ ${esc(s)}</span>`).join("");
+          const typical = typicalOf(j.role_type);
+          const infer = !m.hasJd ? `<div class="muted" style="margin-top:8px">该方向常见能力对照（非本岗位原文）：核心 ${typical.core.join("、")}；重要 ${typical.important.join("、")}</div>` : "";
+          return `<div><b>${m.score}%</b> · ${esc(m.stars)} ${esc(m.grade)}　<button class="btn" type="button" data-act="close" hidden></button></div>
+            ${explainTable(m)}
+            <div class="skills" style="margin-top:8px">${hits}${rels}${miss}</div>
+            ${arr(m.reasons).length ? `<div class="sec"><h4>为什么匹配</h4><ul class="reason">${m.reasons.map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>` : ""}
+            <div class="sec"><h4>我需要补足</h4>${gapHtml(m, false)}</div>
+            ${infer}`;
+        })()}</div>
+        <div class="sec"><h4>🎤 岗位定向模拟面试</h4>${(() => {
+          const m = matchView(j);
+          const r = jobReadiness(j.id);
+          const last = mockSessions(j.id).slice(-1)[0];
+          const weak = r ? (r.weaknesses || []) : [];
+          const rec = mockRecommend(j);
+          const soonTip = (daysLeft(j.deadline) != null && daysLeft(j.deadline) >= 0 && daysLeft(j.deadline) <= 7 && status === "未投")
+            ? `<p class="muted">截止较近。投递前可以先练一次岗位定向面试，不是强制。</p>` : "";
+          return `${rec ? `<p>🎤 推荐现在模拟（已投 / 收藏 / 高匹配 / 即将面试）</p>` : ""}
+            <div>岗位匹配：${m && m.score != null ? m.score + "%" : "待简历分析"}　面试准备度：${r ? r.score + "%（最近 " + r.n + " 次模拟）" : "暂无法准确评估"}</div>
+            <div class="muted">当前薄弱：${weak.length ? weak.map(esc).join("、") : "暂无模拟数据"}</div>
+            ${last ? `<div class="muted">最近模拟：${esc((last.endTime||"").slice(0,10))}　综合 ${last.score} 分</div>` : `<div class="muted">还没有该岗位的模拟记录。</div>`}
+            ${soonTip}
+            <div class="c-act">
+              <button class="btn primary" type="button" data-act="mock-start" data-id="${j.id}">开始模拟</button>
+              ${interviewState.active && interviewState.active.jobId === j.id ? `<button class="btn" type="button" data-act="mock-resume">继续上次模拟</button>` : ""}
+              ${last ? `<button class="btn" type="button" data-act="mock-review" data-id="${last.id}">查看面试复盘</button>` : ""}
+            </div>`;
+        })()}</div>
+        <div class="sec"><h4>备注</h4><textarea id="jobNotes">${esc(notes)}</textarea></div>
+        <div class="sec"><h4>修改状态</h4>
+          <select class="inp" id="jobStatus">${opts}</select>
+        </div>
+        ${!url && j.search_hint ? `<div class="sec"><h4>搜法</h4><div>${esc(j.search_hint)}</div></div>` : ""}
+        <div class="c-act">
+          ${go}
+          <button class="btn${fav?" on":""}" type="button" data-act="fav" data-id="${j.id}">${fav?"★ 已收藏":"☆ 收藏"}</button>
+          <button class="btn" type="button" data-act="skip" data-id="${j.id}">暂时不投</button>
+          <button class="btn" type="button" data-act="mock-start" data-id="${j.id}">🎤 模拟面试</button>
+          <button class="btn ghost" type="button" data-act="close">关闭</button>
+        </div>`;
+      $("#modal").classList.add("on");
+      $("#jobNotes").addEventListener("change", e => {
+        st(j.id).notes = e.target.value;
+        st(j.id).updatedAt = todayStr;
+        saveJobsState();
+      });
+      $("#jobStatus").addEventListener("change", e => {
+        setStatus(j.id, e.target.value);
+        renderDetail(j);
+        render();
+      });
     }
 
     function renderCities(){
       $("#cities").innerHTML = CITIES.map(c =>
         `<button type="button" class="chip${city===c?" on":""}" data-city="${c}">${c}</button>`
-      ).join("") + (city ? `<button type="button" class="chip" data-city="">清除城市</button>` : "");
+      ).join("") + `<button type="button" class="chip${city==="其他"?" on":""}" data-city="其他">其他</button>`
+        + (city ? `<button type="button" class="chip" data-city="">清除城市</button>` : "");
     }
 
-    function render(){
-      const list = filtered();
-      $("#list").innerHTML = list.length ? list.map(card).join("") :
-        `<div class="empty">没有符合筛选的在招岗位，换个条件试试</div>`;
+    function pageNums(cur, total){
+      if(total <= 7) return [...Array(total)].map((_,i)=>i+1);
+      const set = new Set([1, total, cur-1, cur, cur+1]);
+      if(cur <= 3) [2,3,4].forEach(n => set.add(n));
+      if(cur >= total-2) [total-3,total-2,total-1].forEach(n => set.add(n));
+      return [...set].filter(n => n>=1 && n<=total).sort((a,b)=>a-b);
+    }
+
+    function renderPager(pages){
+      const el = $("#pager");
+      if(pages <= 1){
+        el.innerHTML = "";
+        el.hidden = true;
+        return;
+      }
+      el.hidden = false;
+      const nums = pageNums(page, pages);
+      let html = `<button type="button" data-page="${page-1}" ${page<=1?"disabled":""}>上一页</button>`;
+      nums.forEach((n,i)=>{
+        if(i && n - nums[i-1] > 1) html += `<span class="gap">…</span>`;
+        html += `<button type="button" data-page="${n}" class="${n===page?"on":""}">${n}</button>`;
+      });
+      html += `<button type="button" data-page="${page+1}" ${page>=pages?"disabled":""}>下一页</button>`;
+      el.innerHTML = html;
+    }
+
+    function renderDash(){
+      $("#dash").innerHTML = dashData().map(d =>
+        `<button class="d-card${dashKey===d.key?" on":""}" type="button" data-dash="${d.key}">
+          <div class="d-num">${d.num}</div><div class="d-lab">${d.lab}</div>
+        </button>`
+      ).join("");
+    }
+
+    function renderToday(){
+      const list = todayPriorityJobs();
+      $("#today").innerHTML = list.length ? list.map(j => {
+        const dl = deadlineMeta(j);
+        return `<button type="button" class="mini" data-act="detail" data-id="${j.id}">
+          <div class="co">${esc(j.company)}</div>
+          <div class="po">${esc((j.positions||[])[0] || j.role_type)}</div>
+          <div class="meta"><span class="pill ${dl.cls}">${dl.icon} ${esc(dl.text)}</span><span class="pill">${esc(j.role_type||"")}</span><span class="pill">${esc(matchLabel(j))}</span></div>
+        </button>`;
+      }).join("") : `<div class="muted">当前没有可优先投递的未投岗位</div>`;
+    }
+
+    function renderSidebar(){
+      const counts = statusCounts();
+      const max = Math.max(1, JOBS.length);
+      const rows = [
+        ["岗位发现", JOBS.length],
+        ["收藏", JOBS.filter(j => isFav(j.id)).length],
+        ["投递", counts.appliedAll],
+        ["笔试", counts["笔试"]],
+        ["面试", counts.interview],
+        ["Offer", counts["Offer"]]
+      ];
+      const soonList = JOBS.filter(j => {
+        if (getStatus(j) === "暂时不投") return false;
+        const dl = daysLeft(j.deadline);
+        return dl !== null && dl >= 0 && dl <= 7;
+      }).sort((a,b)=>(a.deadline||"9999").localeCompare(b.deadline||"9999")).slice(0,5);
+      $("#sidebar").innerHTML = `
+        <h2>秋招进度</h2>
+        ${rows.map(([k,v])=>`<div class="stat"><span>${k}</span><b>${v}</b></div>`).join("")}
+        <div class="sec"><h4>漏斗</h4>
+          <div class="funnel">${rows.map(([k,v])=>`<div class="fun-row"><span style="width:56px">${k}</span><div class="fun-bar"><i style="width:${Math.round(v/max*100)}%"></i></div><b>${v}</b></div>`).join("")}</div>
+        </div>
+        <div class="sec"><h4>7天内截止</h4>
+          ${soonList.length?soonList.map(j=>`<div class="stat"><span>${esc(j.company)}</span><b>${esc(j.deadline)}</b></div>`).join(""):`<div class="muted">暂无</div>`}
+        </div>`;
+    }
+
+    function statusCounts(){
+      const c = { "未投":0,"已投":0,"笔试":0,"一面":0,"二面":0,"HR面":0,"Offer":0,"淘汰":0,"暂时不投":0, appliedAll:0, interview:0, doing:0 };
+      JOBS.forEach(j => {
+        const s = getStatus(j);
+        if (c[s] != null) c[s]++;
+        if (APPLIED_STATUSES.includes(s)) c.appliedAll++;
+        if (INTERVIEW_STATUSES.includes(s)) c.interview++;
+        if (["已投","笔试","一面","二面","HR面"].includes(s)) c.doing++;
+      });
+      return c;
+    }
+
+    function ensureTodayTasks(){
+      if (!taskState.items) taskState.items = [];
+      const lastMock = (interviewState.sessions || []).filter(s => s.status === "completed").slice(-1)[0];
+      const planKey = todayStr + "|" + MATCH_MODEL + "|" + (candidateProfile.resumeVersion || "") + "|" + (profileReady() ? "p" : "n") + "|" + (lastMock ? lastMock.id : "0");
+      if (profileReady()){
+        if (taskState.planKey !== planKey){
+          const defaultSet = new Set(DEFAULT_TASKS);
+          taskState.items = taskState.items.filter(t => {
+            if (t.date !== todayStr) return true;
+            if (t.source === "roi" || t.source === "default") return false;
+            if (defaultSet.has(t.title) && !t.learn) return false;
+            return true;
+          });
+          generateDailyPlan().forEach(item => {
+            taskState.items.push({
+              id: uid(),
+              title: item.title,
+              done: false,
+              cancelled: false,
+              date: todayStr,
+              createdAt: todayStr,
+              source: "roi",
+              skill: item.skill || "",
+              priority: item.priority || "",
+              learn: item.learn || "",
+              practice: item.practice || "",
+              interview: item.interview || "",
+              eta: item.eta || "",
+              relatedJobs: item.relatedJobs || 0
+            });
+          });
+          taskState.planKey = planKey;
+          taskState.inited = true;
+          saveTasks();
+        }
+        return;
+      }
+      const hasToday = taskState.items.some(t => t.date === todayStr);
+      if (!taskState.inited && !hasToday){
+        DEFAULT_TASKS.forEach(title => taskState.items.push({
+          id: uid(), title, done: false, cancelled: false, date: todayStr, createdAt: todayStr, source: "default"
+        }));
+        taskState.inited = true;
+        saveTasks();
+      }
+    }
+
+    function todayTasks(){ return (taskState.items||[]).filter(t => t.date === todayStr); }
+
+    function renderTasks(){
+      ensureTodayTasks();
+      const items = todayTasks();
+      const active = items.filter(t => !t.cancelled);
+      const done = active.filter(t => t.done).length;
+      const total = active.length;
+      const pct = total ? Math.round(done/total*100) : 0;
+      $("#taskStat").textContent = `今日完成：${done} / ${total}　${pct}%`;
+      $("#taskBar").style.width = pct + "%";
+      $("#tasks").innerHTML = items.length ? items.map(t => `
+        <div class="task${t.done?" done":""}${t.cancelled?" cancelled":""}">
+          <input type="checkbox" data-act="task-done" data-id="${t.id}" ${t.done?"checked":""} ${t.cancelled?"disabled":""} />
+          <div style="flex:1">
+            <div>${t.priority ? `<b>${esc(t.priority)}</b> ` : ""}${esc(t.title)}</div>
+            ${t.learn ? `<div class="meta">学习：${esc(t.learn)}<br>实操：${esc(t.practice)}<br>面试：${esc(t.interview)}<br>验收：${esc(t.accept)}${t.eta ? "<br>预计：" + esc(t.eta) : ""}${t.relatedJobs ? "<br>关联岗位约 " + esc(String(t.relatedJobs)) + " 个" : ""}</div>` : ""}
+          </div>
+          <button class="btn" type="button" data-act="task-edit" data-id="${t.id}">编辑</button>
+          <button class="btn" type="button" data-act="task-cancel" data-id="${t.id}">${t.cancelled?"恢复":"取消"}</button>
+          <button class="btn danger" type="button" data-act="task-del" data-id="${t.id}">删除</button>
+        </div>`).join("") : `<div class="muted">今天还没有任务</div>`;
+    }
+
+    function renderInterviews(){
+      const list = interviewState.records || [];
+      $("#ivList").innerHTML = list.length ? list.slice().reverse().map(r => `
+        <div class="iv">
+          <div><b>${esc(r.company)}</b> · ${esc(r.position||"")}</div>
+          <div class="muted">${esc(r.time||"")} · ${esc(r.round||"")} · ${esc(r.result||"")}</div>
+          ${r.questions?`<div>面试题：${esc(r.questions)}</div>`:""}
+          ${r.notes?`<div class="muted">${esc(r.notes)}</div>`:""}
+          <div class="row" style="margin-top:6px">
+            <button class="btn danger" type="button" data-act="iv-del" data-id="${r.id}">删除</button>
+          </div>
+        </div>`).join("") : `<div class="muted" style="margin-top:8px">还没有面试记录</div>`;
+    }
+
+    function renderMe(){
+      const c = statusCounts();
+      $("#meStats").innerHTML = [
+        ["投递总数", c.appliedAll],
+        ["笔试", c["笔试"]],
+        ["面试", c.interview],
+        ["Offer", c["Offer"]],
+        ["淘汰", c["淘汰"]],
+        ["进行中", c.doing]
+      ].map(([k,v])=>`<div class="d-card" style="cursor:default"><div class="d-num">${v}</div><div class="d-lab">${k}</div></div>`).join("");
+      const max = Math.max(1, JOBS.length);
+      const funnel = [
+        ["岗位发现", JOBS.length],
+        ["收藏", JOBS.filter(j => isFav(j.id)).length],
+        ["投递", c.appliedAll],
+        ["笔试", c["笔试"]],
+        ["面试", c.interview],
+        ["Offer", c["Offer"]]
+      ];
+      $("#funnel").innerHTML = funnel.map(([k,v]) =>
+        `<div class="fun-row"><span style="width:72px">${k}</span><div class="fun-bar"><i style="width:${Math.round(v/max*100)}%"></i></div><b>${v}</b></div>`
+      ).join("");
+      renderSkillPanels();
+      renderMockMe();
+      renderTasks();
+      renderInterviews();
+      const chips = ["全部","笔试","一面","二面","HR面","Offer","淘汰"];
+      $("#meStageChips").innerHTML = chips.map(s =>
+        `<button type="button" class="chip${meStage===s?" on":""}" data-stage="${s}">${s}</button>`
+      ).join("");
+      const list = JOBS.filter(j => {
+        const s = getStatus(j);
+        if (meStage === "全部") return APPLIED_STATUSES.includes(s) || s === "暂时不投";
+        return s === meStage;
+      });
+      $("#meStageList").innerHTML = list.length ? list.map(card).join("") : `<div class="empty">这一状态还没有岗位</div>`;
+    }
+
+    function renderFav(){
+      $("#favChips").innerHTML = [
+        ["all","全部收藏"],
+        ["focus","重点收藏"],
+        ["soon","即将截止收藏"]
+      ].map(([k,lab]) => `<button type="button" class="chip${favMode===k?" on":""}" data-fav="${k}">${lab}</button>`).join("");
+      let list = JOBS.filter(j => isFav(j.id));
+      if (favMode === "focus") list = list.filter(j => j.scale === "大厂");
+      if (favMode === "soon") list = list.filter(j => {
+        const dl = daysLeft(j.deadline);
+        return dl !== null && dl >= 0 && dl <= 7;
+      });
+      list.sort((a,b) => recScore(b) - recScore(a));
+      $("#favList").innerHTML = list.length ? list.map(card).join("") : `<div class="empty">还没有收藏岗位</div>`;
+    }
+
+    function renderApps(){
+      $("#appChips").innerHTML = [
+        ["all","全部已投"],
+        ["笔试","笔试"],
+        ["面试","面试"],
+        ["Offer","Offer"],
+        ["淘汰","淘汰"]
+      ].map(([k,lab]) => `<button type="button" class="chip${appMode===k?" on":""}" data-app="${k}">${lab}</button>`).join("");
+      const list = JOBS.filter(j => {
+        const s = getStatus(j);
+        if (!APPLIED_STATUSES.includes(s)) return false;
+        if (appMode === "all") return true;
+        if (appMode === "面试") return INTERVIEW_STATUSES.includes(s);
+        return s === appMode;
+      });
+      $("#appList").innerHTML = list.length ? list.map(card).join("") : `<div class="empty">还没有投递记录。首页点「立即投递」或在详情里改状态即可。</div>`;
+    }
+
+    function currentResume(){
+      return (resumeState.versions||[]).find(v => v.id === resumeState.currentId) || null;
+    }
+    function nextVersionName(){
+      const cur = currentResume();
+      if (!cur || !cur.version) return "v1.0";
+      const m = String(cur.version).match(/v?(\d+)\.(\d+)/i);
+      if (!m) return "v1.1";
+      return "v" + m[1] + "." + (Number(m[2]) + 1);
+    }
+    function renderResume(){
+      const cur = currentResume();
+      const vers = resumeState.versions || [];
+      $("#resumeCur").innerHTML = cur ? `
+        <div class="ver cur">
+          <div style="flex:1">
+            <div><b>当前简历：</b>${esc(cur.name || cur.fileName)}</div>
+            <div class="muted">版本 ${esc(cur.version)} · 更新时间 ${esc(cur.uploadedAt)} · ${esc(cur.fileName)}</div>
+          </div>
+          ${cur.dataUrl ? `<a class="btn" href="${cur.dataUrl}" download="${esc(cur.fileName)}" target="_blank" rel="noopener">查看简历</a>` : `<span class="muted">仅保存了版本信息</span>`}
+        </div>` : `<div class="muted">还没有上传简历</div>`;
+      const p = candidateProfile;
+      const edu = p.education || {};
+      $("#profileBox").innerHTML = profileReady(p) ? `
+        <div class="ver" style="margin-top:10px">
+          <div style="flex:1">
+            <div><b>已生成 candidateProfile</b> · 版本 ${esc(p.resumeVersion || "—")}</div>
+            <div class="muted">${esc([edu.school, edu.major, edu.degree, edu.graduationYear].filter(Boolean).join(" · ") || "教育信息未识别")}</div>
+            <div class="skills" style="margin-top:8px">${arr(p.skills).map(s=>`<span class="sk">${esc(s)}</span>`).join("") || `<span class="muted">未识别到技能</span>`}</div>
+            <div class="muted" style="margin-top:6px">求职方向：${esc(arr(p.targetPositions).join(" / ") || "未识别")} · 目标城市：${esc(arr(p.targetCities).join(" / ") || "未识别")}</div>
+            ${arr(p.internships).length ? `<div class="muted" style="margin-top:6px">实习：${esc(arr(p.internships).map(i=>typeof i==="string"?i:(i.company||"")+" "+(i.title||"")).join("；")).slice(0,180)}</div>` : `<div class="muted" style="margin-top:6px">未识别到实习经历</div>`}
+            ${arr(p.projects).length ? `<div class="muted">项目：${esc(arr(p.projects).map(i=>typeof i==="string"?i:(i.name||"")).join("；")).slice(0,180)}</div>` : ""}
+          </div>
+        </div>` : `<div class="muted" style="margin-top:8px">上传或粘贴简历后，将提取画像并计算全部岗位匹配度。</div>`;
+      $("#resumeVers").innerHTML = vers.map(v => `
+        <div class="ver${v.id===resumeState.currentId?" cur":""}">
+          <div style="flex:1">
+            <div>${esc(v.name || v.fileName)} · ${esc(v.version)}</div>
+            <div class="muted">${esc(v.uploadedAt)} · ${esc(v.fileName)}${v.size? " · " + Math.round(v.size/1024) + " KB":""}${v.text?" · 已解析":""}</div>
+          </div>
+          <button class="btn" type="button" data-act="resume-cur" data-id="${v.id}">设为当前</button>
+          ${v.dataUrl?`<a class="btn" href="${v.dataUrl}" download="${esc(v.fileName)}" target="_blank" rel="noopener">查看</a>`:""}
+          <button class="btn danger" type="button" data-act="resume-del" data-id="${v.id}">删除</button>
+        </div>`).join("");
+    }
+
+    function setView(name){
+      if (name !== "mock" && mockTimer) { clearInterval(mockTimer); mockTimer = null; }
+      view = name;
+      document.querySelectorAll(".page").forEach(p => {
+        const on = p.id === "view-" + name;
+        p.classList.toggle("on", on);
+        p.hidden = !on;
+      });
+      document.querySelectorAll(".tab").forEach(t => t.classList.toggle("on", t.dataset.view === name));
+      window.scrollTo(0, 0);
+      render();
+    }
+
+    function render(opts){
+      if(opts && opts.resetPage) page = 1;
       const n = JOBS.length;
       const js = JOBS.filter(j=>(j.provinces||[]).includes("江苏")).length;
       const zj = JOBS.filter(j=>(j.provinces||[]).includes("浙江")).length;
@@ -245,31 +2847,355 @@
       const sh = JOBS.filter(j=>(j.provinces||[]).includes("上海")).length;
       $("#stats").innerHTML =
         `共 <b>${n}</b> 条在招测试岗 · 江苏 ${js} · 浙江 ${zj} · 安徽 ${ah} · 上海 ${sh} · 更新于 <b>${META.updated_at||"—"}</b>`;
-      $("#count").innerHTML = `当前显示 <b>${list.length}</b> 条 · 已标记 ${applied.size} 家`;
-      renderCities();
+
+      if (view === "home"){
+        const list = filtered();
+        const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE) || 1);
+        if(page > pages) page = pages;
+        if(page < 1) page = 1;
+        const slice = list.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE);
+        $("#list").innerHTML = list.length ? slice.map(card).join("") :
+          `<div class="empty">没有符合筛选的在招岗位，换个条件试试</div>`;
+        $("#count").innerHTML = list.length
+          ? `筛选 <b>${list.length}</b> 条 · 第 <b>${page}</b> / ${pages} 页 · 已投 ${applied.size} 家`
+          : `当前显示 <b>0</b> 条 · 已投 ${applied.size} 家`;
+        renderDash();
+        renderToday();
+        renderCities();
+        renderPager(pages);
+        renderSidebar();
+      }
+      if (view === "fav") renderFav();
+      if (view === "apps") renderApps();
+      if (view === "me") renderMe();
+      if (view === "resume") renderResume();
+      if (view === "mock") renderMock();
     }
 
-    $("#province").addEventListener("change", e=>{ province=e.target.value; render(); });
-    $("#scale").addEventListener("change", e=>{ scale=e.target.value; render(); });
-    $("#role").addEventListener("change", e=>{ role=e.target.value; render(); });
-    $("#sort").addEventListener("change", e=>{ sort=e.target.value; render(); });
-    $("#soon").addEventListener("change", e=>{ soon=e.target.checked; render(); });
-    $("#unapplied").addEventListener("change", e=>{ unapplied=e.target.checked; render(); });
-    $("#q").addEventListener("input", e=>{ q=e.target.value; render(); });
+    function goPage(n){
+      page = n;
+      render();
+      $("#list").scrollIntoView({behavior:"smooth", block:"start"});
+    }
+
+    function handleAct(el){
+      const act = el.dataset.act;
+      const id = el.dataset.id;
+      if (act === "close"){ $("#modal").classList.remove("on"); return; }
+      if (act === "detail"){
+        const j = jobById(id);
+        if (j) renderDetail(j);
+        return;
+      }
+      if (act === "fav"){ toggleFav(id); if ($("#modal").classList.contains("on") && jobById(id)) renderDetail(jobById(id)); render(); return; }
+      if (act === "skip"){ setSkip(id); if ($("#modal").classList.contains("on") && jobById(id)) renderDetail(jobById(id)); render(); return; }
+      if (act === "apply"){
+        if (getStatus({id}) === "未投" || getStatus({id}) === "暂时不投") setStatus(id, "已投");
+        render();
+        return;
+      }
+      if (act === "task-done"){
+        const t = (taskState.items||[]).find(x => x.id === id);
+        if (t){ t.done = !!el.checked; saveTasks(); renderTasks(); }
+        return;
+      }
+      if (act === "task-cancel"){
+        const t = (taskState.items||[]).find(x => x.id === id);
+        if (t){ t.cancelled = !t.cancelled; if (t.cancelled) t.done = false; saveTasks(); renderTasks(); }
+        return;
+      }
+      if (act === "task-del"){
+        taskState.items = (taskState.items||[]).filter(x => x.id !== id);
+        saveTasks(); renderTasks();
+        return;
+      }
+      if (act === "task-edit"){
+        const t = (taskState.items||[]).find(x => x.id === id);
+        if (!t) return;
+        const next = prompt("编辑任务", t.title);
+        if (next != null && next.trim()){ t.title = next.trim(); saveTasks(); renderTasks(); }
+        return;
+      }
+      if (act === "start-plan"){
+        setView("me");
+        setTimeout(() => { const el = $("#tasks"); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 50);
+        return;
+      }
+      if (act === "mock-start"){ openMockForJob(id); return; }
+      if (act === "mock-cfg"){ interviewState.pendingJobId = id; mockPhase = "config"; renderMock(); return; }
+      if (act === "mock-pick"){ openMockPick(); return; }
+      if (act === "mock-exit"){
+        if (interviewState.active && interviewState.active.status === "in_progress") pauseMock();
+        else setView("me");
+        return;
+      }
+      if (act === "mock-go" || act === "mock-go-weak"){
+        const jobId = interviewState.pendingJobId;
+        if (!jobId) return;
+        createMockSession({
+          jobId,
+          type: ($("#mockType") && $("#mockType").value) || "综合面试",
+          stage: ($("#mockStage") && $("#mockStage").value) || "一面",
+          difficulty: ($("#mockDiff") && $("#mockDiff").value) || "秋招",
+          minutes: ($("#mockMin") && Number($("#mockMin").value)) || 20,
+          retryWeak: act === "mock-go-weak"
+        });
+        return;
+      }
+      if (act === "mock-submit"){
+        const t = $("#mockAns") ? $("#mockAns").value : "";
+        submitMockAnswer(t, false);
+        return;
+      }
+      if (act === "mock-skip"){ submitMockAnswer("", true); return; }
+      if (act === "mock-next"){ continueAfterFeedback(); return; }
+      if (act === "mock-retry"){ retryMockAnswer(); return; }
+      if (act === "mock-pause"){ pauseMock(); return; }
+      if (act === "mock-resume"){ resumeMock(); return; }
+      if (act === "mock-review"){
+        $("#modal").classList.remove("on");
+        interviewState.reviewId = id;
+        mockPhase = "review";
+        setView("mock");
+        return;
+      }
+      if (act === "mock-again"){ openMockForJob(id, { retryWeak: true }); return; }
+      if (act === "mock-star"){ toggleStarQuestion(id, el.dataset.sid); return; }
+      if (act === "mock-drill"){ openMockForJob(id, { retryWeak: true }); return; }
+      if (act === "iv-del"){
+        interviewState.records = (interviewState.records||[]).filter(x => x.id !== id);
+        saveIv(); renderInterviews();
+        return;
+      }
+      if (act === "resume-cur"){
+        resumeState.currentId = id;
+        saveResume();
+        applyResumeRecord(currentResume()).then(() => render());
+        return;
+      }
+      if (act === "resume-del"){
+        resumeState.versions = (resumeState.versions||[]).filter(x => x.id !== id);
+        if (resumeState.currentId === id) resumeState.currentId = resumeState.versions[0] ? resumeState.versions[0].id : "";
+        saveResume();
+        if (resumeState.currentId) applyResumeRecord(currentResume()).then(() => render());
+        else {
+          candidateProfile = {
+            education: { school: "", major: "", degree: "", graduationYear: "" },
+            skills: [], projects: [], internships: [], targetPositions: [], targetCities: [], keywords: [],
+            resumeVersion: "", updatedAt: todayStr
+          };
+          saveProfile();
+          recalculateAllMatches();
+          render();
+        }
+      }
+    }
+
+    $("#province").addEventListener("change", e=>{ province=e.target.value; dashKey=""; render({resetPage:true}); });
+    $("#scale").addEventListener("change", e=>{ scale=e.target.value; dashKey=""; render({resetPage:true}); });
+    $("#role").addEventListener("change", e=>{ role=e.target.value; dashKey=""; render({resetPage:true}); });
+    $("#citySel").addEventListener("change", e=>{ city=e.target.value; dashKey=""; render({resetPage:true}); });
+    $("#sort").addEventListener("change", e=>{ sort=e.target.value; render({resetPage:true}); });
+    $("#soon").addEventListener("change", e=>{ soon=e.target.checked; dashKey = soon ? "soon" : ""; render({resetPage:true}); });
+    $("#unapplied").addEventListener("change", e=>{ unapplied=e.target.checked; render({resetPage:true}); });
+    $("#showSkipped").addEventListener("change", e=>{
+      showSkipped=e.target.checked;
+      if (showSkipped){ unapplied = false; $("#unapplied").checked = false; }
+      render({resetPage:true});
+    });
+    $("#q").addEventListener("input", e=>{ q=e.target.value; render({resetPage:true}); });
     $("#cities").addEventListener("click", e=>{
       const btn = e.target.closest("[data-city]");
       if(!btn) return;
       city = city === btn.dataset.city ? "" : btn.dataset.city;
-      render();
+      $("#citySel").value = city;
+      render({resetPage:true});
     });
-    $("#list").addEventListener("change", e=>{
-      const box = e.target.closest(".applied");
-      if(!box) return;
-      const id = e.target.closest(".card").dataset.id;
-      if(box.checked) applied.add(id); else applied.delete(id);
-      saveApplied();
-      render();
+    $("#pager").addEventListener("click", e=>{
+      const btn = e.target.closest("[data-page]");
+      if(!btn || btn.disabled) return;
+      const n = Number(btn.dataset.page);
+      if(!n) return;
+      goPage(n);
     });
+    $("#dash").addEventListener("click", e=>{
+      const btn = e.target.closest("[data-dash]");
+      if(!btn) return;
+      applyDash(btn.dataset.dash);
+    });
+    document.querySelector(".tabbar").addEventListener("click", e=>{
+      const btn = e.target.closest("[data-view]");
+      if(!btn) return;
+      dashKey = "";
+      setView(btn.dataset.view);
+    });
+    document.addEventListener("click", e=>{
+      const el = e.target.closest("[data-act]");
+      if(!el) return;
+      if (el.tagName === "A" && el.dataset.act === "apply") handleAct(el);
+      else if (el.tagName !== "A") handleAct(el);
+    });
+    $("#modal").addEventListener("click", e=>{
+      if (e.target.id === "modal") $("#modal").classList.remove("on");
+    });
+    $("#favChips").addEventListener("click", e=>{
+      const btn = e.target.closest("[data-fav]");
+      if(!btn) return;
+      favMode = btn.dataset.fav;
+      renderFav();
+    });
+    $("#appChips").addEventListener("click", e=>{
+      const btn = e.target.closest("[data-app]");
+      if(!btn) return;
+      appMode = btn.dataset.app;
+      renderApps();
+    });
+    $("#meStageChips").addEventListener("click", e=>{
+      const btn = e.target.closest("[data-stage]");
+      if(!btn) return;
+      meStage = btn.dataset.stage;
+      renderMe();
+    });
+    $("#taskAdd").addEventListener("click", ()=>{
+      const title = $("#taskInput").value.trim();
+      if(!title) return;
+      taskState.items.push({ id: uid(), title, done:false, cancelled:false, date: todayStr, createdAt: todayStr });
+      $("#taskInput").value = "";
+      saveTasks(); renderTasks();
+    });
+    $("#ivAdd").addEventListener("click", ()=>{
+      const company = $("#ivCompany").value.trim();
+      if(!company) return;
+      interviewState.records.push({
+        id: uid(),
+        company,
+        position: $("#ivPosition").value.trim(),
+        time: $("#ivTime").value || todayStr,
+        round: $("#ivRound").value,
+        result: $("#ivResult").value,
+        questions: $("#ivQuestions").value.trim(),
+        notes: $("#ivNotes").value.trim()
+      });
+      ["ivCompany","ivPosition","ivQuestions","ivNotes"].forEach(id => $("#"+id).value = "");
+      saveIv(); renderInterviews();
+    });
+    $("#resumeUploadBtn").addEventListener("click", ()=> $("#resumeFile").click());
+    $("#resumeFile").addEventListener("change", e=>{
+      const file = e.target.files && e.target.files[0];
+      e.target.value = "";
+      if(!file) return;
+      ingestResumeFile(file);
+    });
+    $("#resumePasteBtn").addEventListener("click", ()=>{
+      const text = ($("#resumePaste").value || "").trim();
+      if (!text){ $("#parseMsg").textContent = "请先粘贴简历文本"; return; }
+      const version = nextVersionName();
+      const rec = { id: uid(), name: "2027秋招简历_" + version, version, fileName: "pasted.txt", mime: "text/plain", size: text.length, uploadedAt: todayStr, dataUrl: "", text };
+      resumeState.versions = resumeState.versions || [];
+      resumeState.versions.push(rec);
+      resumeState.currentId = rec.id;
+      applyParsedText(text, version, rec);
+      $("#parseMsg").textContent = "已从文本解析，并重新计算岗位匹配度";
+    });
+    $("#resumeReparseBtn").addEventListener("click", ()=>{
+      const cur = currentResume();
+      if (!cur){ $("#parseMsg").textContent = "还没有可解析的简历"; return; }
+      reparseCurrent();
+    });
+
+    function fileToDataUrl(file){
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+    }
+    function applyParsedText(text, version, rec){
+      const profile = extractCandidateProfile(text, version);
+      candidateProfile = profile;
+      if (rec){
+        rec.text = String(text || "").slice(0, 80000);
+        rec.profile = profile;
+      }
+      saveProfile();
+      saveResume();
+      recalculateAllMatches();
+      render();
+    }
+    async function applyResumeRecord(rec){
+      if (!rec) return;
+      if (rec.profile && profileReady(rec.profile)){
+        candidateProfile = Object.assign({}, rec.profile, { resumeVersion: rec.version, updatedAt: todayStr });
+        saveProfile();
+        recalculateAllMatches();
+        return;
+      }
+      if (rec.text){
+        applyParsedText(rec.text, rec.version, rec);
+        return;
+      }
+      if (rec.dataUrl){
+        $("#parseMsg").textContent = "正在重新解析…";
+        const parsed = await parseResume({ dataUrl: rec.dataUrl, fileName: rec.fileName });
+        if (parsed.text) applyParsedText(parsed.text, rec.version, rec);
+        $("#parseMsg").textContent = parsed.error || "已重新解析";
+      }
+    }
+    async function ingestResumeFile(file){
+      $("#parseMsg").textContent = "正在解析简历…";
+      const version = nextVersionName();
+      const rec = {
+        id: uid(),
+        name: "2027秋招简历_" + version,
+        version,
+        fileName: file.name,
+        mime: file.type,
+        size: file.size,
+        uploadedAt: todayStr,
+        dataUrl: "",
+        text: ""
+      };
+      const parsed = await parseResume(file);
+      if (!parsed.text && parsed.error){
+        $("#parseMsg").textContent = parsed.error;
+        return;
+      }
+      try {
+        if (file.size <= 1.6 * 1024 * 1024) rec.dataUrl = await fileToDataUrl(file);
+      } catch(e) {}
+      resumeState.versions = resumeState.versions || [];
+      resumeState.versions.push(rec);
+      resumeState.currentId = rec.id;
+      applyParsedText(parsed.text, version, rec);
+      const n = (candidateProfile.skills || []).length;
+      $("#parseMsg").textContent = (parsed.error ? parsed.error + "；" : "") + "已提取 " + n + " 项技能，并重新计算全部岗位匹配度";
+    }
+    async function reparseCurrent(){
+      const cur = currentResume();
+      if (!cur) return;
+      $("#parseMsg").textContent = "正在重新解析…";
+      if (cur.text){
+        applyParsedText(cur.text, cur.version, cur);
+        $("#parseMsg").textContent = "已按保存文本重新计算匹配度";
+        return;
+      }
+      await applyResumeRecord(cur);
+    }
+
+    window.parseResume = parseResume;
+    window.extractCandidateProfile = extractCandidateProfile;
+    window.calculateMatchScore = calculateMatchScore;
+    window.getMatchedSkills = getMatchedSkills;
+    window.getMissingSkills = getMissingSkills;
+    window.getMatchReason = getMatchReason;
+
+    if (applied.size) saveJobsState();
+    if (profileReady()){
+      const sample = JOBS[0];
+      const cached = sample ? peek(sample.id).match : null;
+      if (!cached || cached.resumeVersion !== (candidateProfile.resumeVersion || "") || cached.matchModel !== MATCH_MODEL) recalculateAllMatches();
+    }
     render();
   </script>
 </body>

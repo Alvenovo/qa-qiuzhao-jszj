@@ -106,7 +106,25 @@ def lookup_channel(company: str) -> dict[str, str]:
     return {}
 
 
+def is_job_detail_url(url: str | None) -> bool:
+    if not url or not str(url).startswith("http"):
+        return False
+    u = str(url).lower()
+    if any(x in u for x in ("/sou/", "keyword=", "/search", "/schedule", "/campus/position?")):
+        return False
+    if "iguopin.com/job/detail" in u or "/jobs/detail/" in u:
+        return True
+    if re.search(r"/(detail|job|position|post)/[a-z0-9_-]{6,}", u):
+        return True
+    if re.search(r"(job[_-]?id|post[_-]?id|position[_-]?id|jid|[?&]id)=\w{6,}", u):
+        return True
+    return False
+
+
 def official_apply(company: str, fallback: str | None) -> str | None:
+    # 职位详情链接优先于公司招聘首页，否则后面抽不到原文 JD。
+    if is_job_detail_url(fallback):
+        return fallback
     ch = lookup_channel(company)
     url = (ch.get("url") or "").strip()
     if url.startswith("http"):
@@ -148,6 +166,7 @@ def get(url: str, **kwargs) -> requests.Response | None:
     try:
         resp = SESSION.get(url, timeout=TIMEOUT, **kwargs)
         if resp.status_code >= 400:
+            print(f"  GET {resp.status_code} {url[:80]}", flush=True)
             return None
         resp.raise_for_status()
         return resp
@@ -160,6 +179,7 @@ def post(url: str, **kwargs) -> requests.Response | None:
     try:
         resp = SESSION.post(url, timeout=TIMEOUT, **kwargs)
         if resp.status_code >= 400:
+            print(f"  POST {resp.status_code} {url[:80]}", flush=True)
             return None
         return resp
     except Exception as exc:
@@ -250,6 +270,385 @@ def still_open(deadline: str | None) -> bool:
         return True
 
 
+JD_SKILL_TERMS = [
+    ("Python", ["Python", "python3", "Python3"]),
+    ("pytest", ["pytest", "py.test"]),
+    ("接口测试", ["接口测试", "API测试", "API 测试", "接口自动化"]),
+    ("自动化测试", ["自动化测试"]),
+    ("Selenium", ["Selenium"]),
+    ("Playwright", ["Playwright"]),
+    ("Appium", ["Appium"]),
+    ("JMeter", ["JMeter", "jmeter"]),
+    ("Postman", ["Postman"]),
+    ("requests", ["requests"]),
+    ("Allure", ["Allure"]),
+    ("MySQL", ["MySQL", "mysql"]),
+    ("PostgreSQL", ["PostgreSQL", "Postgres"]),
+    ("SQL", ["SQL"]),
+    ("Linux", ["Linux"]),
+    ("Git", ["Git"]),
+    ("HTTP/HTTPS", ["HTTP", "HTTPS", "http协议"]),
+    ("Java", ["Java"]),
+    ("Jenkins", ["Jenkins"]),
+    ("CI/CD", ["CI/CD", "持续集成"]),
+    ("Docker", ["Docker"]),
+    ("用例设计", ["用例设计", "测试用例"]),
+    ("缺陷跟踪", ["禅道", "Jira", "缺陷跟踪"]),
+    ("性能测试", ["性能测试"]),
+    ("unittest", ["unittest"]),
+    ("JUnit", ["JUnit"]),
+    ("YAML", ["YAML"]),
+]
+SALARY_RE = re.compile(
+    r"(?:薪资|月薪|年薪|薪酬|工资)[:：是为]{0,4}\s*(面议|待议|薪资待定|[^\n。；;]{1,24})"
+    r"|((?:\d{1,3}\s*[-~～到至]\s*\d{1,3})\s*[kKwW千万元]{1,3}(?:/月|/年|·月)?"
+    r"|(?:\d{4,6}\s*[-~～到至]\s*\d{4,6})\s*(?:元)?(?:/月|/年)?)"
+)
+
+
+def as_text(v: Any) -> str:
+    if v is None:
+        return ""
+    if isinstance(v, str):
+        return v.strip()
+    if isinstance(v, dict):
+        return as_text(v.get("name") or v.get("zh_name") or v.get("en_name") or v.get("content") or "")
+    if isinstance(v, list):
+        return "\n".join(x for x in (as_text(i) for i in v) if x)
+    return str(v).strip()
+
+
+def soup_of(html: str) -> BeautifulSoup:
+    try:
+        return BeautifulSoup(html or "", "lxml")
+    except Exception:
+        return BeautifulSoup(html or "", "html.parser")
+
+
+def html_to_text(html: str) -> str:
+    soup = soup_of(html)
+    for tag in soup(["script", "style", "noscript", "svg"]):
+        tag.decompose()
+    return soup.get_text("\n", strip=True)
+
+
+def looks_like_salary_text(s: str) -> bool:
+    s = re.sub(r"\s+", "", (s or "").strip())
+    if not s or len(s) > 40:
+        return False
+    if re.search(r"成立|周年|年假|注册资本|员工\d|粉丝", s):
+        return False
+    if re.fullmatch(r"0+万?", s):
+        return False
+    if re.search(r"面议|待议|薪资待定", s):
+        return True
+    if re.search(r"\d+\s*[-~～到至]\s*\d+\s*[kKwW千万元]", s):
+        return True
+    if re.search(r"\d{4,6}\s*[-~～到至]\s*\d{4,6}", s):
+        return True
+    if re.search(r"(月薪|年薪|薪资|薪酬).{0,12}\d", s):
+        return True
+    if re.search(r"\d+[kK万]\s*[-~～到至]\s*\d+[kK万]", s):
+        return True
+    return False
+
+
+def extract_salary(text: str) -> str:
+    blob = text or ""
+    for m in SALARY_RE.finditer(blob):
+        raw = next((g for g in m.groups() if g), "").strip(" :：-|")
+        if not looks_like_salary_text(raw):
+            continue
+        return re.sub(r"\s+", " ", raw).strip()
+    return ""
+
+
+def salary_from_posting(row: dict[str, Any], extra_text: str = "") -> str:
+    """岗位上怎么写就怎么存，不换算、不编造。"""
+    for key in ("salary", "salaryDesc", "salary_range", "salaryRange", "wage_cn", "pay"):
+        raw = as_text(row.get(key))
+        if looks_like_salary_text(raw):
+            return re.sub(r"\s+", " ", raw).strip()
+    labeled = extract_salary(extra_text or as_text(row.get("contents")))
+    if labeled:
+        return labeled
+    if row.get("is_negotiable") in (True, 1, "1", "true", "True"):
+        return "面议"
+    lo, hi = row.get("min_wage") or 0, row.get("max_wage") or 0
+    try:
+        lo, hi = int(lo), int(hi)
+    except (TypeError, ValueError):
+        lo, hi = 0, 0
+    unit = as_text(row.get("wage_unit_cn")) or "元/月"
+    if lo <= 0 and hi <= 0:
+        return "面议"
+    if unit == "元/天":
+        text = f"{lo}~{hi}元/天" if hi and lo != hi else f"{lo}元/天"
+    elif unit in ("元/月", "") and lo >= 1000:
+        a, b = lo // 1000, (hi or lo) // 1000
+        text = f"{a}~{b}K" if b and a != b else f"{a}K"
+    else:
+        text = f"{lo}~{hi}{unit}" if hi and lo != hi else f"{lo or hi}{unit}"
+    try:
+        months = int(row.get("months") or 0)
+    except (TypeError, ValueError):
+        months = 0
+    if months and months not in (0, 12):
+        text += f"·{months}薪"
+    return text
+
+
+def extract_skills_from_blob(text: str) -> list[str]:
+    t = text or ""
+    out = []
+    for name, aliases in JD_SKILL_TERMS:
+        if any(a in t for a in aliases + [name]):
+            out.append(name)
+    return list(dict.fromkeys(out))
+
+
+def _cut_section(text: str, heads: str) -> str:
+    m = re.search(heads, text)
+    if not m:
+        return ""
+    start = m.end()
+    nxt = re.search(
+        r"\n\s*(?:任职要求|任职资格|岗位要求|职位要求|任职条件|岗位职责|工作职责|"
+        r"加分项|福利待遇|薪资待遇|工作地点|职位描述)\s*[:：]?",
+        text[start:],
+    )
+    end = start + nxt.start() if nxt else min(len(text), start + 1800)
+    return text[start:end].strip(" \n:：")
+
+
+def split_jd_items(block: str) -> list[str]:
+    items = []
+    for line in re.split(r"[\n；;]", block or ""):
+        line = re.sub(r"^[\s\d一二三四五六七八九十]+[\.、．\)）]\s*", "", line)
+        line = line.strip(" -•·*、")
+        if 6 <= len(line) <= 180:
+            items.append(line)
+    return items[:12]
+
+
+def parse_jd_text(*parts: Any) -> dict[str, Any]:
+    text = re.sub(r"\n{3,}", "\n\n", "\n".join(as_text(p) for p in parts if as_text(p))).strip()
+    if len(text) < 24:
+        return {"description": "", "responsibilities": [], "requirements": [], "skills": [], "salary": ""}
+    resp = split_jd_items(_cut_section(text, r"(?:岗位职责|工作职责|工作内容|职位描述)\s*[:：]?"))
+    req = split_jd_items(_cut_section(text, r"(?:任职要求|任职资格|岗位要求|职位要求|任职条件)\s*[:：]?"))
+    if not resp and not req:
+        return {
+            "description": "",
+            "responsibilities": [],
+            "requirements": [],
+            "skills": extract_skills_from_blob(text) if re.search(r"岗位职责|任职要求", text) else [],
+            "salary": extract_salary(text),
+        }
+    desc = "；".join(resp[:4]) if resp else text[:500]
+    if len(desc) > 600:
+        desc = desc[:600].rstrip() + "…"
+    return {
+        "description": desc,
+        "responsibilities": resp,
+        "requirements": req,
+        "skills": extract_skills_from_blob(text),
+        "salary": extract_salary(text),
+    }
+
+
+def merge_jd_into(job: dict[str, Any], parsed: dict[str, Any] | None) -> None:
+    if not parsed:
+        return
+    if looks_real_jd(parsed):
+        desc = as_text(parsed.get("description"))
+        if desc and len(desc) > len(as_text(job.get("description"))):
+            job["description"] = desc[:800]
+        for key in ("responsibilities", "requirements", "skills"):
+            old = [x for x in (job.get(key) or []) if x]
+            new = [x for x in (parsed.get(key) or []) if x]
+            job[key] = list(dict.fromkeys(old + new))[:16]
+    sal = as_text(parsed.get("salary"))
+    if looks_real_salary(sal) and (not job.get("salary") or job.get("salary") == "面议"):
+        job["salary"] = sal
+
+
+def job_has_jd(job: dict[str, Any]) -> bool:
+    return bool(
+        as_text(job.get("description"))
+        or job.get("responsibilities")
+        or job.get("requirements")
+        or job.get("skills")
+    )
+
+
+def should_fetch_jd(url: str | None) -> bool:
+    if not url or not str(url).startswith("http"):
+        return False
+    u = str(url).lower()
+    skip = (
+        "baidu.com", "google.com", "weixin.qq.com", "mp.weixin",
+        "iguopin.com/job?", "zhipin.com/web/geek/job",
+        "nowcoder.com/jobs/school/schedule", "zhiye.com/login",
+        "zhaopin.com/sou/", "xiaoyuan.zhaopin.com", "lagou.com",
+    )
+    if any(s in u for s in skip) and "job/detail" not in u:
+        return False
+    return is_job_detail_url(url)
+
+
+def _jsonld_jobs(html: str) -> list[dict[str, Any]]:
+    soup = soup_of(html or "")
+    out = []
+    for tag in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        raw = tag.string or tag.get_text() or ""
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+        rows = data if isinstance(data, list) else [data]
+        if isinstance(data, dict) and isinstance(data.get("@graph"), list):
+            rows = data["@graph"]
+        for row in rows:
+            if not isinstance(row, dict):
+                continue
+            typ = str(row.get("@type") or "")
+            if "JobPosting" not in typ and "job" not in typ.lower():
+                continue
+            salary = ""
+            base = row.get("baseSalary") or {}
+            if isinstance(base, dict):
+                val = base.get("value") or {}
+                if isinstance(val, dict):
+                    lo, hi, cur = val.get("minValue"), val.get("maxValue"), val.get("unitText") or ""
+                    if lo and hi:
+                        salary = f"{lo}-{hi}{cur}"
+                    elif lo:
+                        salary = f"{lo}{cur}"
+                elif isinstance(val, (int, float, str)):
+                    salary = str(val)
+            out.append({
+                "description": as_text(row.get("description")),
+                "responsibilities": split_jd_items(as_text(row.get("responsibilities"))),
+                "requirements": split_jd_items(as_text(row.get("qualifications") or row.get("experienceRequirements"))),
+                "skills": extract_skills_from_blob(as_text(row.get("skills")) + as_text(row.get("description"))),
+                "salary": salary or extract_salary(as_text(row.get("description"))),
+            })
+    return out
+
+
+def fetch_jd_from_url(url: str) -> dict[str, Any] | None:
+    resp = get(url)
+    if not resp or not resp.text:
+        return None
+    html = resp.text
+    parsed = parse_jd_text(html_to_text(html))
+    for block in _jsonld_jobs(html):
+        merge_jd_into(parsed, block)
+    if not looks_real_jd(parsed):
+        parsed["description"] = ""
+        parsed["responsibilities"] = []
+        parsed["requirements"] = []
+        parsed["skills"] = []
+    if parsed.get("salary") and not looks_like_salary_text(as_text(parsed.get("salary"))):
+        parsed["salary"] = ""
+    if not job_has_jd(parsed) and not parsed.get("salary"):
+        return None
+    return parsed
+
+
+def looks_real_jd(job: dict[str, Any]) -> bool:
+    blob = as_text(job.get("description")) + " " + " ".join(job.get("responsibilities") or []) + " " + " ".join(job.get("requirements") or [])
+    if len(blob) < 30:
+        return False
+    if re.search(r"射线衍射|随钻测量|pick你的心仪岗位|多种方式", blob):
+        return False
+    return bool(re.search(
+        r"岗位职责|任职要求|工作职责|职位描述|测试用例|接口测试|自动化测试|"
+        r"质量保障|缺陷跟踪|pytest|软件测试|测试开发|测开",
+        blob,
+    ))
+
+
+def looks_real_salary(s: str) -> bool:
+    return looks_like_salary_text(s)
+
+
+def scrub_false_jd(jobs: list[dict[str, Any]]) -> None:
+    for job in jobs:
+        if job.get("description") or job.get("responsibilities") or job.get("skills"):
+            if not looks_real_jd(job):
+                job["description"] = ""
+                job["responsibilities"] = []
+                job["requirements"] = []
+                job["skills"] = []
+        if job.get("salary") and not looks_real_salary(as_text(job.get("salary"))):
+            job["salary"] = ""
+
+
+def enrich_from_apis(jobs: list[dict[str, Any]]) -> int:
+    extra: list[dict[str, Any]] = []
+    for fn in (from_bytedance, from_huawei, from_nowcoder):
+        try:
+            extra.extend(fn())
+        except Exception as exc:
+            log_source(fn.__name__, False, 0, str(exc))
+    n = 0
+    for src in extra:
+        if not looks_real_jd(src) and not looks_real_salary(as_text(src.get("salary"))):
+            continue
+        for job in jobs:
+            same_co = src["company"] in job["company"] or job["company"] in src["company"]
+            if not same_co or not _role_alike(src, job):
+                continue
+            before = looks_real_jd(job)
+            merge_jd_into(job, src)
+            if looks_real_jd(job) and not before:
+                n += 1
+            break
+    log_source("官网接口补JD", True, n, f"接口返回 {len(extra)} 条")
+    return n
+
+
+def _role_alike(src: dict[str, Any], job: dict[str, Any]) -> bool:
+    sp = " ".join(src.get("positions") or [])
+    jp = " ".join(job.get("positions") or [])
+    generic = ("软件测试相关", "测试相关", "测试开发")
+    if jp in generic or sp in generic:
+        return True
+    tokens = re.findall(r"[\u4e00-\u9fff]{2,}|[A-Za-z]{3,}", sp)
+    return any(len(t) >= 4 and t in jp for t in tokens)
+
+
+def enrich_jobs_with_jd(jobs: list[dict[str, Any]], limit: int = 80) -> int:
+    filled = 0
+    tried = 0
+    for job in jobs:
+        if looks_real_jd(job) and looks_real_salary(as_text(job.get("salary"))):
+            continue
+        url = job.get("apply_url")
+        if not should_fetch_jd(url):
+            continue
+        if tried >= limit:
+            break
+        tried += 1
+        try:
+            parsed = fetch_jd_from_url(url)
+        except Exception as exc:
+            print(f"  JD fail {url[:70]} -> {exc}", flush=True)
+            parsed = None
+        if parsed:
+            before = looks_real_jd(job)
+            merge_jd_into(job, parsed)
+            if looks_real_jd(job) and not before:
+                filled += 1
+            elif looks_real_salary(as_text(job.get("salary"))) and parsed.get("salary"):
+                filled += 1
+        time.sleep(0.25)
+    log_source("职位详情补全", True, filled, f"尝试 {tried} 个投递链接")
+    return filled
+
+
 def make_job(**kwargs) -> dict[str, Any] | None:
     company = (kwargs.get("company") or "").strip()
     if not company:
@@ -282,6 +681,40 @@ def make_job(**kwargs) -> dict[str, Any] | None:
     ch = lookup_channel(company)
     search_hint = (kwargs.get("search_hint") or ch.get("hint") or "").strip() or default_search_hint(company)
     role = kwargs.get("role_type") or classify_role(positions)
+    parsed = parse_jd_text(
+        kwargs.get("description"),
+        kwargs.get("raw_jd"),
+        kwargs.get("raw"),
+        "\n".join(kwargs.get("responsibilities") or []),
+        "\n".join(kwargs.get("requirements") or []),
+    )
+    if kwargs.get("responsibilities"):
+        parsed["responsibilities"] = list(dict.fromkeys(
+            [as_text(x) for x in kwargs["responsibilities"] if as_text(x)] + parsed["responsibilities"]
+        ))[:16]
+    if kwargs.get("requirements"):
+        parsed["requirements"] = list(dict.fromkeys(
+            [as_text(x) for x in kwargs["requirements"] if as_text(x)] + parsed["requirements"]
+        ))[:16]
+    if kwargs.get("skills"):
+        parsed["skills"] = list(dict.fromkeys(
+            [as_text(x) for x in kwargs["skills"] if as_text(x)] + parsed["skills"]
+        ))[:16]
+    salary = as_text(kwargs.get("salary")) or parsed["salary"]
+    description = as_text(kwargs.get("description")) or parsed["description"]
+    draft = {
+        "description": description,
+        "responsibilities": parsed["responsibilities"],
+        "requirements": parsed["requirements"],
+        "skills": parsed["skills"],
+    }
+    if description and not looks_real_jd(draft):
+        description = ""
+        parsed["responsibilities"] = []
+        parsed["requirements"] = []
+        parsed["skills"] = []
+    if salary and not looks_real_salary(salary):
+        salary = ""
     key = hashlib.md5(
         f"{company}|{kwargs.get('batch')}|{deadline}|{','.join(locations)}|{role}".encode("utf-8")
     ).hexdigest()[:12]
@@ -305,6 +738,11 @@ def make_job(**kwargs) -> dict[str, Any] | None:
         "scale": kwargs.get("scale") or classify_scale(company),
         "owner": kwargs.get("owner") or "",
         "status": "open",
+        "description": description or "",
+        "responsibilities": parsed["responsibilities"],
+        "requirements": parsed["requirements"],
+        "skills": parsed["skills"],
+        "salary": salary or "",
     }
 
 
@@ -321,11 +759,12 @@ def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         old["positions"] = list(dict.fromkeys(old["positions"] + job["positions"]))
         old["locations"] = list(dict.fromkeys(old["locations"] + job["locations"]))
         old["provinces"] = list(dict.fromkeys(old["provinces"] + job["provinces"]))
-        if job.get("apply_url") and (not old.get("apply_url") or old["source"] != "企业官网"):
-            if job["source"] == "企业官网" or not old.get("apply_url"):
-                old["apply_url"] = job["apply_url"]
-                if job["source"] == "企业官网":
-                    old["source"] = "企业官网"
+        old_score = 3 if is_job_detail_url(old.get("apply_url")) else (2 if old.get("source") == "企业官网" and old.get("apply_url") else (1 if old.get("apply_url") else 0))
+        new_score = 3 if is_job_detail_url(job.get("apply_url")) else (2 if job.get("source") == "企业官网" and job.get("apply_url") else (1 if job.get("apply_url") else 0))
+        if new_score > old_score:
+            old["apply_url"] = job["apply_url"]
+            if job["source"] == "企业官网":
+                old["source"] = "企业官网"
         if job.get("search_hint") and (
             not old.get("search_hint") or len(job["search_hint"]) > len(old.get("search_hint") or "")
         ):
@@ -336,6 +775,13 @@ def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
             old["start_date"] = job["start_date"]
         if job.get("updated_at") and job["updated_at"] > (old.get("updated_at") or ""):
             old["updated_at"] = job["updated_at"]
+        merge_jd_into(old, {
+            "description": job.get("description"),
+            "responsibilities": job.get("responsibilities"),
+            "requirements": job.get("requirements"),
+            "skills": job.get("skills"),
+            "salary": job.get("salary"),
+        })
     jobs = list(bucket.values())
     jobs.sort(key=lambda j: (j.get("deadline") or "9999", j["company"]))
     return jobs
@@ -343,9 +789,145 @@ def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 # ---------- sources ----------
 
+IGUOPIN_CAMPUS_NATURE = "115xW5oQ"
+IGUOPIN_PROV = {"310000", "320000", "330000", "340000"}
+
+
+def _iguopin_locations(row: dict[str, Any]) -> list[str]:
+    out = []
+    for d in row.get("district_list") or []:
+        if not isinstance(d, dict):
+            continue
+        area = as_text(d.get("area_cn") or d.get("address"))
+        out.extend(split_locations(area.replace("-", "、")))
+    return out
+
+
+def _iguopin_in_region(row: dict[str, Any]) -> bool:
+    for d in row.get("district_list") or []:
+        if not isinstance(d, dict):
+            continue
+        if str(d.get("province") or "") in IGUOPIN_PROV:
+            return True
+        area = as_text(d.get("area_cn"))
+        cities, provs = js_zj_cities(split_locations(area.replace("-", "、")))
+        if cities or provs:
+            return True
+    return False
+
+
+def from_iguopin() -> list[dict[str, Any]]:
+    url = "https://gp-api.iguopin.com/api/jobs/v1/list"
+    headers = {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Accept": "application/json, text/plain, */*",
+        "Device": "pc",
+        "Subsite": "iguopin",
+        "Version": "5.2.300",
+        "Origin": "https://www.iguopin.com",
+        "Referer": "https://www.iguopin.com/",
+    }
+    seen: set[str] = set()
+    jobs: list[dict[str, Any]] = []
+    for keyword in ("软件测试", "测试开发", "测试工程师", "质量保障", "测开"):
+        for page in range(1, 8):
+            body = {
+                "page": page,
+                "page_size": 50,
+                "keyword": keyword,
+            }
+            resp = post(url, json=body, headers=headers)
+            if not resp:
+                continue
+            try:
+                data = resp.json()
+            except Exception:
+                continue
+            rows = ((data.get("data") or {}).get("list")) or []
+            for row in rows:
+                if not isinstance(row, dict):
+                    continue
+                jid = as_text(row.get("job_id"))
+                if not jid or jid in seen:
+                    continue
+                title = as_text(row.get("job_name"))
+                if not TEST_RE.search(title) or re.search(r"机械测试|通讯测试|无线通信|测量方向|生产辅助|射频测试|硬件测试|汽车通讯|GNSS测试|仿真测试", title):
+                    continue
+                if SKIP_TEST_RE.search(title) and not re.search(r"软件测试|测试开发|测开", title):
+                    continue
+                if not _iguopin_in_region(row):
+                    continue
+                seen.add(jid)
+                contents = as_text(row.get("contents"))
+                if "<" in contents:
+                    contents = html_to_text(contents)
+                notes = as_text(row.get("notes"))
+                salary = salary_from_posting(row, contents + "\n" + notes)
+                job = make_job(
+                    company=as_text(row.get("company_name")),
+                    program=as_text(row.get("recruitment_type_cn")) or "校园招聘",
+                    cohort="2027届",
+                    batch="校招",
+                    positions=[title],
+                    locations=_iguopin_locations(row),
+                    start_date=row.get("start_time"),
+                    deadline=row.get("end_time"),
+                    updated_at=row.get("refresh_time") or row.get("update_time"),
+                    apply_url=f"https://www.iguopin.com/job/detail?id={jid}",
+                    source="国聘网",
+                    industry=as_text((row.get("company_info") or {}).get("nature_cn")) or "国企",
+                    description=contents,
+                    raw_jd=contents,
+                    salary=salary,
+                    search_hint=f"国聘职位详情：https://www.iguopin.com/job/detail?id={jid}",
+                )
+                if job:
+                    jobs.append(job)
+            time.sleep(0.2)
+    log_source("国聘网", True, len(jobs), "职位详情含原文职责/薪资")
+    return jobs
+
+
+def from_existing() -> list[dict[str, Any]]:
+    path = ROOT / "jobs.json"
+    if not path.exists():
+        return []
+    rows = json.loads(path.read_text(encoding="utf-8"))
+    jobs = []
+    for row in rows:
+        job = make_job(**{k: v for k, v in row.items() if k != "id"})
+        if job:
+            jobs.append(job)
+    log_source("现有岗位", True, len(jobs), "保留未截止")
+    return jobs
+
+
+def copy_jd_across_same_company(jobs: list[dict[str, Any]]) -> int:
+    with_jd = [j for j in jobs if looks_real_jd(j)]
+    n = 0
+    for job in jobs:
+        if looks_real_jd(job) and looks_real_salary(as_text(job.get("salary"))):
+            continue
+        for src in with_jd:
+            same_co = src["company"] in job["company"] or job["company"] in src["company"]
+            if not same_co or not _role_alike(src, job):
+                continue
+            before = looks_real_jd(job)
+            merge_jd_into(job, src)
+            if looks_real_jd(job) and not before:
+                n += 1
+            if looks_real_salary(as_text(src.get("salary"))) and not looks_real_salary(as_text(job.get("salary"))):
+                job["salary"] = src["salary"]
+            if is_job_detail_url(src.get("apply_url")) and not is_job_detail_url(job.get("apply_url")):
+                job["apply_url"] = src["apply_url"]
+            break
+    log_source("同公司补JD", True, n)
+    return n
+
+
 def from_seed() -> list[dict[str, Any]]:
     jobs = []
-    for name in ("seed_jobs.json", "extra_jobs.json", "sh_ah_jobs.json", "crawled_jobs.json"):
+    for name in ("seed_jobs.json", "extra_jobs.json", "sh_ah_jobs.json", "crawled_jobs.json", "iguopin_jobs.json"):
         path = ROOT / name
         if not path.exists():
             continue
@@ -388,6 +970,11 @@ def from_xixicc() -> list[dict[str, Any]]:
             source="xixicc2027",
             industry=row.get("industry"),
             raw=" ".join(row.get("positions") or []),
+            description=row.get("description") or row.get("desc") or row.get("jd"),
+            responsibilities=row.get("responsibilities") or [],
+            requirements=row.get("requirements") or row.get("requirement") or [],
+            skills=row.get("skills") or [],
+            salary=row.get("salary") or row.get("pay") or "",
         )
         if job:
             jobs.append(job)
@@ -478,7 +1065,7 @@ def from_niuqizp() -> list[dict[str, Any]]:
             fail += 1
             continue
         try:
-            soup = BeautifulSoup(resp.text, "lxml")
+            soup = soup_of(resp.text)
             text = soup.get_text("\n", strip=True)
             jobs.extend(_parse_niuqizp_text(text, city_cn.get(slug, "")))
             ok += 1
@@ -548,6 +1135,10 @@ def from_nowcoder() -> list[dict[str, Any]]:
                 source="牛客",
                 cohort="2027届",
                 batch="校招",
+                description=as_text(row.get("jobDescription") or row.get("description") or row.get("jobDesc")),
+                requirements=split_jd_items(as_text(row.get("jobRequire") or row.get("requirement"))),
+                salary=as_text(row.get("salaryDesc") or row.get("salary") or row.get("salaryRange")),
+                raw_jd=as_text(row.get("jobDescription") or "") + "\n" + as_text(row.get("jobRequire") or ""),
             )
             if job:
                 jobs.append(job)
@@ -555,7 +1146,7 @@ def from_nowcoder() -> list[dict[str, Any]]:
     # HTML 日程页兜底
     page = get("https://www.nowcoder.com/jobs/school/schedule")
     if page:
-        soup = BeautifulSoup(page.text, "lxml")
+        soup = soup_of(page.text)
         text = soup.get_text("\n", strip=True)
         for m in re.finditer(
             r"(.{2,20}?)(?:\s+)(27秋招|27届校招|27提前批|27届秋招).{0,80}地点：\s*([^\n]{2,80})",
@@ -618,9 +1209,21 @@ def from_bytedance() -> list[dict[str, Any]]:
                 locs.append(loc.get("name") or loc.get("en_name") or "")
             else:
                 locs.append(str(loc))
+        rec = row.get("recruit_type")
+        program = as_text(rec) if rec else "校园招聘"
+        desc = as_text(row.get("description") or row.get("job_description"))
+        req = as_text(row.get("requirement") or row.get("job_requirement"))
+        sal_raw = row.get("salary") or row.get("salary_range")
+        salary = ""
+        if isinstance(sal_raw, dict):
+            lo = as_text(sal_raw.get("min") or sal_raw.get("min_value"))
+            hi = as_text(sal_raw.get("max") or sal_raw.get("max_value"))
+            salary = f"{lo}-{hi}" if lo and hi else (lo or hi)
+        else:
+            salary = as_text(sal_raw) or extract_salary(desc + "\n" + req)
         job = make_job(
             company="字节跳动",
-            program=row.get("recruit_type") or "校园招聘",
+            program=program or "校园招聘",
             positions=[title],
             locations=locs,
             deadline=row.get("expired_time") or row.get("end_time"),
@@ -630,6 +1233,10 @@ def from_bytedance() -> list[dict[str, Any]]:
             or f"https://jobs.bytedance.com/campus/position/{row.get('id')}/detail",
             source="企业官网",
             industry="互联网",
+            description=desc,
+            requirements=split_jd_items(req),
+            raw_jd=desc + "\n" + req,
+            salary=salary,
         )
         if job:
             jobs.append(job)
@@ -665,6 +1272,8 @@ def from_huawei() -> list[dict[str, Any]]:
             continue
         title = row.get("jobName") or row.get("title") or "测试"
         loc = row.get("jobArea") or row.get("workLocation") or row.get("city") or ""
+        duty = as_text(row.get("jobDuty") or row.get("duty") or row.get("jobDesc") or row.get("description"))
+        req = as_text(row.get("jobRequire") or row.get("requirement") or row.get("qualify"))
         job = make_job(
             company="华为",
             positions=[title],
@@ -676,6 +1285,10 @@ def from_huawei() -> list[dict[str, Any]]:
             or "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
             source="企业官网",
             industry="半导体/硬件",
+            description=duty,
+            requirements=split_jd_items(req),
+            raw_jd=duty + "\n" + req,
+            salary=as_text(row.get("salary") or row.get("salaryRange")),
         )
         if job:
             jobs.append(job)
@@ -693,7 +1306,7 @@ def from_netease() -> list[dict[str, Any]]:
         resp = get(url)
         if not resp:
             continue
-        soup = BeautifulSoup(resp.text, "lxml")
+        soup = soup_of(resp.text)
         text = soup.get_text(" ", strip=True)
         if not TEST_RE.search(text):
             continue
@@ -795,7 +1408,17 @@ def render_readme(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
     (ROOT / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def ensure_jd_fields(jobs: list[dict[str, Any]]) -> None:
+    for job in jobs:
+        job.setdefault("description", "")
+        job.setdefault("responsibilities", [])
+        job.setdefault("requirements", [])
+        job.setdefault("skills", [])
+        job.setdefault("salary", "")
+
+
 def write_site(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
+    ensure_jd_fields(jobs)
     template = (ROOT / "site_template.html").read_text(encoding="utf-8")
     html = (
         template
@@ -815,7 +1438,9 @@ def main() -> int:
     print(f"今天（北京时间）{TODAY.isoformat()}，开始抓取未截止的测试岗…", flush=True)
     collected: list[dict[str, Any]] = []
     for fn in (
+        from_existing,
         from_seed,
+        from_iguopin,
         from_xixicc,
         from_niuqizp,
         from_nowcoder,
@@ -829,19 +1454,52 @@ def main() -> int:
         except Exception as exc:
             log_source(fn.__name__, False, 0, str(exc))
     jobs = merge_jobs(collected)
+    copy_jd_across_same_company(jobs)
+    scrub_false_jd(jobs)
+    enrich_from_apis(jobs)
+    enrich_jobs_with_jd(jobs)
+    copy_jd_across_same_company(jobs)
+    scrub_false_jd(jobs)
+    jd_n = sum(1 for j in jobs if looks_real_jd(j))
+    sal_n = sum(1 for j in jobs if looks_real_salary(as_text(j.get("salary"))))
     sources = [s["name"] for s in SOURCE_LOG if s["ok"]]
     meta = {
         "updated_at": datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M"),
         "count": len(jobs),
         "sources": sources,
         "source_log": SOURCE_LOG,
-        "note": "江苏/浙江/安徽/上海，仅软件测试相关，仅未截止",
+        "note": "江苏/浙江/安徽/上海，仅软件测试相关，仅未截止；职责/薪资按职位原文",
+        "jd_filled": jd_n,
+        "salary_filled": sal_n,
     }
     write_site(jobs, meta)
     render_readme(jobs, meta)
-    print(f"完成：{len(jobs)} 条写入 jobs.json / index.html", flush=True)
+    print(f"完成：{len(jobs)} 条写入 jobs.json / index.html（{jd_n} 条有原文职责，{sal_n} 条有薪资）", flush=True)
+    return 0
+
+
+def enrich_only() -> int:
+    path = ROOT / "jobs.json"
+    jobs = json.loads(path.read_text(encoding="utf-8"))
+    print(f"只补全现有 {len(jobs)} 条岗位的职责/技能/薪资，不重新抓日历…", flush=True)
+    scrub_false_jd(jobs)
+    enrich_from_apis(jobs)
+    enrich_jobs_with_jd(jobs)
+    scrub_false_jd(jobs)
+    meta = json.loads((ROOT / "meta.json").read_text(encoding="utf-8"))
+    meta["updated_at"] = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M")
+    meta["count"] = len(jobs)
+    meta["source_log"] = SOURCE_LOG
+    jd_n = sum(1 for j in jobs if job_has_jd(j))
+    sal_n = sum(1 for j in jobs if as_text(j.get("salary")))
+    meta["jd_filled"] = jd_n
+    meta["salary_filled"] = sal_n
+    write_site(jobs, meta)
+    print(f"完成：{len(jobs)} 条中 {jd_n} 条有职责/技能，{sal_n} 条有薪资", flush=True)
     return 0
 
 
 if __name__ == "__main__":
+    if "--enrich-only" in sys.argv:
+        sys.exit(enrich_only())
     sys.exit(main())
