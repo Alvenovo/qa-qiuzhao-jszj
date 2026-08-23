@@ -31,7 +31,7 @@ jobs:
       - name: Commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: 正午更新江苏浙江测试岗"
-          file_pattern: "jobs.json index.html README.md meta.json"
+         commit_message: "chore: 正午更新江苏浙江测试岗"
+          file_pattern: "jobs.json index.html README.md meta.json candidate_jobs.json data/"
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"

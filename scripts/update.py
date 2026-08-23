@@ -7,6 +7,7 @@ import json
 import re
 import sys
 import time
+import os
 from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,13 @@ from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+
+from normalize import (
+    normalize_job_name, job_category, normalize_for_dedup, normalize_url,
+    norm_company, source_type, source_rank, jd_source_rank,
+    classify_status, compute_quality, same_job, similar_position,
+    infer_batch, extract_jd_core, classify_job_domain,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 TODAY = datetime.now(timezone(timedelta(hours=8))).date()
@@ -301,7 +309,7 @@ JD_SKILL_TERMS = [
 ]
 SALARY_RE = re.compile(
     r"(?:薪资|月薪|年薪|薪酬|工资)[:：是为]{0,4}\s*(面议|待议|薪资待定|[^\n。；;]{1,24})"
-    r"|((?:\d{1,3}\s*[-~～到至]\s*\d{1,3})\s*[kKwW千万元]{1,3}(?:/月|/年|·月)?"
+    r"|((?:\d{1,3}(?:\.\d+)?\s*[-~～到至]\s*\d{1,3}(?:\.\d+)?)\s*[kKwW千万元]{1,3}(?:/月|/年|·月)?"
     r"|(?:\d{4,6}\s*[-~～到至]\s*\d{4,6})\s*(?:元)?(?:/月|/年)?)"
 )
 
@@ -342,13 +350,13 @@ def looks_like_salary_text(s: str) -> bool:
         return False
     if re.search(r"面议|待议|薪资待定", s):
         return True
-    if re.search(r"\d+\s*[-~～到至]\s*\d+\s*[kKwW千万元]", s):
+    if re.search(r"\d+(?:\.\d+)?\s*[-~～到至]\s*\d+(?:\.\d+)?\s*[kKwW千万元]", s):
         return True
     if re.search(r"\d{4,6}\s*[-~～到至]\s*\d{4,6}", s):
         return True
     if re.search(r"(月薪|年薪|薪资|薪酬).{0,12}\d", s):
         return True
-    if re.search(r"\d+[kK万]\s*[-~～到至]\s*\d+[kK万]", s):
+    if re.search(r"\d+(?:\.\d+)?[kK万]\s*[-~～到至]\s*\d+(?:\.\d+)?[kK万]", s):
         return True
     return False
 
@@ -567,7 +575,7 @@ def looks_real_jd(job: dict[str, Any]) -> bool:
         r"岗位职责|任职要求|工作职责|职位描述|测试用例|接口测试|自动化测试|"
         r"质量保障|缺陷跟踪|pytest|软件测试|测试开发|测开",
         blob,
-    ))
+    ) or blob.count("测试") >= 2)
 
 
 def looks_real_salary(s: str) -> bool:
@@ -620,16 +628,81 @@ def _role_alike(src: dict[str, Any], job: dict[str, Any]) -> bool:
     return any(len(t) >= 4 and t in jp for t in tokens)
 
 
-def enrich_jobs_with_jd(jobs: list[dict[str, Any]], limit: int = 80) -> int:
+def enrich_jobs_with_jd(jobs: list[dict[str, Any]], time_budget: float = 300) -> int:
+    """历史岗位 JD 二次补全：按优先级队列，带跳过逻辑、搜索反查、统计日志。"""
     filled = 0
     tried = 0
-    for job in jobs:
-        if looks_real_jd(job) and looks_real_salary(as_text(job.get("salary"))):
-            continue
+    start = time.time()
+    stats_by_source: dict[str, int] = {}
+    skipped_recent = 0
+    # 优先级：无JD > 有详情URL > open/unknown > 新发现 > 临近截止
+    def _priority(j):
+        p = 0
+        if not looks_real_jd(j):
+            p += 100
+        if is_job_detail_url(j.get("apply_url")):
+            p += 50
+        if j.get("status") in ("open", "unknown"):
+            p += 20
+        if j.get("last_seen_at") == TODAY.isoformat():
+            p += 10
+        dl = j.get("deadline")
+        if dl:
+            try:
+                days = (date.fromisoformat(dl) - TODAY).days
+                if 0 <= days <= 14:
+                    p += 15
+            except ValueError:
+                pass
+        return -p
+    queue = sorted(jobs, key=_priority)
+    no_jd_total = sum(1 for j in jobs if not looks_real_jd(j))
+    print(f"[INFO] 历史岗位 JD 补全开始，待补 {no_jd_total} 条", flush=True)
+    for job in queue:
+        # 跳过：已有官方 JD 且 7 天内更新过
+        if looks_real_jd(job):
+            jds = job.get("jd_source") or "unknown"
+            jdu = job.get("jd_updated_at") or ""
+            if jds in ("official", "official_api", "iguopin") and jdu:
+                try:
+                    age = (TODAY - date.fromisoformat(jdu)).days
+                    if age < 7:
+                        skipped_recent += 1
+                        continue
+                except ValueError:
+                    pass
+            if looks_real_salary(as_text(job.get("salary"))):
+                continue
         url = job.get("apply_url")
         if not should_fetch_jd(url):
+            # apply_url 不是详情页：尝试搜索反查
+            if not looks_real_jd(job) and job.get("company") and job.get("positions"):
+                if time.time() - start > time_budget:
+                    break
+                search_result = _search_jd_on_iguopin(job)
+                if search_result:
+                    tried += 1
+                    if time.time() - start > time_budget:
+                        break
+                    try:
+                        parsed = fetch_jd_from_url(search_result)
+                    except Exception as exc:
+                        print(f"  JD搜索反查失败 {job['company'][:20]} -> {exc}", flush=True)
+                        parsed = None
+                    if parsed and looks_real_jd(parsed):
+                        before = looks_real_jd(job)
+                        merge_jd_into(job, parsed)
+                        if looks_real_jd(job) and not before:
+                            filled += 1
+                            job["jd_source"] = "iguopin"
+                            job["jd_source_url"] = search_result
+                            job["jd_updated_at"] = TODAY.isoformat()
+                            if not job.get("jd_raw_text"):
+                                job["jd_raw_text"] = as_text(parsed.get("description"))
+                            stats_by_source["iguopin"] = stats_by_source.get("iguopin", 0) + 1
+                    time.sleep(0.3)
             continue
-        if tried >= limit:
+        if time.time() - start > time_budget:
             break
         tried += 1
         try:
@@ -640,13 +713,91 @@ def enrich_jobs_with_jd(jobs: list[dict[str, Any]], limit: int = 80) -> int:
         if parsed:
             before = looks_real_jd(job)
             merge_jd_into(job, parsed)
+            stype = source_type(job.get("source"))
+            src_label = "official" if stype == "official" else ("iguopin" if "iguopin" in url else "official_api")
+            if is_job_detail_url(url) and (stype == "official" or "iguopin" in url):
+                job["jd_source"] = "official" if stype == "official" else "iguopin"
+                job["jd_source_url"] = url
+                job["jd_updated_at"] = TODAY.isoformat()
+            elif looks_real_jd(job) and not before:
+                job["jd_source"] = "official_api"
+                job["jd_source_url"] = url
+                job["jd_updated_at"] = TODAY.isoformat()
             if looks_real_jd(job) and not before:
                 filled += 1
+                if not job.get("jd_raw_text"):
+                    job["jd_raw_text"] = as_text(parsed.get("description"))
+                stats_by_source[src_label] = stats_by_source.get(src_label, 0) + 1
             elif looks_real_salary(as_text(job.get("salary"))) and parsed.get("salary"):
                 filled += 1
         time.sleep(0.25)
-    log_source("职位详情补全", True, filled, f"尝试 {tried} 个投递链接")
+    remaining = sum(1 for j in jobs if not looks_real_jd(j))
+    print(f"[INFO] JD 补全：尝试 {tried}，成功 {filled}，跳过(近期) {skipped_recent}，剩余待补 {remaining}", flush=True)
+    for src, n in sorted(stats_by_source.items(), key=lambda x: -x[1]):
+        print(f"  {src}: {n} 条", flush=True)
+    log_source("职位详情补全", True, filled, f"尝试 {tried} 个投递链接，耗时 {int(time.time()-start)}s")
     return filled
+
+
+def _search_jd_on_iguopin(job: dict[str, Any]) -> str | None:
+    """在国聘 API 按公司名+岗位名搜索，返回匹配的详情页 URL。"""
+    company = job.get("company") or ""
+    pos = (job.get("positions") or [""])[0]
+    if not company or not pos:
+        return None
+    # 公司名去后缀
+    co = re.sub(r"(集团|股份|有限公司|有限责任公司|股份有限公司)$", "", company).strip()
+    keyword = f"{co} {pos}"[:20]
+    url = "https://gp-api.iguopin.com/api/jobs/v1/list"
+    headers = {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Device": "pc", "Subsite": "iguopin", "Version": "5.2.300",
+        "Origin": "https://www.iguopin.com", "Referer": "https://www.iguopin.com/",
+    }
+    body = {"page": 1, "page_size": 10, "keyword": keyword}
+    resp = post(url, json=body, headers=headers)
+    if not resp:
+        return None
+    try:
+        data = resp.json()
+    except Exception:
+        return None
+    rows = ((data.get("data") or {}).get("list")) or []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        row_company = as_text(row.get("company_name"))
+        row_title = as_text(row.get("job_name"))
+        # 公司名匹配：包含关系
+        if co not in row_company and row_company not in company:
+            continue
+        # 岗位名相似
+        if not _job_name_match(pos, row_title):
+            continue
+        jid = as_text(row.get("job_id"))
+        if jid:
+            return f"https://www.iguopin.com/job/detail?id={jid}"
+    return None
+
+
+def _job_name_match(a: str, b: str) -> bool:
+    """判断两个岗位名是否高度相似（不自动合并不同级别）。"""
+    from normalize import normalize_for_dedup
+    na = normalize_for_dedup(a)
+    nb = normalize_for_dedup(b)
+    if not na or not nb:
+        return False
+    if na == nb:
+        return True
+    if na in nb or nb in na:
+        # 但不能是不同级别（实习生/高级/专家/负责人）
+        level_kw = ["实习", "高级", "专家", "负责人", "资深", "初级", "主管", "经理"]
+        a_level = any(k in a for k in level_kw)
+        b_level = any(k in b for k in level_kw)
+        if a_level != b_level:
+            return False
+        return True
+    return False
 
 
 def make_job(**kwargs) -> dict[str, Any] | None:
@@ -671,8 +822,6 @@ def make_job(**kwargs) -> dict[str, Any] | None:
         return None
     start = parse_date(kwargs.get("start_date"))
     deadline = parse_date(kwargs.get("deadline"))
-    if not still_open(deadline):
-        return None
     updated = parse_date(kwargs.get("updated_at")) or TODAY.isoformat()
     apply_url = kwargs.get("apply_url") or None
     if apply_url and not str(apply_url).startswith("http"):
@@ -716,81 +865,324 @@ def make_job(**kwargs) -> dict[str, Any] | None:
     if salary and not looks_real_salary(salary):
         salary = ""
     key = hashlib.md5(
-        f"{company}|{kwargs.get('batch')}|{deadline}|{','.join(locations)}|{role}".encode("utf-8")
+        f"{company}|{kwargs.get('batch')}|{deadline}|{','.join(locations)}|{positions[0]}".encode("utf-8")
     ).hexdigest()[:12]
+    norm_name = normalize_job_name(positions)
+    stype = source_type(kwargs.get("source"))
+    has_jd_flag = bool(description) or bool(parsed["responsibilities"]) or bool(parsed["requirements"])
+    jd_src = stype if has_jd_flag and stype != "unknown" else "unknown"
+    raw_text = as_text(kwargs.get("raw_jd") or kwargs.get("description") or "")
+    if raw_text and not looks_real_jd({"description": raw_text}):
+        raw_text = ""
+    source_list = kwargs.get("sources")
+    if not source_list:
+        source_list = [{"type": stype, "url": apply_url, "found_at": updated}]
     return {
         "id": key,
         "company": company,
         "program": kwargs.get("program") or None,
         "cohort": kwargs.get("cohort") or "2027届",
         "batch": kwargs.get("batch") or "正式批",
+        "recruitment_batch": kwargs.get("recruitment_batch") or infer_batch(
+            kwargs.get("program"), kwargs.get("batch"), kwargs.get("cohort")),
         "role_type": role,
+        "normalized_job_name": norm_name,
+        "job_category": job_category(norm_name),
         "positions": positions,
         "locations": locations,
         "provinces": provinces,
         "start_date": start,
         "deadline": deadline,
+        "deadline_source": stype if deadline else "",
+        "deadline_conflict": False,
         "updated_at": updated,
+        "first_seen_at": kwargs.get("first_seen_at") or updated,
+        "last_seen_at": kwargs.get("last_seen_at") or updated,
         "apply_url": apply_url,
         "search_hint": search_hint,
         "source": kwargs.get("source") or "未知",
+        "sources": source_list,
+        "jd_source": kwargs.get("jd_source") or jd_src,
+        "jd_raw_text": raw_text,
+        "jd_reused_from": "",
+        "jd_source_url": kwargs.get("jd_source_url") or "",
+        "jd_updated_at": kwargs.get("jd_updated_at") or "",
+        "job_domain": kwargs.get("job_domain") or "unknown",
+        "job_domain_confidence": kwargs.get("job_domain_confidence") or 0.0,
+        "excluded": kwargs.get("excluded") or False,
+        "exclude_reason": kwargs.get("exclude_reason") or "",
         "industry": kwargs.get("industry") or "其他",
         "scale": kwargs.get("scale") or classify_scale(company),
         "owner": kwargs.get("owner") or "",
-        "status": "open",
+        "status": "unknown",
         "description": description or "",
         "responsibilities": parsed["responsibilities"],
         "requirements": parsed["requirements"],
         "skills": parsed["skills"],
         "salary": salary or "",
+        "data_quality": {},
     }
-
-
-def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    bucket: dict[str, dict[str, Any]] = {}
-    for job in items:
-        if not job:
-            continue
-        key = (job["company"], job.get("batch"), job.get("deadline"), job["role_type"])
-        old = bucket.get(key)
-        if not old:
-            bucket[key] = job
-            continue
-        old["positions"] = list(dict.fromkeys(old["positions"] + job["positions"]))
-        old["locations"] = list(dict.fromkeys(old["locations"] + job["locations"]))
-        old["provinces"] = list(dict.fromkeys(old["provinces"] + job["provinces"]))
-        old_score = 3 if is_job_detail_url(old.get("apply_url")) else (2 if old.get("source") == "企业官网" and old.get("apply_url") else (1 if old.get("apply_url") else 0))
-        new_score = 3 if is_job_detail_url(job.get("apply_url")) else (2 if job.get("source") == "企业官网" and job.get("apply_url") else (1 if job.get("apply_url") else 0))
-        if new_score > old_score:
-            old["apply_url"] = job["apply_url"]
-            if job["source"] == "企业官网":
-                old["source"] = "企业官网"
-        if job.get("search_hint") and (
-            not old.get("search_hint") or len(job["search_hint"]) > len(old.get("search_hint") or "")
-        ):
-            old["search_hint"] = job["search_hint"]
-        if job.get("owner") and not old.get("owner"):
-            old["owner"] = job["owner"]
-        if job.get("start_date") and (not old.get("start_date") or job["start_date"] < old["start_date"]):
-            old["start_date"] = job["start_date"]
-        if job.get("updated_at") and job["updated_at"] > (old.get("updated_at") or ""):
-            old["updated_at"] = job["updated_at"]
-        merge_jd_into(old, {
-            "description": job.get("description"),
-            "responsibilities": job.get("responsibilities"),
-            "requirements": job.get("requirements"),
-            "skills": job.get("skills"),
-            "salary": job.get("salary"),
-        })
-    jobs = list(bucket.values())
-    jobs.sort(key=lambda j: (j.get("deadline") or "9999", j["company"]))
-    return jobs
-
-
-# ---------- sources ----------
 
 IGUOPIN_CAMPUS_NATURE = "115xW5oQ"
 IGUOPIN_PROV = {"310000", "320000", "330000", "340000"}
+
+
+def _merge_one_into(base: dict[str, Any], src: dict[str, Any]) -> None:
+    today = TODAY.isoformat()
+    base.setdefault("sources", [])
+    src_stype = source_type(src.get("source"))
+    src_entry = {"type": src_stype, "url": src.get("apply_url"), "found_at": src.get("updated_at") or today}
+    if not any(s.get("type") == src_entry["type"] and normalize_url(s.get("url")) == normalize_url(src_entry["url"])
+               for s in base["sources"]):
+        base["sources"].append(src_entry)
+    if source_rank(src_stype) > source_rank(source_type(base.get("source"))):
+        base["source"] = src.get("source")
+    if is_job_detail_url(src.get("apply_url")) and not is_job_detail_url(base.get("apply_url")):
+        base["apply_url"] = src.get("apply_url")
+    elif not base.get("apply_url") and src.get("apply_url"):
+        base["apply_url"] = src.get("apply_url")
+    base["positions"] = list(dict.fromkeys((base.get("positions") or []) + (src.get("positions") or [])))
+    base["locations"] = list(dict.fromkeys((base.get("locations") or []) + (src.get("locations") or [])))
+    base["provinces"] = list(dict.fromkeys((base.get("provinces") or []) + (src.get("provinces") or [])))
+    sh = src.get("search_hint") or ""
+    if sh and (not base.get("search_hint") or len(sh) > len(base.get("search_hint") or "")):
+        base["search_hint"] = sh
+    if src.get("owner") and not base.get("owner"):
+        base["owner"] = src["owner"]
+    if src.get("start_date") and (not base.get("start_date") or src["start_date"] < base["start_date"]):
+        base["start_date"] = src["start_date"]
+    if src.get("updated_at") and src["updated_at"] > (base.get("updated_at") or ""):
+        base["updated_at"] = src["updated_at"]
+    _merge_jd_by_source(base, src)
+    _merge_deadline(base, src)
+
+
+def _merge_jd_by_source(base: dict[str, Any], src: dict[str, Any]) -> None:
+    src_has = looks_real_jd(src) or (bool(src.get("jd_raw_text")) and looks_real_jd({"description": src["jd_raw_text"]}))
+    if not src_has:
+        return
+    src_jd = src.get("jd_source") or source_type(src.get("source"))
+    if src_jd == "unknown":
+        src_jd = "other"
+    base_jd = base.get("jd_source") or "unknown"
+    if jd_source_rank(src_jd) > jd_source_rank(base_jd) or (src_jd == base_jd and not looks_real_jd(base)):
+        base["description"] = src.get("description", "")
+        base["responsibilities"] = src.get("responsibilities", [])
+        base["requirements"] = src.get("requirements", [])
+        base["skills"] = src.get("skills", [])
+        base["salary"] = src.get("salary", "")
+        base["jd_raw_text"] = src.get("jd_raw_text", "")
+        base["jd_source"] = src_jd
+    elif jd_source_rank(src_jd) == jd_source_rank(base_jd):
+        merge_jd_into(base, {"description": src.get("description"), "responsibilities": src.get("responsibilities"),
+                              "requirements": src.get("requirements"), "skills": src.get("skills"), "salary": src.get("salary")})
+        if src.get("jd_raw_text") and not base.get("jd_raw_text"):
+            base["jd_raw_text"] = src["jd_raw_text"]
+
+
+def _merge_deadline(base: dict[str, Any], src: dict[str, Any]) -> None:
+    sd = src.get("deadline")
+    if not sd:
+        return
+    bd = base.get("deadline")
+    if not bd:
+        base["deadline"] = sd
+        base["deadline_source"] = source_type(src.get("source"))
+        return
+    if sd == bd:
+        return
+    sr = source_rank(source_type(src.get("source")))
+    br = source_rank(base.get("deadline_source") or source_type(base.get("source")))
+    if sr > br:
+        base["deadline"] = sd
+        base["deadline_source"] = source_type(src.get("source"))
+    base["deadline_conflict"] = True
+
+
+def merge_jobs(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    today = TODAY.isoformat()
+    for job in items:
+        if not job:
+            continue
+        target = None
+        for oj in out:
+            if same_job(job, oj, is_detail_url_fn=is_job_detail_url):
+                target = oj
+                break
+        if target is None:
+            job = dict(job)
+            job.setdefault("first_seen_at", today)
+            job["last_seen_at"] = today
+            out.append(job)
+        else:
+            _merge_one_into(target, job)
+            target["last_seen_at"] = today
+    deduped = len(items) - len(out)
+    if deduped > 0:
+        print(f"[INFO] 去重合并 {deduped} 条", flush=True)
+    out.sort(key=lambda j: (j.get("deadline") or "9999", j["company"]))
+    return out
+
+
+def merge_with_archive(fresh: list[dict[str, Any]], archive: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    today = TODAY.isoformat()
+    result: list[dict[str, Any]] = []
+    matched_ids: set[str] = set()
+    new_n = 0
+    updated_n = 0
+    for fj in fresh:
+        matched_aid = None
+        for aid, aj in archive.items():
+            if same_job(fj, aj, is_detail_url_fn=is_job_detail_url):
+                matched_aid = aid
+                break
+        if matched_aid:
+            aj = archive[matched_aid]
+            if matched_aid in matched_ids:
+                # 多个 fresh 匹配同一个 archive 条目：合并到已存在的 result 条目
+                for r in result:
+                    if r.get("id") == matched_aid or same_job(r, aj, is_detail_url_fn=is_job_detail_url):
+                        _merge_one_into(r, fj)
+                        r["last_seen_at"] = today
+                        break
+            else:
+                base = dict(aj)
+                base["first_seen_at"] = aj.get("first_seen_at") or aj.get("updated_at") or fj.get("first_seen_at")
+                base["last_seen_at"] = today
+                _merge_one_into(base, fj)
+                matched_ids.add(matched_aid)
+                updated_n += 1
+                result.append(base)
+        else:
+            result.append(dict(fj))
+            new_n += 1
+    for aid, aj in archive.items():
+        if aid not in matched_ids:
+            result.append(dict(aj))
+    if new_n:
+        print(f"[INFO] 新增岗位 {new_n} 条", flush=True)
+    if updated_n:
+        print(f"[INFO] 更新已有岗位 {updated_n} 条", flush=True)
+    return result
+
+
+def finalize_job(job: dict[str, Any]) -> None:
+    job["normalized_job_name"] = normalize_job_name(job.get("positions") or [])
+    job["job_category"] = job_category(job["normalized_job_name"])
+    job["recruitment_batch"] = job.get("recruitment_batch") or infer_batch(
+        job.get("program"), job.get("batch"), job.get("cohort"))
+    if not job.get("sources"):
+        st = source_type(job.get("source"))
+        job["sources"] = [{"type": st, "url": job.get("apply_url"), "found_at": job.get("updated_at") or TODAY.isoformat()}]
+    if not job.get("jd_source"):
+        if looks_real_jd(job) or (job.get("jd_raw_text") and looks_real_jd({"description": job["jd_raw_text"]})):
+            job["jd_source"] = source_type(job.get("source"))
+            if job["jd_source"] == "unknown":
+                job["jd_source"] = "other"
+        else:
+            job["jd_source"] = "unknown"
+    job.setdefault("jd_raw_text", "")
+    job.setdefault("deadline_source", source_type(job.get("source")) if job.get("deadline") else "")
+    job.setdefault("deadline_conflict", False)
+    job.setdefault("jd_reused_from", "")
+    # 已有 JD 但缺 jd_source_url/jd_updated_at 的，从现有信息补
+    if looks_real_jd(job) or (job.get("jd_raw_text") and looks_real_jd({"description": job["jd_raw_text"]})):
+        if not job.get("jd_source_url") and job.get("apply_url"):
+            job["jd_source_url"] = job["apply_url"]
+        if not job.get("jd_updated_at"):
+            job["jd_updated_at"] = job.get("last_seen_at") or job.get("updated_at") or TODAY.isoformat()
+    else:
+        job.setdefault("jd_source_url", "")
+        job.setdefault("jd_updated_at", "")
+    freshly = (job.get("last_seen_at") == TODAY.isoformat())
+    job["status"] = classify_status(job, TODAY, freshly_seen=freshly)
+    job["data_quality"] = compute_quality(job, looks_real_jd)
+    # JD 核心信息提取（只在有 JD 时提取，不编造）
+    if looks_real_jd(job) or job.get("jd_raw_text"):
+        core = extract_jd_core(job)
+        job["core_skills"] = core["core_skills"]
+        job["core_responsibilities"] = core["core_responsibilities"]
+        job["education"] = core["education"]
+        job["major"] = core["major"]
+        job["experience"] = core["experience"]
+        job["graduation_year"] = core["graduation_year"]
+    else:
+        job.setdefault("core_skills", [])
+        job.setdefault("core_responsibilities", [])
+        job.setdefault("education", "")
+        job.setdefault("major", [])
+        job.setdefault("experience", "")
+        job.setdefault("graduation_year", "")
+    # 岗位专业方向分类（综合岗位名+JD+技能，不误杀无JD岗位）
+    domain = classify_job_domain(job)
+    job["job_domain"] = domain["job_domain"]
+    job["job_domain_confidence"] = domain["job_domain_confidence"]
+    job["excluded"] = domain["excluded"]
+    job["exclude_reason"] = domain["exclude_reason"]
+
+
+def save_raw(name: str, data: Any) -> None:
+    raw_dir = ROOT / "data" / "raw" / "latest"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    path = raw_dir / f"{name}.json"
+    try:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception as exc:
+        print(f"[WARN] 保存 raw 失败 {name}: {exc}", flush=True)
+
+
+def load_old_raw(name: str) -> list[dict[str, Any]]:
+    path = ROOT / "data" / "raw" / "latest" / f"{name}.json"
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+
+
+def load_archive() -> dict[str, dict[str, Any]]:
+    cand = ROOT / "candidate_jobs.json"
+    if cand.exists():
+        try:
+            rows = json.loads(cand.read_text(encoding="utf-8"))
+            return {j["id"]: j for j in rows if isinstance(j, dict) and j.get("id")}
+        except Exception:
+            pass
+    jobs_p = ROOT / "jobs.json"
+    if jobs_p.exists():
+        try:
+            rows = json.loads(jobs_p.read_text(encoding="utf-8"))
+        except Exception:
+            rows = []
+        archive: dict[str, dict[str, Any]] = {}
+        for r in rows:
+            if not isinstance(r, dict) or not r.get("id"):
+                continue
+            r.setdefault("sources", [{"type": source_type(r.get("source")),
+                                      "url": r.get("apply_url"),
+                                      "found_at": r.get("updated_at") or TODAY.isoformat()}])
+            r.setdefault("jd_source", source_type(r.get("source")) if looks_real_jd(r) else "unknown")
+            r.setdefault("jd_raw_text", "")
+            r["first_seen_at"] = r.get("first_seen_at") or r.get("updated_at") or TODAY.isoformat()
+            r["last_seen_at"] = r.get("last_seen_at") or r.get("updated_at") or TODAY.isoformat()
+            archive[r["id"]] = r
+        print(f"[INFO] 首次运行，从 jobs.json 初始化历史档案 {len(archive)} 条", flush=True)
+        return archive
+    return {}
+
+
+def save_normalized(jobs: list[dict[str, Any]]) -> None:
+    norm_dir = ROOT / "data" / "normalized"
+    norm_dir.mkdir(parents=True, exist_ok=True)
+    (norm_dir / "jobs_normalized.json").write_text(
+        json.dumps(jobs, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def save_candidate(jobs: list[dict[str, Any]]) -> None:
+    (ROOT / "candidate_jobs.json").write_text(
+        json.dumps(jobs, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 def _iguopin_locations(row: dict[str, Any]) -> list[str]:
@@ -899,7 +1291,7 @@ def from_existing() -> list[dict[str, Any]]:
         if job:
             jobs.append(job)
     log_source("现有岗位", True, len(jobs), "保留未截止")
-    return jobs
+    return jobs  # noqa: 历史档案由 main() 通过 load_archive 处理，此函数已不在 main 调用链
 
 
 def copy_jd_across_same_company(jobs: list[dict[str, Any]]) -> int:
@@ -1297,51 +1689,18 @@ def from_huawei() -> list[dict[str, Any]]:
 
 
 def from_netease() -> list[dict[str, Any]]:
-    # 网易校招职位接口不固定，抓职位页文本做兜底
     jobs = []
-    for url in (
-        "https://campus.163.com",
-        "https://campus.game.163.com/",
-    ):
-        resp = get(url)
-        if not resp:
-            continue
-        soup = soup_of(resp.text)
-        text = soup.get_text(" ", strip=True)
-        if not TEST_RE.search(text):
-            continue
-        job = make_job(
-            company="网易" if "game.campus" not in url else "网易游戏（互娱）",
-            positions=["测试开发", "质量保障", "游戏测试"] if "game" in url else ["测试开发", "质量保障"],
-            locations=["杭州"],
-            apply_url=url,
-            source="企业官网",
-            industry="游戏" if "game" in url else "互联网",
-            updated_at=TODAY.isoformat(),
-        )
-        if job:
-            jobs.append(job)
-    log_source("网易官网", True, len(jobs))
+    # TODO: 网易校招职位接口不固定，未实现真实岗位发现。
+    # 不要写死占位岗位冒充官网抓取数据。
+    log_source("网易官网", False, 0, "未实现真实抓取（pending）")
     return jobs
 
 
 def from_alibaba() -> list[dict[str, Any]]:
-    url = "https://campus-talent.alibaba.com/?lang=zh"
-    resp = get(url)
     jobs = []
-    if resp:
-        job = make_job(
-            company="阿里巴巴",
-            positions=["测试开发工程师", "质量保障"],
-            locations=["杭州", "上海"],
-            apply_url=url,
-            source="企业官网",
-            industry="互联网",
-            updated_at=TODAY.isoformat(),
-        )
-        if job:
-            jobs.append(job)
-    log_source("阿里官网", True, len(jobs), "campus-talent.alibaba.com")
+    # TODO: 阿里校招页面为 SPA，未实现真实岗位发现。
+    # 不要写死占位岗位冒充官网抓取数据。
+    log_source("阿里官网", False, 0, "未实现真实抓取（pending）")
     return jobs
 
 
@@ -1379,13 +1738,14 @@ def render_readme(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
         "",
         "## 岗位表",
         "",
-        "| 公司 | 岗位 | 地区 | 开始 | 截止 | 投递 | 来源 |",
-        "|---|---|---|---|---|---|---|",
+        "> 以下为示例岗位，完整列表请[打开网站](./index.html)查看。",
+        "",
+        "| 公司 | 岗位 | 地区 | 截止 | 投递 | 来源 |",
+        "|---|---|---|---|---|---|",
     ]
-    for j in jobs:
+    for j in jobs[:4]:
         pos = "、".join(j["positions"][:4])
         loc = "、".join(j["locations"])
-        start = j.get("start_date") or "以官网为准"
         end = j.get("deadline") or "招满即止"
         if j.get("apply_url"):
             link = f"[网申]({j['apply_url']})"
@@ -1393,7 +1753,7 @@ def render_readme(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
             hint = (j.get("search_hint") or "见搜法").split("；")[0]
             link = hint
         lines.append(
-            f"| {j['company']} | {pos} | {loc} | {start} | {end} | {link} | {j['source']} |"
+            f"| {j['company']} | {pos} | {loc} | {end} | {link} | {j['source']} |"
         )
     lines += [
         "",
@@ -1415,6 +1775,31 @@ def ensure_jd_fields(jobs: list[dict[str, Any]]) -> None:
         job.setdefault("requirements", [])
         job.setdefault("skills", [])
         job.setdefault("salary", "")
+        job.setdefault("jd_raw_text", "")
+        job.setdefault("jd_source", "unknown")
+        job.setdefault("jd_reused_from", "")
+        job.setdefault("jd_source_url", "")
+        job.setdefault("jd_updated_at", "")
+        job.setdefault("job_domain", "unknown")
+        job.setdefault("job_domain_confidence", 0.0)
+        job.setdefault("excluded", False)
+        job.setdefault("exclude_reason", "")
+        job.setdefault("core_skills", [])
+        job.setdefault("core_responsibilities", [])
+        job.setdefault("education", "")
+        job.setdefault("major", [])
+        job.setdefault("experience", "")
+        job.setdefault("graduation_year", "")
+        job.setdefault("sources", [])
+        job.setdefault("normalized_job_name", "")
+        job.setdefault("job_category", "")
+        job.setdefault("recruitment_batch", "")
+        job.setdefault("first_seen_at", "")
+        job.setdefault("last_seen_at", "")
+        job.setdefault("deadline_source", "")
+        job.setdefault("deadline_conflict", False)
+        job.setdefault("data_quality", {})
+        job.setdefault("status", "unknown")
 
 
 def write_site(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
@@ -1435,46 +1820,97 @@ def write_site(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
 
 
 def main() -> int:
-    print(f"今天（北京时间）{TODAY.isoformat()}，开始抓取未截止的测试岗…", flush=True)
+    print(f"今天（北京时间）{TODAY.isoformat()}，开始抓取测试岗位…", flush=True)
+    # 1. 加载历史档案
+    archive = load_archive()
+    # 2. 抓取各来源，保存 raw
+    raw_sources = {
+        "seed": from_seed,
+        "iguopin": from_iguopin,
+        "xixicc": from_xixicc,
+        "niuqizp": from_niuqizp,
+        "nowcoder": from_nowcoder,
+        "bytedance": from_bytedance,
+        "huawei": from_huawei,
+        "netease": from_netease,
+        "alibaba": from_alibaba,
+    }
     collected: list[dict[str, Any]] = []
-    for fn in (
-        from_existing,
-        from_seed,
-        from_iguopin,
-        from_xixicc,
-        from_niuqizp,
-        from_nowcoder,
-        from_bytedance,
-        from_huawei,
-        from_netease,
-        from_alibaba,
-    ):
+    for raw_name, fn in raw_sources.items():
         try:
-            collected.extend(fn())
+            items = fn()
+            if items:
+                save_raw(raw_name, items)
+            collected.extend(items)
         except Exception as exc:
             log_source(fn.__name__, False, 0, str(exc))
-    jobs = merge_jobs(collected)
-    copy_jd_across_same_company(jobs)
-    scrub_false_jd(jobs)
-    enrich_from_apis(jobs)
-    enrich_jobs_with_jd(jobs)
-    copy_jd_across_same_company(jobs)
-    scrub_false_jd(jobs)
-    jd_n = sum(1 for j in jobs if looks_real_jd(j))
-    sal_n = sum(1 for j in jobs if looks_real_salary(as_text(j.get("salary"))))
+            # 失败时保留旧 raw 兜底
+            old = load_old_raw(raw_name)
+            if old:
+                print(f"[WARN] {fn.__name__} 抓取失败，使用上次 raw 数据 {len(old)} 条", flush=True)
+                collected.extend(old)
+    print(f"[INFO] 本轮抓取 {len(collected)} 条原始岗位", flush=True)
+    # 3. 标准化 + 去重（fresh 内部）
+    for j in collected:
+        finalize_job(j)
+    fresh = merge_jobs(collected)
+    # 4. 与历史档案合并
+    all_jobs = merge_with_archive(fresh, archive)
+    # 5. JD 补全（时间预算）
+    scrub_false_jd(all_jobs)
+    enrich_from_apis(all_jobs)
+    enrich_jobs_with_jd(all_jobs, time_budget=300)
+    copy_jd_across_same_company(all_jobs)
+    scrub_false_jd(all_jobs)
+    # 6. finalize + quality
+    for j in all_jobs:
+        finalize_job(j)
+    save_normalized(all_jobs)
+    # 7. 写 candidate_jobs（全量历史档案）
+    save_candidate(all_jobs)
+    # 8. jobs.json 只输出 open + unknown
+    display = [j for j in all_jobs if j.get("status") in ("open", "unknown") and not j.get("excluded")]
+    display.sort(key=lambda j: (j.get("deadline") or "9999", j["company"]))
+    excluded_n = sum(1 for j in all_jobs if j.get("excluded"))
+    domain_counts: dict[str, int] = {}
+    for j in all_jobs:
+        d = j.get("job_domain") or "unknown"
+        domain_counts[d] = domain_counts.get(d, 0) + 1
+    print(f"[INFO] 岗位方向过滤：原始 {len(all_jobs)}，软件测试 {domain_counts.get('software_testing',0)}，排除 {excluded_n}，展示 {len(display)}", flush=True)
+    for d, n in sorted(domain_counts.items(), key=lambda x: -x[1]):
+        if d not in ("software_testing", "unknown"):
+            print(f"  {d}: {n} 条", flush=True)
+    jd_n = sum(1 for j in display if looks_real_jd(j))
+    sal_n = sum(1 for j in display if looks_real_salary(as_text(j.get("salary"))))
+    open_n = sum(1 for j in all_jobs if j.get("status") == "open")
+    unknown_n = sum(1 for j in all_jobs if j.get("status") == "unknown")
+    expired_n = sum(1 for j in all_jobs if j.get("status") == "expired")
+    closed_n = sum(1 for j in all_jobs if j.get("status") == "closed")
+    new_n = sum(1 for j in all_jobs if j.get("first_seen_at") == TODAY.isoformat())
+    excluded_display = sum(1 for j in all_jobs if j.get("excluded"))
     sources = [s["name"] for s in SOURCE_LOG if s["ok"]]
     meta = {
         "updated_at": datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M"),
-        "count": len(jobs),
+        "count": len(display),
+        "total_candidates": len(all_jobs),
         "sources": sources,
         "source_log": SOURCE_LOG,
-        "note": "江苏/浙江/安徽/上海，仅软件测试相关，仅未截止；职责/薪资按职位原文",
+        "note": "江苏/浙江/安徽/上海，仅软件测试相关；jobs.json 仅 open+unknown，candidate_jobs 含全量历史",
         "jd_filled": jd_n,
         "salary_filled": sal_n,
+        "jd_missing": len(display) - jd_n,
+        "stats": {
+            "open": open_n, "unknown": unknown_n, "expired": expired_n,
+            "closed": closed_n, "new_today": new_n,
+            "excluded": excluded_display,
+        },
     }
-    write_site(jobs, meta)
-    render_readme(jobs, meta)
-    print(f"完成：{len(jobs)} 条写入 jobs.json / index.html（{jd_n} 条有原文职责，{sal_n} 条有薪资）", flush=True)
+    write_site(display, meta)
+    render_readme(display, meta)
+    print(f"[INFO] 历史档案 {len(all_jobs)} 条，展示 {len(display)} 条（open {open_n} / unknown {unknown_n} / expired {expired_n}）", flush=True)
+    print(f"[INFO] 方向过滤排除 {excluded_display} 条（机械/硬件/材料等非软件测试方向）", flush=True)
+    print(f"[INFO] JD 已补全 {jd_n} 条，JD 暂缺 {len(display) - jd_n} 条，薪资 {sal_n} 条", flush=True)
+    print(f"[INFO] 今日新增 {new_n} 条", flush=True)
     return 0
 
 

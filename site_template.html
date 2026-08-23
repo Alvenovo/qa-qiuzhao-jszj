@@ -58,26 +58,26 @@
     .chip.on{background:var(--primary);border-color:var(--primary);color:#fff}
     .tog{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:650;cursor:pointer;color:var(--muted)}
     .layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:14px;align-items:start}
-    .list{display:flex;flex-direction:column;gap:12px;scroll-margin-top:12px}
+    .list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;scroll-margin-top:12px}
     .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
       box-shadow:var(--shadow);padding:12px 14px;min-width:0}
     .card.done{opacity:.72}
     .card.skipped{opacity:.55}
-    .l1{display:flex;align-items:flex-start;gap:10px}
-    .co-name{font-size:16px;font-weight:750;line-height:1.3}
-    .pos{color:var(--muted);font-size:13px;margin-top:2px}
+    .l1{display:flex;align-items:flex-start;gap:8px}
+    .co-name{font-size:15px;font-weight:750;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .pos{color:var(--muted);font-size:12px;margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
     .l1-right{margin-left:auto;text-align:right;flex-shrink:0}
-    .match-box{font-size:12px;font-weight:700;color:var(--primary);background:var(--primary-soft);
-      border-radius:8px;padding:4px 8px;white-space:nowrap}
-    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-    .pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;
+    .match-box{font-size:11px;font-weight:700;color:var(--primary);background:var(--primary-soft);
+      border-radius:6px;padding:3px 6px;white-space:nowrap}
+    .badges{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+    .pill{font-size:10px;font-weight:700;padding:1px 6px;border-radius:999px;
       background:var(--soft);color:var(--muted);border:1px solid var(--line);white-space:nowrap}
     .pill.ok{background:var(--ok-soft);color:#15803d;border-color:#bbf7d0}
     .pill.warn{background:var(--warn-soft);color:#a16207;border-color:#fde68a}
     .pill.soon{background:var(--soon-soft);color:#c2410c;border-color:#fdba74}
     .pill.danger{background:var(--danger-soft);color:var(--danger);border-color:#fecaca}
-    .layer{margin-top:8px;font-size:13px}
-    .layer .k{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:4px}
+    .layer{margin-top:6px;font-size:12px}
+    .layer .k{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:3px}
     .jd{color:#334155;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
     .need-box{max-height:4.6em;overflow:hidden}
     .roi-item{border:1px solid var(--line);border-radius:12px;padding:12px;margin:8px 0;background:#fff}
@@ -86,8 +86,13 @@
     .map-col b{display:block;margin-bottom:4px}
     .muted{color:var(--muted)}
     .skills{display:flex;gap:6px;flex-wrap:wrap}
-    .sk{font-size:12px;background:var(--primary-soft);color:#1d4ed8;
-      padding:2px 8px;border-radius:6px}
+    .sk{font-size:11px;background:var(--primary-soft);color:#1d4ed8;
+      padding:1px 6px;border-radius:6px}
+    .jd-list{margin:0;padding-left:18px;font-size:12px;color:var(--ink);line-height:1.6}
+    .jd-list li{margin-bottom:2px}
+    .kv-inline{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+    .kv-inline .chip{font-size:12px;border:1px solid var(--line);background:var(--soft);
+      padding:2px 8px;border-radius:999px;color:var(--ink)}
     .sk.hit{background:var(--ok-soft);color:#15803d}
     .sk.miss{background:var(--danger-soft);color:var(--danger)}
     .sk.rel{background:var(--warn-soft);color:#a16207}
@@ -105,7 +110,8 @@
     .explain th,.explain td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--soft)}
     .task .meta{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.55}
     .dl-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-    .c-act{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .c-act{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    .c-act .btn{padding:4px 10px;font-size:12px}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:4px;
       border:1px solid var(--line);background:#fff;color:var(--ink);
       font-size:13px;font-weight:700;padding:7px 12px;border-radius:8px}
@@ -147,6 +153,11 @@
     .modal-in{background:#fff;border-radius:12px;width:min(720px,100%);max-height:calc(100vh - 48px);
       overflow:auto;padding:18px 18px 16px}
     .modal h3{font-size:18px;margin-bottom:4px}
+    .modal-in > .c-act:last-child{
+      position:sticky;bottom:-16px;margin:12px -18px -16px;padding:10px 18px;
+      background:#fff;border-top:1px solid var(--line);
+      border-radius:0 0 12px 12px;z-index:5;
+      box-shadow:0 -2px 6px rgba(0,0,0,.05)}
     .kv{display:grid;grid-template-columns:88px 1fr;gap:6px 10px;font-size:13px;margin:12px 0}
     .kv b{color:var(--muted);font-weight:650}
     .sec{margin-top:14px}
@@ -180,12 +191,14 @@
       .layout{grid-template-columns:1fr}
       .today-list{grid-template-columns:repeat(2,minmax(0,1fr))}
       .me-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .list{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
     @media(max-width:680px){
       .app{padding:12px 12px 96px}
       h1{font-size:20px}
       .dash{grid-template-columns:repeat(2,minmax(0,1fr))}
       .today-list,.grid-2,.kv{grid-template-columns:1fr}
+      .list{grid-template-columns:1fr}
       .search{max-width:none}
       .l1{flex-wrap:wrap}
       .l1-right{margin-left:0;text-align:left}
@@ -260,6 +273,8 @@
           <label class="tog"><input type="checkbox" id="soon" /> 7天内截止</label>
           <label class="tog"><input type="checkbox" id="unapplied" checked /> 只看未投</label>
           <label class="tog"><input type="checkbox" id="showSkipped" /> 暂时不投</label>
+          <label class="tog"><input type="checkbox" id="onlyJd" /> JD已补全</label>
+          <label class="tog"><input type="checkbox" id="onlyOfficial" /> 官方岗位</label>
           <input class="search" id="q" placeholder="搜公司 / 岗位" />
         </div>
         <div class="chips" id="cities"></div>
@@ -411,7 +426,6 @@
   <div class="modal" id="modal">
     <div class="modal-in" id="modalIn"></div>
   </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
   <script>
@@ -427,7 +441,7 @@
     const STORE_IV = "qiuzhao-interview-state";
     const STORE_PROFILE = "qiuzhao-candidate-profile";
     const MATCH_MODEL = "v3";
-    const PAGE_SIZE = 12;
+    const PAGE_SIZE = 9;
     const STATUSES = ["未投","已投","笔试","一面","二面","HR面","Offer","淘汰","暂时不投"];
     const APPLIED_STATUSES = ["已投","笔试","一面","二面","HR面","Offer","淘汰"];
     const INTERVIEW_STATUSES = ["一面","二面","HR面"];
@@ -443,7 +457,7 @@
     ];
 
     let province = "全部", scale = "全部", role = "全部", sort = "match";
-    let city = "", q = "", soon = false, unapplied = true, showSkipped = false, page = 1;
+    let city = "", q = "", soon = false, unapplied = true, showSkipped = false, onlyJd = false, onlyOfficial = false, page = 1;
     let view = "home", dashKey = "", favMode = "all", appMode = "all", meStage = "全部";
     let mockPhase = "pick", mockJobQ = "", mockTimer = null;
     let applied = new Set();
@@ -566,6 +580,16 @@
       return { label: "来源待确认", cls: "danger", icon: "🔴" };
     }
 
+    function jdStatus(j){
+      const dq = j.data_quality || {};
+      if (dq.has_jd) return { label: "JD已补全", cls: "ok", icon: "✓", score: dq.score };
+      return { label: "JD暂未找到", cls: "soon", icon: "⚠", score: dq.score || 0 };
+    }
+    function qualityBar(j){
+      const dq = j.data_quality || {};
+      if (!dq.score && dq.score !== 0) return "";
+      return '<span class="pill ' + (dq.score>=70?"ok":dq.score>=50?"warn":"soon") + '">📊 完整度 ' + dq.score + '%</span>';
+    }
     function deadlineMeta(j){
       const dl = daysLeft(j.deadline);
       if (dl === null) return { cls: "", icon: "⚪", text: "截止时间未知", date: "招满即止" };
@@ -2292,6 +2316,8 @@
         if (unapplied && APPLIED_STATUSES.includes(status)) return false;
         if (!showSkipped && status === "暂时不投") return false;
         if (showSkipped && status !== "暂时不投") return false;
+        if (onlyJd && !(j.data_quality || {}).has_jd) return false;
+        if (onlyOfficial && (j.jd_source || "unknown") !== "official" && !((j.sources||[]).some(s=>s.type==="official"))) return false;
         if (kw){
           const blob = [j.company, j.program, ...(j.positions||[]), ...(j.locations||[])].join(" ");
           if (!blob.includes(kw)) return false;
@@ -2358,6 +2384,8 @@
       $("#soon").checked = false;
       $("#unapplied").checked = true;
       $("#showSkipped").checked = false;
+      $("#onlyJd").checked = false; onlyJd = false;
+      $("#onlyOfficial").checked = false; onlyOfficial = false;
       $("#q").value = "";
       if (dashKey === "soon"){ soon = true; $("#soon").checked = true; }
       if (dashKey === "focus"){ scale = "大厂"; $("#scale").value = "大厂"; }
@@ -2393,44 +2421,23 @@
           </div>
           <div class="l1-right">
             <div class="match-box${boxCls}">${esc(matchLabel(j))}${m ? " 匹配" : ""}</div>
-            ${m ? `<div class="grade">${esc(m.stars)} ${esc(m.grade)}</div>` : ""}
-            ${rdy ? `<div class="grade">面试准备 ${esc(readinessStars(rdy.score))} ${rdy.score}%</div>` : ""}
           </div>
         </div>
         <div class="badges">
           <span class="pill">${esc((j.locations||[]).join(" · ") || "地点以官网为准")}</span>
+          <span class="pill ${dl.cls}">${dl.icon} ${esc(dl.text)}</span>
           ${jobSalary(j) ? `<span class="pill ok">💰 ${esc(jobSalary(j))}</span>` : ""}
-          <span class="pill">${esc(j.role_type || "测试")}</span>
-          <span class="pill">${esc(ctype || j.scale || "公司类型未知")}</span>
-          <span class="pill ${trust.cls}">${trust.icon} ${esc(trust.label)}</span>
+          ${(()=>{ const jd = jdStatus(j); return `<span class="pill ${jd.cls}">${jd.icon} ${esc(jd.label)}</span>`; })()}
           <span class="pill">${esc(status)}</span>
         </div>
         <div class="layer">
-          <div class="k">💼 岗位职责</div>
-          <div class="jd ${desc?"":"muted"}">${esc(desc || "暂无详细 JD")}</div>
-        </div>
-        <div class="layer">
-          <div class="k">🛠 技能要求</div>
-          ${skills.length ? `<div class="skills">${skills.map(s=>`<span class="sk">${esc(s)}</span>`).join("")}</div>` : `<div class="muted">暂无详细技能要求</div>`}
-        </div>
-        <div class="layer">
-          <div class="k">🎯 我的匹配</div>
-          ${m ? `<div>${esc(m.score)}% · ${esc(m.stars)} ${esc(m.grade)}</div>${m.hasJd ? "" : `<div class="muted">对照该方向常见要求，非本岗位原文</div>`}${skillPills(m, 6)}` : `<div class="muted">待简历分析 · 上传简历后计算匹配度</div>`}
-        </div>
-        <div class="layer">
-          <div class="k">📚 我需要补足</div>
-          ${gapHtml(m, true)}
-        </div>
-        <div class="layer">
-          <div class="k">截止日期</div>
-          <div class="dl-row"><span class="pill ${dl.cls}">${dl.icon} ${esc(dl.text)}</span><span class="muted">${esc(dl.date)}</span></div>
+          ${(()=>{ const cs = arr(j.core_skills); const all = cs.length ? cs : skills; return all.length ? `<div class="skills">${all.slice(0,5).map(s=>`<span class="sk">${esc(s)}</span>`).join("")}</div>` : `<div class="muted">${desc ? "JD提取中" : "⚠ JD暂缺"}</div>`; })()}
         </div>
         <div class="c-act">
-          <button class="btn${fav?" on":""}" type="button" data-act="fav" data-id="${j.id}">${fav?"★ 已收藏":"☆ 收藏"}</button>
-          <button class="btn${skipped?" on":""}" type="button" data-act="skip" data-id="${j.id}">${skipped?"取消不投":"暂时不投"}</button>
-          <button class="btn ghost" type="button" data-act="detail" data-id="${j.id}">查看详情</button>
-          <button class="btn" type="button" data-act="mock-start" data-id="${j.id}">🎤 ${rec ? "推荐现在模拟" : "针对该岗位模拟面试"}</button>
           ${go}
+          <button class="btn${fav?" on":""}" type="button" data-act="fav" data-id="${j.id}">${fav?"★ 已收藏":"☆ 收藏"}</button>
+          <button class="btn${skipped?" on":""}" type="button" data-act="skip" data-id="${j.id}">${skipped?"取消不投":"不投"}</button>
+          <button class="btn ghost" type="button" data-act="detail" data-id="${j.id}">详情</button>
         </div>
       </article>`;
     }
@@ -2463,11 +2470,14 @@
           <b>薪资待遇</b><span>${jobSalary(j) ? esc(jobSalary(j)) : "暂未公布"}</span>
           <b>截止日期</b><span>${dl.icon} ${esc(dl.text)} · ${esc(dl.date)}</span>
           <b>招聘来源</b><span>${trust.icon} ${esc(trust.label)} · ${esc(j.source || "未知")}</span>
+          <b>数据完整度</b><span>${(()=>{const dq=j.data_quality||{};return (dq.score||0)+"% "+esc(dq.level||"");})()}</span>
+          <b>JD来源</b><span>${esc(j.jd_source || "unknown")}</span>
           <b>投递状态</b><span>${esc(status)}</span>
           <b>收藏状态</b><span>${fav ? "已收藏" : "未收藏"}</span>
           <b>投递链接</b><span>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(url)}</a>` : esc(j.search_hint || "暂无链接，见搜法")}</span>
         </div>
         <div class="sec"><h4>岗位职责</h4><div class="${desc||resp.length?"":"muted"}">${esc(resp.length?resp.join("；"):(desc || "暂无详细 JD"))}</div></div>
+        ${(!desc && !resp.length) ? '<div class="sec"><div class="muted">⚠ JD暂未找到。岗位仍保留展示，投递前请到官网查看具体职责。不会编造 JD。</div></div>' : ''}
         <div class="sec"><h4>招聘信息</h4><div class="muted">${esc(j.program || "暂无更多招聘信息")}${j.batch ? " · " + esc(j.batch) : ""}</div></div>
         <div class="sec"><h4>任职要求</h4><div class="${req.length?"":"muted"}">${esc(req.length?req.join("；"):"暂无详细任职要求")}</div></div>
         <div class="sec"><h4>技能要求</h4>${skills.length?`<div class="skills">${skills.map(s=>`<span class="sk">${esc(s)}</span>`).join("")}</div>`:`<div class="muted">暂无详细技能要求</div>`}</div>
@@ -3003,6 +3013,8 @@
       if (showSkipped){ unapplied = false; $("#unapplied").checked = false; }
       render({resetPage:true});
     });
+    $("#onlyJd").addEventListener("change", e=>{ onlyJd=e.target.checked; render({resetPage:true}); });
+    $("#onlyOfficial").addEventListener("change", e=>{ onlyOfficial=e.target.checked; render({resetPage:true}); });
     $("#q").addEventListener("input", e=>{ q=e.target.value; render({resetPage:true}); });
     $("#cities").addEventListener("click", e=>{
       const btn = e.target.closest("[data-city]");

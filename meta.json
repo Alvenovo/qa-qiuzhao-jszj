@@ -1,27 +1,18 @@
 {
-  "updated_at": "2026-08-23 12:37",
-  "count": 179,
+  "updated_at": "2026-08-23 16:43",
+  "count": 170,
+  "total_candidates": 174,
   "sources": [
-    "现有岗位",
     "本地岗位库",
     "国聘网",
     "xixicc2027",
     "牛客",
-    "网易官网",
-    "阿里官网",
-    "同公司补JD",
     "牛客",
     "官网接口补JD",
     "职位详情补全",
     "同公司补JD"
   ],
   "source_log": [
-    {
-      "name": "现有岗位",
-      "ok": true,
-      "count": 177,
-      "detail": "保留未截止"
-    },
     {
       "name": "本地岗位库",
       "ok": true,
@@ -44,7 +35,7 @@
       "name": "niuqizp校招日历",
       "ok": false,
       "count": 0,
-      "detail": "成功页面 0/19"
+      "detail": "成功页面 19/19"
     },
     {
       "name": "牛客",
@@ -66,21 +57,15 @@
     },
     {
       "name": "网易官网",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "detail": ""
+      "detail": "未实现真实抓取（pending）"
     },
     {
       "name": "阿里官网",
-      "ok": true,
-      "count": 1,
-      "detail": "campus-talent.alibaba.com"
-    },
-    {
-      "name": "同公司补JD",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "detail": ""
+      "detail": "未实现真实抓取（pending）"
     },
     {
       "name": "字节官网",
@@ -110,7 +95,7 @@
       "name": "职位详情补全",
       "ok": true,
       "count": 0,
-      "detail": "尝试 2 个投递链接"
+      "detail": "尝试 2 个投递链接，耗时 25s"
     },
     {
       "name": "同公司补JD",
@@ -119,7 +104,16 @@
       "detail": ""
     }
   ],
-  "note": "江苏/浙江/安徽/上海，仅软件测试相关，仅未截止；职责/薪资按职位原文",
-  "jd_filled": 11,
-  "salary_filled": 13
+  "note": "江苏/浙江/安徽/上海，仅软件测试相关；jobs.json 仅 open+unknown，candidate_jobs 含全量历史",
+  "jd_filled": 22,
+  "salary_filled": 24,
+  "jd_missing": 150,
+  "stats": {
+    "open": 174,
+    "unknown": 0,
+    "expired": 0,
+    "closed": 0,
+    "new_today": 169,
+    "excluded": 4
+  }
 }

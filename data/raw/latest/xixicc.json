@@ -1,0 +1,696 @@
+[
+ {
+  "id": "cb8d21f99ef3",
+  "company": "DeepSeek",
+  "program": null,
+  "cohort": "不限",
+  "batch": "其他",
+  "recruitment_batch": "其他",
+  "role_type": "测试开发",
+  "normalized_job_name": "测试开发",
+  "job_category": "测试开发",
+  "positions": [
+   "测试开发工程师"
+  ],
+  "locations": [
+   "杭州"
+  ],
+  "provinces": [
+   "浙江"
+  ],
+  "start_date": "2026-07-07",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-07",
+  "first_seen_at": "2026-07-07",
+  "last_seen_at": "2026-07-07",
+  "apply_url": "https://app.mokahr.com/social-recruitment/high-flyer/140576",
+  "search_hint": "打开 mokahr 高飞招聘页，搜「测试开发」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://app.mokahr.com/social-recruitment/high-flyer/140576",
+    "found_at": "2026-07-07"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "互联网",
+  "scale": "大厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "20f16f27de5e",
+  "company": "中兴通讯",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "提前批",
+  "recruitment_batch": "提前批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试类"
+  ],
+  "locations": [
+   "上海",
+   "杭州"
+  ],
+  "provinces": [
+   "上海",
+   "浙江"
+  ],
+  "start_date": "2026-07-02",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-02",
+  "first_seen_at": "2026-07-02",
+  "last_seen_at": "2026-07-02",
+  "apply_url": "https://job.zte.com.cn",
+  "search_hint": "打开 job.zte.com.cn → 校园招聘，搜「测试」；微信搜「中兴通讯招聘」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://job.zte.com.cn",
+    "found_at": "2026-07-02"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "半导体/硬件",
+  "scale": "大厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "12a712fb829b",
+  "company": "中新赛克",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "实习",
+  "recruitment_batch": "实习",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "软件测试工程师"
+  ],
+  "locations": [
+   "南京"
+  ],
+  "provinces": [
+   "江苏"
+  ],
+  "start_date": "2026-07-12",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-12",
+  "first_seen_at": "2026-07-12",
+  "last_seen_at": "2026-07-12",
+  "apply_url": "https://recruit.sinovatio.com",
+  "search_hint": "打开 recruit.sinovatio.com，找校园招聘/学生通道",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://recruit.sinovatio.com",
+    "found_at": "2026-07-12"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "其他",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "3715bbfc9e47",
+  "company": "中新赛克",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "提前批",
+  "recruitment_batch": "提前批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "软件测试工程师"
+  ],
+  "locations": [
+   "南京"
+  ],
+  "provinces": [
+   "江苏"
+  ],
+  "start_date": "2026-07-12",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-12",
+  "first_seen_at": "2026-07-12",
+  "last_seen_at": "2026-07-12",
+  "apply_url": "https://recruit.sinovatio.com",
+  "search_hint": "打开 recruit.sinovatio.com，找校园招聘/学生通道",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://recruit.sinovatio.com",
+    "found_at": "2026-07-12"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "其他",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "7af689f706ad",
+  "company": "北方华创",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "提前批",
+  "recruitment_batch": "提前批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "软件测试工程师",
+   "技术类（电气/软件/机械/半导体工艺/射频/光学/系统/软件测试）"
+  ],
+  "locations": [
+   "上海",
+   "合肥",
+   "苏州"
+  ],
+  "provinces": [
+   "上海",
+   "安徽",
+   "江苏"
+  ],
+  "start_date": "2026-07-09",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-13",
+  "first_seen_at": "2026-07-13",
+  "last_seen_at": "2026-07-13",
+  "apply_url": "https://naura.zhiye.com",
+  "search_hint": "打开 naura.zhiye.com（不要加 /campus，那是 404），搜「测试」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://naura.zhiye.com",
+    "found_at": "2026-07-13"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "半导体/硬件",
+  "scale": "中厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "62d96f8d36d3",
+  "company": "大疆",
+  "program": null,
+  "cohort": "不限",
+  "batch": "正式批",
+  "recruitment_batch": "正式批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试/工类"
+  ],
+  "locations": [
+   "上海"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-07-02",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-02",
+  "first_seen_at": "2026-07-02",
+  "last_seen_at": "2026-07-02",
+  "apply_url": "https://we.dji.com/zh-CN/campus",
+  "search_hint": "打开 we.dji.com/zh-CN/campus 或 careers.dji.com，搜「测试」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://we.dji.com/zh-CN/campus",
+    "found_at": "2026-07-02"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "半导体/硬件",
+  "scale": "大厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "8f705d123697",
+  "company": "天锐星通",
+  "program": "星锐计划",
+  "cohort": "2027届",
+  "batch": "提前批",
+  "recruitment_batch": "提前批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试方法研究工程师"
+  ],
+  "locations": [
+   "南京",
+   "上海"
+  ],
+  "provinces": [
+   "江苏",
+   "上海"
+  ],
+  "start_date": "2026-07-15",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-15",
+  "first_seen_at": "2026-07-15",
+  "last_seen_at": "2026-07-15",
+  "apply_url": null,
+  "search_hint": "百度搜「天锐星通 2027校招 测试」；微信搜「天锐星通招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": null,
+    "found_at": "2026-07-15"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "半导体/硬件",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "344463c3411e",
+  "company": "小鹏",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "正式批",
+  "recruitment_batch": "正式批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试类"
+  ],
+  "locations": [
+   "上海"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-07-08",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-11",
+  "first_seen_at": "2026-07-11",
+  "last_seen_at": "2026-07-11",
+  "apply_url": "https://xiaopeng.jobs.feishu.cn/campus/m/",
+  "search_hint": "打开 xiaopeng.jobs.feishu.cn，搜「测试」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://xiaopeng.jobs.feishu.cn/campus/m/",
+    "found_at": "2026-07-11"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "新能源车企",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "15434f847e2d",
+  "company": "微步在线",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "正式批",
+  "recruitment_batch": "正式批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试工程师"
+  ],
+  "locations": [
+   "上海",
+   "苏州",
+   "杭州"
+  ],
+  "provinces": [
+   "上海",
+   "江苏",
+   "浙江"
+  ],
+  "start_date": "2026-07-07",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-07",
+  "first_seen_at": "2026-07-07",
+  "last_seen_at": "2026-07-07",
+  "apply_url": "https://www.threatbook.cn",
+  "search_hint": "「/about/joinus」是 404。搜「微步在线 校招」；微信「微步在线招聘」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://www.threatbook.cn",
+    "found_at": "2026-07-07"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "互联网",
+  "scale": "中厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "f5e4ea3605f6",
+  "company": "思瑞浦",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "正式批",
+  "recruitment_batch": "正式批",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "研发测试工程师"
+  ],
+  "locations": [
+   "上海",
+   "杭州",
+   "苏州"
+  ],
+  "provinces": [
+   "上海",
+   "浙江",
+   "江苏"
+  ],
+  "start_date": "2026-07-11",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-11",
+  "first_seen_at": "2026-07-11",
+  "last_seen_at": "2026-07-11",
+  "apply_url": "https://app.mokahr.com/campus-recruitment/3peakic/67894?locale=zh-CN",
+  "search_hint": "打开 mokahr 思瑞浦校招页，搜「研发测试」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://app.mokahr.com/campus-recruitment/3peakic/67894?locale=zh-CN",
+    "found_at": "2026-07-11"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "半导体/硬件",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "d1f7384fd014",
+  "company": "杰华特",
+  "program": null,
+  "cohort": "2027届",
+  "batch": "正式批",
+  "recruitment_batch": "正式批",
+  "role_type": "测试开发",
+  "normalized_job_name": "测试开发",
+  "job_category": "测试开发",
+  "positions": [
+   "测试开发工程师",
+   "测试开发助理工程师"
+  ],
+  "locations": [
+   "杭州"
+  ],
+  "provinces": [
+   "浙江"
+  ],
+  "start_date": "2026-07-15",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-15",
+  "first_seen_at": "2026-07-15",
+  "last_seen_at": "2026-07-15",
+  "apply_url": "https://joulwatt.zhiye.com/",
+  "search_hint": "打开 joulwatt.zhiye.com，搜「测试开发」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://joulwatt.zhiye.com/",
+    "found_at": "2026-07-15"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "半导体/硬件",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "67592de92937",
+  "company": "歌尔",
+  "program": "精英计划",
+  "cohort": "2027届",
+  "batch": "正式批",
+  "recruitment_batch": "正式批",
+  "role_type": "测试开发",
+  "normalized_job_name": "测试开发",
+  "job_category": "测试开发",
+  "positions": [
+   "检测开发岗"
+  ],
+  "locations": [
+   "上海",
+   "南京",
+   "杭州"
+  ],
+  "provinces": [
+   "上海",
+   "江苏",
+   "浙江"
+  ],
+  "start_date": "2026-07-09",
+  "deadline": null,
+  "deadline_source": "",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-09",
+  "first_seen_at": "2026-07-09",
+  "last_seen_at": "2026-07-09",
+  "apply_url": "https://goertek.hotjob.cn/",
+  "search_hint": "打开 goertek.hotjob.cn，搜「检测」或「测试」",
+  "source": "xixicc2027",
+  "sources": [
+   {
+    "type": "xixicc",
+    "url": "https://goertek.hotjob.cn/",
+    "found_at": "2026-07-09"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "制造业",
+  "scale": "中厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ }
+]
