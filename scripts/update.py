@@ -545,7 +545,53 @@ def _jsonld_jobs(html: str) -> list[dict[str, Any]]:
     return out
 
 
+def _fetch_iguopin_jd_api(url: str) -> dict[str, Any] | None:
+    """通过国聘详情 API 获取 JD（SPA 页面无法直接抓 HTML）。"""
+    m = re.search(r"[?&]id=(\d+)", url)
+    if not m:
+        return None
+    jid = m.group(1)
+    api = f"https://gp-api.iguopin.com/api/jobs/v1/info?id={jid}"
+    headers = {
+        "Device": "pc", "Subsite": "iguopin", "Version": "5.2.300",
+        "Origin": "https://www.iguopin.com", "Referer": "https://www.iguopin.com/",
+    }
+    resp = get(api, headers=headers)
+    if not resp or not resp.text:
+        return None
+    try:
+        data = resp.json()
+    except Exception:
+        return None
+    job_data = (data.get("data") or {}) if isinstance(data, dict) else {}
+    contents = as_text(job_data.get("contents"))
+    if not contents:
+        return None
+    if "<" in contents:
+        contents = html_to_text(contents)
+    parsed = parse_jd_text(contents)
+    # 国聘 API 返回的结构化薪资字段
+    salary = ""
+    lo = job_data.get("min_wage")
+    hi = job_data.get("max_wage")
+    if lo and hi:
+        unit = as_text(job_data.get("wage_unit_cn")) or ""
+        salary = f"{lo}-{hi}{unit}"
+    if salary and not looks_like_salary_text(salary):
+        salary = ""
+    if salary:
+        parsed["salary"] = salary
+    if not job_has_jd(parsed) and not parsed.get("salary"):
+        return None
+    return parsed
+
+
 def fetch_jd_from_url(url: str) -> dict[str, Any] | None:
+    # 国聘详情页是 SPA，HTML 不含 JD；优先改用 API 获取
+    if "iguopin.com/job/detail" in url.lower():
+        api_result = _fetch_iguopin_jd_api(url)
+        if api_result:
+            return api_result
     resp = get(url)
     if not resp or not resp.text:
         return None

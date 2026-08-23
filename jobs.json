@@ -1018,7 +1018,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -1156,7 +1156,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -1525,7 +1525,31 @@
       "用例设计",
       "缺陷跟踪"
     ],
-    "salary": "面议"
+    "salary": "面议",
+    "jd_raw_text": "",
+    "jd_source": "unknown",
+    "jd_reused_from": "",
+    "jd_source_url": "",
+    "jd_updated_at": "",
+    "job_domain": "unknown",
+    "job_domain_confidence": 0.0,
+    "excluded": false,
+    "exclude_reason": "",
+    "core_skills": [],
+    "core_responsibilities": [],
+    "education": "",
+    "major": [],
+    "experience": "",
+    "graduation_year": "",
+    "sources": [],
+    "normalized_job_name": "",
+    "job_category": "",
+    "recruitment_batch": "",
+    "first_seen_at": "",
+    "last_seen_at": "",
+    "deadline_source": "",
+    "deadline_conflict": false,
+    "data_quality": {}
   },
   {
     "id": "fe9ca290d3c1",
@@ -1634,7 +1658,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -1773,7 +1797,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "iguopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -1797,8 +1821,8 @@
     "major": [],
     "experience": "",
     "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
+    "jd_source_url": "https://www.iguopin.com/job/detail?id=209069781825880984",
+    "jd_updated_at": "2026-08-23",
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
@@ -1984,7 +2008,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -2282,7 +2306,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -3093,8 +3117,12 @@
     "scale": "中厂",
     "owner": "",
     "status": "open",
-    "description": "",
-    "responsibilities": [],
+    "description": "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作；开展稳态测试数据分析及排故；协助完成强度测试技术研究工作",
+    "responsibilities": [
+      "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作",
+      "开展稳态测试数据分析及排故",
+      "协助完成强度测试技术研究工作"
+    ],
     "requirements": [],
     "skills": [],
     "salary": "15~30K",
@@ -3105,8 +3133,8 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
-    "jd_raw_text": "",
+    "jd_source": "iguopin",
+    "jd_raw_text": "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作；开展稳态测试数据分析及排故；协助完成强度测试技术研究工作",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
     "normalized_job_name": "软件测试",
@@ -3129,8 +3157,8 @@
     "major": [],
     "experience": "",
     "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
+    "jd_source_url": "https://www.iguopin.com/job/detail?id=211221953380354804",
+    "jd_updated_at": "2026-08-23",
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
@@ -3337,7 +3365,31 @@
       "缺陷跟踪",
       "性能测试"
     ],
-    "salary": "面议"
+    "salary": "面议",
+    "jd_raw_text": "",
+    "jd_source": "unknown",
+    "jd_reused_from": "",
+    "jd_source_url": "",
+    "jd_updated_at": "",
+    "job_domain": "unknown",
+    "job_domain_confidence": 0.0,
+    "excluded": false,
+    "exclude_reason": "",
+    "core_skills": [],
+    "core_responsibilities": [],
+    "education": "",
+    "major": [],
+    "experience": "",
+    "graduation_year": "",
+    "sources": [],
+    "normalized_job_name": "",
+    "job_category": "",
+    "recruitment_batch": "",
+    "first_seen_at": "",
+    "last_seen_at": "",
+    "deadline_source": "",
+    "deadline_conflict": false,
+    "data_quality": {}
   },
   {
     "id": "3ff08637dcf3",
@@ -3662,7 +3714,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -3729,7 +3781,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "jd_reused_from": "",
     "industry": "新能源车企",
@@ -3800,7 +3852,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -7665,7 +7717,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -9214,7 +9266,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -10735,9 +10787,22 @@
     "scale": "中厂",
     "owner": "",
     "status": "open",
-    "description": "",
-    "responsibilities": [],
-    "requirements": [],
+    "description": "岗位职责：1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；4、能推动AI智能穿戴设备测试经验摸索和沉淀；职位要求：1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；4、掌握Python等编程语言，熟悉机器学习和深度学习算法，具备一定的数学和统计学基础；5、熟悉自然语言处理技术，包括语义理解、对话管理；6、对智能家居熟悉，如：WiFi产品、蓝牙产品、蜂窝产品；7、很强的责任心，良好的沟通能力和表达能力，能承受一定的工作压力。\n\n岗位职责：\n\n1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；\n\n2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；\n\n3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；\n\n4、能推动AI智能穿戴设备测试经验摸索和沉淀；\n\n\n\n\n职位要求：\n\n1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；\n\n2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；\n\n3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；\n\n4、掌握Python等编程语言，熟悉机器学习和深度学习算法，具备一定的数学和统计学基础；\n\n5、熟悉自然语言处理技术，包括语义理解、对话管理；\n\n6、对智能家居熟悉，如：WiFi产品、蓝牙产品、蜂窝产品；\n\n7、很强的责任心，良好的沟通能力和表达能力，能承受一定的工作压力。\n\n允许3个月内投递3个职位，请选择适合的职位进行投递\n立即投递\n30 行/页\n1\n前往  页\n最新职位\nAI硬件产品经理（智慧屏&网关）\nAI产品经理（照明）\n嵌入式开发工程师\n客户质量工程师（CQE）\n嵌入式开发工程师（Linux）\nAI产品经理\n工艺工程师\n采购工程师\n了解涂鸦\n关于我们\n关于我们\n行业百科\n行业百科\n最新动态\n最新动态\n支持\n帮助中心\n帮助中心\n在线咨询\n在线咨询\n技术支持\n技术支持\n联系我们\n加入我们\n加入我们\nApp 商城\nApp 商城\nTuyaExpo\nTuyaExpo\n涂鸦智能\n浙公网安备33010602004238号浙ICP备14011795号\n关注“涂鸦招聘”\n了解更多\n了解更多\n隐私政策与cookies政策\n我们使用cookies以便您在我们网站上获得更好的体验，继续使用此网站，表明您同意我们的《隐私协议》\n好的",
+    "responsibilities": [
+      "岗位职责：1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；4、能推动AI智能穿戴设备测试经验摸索和沉淀；"
+    ],
+    "requirements": [
+      "职位要求：1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；4、掌握Python等编程语言，熟悉机器学习和深度学习算法，具备一定的数学和统计学基础；5、熟悉自然语言处理技术，包括语义理解、对话管理；6、对智能家居熟悉，如：WiFi产品、蓝牙产品、蜂窝产品；7、很强的责任心，良好的沟通能力和表达能力，能承受一定的工作压力。",
+      "岗位职责：",
+      "1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；",
+      "2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；",
+      "3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；",
+      "4、能推动AI智能穿戴设备测试经验摸索和沉淀；",
+      "职位要求：",
+      "1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；",
+      "2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；",
+      "3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；"
+    ],
     "skills": [],
     "salary": "",
     "sources": [
@@ -10747,7 +10812,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "browser",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
@@ -10771,8 +10836,8 @@
     "major": [],
     "experience": "",
     "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
+    "jd_source_url": "https://app.mokahr.com/campus-recruitment/tuya/147434?locale=zh-CN#/jobs?zhineng%5B0%5D=208986",
+    "jd_updated_at": "2026-08-23",
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
@@ -12142,7 +12207,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-23",
