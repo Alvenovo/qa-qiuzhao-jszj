@@ -1,12 +1,11 @@
 {
-  "updated_at": "2026-08-23 01:33",
-  "count": 177,
+  "updated_at": "2026-08-23 12:37",
+  "count": 179,
   "sources": [
     "现有岗位",
     "本地岗位库",
     "国聘网",
     "xixicc2027",
-    "niuqizp校招日历",
     "牛客",
     "网易官网",
     "阿里官网",
@@ -20,19 +19,19 @@
     {
       "name": "现有岗位",
       "ok": true,
-      "count": 160,
+      "count": 177,
       "detail": "保留未截止"
     },
     {
       "name": "本地岗位库",
       "ok": true,
-      "count": 162,
+      "count": 173,
       "detail": "含中小厂"
     },
     {
       "name": "国聘网",
       "ok": true,
-      "count": 0,
+      "count": 3,
       "detail": "职位详情含原文职责/薪资"
     },
     {
@@ -43,9 +42,9 @@
     },
     {
       "name": "niuqizp校招日历",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "detail": "成功页面 18/19"
+      "detail": "成功页面 0/19"
     },
     {
       "name": "牛客",
@@ -111,7 +110,7 @@
       "name": "职位详情补全",
       "ok": true,
       "count": 0,
-      "detail": "尝试 0 个投递链接"
+      "detail": "尝试 2 个投递链接"
     },
     {
       "name": "同公司补JD",
@@ -120,7 +119,7 @@
       "detail": ""
     }
   ],
-  "note": "职责/薪资按国聘职位原文；日历岗无详情时仍为空",
-  "jd_filled": 9,
-  "salary_filled": 11
+  "note": "江苏/浙江/安徽/上海，仅软件测试相关，仅未截止；职责/薪资按职位原文",
+  "jd_filled": 11,
+  "salary_filled": 13
 }
