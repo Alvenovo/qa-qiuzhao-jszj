@@ -21,6 +21,7 @@ from normalize import (
     norm_company, source_type, source_rank, jd_source_rank,
     classify_status, compute_quality, same_job, similar_position,
     infer_batch, extract_jd_core, classify_job_domain,
+    jd_year_matches_cohort, jd_is_software_testing,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -615,6 +616,8 @@ def looks_real_jd(job: dict[str, Any]) -> bool:
     blob = as_text(job.get("description")) + " " + " ".join(job.get("responsibilities") or []) + " " + " ".join(job.get("requirements") or [])
     if len(blob) < 30:
         return False
+    if _is_search_page_noise(blob):
+        return False
     if re.search(r"射线衍射|随钻测量|pick你的心仪岗位|多种方式", blob):
         return False
     return bool(re.search(
@@ -624,6 +627,27 @@ def looks_real_jd(job: dict[str, Any]) -> bool:
     ) or blob.count("测试") >= 2)
 
 
+_NOISE_LINE_RE = re.compile(r".{2,15}招聘(信息|网)?$")
+
+
+def _is_search_page_noise(text: str) -> bool:
+    """检测是否为搜索页/列表页噪音（多个不相关「xxx招聘」标题拼接）。
+
+    真实 JD 可能提到「招聘」一词，但不会由多条不相关招聘标题拼接而成。
+    """
+    if not text or len(text) < 30:
+        return False
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    noise_lines = sum(1 for l in lines if _NOISE_LINE_RE.search(l))
+    # 3 行以上「xxx招聘」模式 → 搜索页噪音
+    if noise_lines >= 3:
+        return True
+    # 5 行以上且无 JD 结构标题 + 2 行噪音 → 噪音
+    if len(lines) >= 5 and noise_lines >= 2 and not re.search(r"岗位职责|任职要求|工作职责|职位描述", text):
+        return True
+    return False
+
+
 def looks_real_salary(s: str) -> bool:
     return looks_like_salary_text(s)
 
@@ -631,13 +655,41 @@ def looks_real_salary(s: str) -> bool:
 def scrub_false_jd(jobs: list[dict[str, Any]]) -> None:
     for job in jobs:
         if job.get("description") or job.get("responsibilities") or job.get("skills"):
-            if not looks_real_jd(job):
+            blob = as_text(job.get("description")) + " " + " ".join(job.get("responsibilities") or []) + " " + " ".join(job.get("requirements") or [])
+            if not looks_real_jd(job) or not jd_is_software_testing(blob) or not jd_year_matches_cohort(blob, job.get("cohort")):
                 job["description"] = ""
                 job["responsibilities"] = []
                 job["requirements"] = []
                 job["skills"] = []
         if job.get("salary") and not looks_real_salary(as_text(job.get("salary"))):
             job["salary"] = ""
+
+
+PORTAL_HOSTS = ("mokahr.com", "jobs.feishu.cn", "hotjob.cn", "zhiye.com")
+
+
+def _is_portal_url(url: str | None) -> bool:
+    """判断 URL 是否为已知 SPA 招聘门户（可能含 SSR/JSON-LD 数据）。"""
+    if not url or not str(url).startswith("http"):
+        return False
+    u = str(url).lower()
+    return any(h in u for h in PORTAL_HOSTS)
+
+
+def _jd_passes_guards(job: dict[str, Any], parsed: dict[str, Any]) -> bool:
+    """年份 + 方向双守卫：merge 前拦截旧年份 JD 和非软件测试 JD。"""
+    blob = " ".join([
+        as_text(parsed.get("description")),
+        " ".join(parsed.get("responsibilities") or []),
+        " ".join(parsed.get("requirements") or []),
+    ]).strip()
+    if not blob:
+        return True
+    if not jd_year_matches_cohort(blob, job.get("cohort")):
+        return False
+    if not jd_is_software_testing(blob):
+        return False
+    return True
 
 
 def enrich_from_apis(jobs: list[dict[str, Any]]) -> int:
@@ -654,6 +706,8 @@ def enrich_from_apis(jobs: list[dict[str, Any]]) -> int:
         for job in jobs:
             same_co = src["company"] in job["company"] or job["company"] in src["company"]
             if not same_co or not _role_alike(src, job):
+                continue
+            if not _jd_passes_guards(job, src):
                 continue
             before = looks_real_jd(job)
             merge_jd_into(job, src)
@@ -721,8 +775,35 @@ def enrich_jobs_with_jd(jobs: list[dict[str, Any]], time_budget: float = 300) ->
                 continue
         url = job.get("apply_url")
         if not should_fetch_jd(url):
-            # apply_url 不是详情页：尝试搜索反查
-            if not looks_real_jd(job) and job.get("company") and job.get("positions"):
+            # 已知 SPA 门户先试抓 HTML（可能含 SSR/JSON-LD 数据）
+            if _is_portal_url(url) and not looks_real_jd(job):
+                if time.time() - start > time_budget:
+                    break
+                tried += 1
+                try:
+                    portal_parsed = fetch_jd_from_url(url)
+                except Exception:
+                    portal_parsed = None
+                if portal_parsed and looks_real_jd(portal_parsed) and _jd_passes_guards(job, portal_parsed):
+                    before = looks_real_jd(job)
+                    merge_jd_into(job, portal_parsed)
+                    if looks_real_jd(job) and not before:
+                        filled += 1
+                        job["jd_source"] = "official"
+                        job["jd_source_url"] = url
+                        job["jd_updated_at"] = TODAY.isoformat()
+                        stats_by_source["portal"] = stats_by_source.get("portal", 0) + 1
+                time.sleep(0.3)
+                if looks_real_jd(job) and looks_real_salary(as_text(job.get("salary"))):
+                    continue
+            # apply_url 非详情页、或无 apply_url：有公司名+岗位名即尝试国聘反查
+            _no_apply_url = not (url and str(url).startswith("http"))
+            if (
+                not looks_real_jd(job)
+                and job.get("company")
+                and job.get("positions")
+                and (_no_apply_url or not is_job_detail_url(url))
+            ):
                 if time.time() - start > time_budget:
                     break
                 search_result = _search_jd_on_iguopin(job)
@@ -735,7 +816,7 @@ def enrich_jobs_with_jd(jobs: list[dict[str, Any]], time_budget: float = 300) ->
                     except Exception as exc:
                         print(f"  JD搜索反查失败 {job['company'][:20]} -> {exc}", flush=True)
                         parsed = None
-                    if parsed and looks_real_jd(parsed):
+                    if parsed and looks_real_jd(parsed) and _jd_passes_guards(job, parsed):
                         before = looks_real_jd(job)
                         merge_jd_into(job, parsed)
                         if looks_real_jd(job) and not before:
@@ -756,6 +837,9 @@ def enrich_jobs_with_jd(jobs: list[dict[str, Any]], time_budget: float = 300) ->
         except Exception as exc:
             print(f"  JD fail {url[:70]} -> {exc}", flush=True)
             parsed = None
+        if parsed:
+            if not _jd_passes_guards(job, parsed):
+                parsed = None
         if parsed:
             before = looks_real_jd(job)
             merge_jd_into(job, parsed)
@@ -793,36 +877,38 @@ def _search_jd_on_iguopin(job: dict[str, Any]) -> str | None:
         return None
     # 公司名去后缀
     co = re.sub(r"(集团|股份|有限公司|有限责任公司|股份有限公司)$", "", company).strip()
-    keyword = f"{co} {pos}"[:20]
+    # 搜索关键词：先公司+岗位，再公司名单独搜
+    keywords = [f"{co} {pos}"[:20], co[:20]]
     url = "https://gp-api.iguopin.com/api/jobs/v1/list"
     headers = {
         "Content-Type": "application/json;charset=UTF-8",
         "Device": "pc", "Subsite": "iguopin", "Version": "5.2.300",
         "Origin": "https://www.iguopin.com", "Referer": "https://www.iguopin.com/",
     }
-    body = {"page": 1, "page_size": 10, "keyword": keyword}
-    resp = post(url, json=body, headers=headers)
-    if not resp:
-        return None
-    try:
-        data = resp.json()
-    except Exception:
-        return None
-    rows = ((data.get("data") or {}).get("list")) or []
-    for row in rows:
-        if not isinstance(row, dict):
+    for keyword in keywords:
+        body = {"page": 1, "page_size": 10, "keyword": keyword}
+        resp = post(url, json=body, headers=headers)
+        if not resp:
             continue
-        row_company = as_text(row.get("company_name"))
-        row_title = as_text(row.get("job_name"))
-        # 公司名匹配：包含关系
-        if co not in row_company and row_company not in company:
+        try:
+            data = resp.json()
+        except Exception:
             continue
-        # 岗位名相似
-        if not _job_name_match(pos, row_title):
-            continue
-        jid = as_text(row.get("job_id"))
-        if jid:
-            return f"https://www.iguopin.com/job/detail?id={jid}"
+        rows = ((data.get("data") or {}).get("list")) or []
+        for row in rows:
+            if not isinstance(row, dict):
+                continue
+            row_company = as_text(row.get("company_name"))
+            row_title = as_text(row.get("job_name"))
+            # 公司名匹配：包含关系
+            if co not in row_company and row_company not in company:
+                continue
+            # 岗位名相似
+            if not _job_name_match(pos, row_title):
+                continue
+            jid = as_text(row.get("job_id"))
+            if jid:
+                return f"https://www.iguopin.com/job/detail?id={jid}"
     return None
 
 
@@ -1350,6 +1436,8 @@ def copy_jd_across_same_company(jobs: list[dict[str, Any]]) -> int:
             same_co = src["company"] in job["company"] or job["company"] in src["company"]
             if not same_co or not _role_alike(src, job):
                 continue
+            if not _jd_passes_guards(job, src):
+                continue
             before = looks_real_jd(job)
             merge_jd_into(job, src)
             if looks_real_jd(job) and not before:
@@ -1361,6 +1449,15 @@ def copy_jd_across_same_company(jobs: list[dict[str, Any]]) -> int:
             break
     log_source("同公司补JD", True, n)
     return n
+
+
+def mark_jd_status(jobs: list[dict[str, Any]]) -> None:
+    """在补全链路末端给每条岗位打 jd_status：has_jd / no_jd。"""
+    for job in jobs:
+        if looks_real_jd(job):
+            job["jd_status"] = "has_jd"
+        else:
+            job["jd_status"] = "no_jd"
 
 
 def from_seed() -> list[dict[str, Any]]:
@@ -1846,6 +1943,7 @@ def ensure_jd_fields(jobs: list[dict[str, Any]]) -> None:
         job.setdefault("deadline_conflict", False)
         job.setdefault("data_quality", {})
         job.setdefault("status", "unknown")
+        job.setdefault("jd_status", "pending")
 
 
 def write_site(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
@@ -1902,12 +2000,14 @@ def main() -> int:
     fresh = merge_jobs(collected)
     # 4. 与历史档案合并
     all_jobs = merge_with_archive(fresh, archive)
-    # 5. JD 补全（时间预算）
+    # 5. JD 多级补全（优先级：已有 > 详情页 > API > 国聘 > 同公司复用）
     scrub_false_jd(all_jobs)
-    enrich_from_apis(all_jobs)
-    enrich_jobs_with_jd(all_jobs, time_budget=300)
-    copy_jd_across_same_company(all_jobs)
+    copy_jd_across_same_company(all_jobs)   # 先复用已有 JD，减少网络请求
+    enrich_from_apis(all_jobs)              # 企业公开 API（字节/华为/牛客）
+    enrich_jobs_with_jd(all_jobs, time_budget=300)  # 详情页 + 门户抓取 + 国聘反查
+    copy_jd_across_same_company(all_jobs)   # 二次复用（新补的 JD 可能帮到同公司其他岗）
     scrub_false_jd(all_jobs)
+    mark_jd_status(all_jobs)
     # 6. finalize + quality
     for j in all_jobs:
         finalize_job(j)
@@ -1968,6 +2068,7 @@ def enrich_only() -> int:
     enrich_from_apis(jobs)
     enrich_jobs_with_jd(jobs)
     scrub_false_jd(jobs)
+    mark_jd_status(jobs)
     meta = json.loads((ROOT / "meta.json").read_text(encoding="utf-8"))
     meta["updated_at"] = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d %H:%M")
     meta["count"] = len(jobs)

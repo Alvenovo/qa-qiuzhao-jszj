@@ -7,6 +7,7 @@ update.py 通过 ``from normalize import ...`` 调用。
 from __future__ import annotations
 
 import re
+from urllib.parse import parse_qsl, urlencode, urlparse
 from datetime import date
 from typing import Any, Callable
 
@@ -157,13 +158,29 @@ def compute_quality(job: dict[str, Any], has_jd_fn: Callable[[dict], bool] | Non
     }
 
 
+# 岗位唯一标识参数名：normalize_url 保留这些，其余查询参数删除
+_JOB_ID_PARAMS = frozenset({
+    "id", "jdno", "jobid", "job_id", "postid", "post_id",
+    "positionid", "position_id", "jid", "jobno",
+})
+
+
 def normalize_url(url: str | None) -> str:
     if not url:
         return ""
     u = str(url).strip()
-    u = re.sub(r"[?#].*$", "", u)
-    u = u.rstrip("/")
-    return u.lower()
+    parsed = urlparse(u)
+    # 只保留岗位 ID 参数，删除 utm/spm/from 等追踪参数
+    if parsed.query:
+        params = parse_qsl(parsed.query, keep_blank_values=True)
+        kept = [(k, v) for k, v in params if k.lower() in _JOB_ID_PARAMS]
+        new_query = urlencode(kept)
+    else:
+        new_query = ""
+    result = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+    if new_query:
+        result += f"?{new_query}"
+    return result.rstrip("/").lower()
 
 
 def norm_company(name: str) -> str:
@@ -466,7 +483,7 @@ NON_SOFTWARE_KW = [
     "机械测试", "硬件测试", "硬件验证", "电子测试", "电气测试",
     "材料测试", "化学测试", "声学测试",
     "装配图", "卡尺", "工装夹具", "样机", "试制",
-    "出厂测试", "转产验收", "产品验证",
+    "出厂测试", "转产验收", "产品验证", "强度仿真", "硬件结构", "硬件安装", "稳态测试",
     "并网", "整机", "机组", "基站", "通信工程", "链路", "低轨", "信号测试",
 ]
 NON_SOFTWARE_STRONG = [
@@ -476,7 +493,7 @@ NON_SOFTWARE_STRONG = [
     "装配图", "工装夹具", "试制",
     "PLC", "电控", "电气专业", "电气工程",
     "耐久性试验", "拉伸试验", "冲击试验", "振动试验", "盐雾试验",
-    "出厂测试", "转产验收", "CAD", "SolidWorks", "CATIA",
+    "出厂测试", "转产验收", "CAD", "SolidWorks", "CATIA", "强度仿真", "硬件结构", "硬件安装",
     "半导体工艺", "晶圆测试", "封装测试",
     "并网", "机组", "基站", "通信工程",
 ]
@@ -589,3 +606,41 @@ def _match_domain(text: str) -> str:
         if any(kw in text for kw in keywords):
             return domain
     return "other"
+# JD 补全守卫：年份校验 + 方向校验 + 状态常量
+
+JD_STATUS_FILLED = "has_jd"
+JD_STATUS_NONE = "no_jd"
+JD_STATUS_PENDING = "pending"
+
+
+def jd_year_matches_cohort(jd_text: str, cohort: str | None) -> bool:
+    """检查 JD 中的毕业年份是否与当前届别一致。
+
+    JD 不含年份 -> True（不阻断补全）；含冲突年份 -> False。
+    """
+    if not jd_text or not cohort:
+        return True
+    year = extract_graduation_year(jd_text)
+    if not year:
+        m = re.search(r"(202[3-9])\s*届", jd_text)
+        if m:
+            year = m.group(1)
+    if not year:
+        return True
+    m = re.search(r"(202[3-9])", str(cohort))
+    if not m:
+        return True
+    return year == m.group(1)
+
+
+def jd_is_software_testing(jd_text: str) -> bool:
+    """快速判定 JD 内容是否属于软件测试方向。
+
+    True = 通过（软件测试或无法判定）；False = 明确非软件测试。
+    """
+    if not jd_text or len(jd_text) < 10:
+        return True
+    non_sw_strong_hits = sum(1 for kw in NON_SOFTWARE_STRONG if kw in jd_text)
+    if non_sw_strong_hits >= 3:
+        return False
+    return True

@@ -1,18 +1,80 @@
 {
-  "updated_at": "2026-08-23 17:57",
-  "count": 172,
-  "total_candidates": 174,
+  "updated_at": "2026-08-24 12:17",
+  "count": 164,
+  "total_candidates": 173,
   "sources": [
     "本地岗位库",
     "国聘网",
     "xixicc2027",
+    "niuqizp校招日历",
     "牛客",
+    "同公司补JD",
     "牛客",
     "官网接口补JD",
     "职位详情补全",
     "同公司补JD"
   ],
   "source_log": [
+    {
+      "name": "本地岗位库",
+      "ok": true,
+      "count": 173,
+      "detail": "含中小厂"
+    },
+    {
+      "name": "国聘网",
+      "ok": true,
+      "count": 3,
+      "detail": "职位详情含原文职责/薪资"
+    },
+    {
+      "name": "xixicc2027",
+      "ok": true,
+      "count": 12,
+      "detail": ""
+    },
+    {
+      "name": "niuqizp校招日历",
+      "ok": true,
+      "count": 0,
+      "detail": "成功页面 19/19"
+    },
+    {
+      "name": "牛客",
+      "ok": true,
+      "count": 0,
+      "detail": "接口可能被拦，已做 HTML 兜底"
+    },
+    {
+      "name": "字节官网",
+      "ok": false,
+      "count": 0,
+      "detail": "接口不可用"
+    },
+    {
+      "name": "华为官网",
+      "ok": false,
+      "count": 0,
+      "detail": ""
+    },
+    {
+      "name": "网易官网",
+      "ok": false,
+      "count": 0,
+      "detail": "未实现真实抓取（pending）"
+    },
+    {
+      "name": "阿里官网",
+      "ok": false,
+      "count": 0,
+      "detail": "未实现真实抓取（pending）"
+    },
+    {
+      "name": "同公司补JD",
+      "ok": true,
+      "count": 0,
+      "detail": ""
+    },
     {
       "name": "字节官网",
       "ok": false,
@@ -40,20 +102,26 @@
     {
       "name": "职位详情补全",
       "ok": true,
-      "count": 2,
-      "detail": "尝试 2 个投递链接，耗时 29s"
+      "count": 1,
+      "detail": "尝试 19 个投递链接，耗时 57s"
+    },
+    {
+      "name": "同公司补JD",
+      "ok": true,
+      "count": 0,
+      "detail": ""
     }
   ],
-  "note": "江苏/浙江/安徽/上海，仅软件测试相关；jobs.json 仅 open+unknown，candidate_jobs 含全量历史",
-  "jd_filled": 24,
-  "salary_filled": 24,
-  "jd_missing": 148,
+  "note": "职责/薪资按 Boss/智联职位详情原文（登录态抓取）；日历岗无详情时仍为空",
+  "jd_filled": 15,
+  "salary_filled": 21,
+  "jd_missing": 152,
   "stats": {
-    "open": 174,
+    "open": 171,
     "unknown": 0,
-    "expired": 0,
+    "expired": 2,
     "closed": 0,
-    "new_today": 169,
+    "new_today": 6,
     "excluded": 4
   }
 }

@@ -1,144 +1,5 @@
 [
   {
-    "id": "b9afd1836a23",
-    "company": "乐元素",
-    "program": "2027届秋季校园招聘",
-    "cohort": "2027届",
-    "batch": "正式批",
-    "role_type": "软件测试",
-    "positions": [
-      "测试"
-    ],
-    "locations": [
-      "上海"
-    ],
-    "provinces": [
-      "上海"
-    ],
-    "start_date": "2026-06-27",
-    "deadline": "2026-08-23",
-    "updated_at": "2026-08-23",
-    "apply_url": "https://www.happyelements.com/jobs",
-    "search_hint": "打开 happyelements.com/jobs；打不开就搜「乐元素 校招」",
-    "source": "校招日历",
-    "industry": "游戏",
-    "scale": "小厂",
-    "owner": "",
-    "status": "open",
-    "description": "",
-    "responsibilities": [],
-    "requirements": [],
-    "skills": [],
-    "salary": "",
-    "sources": [
-      {
-        "type": "calendar",
-        "url": "https://www.happyelements.com/jobs",
-        "found_at": "2026-08-23"
-      }
-    ],
-    "jd_source": "unknown",
-    "jd_raw_text": "",
-    "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
-    "normalized_job_name": "软件测试",
-    "job_category": "软件测试",
-    "recruitment_batch": "正式批",
-    "deadline_source": "calendar",
-    "deadline_conflict": false,
-    "jd_reused_from": "",
-    "data_quality": {
-      "score": 40,
-      "level": "信息不足",
-      "has_jd": false,
-      "has_deadline": true,
-      "has_apply_url": true,
-      "has_official_source": false
-    },
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "unknown",
-    "job_domain_confidence": 0.0,
-    "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "e4f82104f3ea",
-    "company": "拼多多",
-    "program": "2027届校园招聘",
-    "cohort": "2027届",
-    "batch": "正式批",
-    "role_type": "测试开发",
-    "positions": [
-      "测试开发工程师",
-      "质量保障"
-    ],
-    "locations": [
-      "上海"
-    ],
-    "provinces": [
-      "上海"
-    ],
-    "start_date": null,
-    "deadline": "2026-08-23",
-    "updated_at": "2026-08-23",
-    "apply_url": "https://careers.pddglobalhr.com/campus",
-    "search_hint": "打开 careers.pddglobalhr.com/campus，搜「测试」或「质量保障」",
-    "source": "企业官网",
-    "industry": "互联网",
-    "scale": "大厂",
-    "owner": "",
-    "status": "open",
-    "description": "",
-    "responsibilities": [],
-    "requirements": [],
-    "skills": [],
-    "salary": "",
-    "sources": [
-      {
-        "type": "official",
-        "url": "https://careers.pddglobalhr.com/campus",
-        "found_at": "2026-08-23"
-      }
-    ],
-    "jd_source": "unknown",
-    "jd_raw_text": "",
-    "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
-    "normalized_job_name": "测试开发",
-    "job_category": "测试开发",
-    "recruitment_batch": "正式批",
-    "deadline_source": "official",
-    "deadline_conflict": false,
-    "jd_reused_from": "",
-    "data_quality": {
-      "score": 70,
-      "level": "较完整",
-      "has_jd": false,
-      "has_deadline": true,
-      "has_apply_url": true,
-      "has_official_source": true
-    },
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "software_testing",
-    "job_domain_confidence": 0.95,
-    "excluded": false,
-    "exclude_reason": ""
-  },
-  {
     "id": "a0e62db01692",
     "company": "新凯来",
     "program": "2027届校园招聘",
@@ -156,7 +17,7 @@
     ],
     "start_date": "2026-06-25",
     "deadline": "2026-08-25",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.sicarrier.com",
     "search_hint": "打开 career.sicarrier.com → 校园招聘；或微信搜「新凯来招聘」",
     "source": "三方校招日历",
@@ -179,7 +40,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -205,7 +66,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "cdafadfa9c13",
@@ -225,7 +87,7 @@
     ],
     "start_date": "2026-07-31",
     "deadline": "2026-08-28",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "没有公开网申页。微信搜「群核科技招聘」→ 校园招聘 → 2027届校招",
     "source": "校招日历",
@@ -248,7 +110,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -274,7 +136,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "340257e05a5a",
@@ -298,7 +161,7 @@
     ],
     "start_date": "2026-06-29",
     "deadline": "2026-08-29",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.zte.com.cn",
     "search_hint": "打开 job.zte.com.cn → 校园招聘，搜「测试」；微信搜「中兴通讯招聘」",
     "source": "企业官网",
@@ -321,7 +184,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -347,7 +210,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d18a3d85a0ad",
@@ -367,7 +231,7 @@
     ],
     "start_date": "2026-08-03",
     "deadline": "2026-08-31",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://ctyun.hotjob.cn",
     "search_hint": "打开 ctyun.hotjob.cn，应聘类型选「2027届校园招聘」，搜「测试开发」；微信搜「中国电信天翼云招聘」",
     "source": "企业官网",
@@ -390,7 +254,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -416,7 +280,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "df64105bb56e",
@@ -436,7 +301,7 @@
     ],
     "start_date": "2026-08-01",
     "deadline": "2026-08-31",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "http://career.inspur.com/campus2026/campus.html",
     "search_hint": "官网常打不开。微信搜「浪潮招聘」→ 热招职位 → 校园招聘；或搜「浪潮 2027校招」",
     "source": "企业官网",
@@ -459,7 +324,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "提前批",
@@ -485,7 +350,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "a9206b8a8d0e",
@@ -505,7 +371,7 @@
     ],
     "start_date": "2026-07-01",
     "deadline": "2026-08-31",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.robosense.ai/about/joinus",
     "search_hint": "打开 robosense.ai/about/joinus；或搜「速腾聚创 mokahr」进入官方招聘系统",
     "source": "校招日历",
@@ -528,7 +394,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "提前批",
@@ -554,7 +420,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "9edcf1f05c85",
@@ -575,7 +442,7 @@
     ],
     "start_date": "2026-07-01",
     "deadline": "2026-09-01",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.espressif.com.cn/zh-hans/careers",
     "search_hint": "打开 espressif.com.cn → 加入我们；或搜「乐鑫科技 校招」",
     "source": "企业官网",
@@ -598,7 +465,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -624,7 +491,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "3de3a776582a",
@@ -646,7 +514,7 @@
     ],
     "start_date": "2026-08-10",
     "deadline": "2026-09-07",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://horizon.hotjob.cn",
     "search_hint": "打开 horizon.hotjob.cn，搜「测试」",
     "source": "企业官网",
@@ -669,7 +537,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -695,7 +563,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "6a2456db70c3",
@@ -716,7 +585,7 @@
     ],
     "start_date": "2026-08-10",
     "deadline": "2026-09-07",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://talent.antgroup.com",
     "search_hint": "打开 talent.antgroup.com，校招搜「质量保障」或「测试开发」",
     "source": "企业官网",
@@ -739,7 +608,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -765,7 +634,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "b0f0604d7e5a",
@@ -785,7 +655,7 @@
     ],
     "start_date": "2026-08-11",
     "deadline": "2026-09-08",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.game.163.com/",
     "search_hint": "打开 campus.game.163.com，搜「测试」",
     "source": "企业官网",
@@ -808,7 +678,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "游戏测试",
     "job_category": "游戏测试",
     "recruitment_batch": "正式批",
@@ -834,7 +704,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5b59e64fc013",
@@ -855,7 +726,7 @@
     ],
     "start_date": "2026-08-12",
     "deadline": "2026-09-09",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.bosch.com.cn/careers/",
     "search_hint": "打开 bosch.com.cn/careers；搜「博世中国 校招 无锡 测试」",
     "source": "企业官网",
@@ -878,7 +749,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -904,7 +775,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e395bb6b1c01",
@@ -925,7 +797,7 @@
     ],
     "start_date": "2026-08-12",
     "deadline": "2026-09-09",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://jobs.bytedance.com/campus/position?keywords=%E6%B5%8B%E8%AF%95",
     "search_hint": "打开 jobs.bytedance.com/campus，关键词「测试」",
     "source": "企业官网",
@@ -948,7 +820,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -974,7 +846,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d92200613af3",
@@ -998,7 +871,7 @@
     ],
     "start_date": "2026-08-14",
     "deadline": "2026-09-11",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.ciqtek.com",
     "search_hint": "网申页 404。简历发 hr@ciqtek.com（无锡 hr-wx@ciqtek.com）；微信搜「国仪量子招聘」",
     "source": "校招日历",
@@ -1018,10 +891,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1047,7 +920,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "2beded2523f6",
@@ -1067,7 +941,7 @@
     ],
     "start_date": "2026-07-15",
     "deadline": "2026-09-15",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.deeproute.cn",
     "search_hint": "打开 campus.deeproute.cn；或微信搜「元戎启行招聘」",
     "source": "校招日历",
@@ -1090,7 +964,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1116,7 +990,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "7b69deb7b22e",
@@ -1136,7 +1011,7 @@
     ],
     "start_date": "2026-08-18",
     "deadline": "2026-09-15",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.transwarp.cn",
     "search_hint": "「/join」是 404。搜「星环科技 2027校招」或微信「星环科技招聘」",
     "source": "企业官网",
@@ -1156,10 +1031,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -1185,7 +1060,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "cdbd1b16c36e",
@@ -1205,7 +1081,7 @@
     ],
     "start_date": "2026-08-19",
     "deadline": "2026-09-16",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.edianyun.com",
     "search_hint": "「/campus」是 404。搜「易点云 2027校招 测试」；微信搜「易点云招聘」",
     "source": "三方校招日历",
@@ -1228,7 +1104,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1254,7 +1130,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "b9e4a5db863e",
@@ -1275,7 +1152,7 @@
     ],
     "start_date": "2026-08-20",
     "deadline": "2026-09-17",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.qycloud.com.cn",
     "search_hint": "官网没有独立校招页。搜「启云方 2027校招」或微信「启云方招聘」",
     "source": "校招日历",
@@ -1298,7 +1175,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "渗透测试",
     "job_category": "渗透测试",
     "recruitment_batch": "正式批",
@@ -1324,7 +1201,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "a17edeabeea4",
@@ -1344,7 +1222,7 @@
     ],
     "start_date": "2026-07-17",
     "deadline": "2026-09-17",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "域名打不开。搜「武汉芯动科技 校招」或「INXHITEK 招聘」",
     "source": "校招日历",
@@ -1367,7 +1245,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1393,7 +1271,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e0ee7b000b1c",
@@ -1413,7 +1292,7 @@
     ],
     "start_date": "2026-07-30",
     "deadline": "2026-09-20",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://cmbnt.cmbchina.com/",
     "search_hint": "打开 cmbnt.cmbchina.com，搜「测试技术开发」",
     "source": "企业官网",
@@ -1436,7 +1315,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -1462,94 +1341,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "ffb51727d616",
-    "company": "杭州朗旭新能源科技有限公司",
-    "program": "社会招聘",
-    "cohort": "2027届",
-    "batch": "校招",
-    "role_type": "软件测试",
-    "positions": [
-      "测试工程师"
-    ],
-    "locations": [
-      "杭州"
-    ],
-    "provinces": [
-      "浙江"
-    ],
-    "start_date": "2026-06-23",
-    "deadline": "2026-09-20",
-    "updated_at": "2026-06-23",
-    "apply_url": "https://www.iguopin.com/job/detail?id=206208270786888464",
-    "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=206208270786888464",
-    "source": "国聘网",
-    "industry": "民营企业",
-    "scale": "小厂",
-    "owner": "",
-    "status": "open",
-    "description": "【岗位职责】\n• 负责产品功能、性能、可靠性、稳定性等测试用例与测试方案设计；\n• 负责搭建测试环境、执行测试用例、输出测试报告；\n• 负责缺陷跟踪、复现、定位与回归验证；\n• 负责自动化测试脚本开发、测试工具平台建设；\n• 负责产品转产验收、出厂测试规范制定及质量改进；\n• 参与产品需求评审、可测试性设计评审及设计持续改进。\n【任职要求】\n• 本科及以上学历，电气、电子、通信等相关专业；\n• 2年以上电子/通信/嵌入式产品测试经验；\n• 熟悉常用测试仪器（示波器、万用表、信号源、综测仪等）使用；\n• 熟悉测试理论、方法与流程，能独立编写测试方案与报告；\n• 熟悉Python/Shell等脚本语言，有自动化测试经验者优先；\n• 具备较强的逻辑分析能力、学习能力、问题定位能力与质量意识，良好的团队协作精神，能承受一定工作压力。能接受加班。\n\n【薪酬福利】\n• 薪资从优，提供行业内具有竞争力的薪酬体系，优秀人才可享受股权激励；\n• 五险一金、带薪年假、节日福利、工作午餐、旅游/团建、绩效奖金、年终奖金。\n• 公司有良好的培训、加薪、晋升机制，成长路径清晰，优秀者可获股权激励。\n• 工作时间9：00-17：30，周末双休，按国家规定享受法定节假日、年休假、婚假、产假等假期。如加班按国家规定发放加班费。\n• 工程师岗位在项目研发期会有加班，如加班按国家规定发放加班费。提倡开放、平等、协作的工程师文化氛围。\n\n【工作地点】\n——临安青山湖科技城\n自然环境 ：这里依山傍水、宜居宜业，沿湖42公里环湖绿道串联起湖畔花园、骑行驿站与网红咖啡馆，是周末骑行、慢跑、亲子休闲的绝佳去处。是杭州城西科创大走廊的重要一极。\n科创产业：科技城汇聚了香港大学浙江科研院、浙大能源研究院、福斯特、万马等一批高校院所与高新企业，产业氛围浓厚、创新资源密集。\n城市通勤：地铁16号线直达杭州市区，城西至萧山机场的快速路也已贯通，\"工作在科技城、居住在杭州城\"成为越来越多青年人才的选择。\n生活配套：教育、医疗、商业配套齐全，宝龙广场、青山湖宝龙酒店、浙江省人民医院临安院区等多业态环绕，无论是单身青年安家还是带娃家庭落户都极为便利。\n选择这里，就是选择\"湖山之间、事业之上\"的高品质生活——我们诚邀您的加入，在青山湖畔共同书写事业新篇章。",
-    "responsibilities": [
-      "负责产品功能、性能、可靠性、稳定性等测试用例与测试方案设计",
-      "负责搭建测试环境、执行测试用例、输出测试报告",
-      "负责缺陷跟踪、复现、定位与回归验证",
-      "负责自动化测试脚本开发、测试工具平台建设",
-      "负责产品转产验收、出厂测试规范制定及质量改进",
-      "参与产品需求评审、可测试性设计评审及设计持续改进。",
-      "【任职要求】",
-      "本科及以上学历，电气、电子、通信等相关专业",
-      "2年以上电子/通信/嵌入式产品测试经验",
-      "熟悉常用测试仪器（示波器、万用表、信号源、综测仪等）使用",
-      "熟悉测试理论、方法与流程，能独立编写测试方案与报告",
-      "熟悉Python/Shell等脚本语言，有自动化测试经验者优先"
-    ],
-    "requirements": [
-      "本科及以上学历，电气、电子、通信等相关专业",
-      "2年以上电子/通信/嵌入式产品测试经验",
-      "熟悉常用测试仪器（示波器、万用表、信号源、综测仪等）使用",
-      "熟悉测试理论、方法与流程，能独立编写测试方案与报告",
-      "熟悉Python/Shell等脚本语言，有自动化测试经验者优先",
-      "具备较强的逻辑分析能力、学习能力、问题定位能力与质量意识，良好的团队协作精神，能承受一定工作压力。能接受加班。",
-      "【薪酬福利】",
-      "薪资从优，提供行业内具有竞争力的薪酬体系，优秀人才可享受股权激励",
-      "五险一金、带薪年假、节日福利、工作午餐、旅游/团建、绩效奖金、年终奖金。",
-      "公司有良好的培训、加薪、晋升机制，成长路径清晰，优秀者可获股权激励。",
-      "工作时间9：00-17：30，周末双休，按国家规定享受法定节假日、年休假、婚假、产假等假期。如加班按国家规定发放加班费。",
-      "工程师岗位在项目研发期会有加班，如加班按国家规定发放加班费。提倡开放、平等、协作的工程师文化氛围。"
-    ],
-    "skills": [
-      "Python",
-      "自动化测试",
-      "用例设计",
-      "缺陷跟踪"
-    ],
-    "salary": "面议",
-    "jd_raw_text": "",
-    "jd_source": "unknown",
-    "jd_reused_from": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "unknown",
-    "job_domain_confidence": 0.0,
-    "excluded": false,
     "exclude_reason": "",
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "sources": [],
-    "normalized_job_name": "",
-    "job_category": "",
-    "recruitment_batch": "",
-    "first_seen_at": "",
-    "last_seen_at": "",
-    "deadline_source": "",
-    "deadline_conflict": false,
-    "data_quality": {}
+    "jd_status": "no_jd"
   },
   {
     "id": "fe9ca290d3c1",
@@ -1569,7 +1362,7 @@
     ],
     "start_date": "2026-07-21",
     "deadline": "2026-09-21",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "域名打不开。邮箱 hr@sepoch.cn；微信搜「箭元科技招聘」；搜「箭元 2027校招」",
     "source": "三方校招日历",
@@ -1592,7 +1385,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1618,7 +1411,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d2f91d4c8a5d",
@@ -1638,7 +1432,7 @@
     ],
     "start_date": "2026-07-25",
     "deadline": "2026-09-25",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://momenta.jobs.feishu.cn",
     "search_hint": "打开 momenta.jobs.feishu.cn；官网 /career 是 404",
     "source": "校招日历",
@@ -1658,10 +1452,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1687,7 +1481,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "6888b757e60b",
@@ -1707,7 +1502,7 @@
     ],
     "start_date": null,
     "deadline": "2026-09-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://careers.shopee.cn",
     "search_hint": "百度搜「Shopee研发中心 2027校招 测试」；微信搜「Shopee研发中心招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -1730,7 +1525,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1756,7 +1551,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "de5f2a3d33e5",
@@ -1777,7 +1573,7 @@
     ],
     "start_date": "2026-07-13",
     "deadline": "2026-09-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.iguopin.com/job/detail?id=209069781825880984",
     "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=209069781825880984",
     "source": "国聘网",
@@ -1800,7 +1596,7 @@
     "jd_source": "iguopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "实习",
@@ -1822,11 +1618,12 @@
     "experience": "",
     "graduation_year": "",
     "jd_source_url": "https://www.iguopin.com/job/detail?id=209069781825880984",
-    "jd_updated_at": "2026-08-23",
+    "jd_updated_at": "2026-08-24",
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "0e8d34e77a73",
@@ -1849,7 +1646,7 @@
     ],
     "start_date": "2026-07-31",
     "deadline": "2026-09-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://jobs.hisense.com",
     "search_hint": "打开 jobs.hisense.com → 校园招聘-信动力计划；微信「海信集团招聘」。旧链接 hisense.zhiye.com/campus 是 404",
     "source": "企业官网",
@@ -1872,7 +1669,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1898,7 +1695,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "179da2b4debc",
@@ -1918,7 +1716,7 @@
     ],
     "start_date": "2026-08-18",
     "deadline": "2026-09-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.honor.com",
     "search_hint": "打开 career.honor.com，切到校园招聘搜「测试」",
     "source": "企业官网",
@@ -1941,7 +1739,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -1967,7 +1765,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "6217e3373cc0",
@@ -1988,7 +1787,7 @@
     ],
     "start_date": "2026-08-03",
     "deadline": "2026-10-03",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://cksic.zhiye.com/campus",
     "search_hint": "打开 cksic.zhiye.com/campus，搜「测试」",
     "source": "企业官网",
@@ -2008,10 +1807,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2037,7 +1836,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "3cc5415870ed",
@@ -2059,7 +1859,7 @@
     ],
     "start_date": "2026-08-04",
     "deadline": "2026-10-04",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "semiconductor-test.com 不是招聘站。搜「上海精测半导体 校招」或「精测电子 招聘」",
     "source": "校招日历",
@@ -2082,7 +1882,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2108,7 +1908,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "591286676968",
@@ -2130,7 +1931,7 @@
     ],
     "start_date": "2026-08-12",
     "deadline": "2026-10-12",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "官网 403。搜「华芯程科技 校招」或微信「华芯程招聘」",
     "source": "校招日历",
@@ -2153,7 +1954,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2179,7 +1980,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "86314ec4783c",
@@ -2200,7 +2002,7 @@
     ],
     "start_date": "2026-07-16",
     "deadline": "2026-10-13",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.iguopin.com/job/detail?id=209501108060555405",
     "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=209501108060555405",
     "source": "国聘网",
@@ -2231,9 +2033,9 @@
       }
     ],
     "jd_source": "iguopin",
-    "jd_raw_text": "",
+    "jd_raw_text": "岗位职责：\n1、分析策划需求，提前找出问题需求并输出测试用例；\n2、完成功能测试工作，配合游戏策划、游戏程序解决过程中的问题；\n3、编写通用测试文档，持续跟进和改善工作流程；\n4、根据业务需要，完成上级安排的市场调研/数据分析/方案设计等其他工作。\n\n岗位要求：\n1、热爱游戏，吃苦耐劳，能够全身心的投入工作；\n2、具备良好责任心、协作精神和基础的逻辑分析能力。\n加分项：\n1、熟悉大型mmo类型游戏，有回合游戏经验者加分。\n提示：\n1、公司实行全面禁烟制度；\n2、杭州岗位录用后可能会安排在广州或苏州、武汉实习/入职一段时间，无法接受者请慎投杭州。\n\n岗位薪酬：\n1、目标年薪：11.5~12万元/年，由基本工资、加班费、奖金等构成；\n2、针对工作努力、表现突出的优秀奋斗者，将有机会获得超过上述目标收入的薪酬水平；\n3、目标月薪与目标年薪预估包含法定每月不超过36小时的加班费、奖金等，具体金额视实际情况而定；新员工目标收入根据实际工作时间进行折算。",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "游戏测试",
     "job_category": "游戏测试",
     "recruitment_batch": "2027秋招",
@@ -2266,7 +2068,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "e37a8ec3c4c4",
@@ -2286,7 +2089,7 @@
     ],
     "start_date": "2026-08-13",
     "deadline": "2026-10-13",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.didiglobal.com",
     "search_hint": "打开 campus.didiglobal.com，搜「测试」",
     "source": "企业官网",
@@ -2306,10 +2109,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2335,7 +2138,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "391d90241621",
@@ -2362,7 +2166,7 @@
     ],
     "start_date": "2026-08-13",
     "deadline": "2026-10-13",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.iflytek.com",
     "search_hint": "打开 campus.iflytek.com 或 iflytek.zhiye.com，搜「测试」",
     "source": "企业官网",
@@ -2385,7 +2189,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2411,7 +2215,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "215a211e112a",
@@ -2434,7 +2239,7 @@
     ],
     "start_date": "2026-08-17",
     "deadline": "2026-10-17",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
     "source": "企业官网",
@@ -2457,7 +2262,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2483,7 +2288,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "fa1318c0b7f7",
@@ -2503,7 +2309,7 @@
     ],
     "start_date": "2026-08-18",
     "deadline": "2026-10-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zh-jieli.com",
     "search_hint": "「/join」是 404。搜「杰理科技 校招」；微信「杰理科技招聘」",
     "source": "校招日历",
@@ -2526,7 +2332,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2552,7 +2358,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "cdb2de5e0eac",
@@ -2572,7 +2379,7 @@
     ],
     "start_date": null,
     "deadline": "2026-10-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.163.com",
     "search_hint": "打开 campus.163.com，搜「测试」；雷火另见 leihuo.163.com/campus",
     "source": "企业官网",
@@ -2595,7 +2402,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "游戏测试",
     "job_category": "游戏测试",
     "recruitment_batch": "正式批",
@@ -2621,7 +2428,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e50117c062d9",
@@ -2641,7 +2449,7 @@
     ],
     "start_date": null,
     "deadline": "2026-10-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.envision-group.com",
     "search_hint": "百度搜「远景能源 2027校招 测试」；微信搜「远景能源招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -2664,7 +2472,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2690,7 +2498,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "7a91cfc2fb13",
@@ -2710,7 +2519,7 @@
     ],
     "start_date": "2026-04-20",
     "deadline": "2026-10-31",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.htsc.com.cn",
     "search_hint": "打开 job.htsc.com.cn（证书可能报警，仍是官网）；搜「华泰证券 Fintech 校招 测试」",
     "source": "企业官网",
@@ -2733,7 +2542,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2759,166 +2568,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "85ac85bd0b76",
-    "company": "杭州天扬机械有限公司",
-    "program": "校园招聘",
-    "cohort": "2027届",
-    "batch": "校招",
-    "role_type": "质量保障",
-    "positions": [
-      "质量工程师",
-      "应用开发团队-测试工程师",
-      "验证测试员",
-      "测试技术岗",
-      "秋招测试开发工程师-南京",
-      "测试工程师",
-      "实验测试员（机械方向）",
-      "游戏测试（27届校招）",
-      "测试工程师（自招）"
-    ],
-    "locations": [
-      "杭州",
-      "上海",
-      "浦东",
-      "奉贤",
-      "南京",
-      "临平",
-      "西湖"
-    ],
-    "provinces": [
-      "浙江",
-      "上海",
-      "江苏"
-    ],
-    "start_date": "2026-03-22",
-    "deadline": "2026-11-14",
-    "updated_at": "2026-08-23",
-    "apply_url": "https://www.iguopin.com/job/detail?id=202085396790640652",
-    "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=202085396790640652",
-    "source": "国聘网",
-    "industry": "国企",
-    "scale": "小厂",
-    "owner": "",
-    "status": "open",
-    "description": "【岗位职责】\n• 负责产品功能、性能、可靠性、稳定性等测试用例与测试方案设计；\n• 负责搭建测试环境、执行测试用例、输出测试报告；\n• 负责缺陷跟踪、复现、定位与回归验证；\n• 负责自动化测试脚本开发、测试工具平台建设；\n• 负责产品转产验收、出厂测试规范制定及质量改进；\n• 参与产品需求评审、可测试性设计评审及设计持续改进。\n【任职要求】\n• 本科及以上学历，电气、电子、通信等相关专业；\n• 2年以上电子/通信/嵌入式产品测试经验；\n• 熟悉常用测试仪器（示波器、万用表、信号源、综测仪等）使用；\n• 熟悉测试理论、方法与流程，能独立编写测试方案与报告；\n• 熟悉Python/Shell等脚本语言，有自动化测试经验者优先；\n• 具备较强的逻辑分析能力、学习能力、问题定位能力与质量意识，良好的团队协作精神，能承受一定工作压力。能接受加班。\n\n【薪酬福利】\n• 薪资从优，提供行业内具有竞争力的薪酬体系，优秀人才可享受股权激励；\n• 五险一金、带薪年假、节日福利、工作午餐、旅游/团建、绩效奖金、年终奖金。\n• 公司有良好的培训、加薪、晋升机制，成长路径清晰，优秀者可获股权激励。\n• 工作时间9：00-17：30，周末双休，按国家规定享受法定节假日、年休假、婚假、产假等假期。如加班按国家规定发放加班费。\n• 工程师岗位在项目研发期会有加班，如加班按国家规定发放加班费。提倡开放、平等、协作的工程师文化氛围。\n\n【工作地点】\n——临安青山湖科技城\n自然环境 ：这里依山傍水、宜居宜业，沿湖42公里环湖绿道串联起湖畔花园、骑行驿站与网红咖啡馆，是周末骑行、慢跑、亲子休闲的绝佳去处。是杭州城西科创大走廊的重要一极。\n科创产业：科技城汇聚了香港大学浙江科研院、浙大能源研究院、福斯特、万马等一批高校院所与高新企业，产业氛围浓厚、创新资源密集。\n城市通勤：地铁16号线直达杭州市区，城西至萧山机场的",
-    "responsibilities": [
-      "发动机零件生产过程控制及制造过程验证。任职要求：1.机械相关专业毕业生",
-      "航空航天从专业优先",
-      "工作态度积极主动，善于思考，具有强烈的工作责任心和团队协作能力",
-      "具备良好的沟通能力和执行力。 职能类别：质量管理/测试主管(QA/QC主管)质量管理/测试工程师(QA/QC工程师)",
-      "机械相关专业毕业生",
-      "参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案",
-      "设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量",
-      "编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复",
-      "参与自动化测试框架与工具的建设，提升测试效率与覆盖率",
-      "对系统稳定性、性能、兼容性、安全性进行验证与优化",
-      "与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量",
-      "总结测试经验，推动测试流程与方法论的持续改进。",
-      "【任职条件】",
-      "本科及以上学历，计算机或相关专业优先",
-      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
-      "熟悉功能测试、性能测试、安全测试等常见测试类型"
-    ],
-    "requirements": [
-      "机械相关专业毕业生",
-      "航空航天从专业优先",
-      "工作态度积极主动，善于思考，具有强烈的工作责任心和团队协作能力",
-      "具备良好的沟通能力和执行力。 职能类别：质量管理/测试主管(QA/QC主管)质量管理/测试工程师(QA/QC工程师)",
-      "发动机零件生产过程控制及制造过程验证。任职要求：1.机械相关专业毕业生",
-      "本科及以上学历，计算机或相关专业优先",
-      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
-      "熟悉功能测试、性能测试、安全测试等常见测试类型",
-      "掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）",
-      "熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证",
-      "熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）",
-      "良好的逻辑分析、问题定位与跨团队沟通能力。",
-      "【优先条件】",
-      "主导或参与过大型Web/APP项目的测试工作",
-      "有CI/CD流程下的自动化测试经验",
-      "熟悉云平台、微服务、容器化环境下的测试方法"
-    ],
-    "skills": [
-      "接口测试",
-      "自动化测试",
-      "Selenium",
-      "Appium",
-      "JMeter",
-      "Postman",
-      "SQL",
-      "Git",
-      "CI/CD",
-      "用例设计",
-      "缺陷跟踪",
-      "性能测试",
-      "Python",
-      "Linux"
-    ],
-    "salary": "11~15K",
-    "sources": [
-      {
-        "type": "iguopin",
-        "url": "https://www.iguopin.com/job/detail?id=202085396790640652",
-        "found_at": "2026-08-23"
-      }
-    ],
-    "jd_source": "iguopin",
-    "jd_raw_text": "【岗位职责】\n1.参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案；\n2.设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量；\n3.编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复；\n4.参与自动化测试框架与工具的建设，提升测试效率与覆盖率；\n5.对系统稳定性、性能、兼容性、安全性进行验证与优化；\n6.与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量；\n7.总结测试经验，推动测试流程与方法论的持续改进。\n\n【任职条件】\n1.本科及以上学历，计算机或相关专业优先；\n2.2年及以上软件测试经验，熟悉软件测试流程与方法论；\n3.熟悉功能测试、性能测试、安全测试等常见测试类型；\n4.掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）；\n5.熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证；\n6.熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）；\n7.良好的逻辑分析、问题定位与跨团队沟通能力。\n\n【优先条件】\n-主导或参与过大型Web/APP项目的测试工作；\n-有CI/CD流程下的自动化测试经验；\n-熟悉云平台、微服务、容器化环境下的测试方法；\n-有性能压测、可靠性测试、混沌测试的实际经验；\n-持有ISTQB、软件评测师、软件测试工程师等相关认证。",
-    "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
-    "deadline_conflict": true,
-    "normalized_job_name": "测试开发",
-    "job_category": "测试开发",
-    "recruitment_batch": "2027秋招",
-    "deadline_source": "iguopin",
-    "jd_reused_from": "",
-    "data_quality": {
-      "score": 70,
-      "level": "较完整",
-      "has_jd": true,
-      "has_deadline": true,
-      "has_apply_url": true,
-      "has_official_source": false
-    },
-    "core_skills": [
-      "Python",
-      "SQL",
-      "Linux",
-      "Git",
-      "Selenium",
-      "Appium",
-      "JMeter",
-      "Postman",
-      "CI/CD",
-      "Docker",
-      "接口测试",
-      "自动化测试",
-      "性能测试",
-      "用例设计",
-      "缺陷跟踪"
-    ],
-    "core_responsibilities": [
-      "发动机零件生产过程控制及制造过程验证。任职要求：1.机械相关专业毕业生",
-      "航空航天从专业优先",
-      "具备良好的沟通能力和执行力。 职能类别：质量管理/测试主管(QA/QC主管)质量管理/测试工程师(QA/QC工程师)",
-      "机械相关专业毕业生",
-      "参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案"
-    ],
-    "education": "本科",
-    "major": [
-      "计算机",
-      "机械"
-    ],
-    "experience": "应届生",
-    "graduation_year": "",
-    "jd_source_url": "https://www.iguopin.com/job/detail?id=202085396790640652",
-    "jd_updated_at": "2026-08-23",
-    "job_domain": "software_testing",
-    "job_domain_confidence": 0.95,
-    "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5101cafdd61a",
@@ -2938,7 +2589,7 @@
     ],
     "start_date": "2026-08-05",
     "deadline": "2026-11-14",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://talent.lenovo.com.cn/campus",
     "search_hint": "打开 talent.lenovo.com.cn/campus，搜「测试」",
     "source": "企业官网",
@@ -2961,7 +2612,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -2987,7 +2638,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "43352e217ba5",
@@ -3007,7 +2659,7 @@
     ],
     "start_date": "2026-08-21",
     "deadline": "2026-11-19",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.iguopin.com/job/detail?id=214735221260551523",
     "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214735221260551523",
     "source": "国聘网",
@@ -3049,9 +2701,9 @@
       }
     ],
     "jd_source": "iguopin",
-    "jd_raw_text": "",
+    "jd_raw_text": "岗位职责：\n1、参与产品测试工作，包括测试需求分析、测试设计、测试用例编写、测试环境搭建与执行；\n2、深入分析、定位产品缺陷或问题，按流程完成跟踪管理闭环；\n3、自动化测试脚本的开发，提升测试效率；\n4、主动学习测试技术、工具和方法，并应用到测试工作中；\n任职要求：\n1、统招本科及以上学历，计算机或相关专业；\n2、具备团队合作和艰苦奋斗精神，良好的沟通和学习能力，较强的问题分析和解决能力；\n3、做事细致耐心，喜欢寻找软件问题并分析探究问题根源，享受和开发共同努力修复解决问题，在同行公司做过测试实习半年以上者优先；\n4、熟悉计算机网络，熟悉TCP/IP等网络协议原理，有CCNA认证者优先；\n5、熟悉Linux系统、数据库、Shell/Python编程语言，在学校或实习做过6个月以上系统开发者优先。\n6、 熟练使用主流AI工具，并具备用AI辅助完成项目开发、测试经验者优先",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "2027秋招",
@@ -3088,14 +2740,15 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
-    "id": "8b1cf26c2f10",
-    "company": "中国航发商用航空发动机有限责任公司",
-    "program": "校园招聘",
+    "id": "ac8ca3fddf48",
+    "company": "中国航发商用航空发动机",
+    "program": "2027届校园招聘",
     "cohort": "2027届",
-    "batch": "校招",
+    "batch": "正式批",
     "role_type": "软件测试",
     "positions": [
       "测试技术岗"
@@ -3109,37 +2762,38 @@
     ],
     "start_date": "2026-07-28",
     "deadline": "2026-11-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.iguopin.com/job/detail?id=211221953380354804",
     "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=211221953380354804",
     "source": "国聘网",
-    "industry": "国企",
+    "industry": "央国企",
     "scale": "中厂",
-    "owner": "",
+    "owner": "央企",
     "status": "open",
-    "description": "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作；开展稳态测试数据分析及排故；协助完成强度测试技术研究工作",
-    "responsibilities": [
-      "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作",
-      "开展稳态测试数据分析及排故",
-      "协助完成强度测试技术研究工作"
-    ],
+    "description": "",
+    "responsibilities": [],
     "requirements": [],
     "skills": [],
     "salary": "15~30K",
     "sources": [
       {
         "type": "iguopin",
-        "url": "https://www.iguopin.com/job/detail?id=211221953380354804",
+        "url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF",
         "found_at": "2026-08-23"
+      },
+      {
+        "type": "iguopin",
+        "url": "https://www.iguopin.com/job/detail?id=211221953380354804",
+        "found_at": "2026-08-24"
       }
     ],
-    "jd_source": "iguopin",
-    "jd_raw_text": "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作；开展稳态测试数据分析及排故；协助完成强度测试技术研究工作",
+    "jd_source": "unknown",
+    "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
-    "recruitment_batch": "2027秋招",
+    "recruitment_batch": "正式批",
     "deadline_source": "iguopin",
     "deadline_conflict": false,
     "jd_reused_from": "",
@@ -3152,17 +2806,160 @@
       "has_official_source": false
     },
     "core_skills": [],
-    "core_responsibilities": [],
+    "core_responsibilities": [
+      "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作",
+      "开展稳态测试数据分析及排故",
+      "协助完成强度测试技术研究工作"
+    ],
     "education": "",
     "major": [],
     "experience": "",
     "graduation_year": "",
     "jd_source_url": "https://www.iguopin.com/job/detail?id=211221953380354804",
-    "jd_updated_at": "2026-08-23",
+    "jd_updated_at": "2026-08-24",
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
+  },
+  {
+    "id": "3bc3f42a96f8",
+    "company": "中数联物流科技（上海）",
+    "program": "社会招聘",
+    "cohort": "不限",
+    "batch": "社招",
+    "role_type": "软件测试",
+    "positions": [
+      "测试工程师",
+      "应用开发团队-测试工程师"
+    ],
+    "locations": [
+      "上海",
+      "浦东"
+    ],
+    "provinces": [
+      "上海"
+    ],
+    "start_date": "2026-03-22",
+    "deadline": "2026-12-31",
+    "updated_at": "2026-08-24",
+    "apply_url": "https://www.iguopin.com/job/detail?id=192741106994121867",
+    "search_hint": "百度搜「中数联物流科技（上海） 2027校招 测试」；微信搜「中数联物流科技（上海）招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
+    "source": "国聘网",
+    "industry": "央国企",
+    "scale": "中厂",
+    "owner": "国企",
+    "status": "open",
+    "description": "【岗位职责】\n1.参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案；\n2.设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量；\n3.编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复；\n4.参与自动化测试框架与工具的建设，提升测试效率与覆盖率；\n5.对系统稳定性、性能、兼容性、安全性进行验证与优化；\n6.与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量；\n7.总结测试经验，推动测试流程与方法论的持续改进。\n\n【任职条件】\n1.本科及以上学历，计算机或相关专业优先；\n2.2年及以上软件测试经验，熟悉软件测试流程与方法论；\n3.熟悉功能测试、性能测试、安全测试等常见测试类型；\n4.掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）；\n5.熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证；\n6.熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）；\n7.良好的逻辑分析、问题定位与跨团队沟通能力。\n\n【优先条件】\n-主导或参与过大型Web/APP项目的测试工作；\n-有CI/CD流程下的自动化测试经验；\n-熟悉云平台、微服务、容器化环境下的测试方法；\n-有性能压测、可靠性测试、混沌测试的实际经验；\n-持有ISTQB、软件评测师、软件测试工程师等相关认证。",
+    "responsibilities": [
+      "参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案",
+      "设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量",
+      "编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复",
+      "参与自动化测试框架与工具的建设，提升测试效率与覆盖率",
+      "对系统稳定性、性能、兼容性、安全性进行验证与优化",
+      "与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量",
+      "总结测试经验，推动测试流程与方法论的持续改进。",
+      "【任职条件】",
+      "本科及以上学历，计算机或相关专业优先",
+      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
+      "熟悉功能测试、性能测试、安全测试等常见测试类型",
+      "掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）"
+    ],
+    "requirements": [
+      "本科及以上学历，计算机或相关专业优先",
+      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
+      "熟悉功能测试、性能测试、安全测试等常见测试类型",
+      "掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）",
+      "熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证",
+      "熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）",
+      "良好的逻辑分析、问题定位与跨团队沟通能力。",
+      "【优先条件】",
+      "主导或参与过大型Web/APP项目的测试工作",
+      "有CI/CD流程下的自动化测试经验",
+      "熟悉云平台、微服务、容器化环境下的测试方法",
+      "有性能压测、可靠性测试、混沌测试的实际经验"
+    ],
+    "skills": [
+      "接口测试",
+      "自动化测试",
+      "Selenium",
+      "Appium",
+      "JMeter",
+      "Postman",
+      "SQL",
+      "Git",
+      "CI/CD",
+      "用例设计",
+      "缺陷跟踪",
+      "性能测试"
+    ],
+    "salary": "面议",
+    "sources": [
+      {
+        "type": "iguopin",
+        "url": "https://www.iguopin.com/job/detail?id=192741106994121867",
+        "found_at": "2026-08-23"
+      },
+      {
+        "type": "iguopin",
+        "url": "https://www.iguopin.com/job?keyword=%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95",
+        "found_at": "2026-08-23"
+      }
+    ],
+    "jd_source": "iguopin",
+    "jd_raw_text": "【岗位职责】\n1.参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案；\n2.设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量；\n3.编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复；\n4.参与自动化测试框架与工具的建设，提升测试效率与覆盖率；\n5.对系统稳定性、性能、兼容性、安全性进行验证与优化；\n6.与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量；\n7.总结测试经验，推动测试流程与方法论的持续改进。\n\n【任职条件】\n1.本科及以上学历，计算机或相关专业优先；\n2.2年及以上软件测试经验，熟悉软件测试流程与方法论；\n3.熟悉功能测试、性能测试、安全测试等常见测试类型；\n4.掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）；\n5.熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证；\n6.熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）；\n7.良好的逻辑分析、问题定位与跨团队沟通能力。\n\n【优先条件】\n-主导或参与过大型Web/APP项目的测试工作；\n-有CI/CD流程下的自动化测试经验；\n-熟悉云平台、微服务、容器化环境下的测试方法；\n-有性能压测、可靠性测试、混沌测试的实际经验；\n-持有ISTQB、软件评测师、软件测试工程师等相关认证。",
+    "first_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
+    "normalized_job_name": "软件测试",
+    "job_category": "软件测试",
+    "recruitment_batch": "社招",
+    "deadline_source": "iguopin",
+    "deadline_conflict": false,
+    "jd_reused_from": "",
+    "data_quality": {
+      "score": 70,
+      "level": "较完整",
+      "has_jd": true,
+      "has_deadline": true,
+      "has_apply_url": true,
+      "has_official_source": false
+    },
+    "core_skills": [
+      "SQL",
+      "Git",
+      "Selenium",
+      "Appium",
+      "JMeter",
+      "Postman",
+      "CI/CD",
+      "Docker",
+      "接口测试",
+      "自动化测试",
+      "性能测试",
+      "用例设计",
+      "缺陷跟踪"
+    ],
+    "core_responsibilities": [
+      "参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案",
+      "设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量",
+      "编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复",
+      "参与自动化测试框架与工具的建设，提升测试效率与覆盖率",
+      "对系统稳定性、性能、兼容性、安全性进行验证与优化"
+    ],
+    "education": "本科",
+    "major": [
+      "计算机"
+    ],
+    "experience": "",
+    "graduation_year": "",
+    "jd_source_url": "https://www.iguopin.com/job/detail?id=192741106994121867",
+    "jd_updated_at": "2026-08-23",
+    "job_domain": "software_testing",
+    "job_domain_confidence": 0.9,
+    "excluded": false,
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "4ec89eafda55",
@@ -3293,103 +3090,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.9,
     "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "6cfeea2371ed",
-    "company": "中数联物流科技（上海）有限公司",
-    "program": "社会招聘",
-    "cohort": "2027届",
-    "batch": "校招",
-    "role_type": "软件测试",
-    "positions": [
-      "应用开发团队-测试工程师"
-    ],
-    "locations": [
-      "上海",
-      "浦东"
-    ],
-    "provinces": [
-      "上海"
-    ],
-    "start_date": "2026-03-22",
-    "deadline": "2026-12-31",
-    "updated_at": "2026-03-22",
-    "apply_url": "https://www.iguopin.com/job/detail?id=192741106994121867",
-    "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=192741106994121867",
-    "source": "国聘网",
-    "industry": "国企",
-    "scale": "小厂",
-    "owner": "",
-    "status": "open",
-    "description": "【岗位职责】\n1.参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案；\n2.设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量；\n3.编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复；\n4.参与自动化测试框架与工具的建设，提升测试效率与覆盖率；\n5.对系统稳定性、性能、兼容性、安全性进行验证与优化；\n6.与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量；\n7.总结测试经验，推动测试流程与方法论的持续改进。\n\n【任职条件】\n1.本科及以上学历，计算机或相关专业优先；\n2.2年及以上软件测试经验，熟悉软件测试流程与方法论；\n3.熟悉功能测试、性能测试、安全测试等常见测试类型；\n4.掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）；\n5.熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证；\n6.熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）；\n7.良好的逻辑分析、问题定位与跨团队沟通能力。\n\n【优先条件】\n-主导或参与过大型Web/APP项目的测试工作；\n-有CI/CD流程下的自动化测试经验；\n-熟悉云平台、微服务、容器化环境下的测试方法；\n-有性能压测、可靠性测试、混沌测试的实际经验；\n-持有ISTQB、软件评测师、软件测试工程师等相关认证。",
-    "responsibilities": [
-      "参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案",
-      "设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量",
-      "编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复",
-      "参与自动化测试框架与工具的建设，提升测试效率与覆盖率",
-      "对系统稳定性、性能、兼容性、安全性进行验证与优化",
-      "与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量",
-      "总结测试经验，推动测试流程与方法论的持续改进。",
-      "【任职条件】",
-      "本科及以上学历，计算机或相关专业优先",
-      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
-      "熟悉功能测试、性能测试、安全测试等常见测试类型",
-      "掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）"
-    ],
-    "requirements": [
-      "本科及以上学历，计算机或相关专业优先",
-      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
-      "熟悉功能测试、性能测试、安全测试等常见测试类型",
-      "掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）",
-      "熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证",
-      "熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）",
-      "良好的逻辑分析、问题定位与跨团队沟通能力。",
-      "【优先条件】",
-      "主导或参与过大型Web/APP项目的测试工作",
-      "有CI/CD流程下的自动化测试经验",
-      "熟悉云平台、微服务、容器化环境下的测试方法",
-      "有性能压测、可靠性测试、混沌测试的实际经验"
-    ],
-    "skills": [
-      "接口测试",
-      "自动化测试",
-      "Selenium",
-      "Appium",
-      "JMeter",
-      "Postman",
-      "SQL",
-      "Git",
-      "CI/CD",
-      "用例设计",
-      "缺陷跟踪",
-      "性能测试"
-    ],
-    "salary": "面议",
-    "jd_raw_text": "",
-    "jd_source": "unknown",
-    "jd_reused_from": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "unknown",
-    "job_domain_confidence": 0.0,
-    "excluded": false,
     "exclude_reason": "",
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "sources": [],
-    "normalized_job_name": "",
-    "job_category": "",
-    "recruitment_batch": "",
-    "first_seen_at": "",
-    "last_seen_at": "",
-    "deadline_source": "",
-    "deadline_conflict": false,
-    "data_quality": {}
+    "jd_status": "has_jd"
   },
   {
     "id": "3ff08637dcf3",
@@ -3409,7 +3111,7 @@
     ],
     "start_date": "2026-06-25",
     "deadline": "2026-12-31",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://we.dji.com/zh-CN/campus",
     "search_hint": "打开 we.dji.com/zh-CN/campus 或 careers.dji.com，搜「测试」",
     "source": "企业官网",
@@ -3432,7 +3134,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -3458,7 +3160,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "b61ea5a51a25",
@@ -3479,7 +3182,7 @@
     ],
     "start_date": null,
     "deadline": "2026-12-31",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.hr.xiaomi.com",
     "search_hint": "打开 campus.hr.xiaomi.com，搜「测试」",
     "source": "企业官网",
@@ -3502,7 +3205,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -3528,7 +3231,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "9f0939d38894",
@@ -3551,7 +3255,7 @@
     ],
     "start_date": "2026-07-09",
     "deadline": "2027-06-01",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://talent.baidu.com",
     "search_hint": "打开 talent.baidu.com，切校园招聘搜「测试」",
     "source": "企业官网",
@@ -3574,7 +3278,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -3600,7 +3304,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "28c7e2e67ff6",
@@ -3622,7 +3327,7 @@
     ],
     "start_date": "2026-08-18",
     "deadline": "2027-06-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.dapustor.com",
     "search_hint": "搜「大普微电子 校招」；微信「大普微招聘」",
     "source": "校招日历",
@@ -3645,7 +3350,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -3671,7 +3376,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "a686270f22aa",
@@ -3694,7 +3400,7 @@
     ],
     "start_date": "2026-07-25",
     "deadline": "2027-06-30",
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.hirain.com",
     "search_hint": "hire.hirain.com 解析失败。搜「经纬恒润 校招」或微信「经纬恒润招聘」；国聘也能搜到",
     "source": "企业官网",
@@ -3714,10 +3420,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "deadline_conflict": true,
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
@@ -3743,7 +3449,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5fc887ece5a9",
@@ -3768,9 +3475,9 @@
     "deadline": "2027-06-30",
     "deadline_source": "official",
     "deadline_conflict": false,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "apply_url": "https://www.hirain.com",
     "search_hint": "hire.hirain.com 解析失败。搜「经纬恒润 校招」或微信「经纬恒润招聘」；国聘也能搜到",
     "source": "企业官网",
@@ -3781,7 +3488,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "jd_reused_from": "",
     "industry": "新能源车企",
@@ -3812,7 +3519,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "4bd8c9c4934a",
@@ -3832,7 +3540,7 @@
     ],
     "start_date": "2026-07-07",
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://app.mokahr.com/social-recruitment/high-flyer/140576",
     "search_hint": "打开 mokahr 高飞招聘页，搜「测试开发」",
     "source": "企业官网",
@@ -3852,10 +3560,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "其他",
@@ -3881,7 +3589,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d6766871a5c5",
@@ -3901,7 +3610,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://careers.garena.com",
     "search_hint": "打开 careers.garena.com，搜 QA / 游戏测试；或走牛客「Garena 2027秋季校园招聘」",
     "source": "牛客网",
@@ -3924,7 +3633,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "游戏测试",
     "job_category": "游戏测试",
     "recruitment_batch": "正式批",
@@ -3950,7 +3659,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "a6b6a2413c3f",
@@ -3970,7 +3680,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%80%E7%B1%B3OA%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「一米OA 2027校招 测试」；微信搜「一米OA招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -3993,7 +3703,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -4019,7 +3729,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "3e289ac567cc",
@@ -4039,7 +3750,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.samsungcareers.com",
     "search_hint": "打开 samsungcareers.com，地区选中国/苏州，搜 Test 或「测试」",
     "source": "企业官网",
@@ -4062,7 +3773,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -4088,7 +3799,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "89aafe2f8831",
@@ -4108,7 +3820,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "国企。搜「上交所技术 校招 测试」；微信搜「上交所技术招聘」",
     "source": "智联校园",
@@ -4152,7 +3864,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -4199,78 +3911,8 @@
     "job_domain_confidence": 0.9,
     "excluded": false,
     "exclude_reason": "",
+    "jd_status": "has_jd",
     "jd_source_url": ""
-  },
-  {
-    "id": "20f16f27de5e",
-    "company": "中兴通讯",
-    "program": null,
-    "cohort": "2027届",
-    "batch": "提前批",
-    "recruitment_batch": "提前批",
-    "role_type": "软件测试",
-    "normalized_job_name": "软件测试",
-    "job_category": "软件测试",
-    "positions": [
-      "测试类"
-    ],
-    "locations": [
-      "上海",
-      "杭州"
-    ],
-    "provinces": [
-      "上海",
-      "浙江"
-    ],
-    "start_date": "2026-07-02",
-    "deadline": null,
-    "deadline_source": "",
-    "deadline_conflict": false,
-    "updated_at": "2026-07-02",
-    "first_seen_at": "2026-07-02",
-    "last_seen_at": "2026-08-23",
-    "apply_url": "https://job.zte.com.cn",
-    "search_hint": "打开 job.zte.com.cn → 校园招聘，搜「测试」；微信搜「中兴通讯招聘」",
-    "source": "xixicc2027",
-    "sources": [
-      {
-        "type": "xixicc",
-        "url": "https://job.zte.com.cn",
-        "found_at": "2026-07-02"
-      }
-    ],
-    "jd_source": "unknown",
-    "jd_raw_text": "",
-    "jd_reused_from": "",
-    "industry": "半导体/硬件",
-    "scale": "大厂",
-    "owner": "",
-    "status": "open",
-    "description": "",
-    "responsibilities": [],
-    "requirements": [],
-    "skills": [],
-    "salary": "",
-    "data_quality": {
-      "score": 25,
-      "level": "信息不足",
-      "has_jd": false,
-      "has_deadline": false,
-      "has_apply_url": true,
-      "has_official_source": false
-    },
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "unknown",
-    "job_domain_confidence": 0.0,
-    "excluded": false,
-    "exclude_reason": ""
   },
   {
     "id": "e1851b874f91",
@@ -4291,7 +3933,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.zte.com.cn",
     "search_hint": "打开 job.zte.com.cn → 校园招聘，搜「测试」；微信搜「中兴通讯招聘」",
     "source": "Boss直聘",
@@ -4314,7 +3956,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "社招",
@@ -4340,7 +3982,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "25889d33cecd",
@@ -4366,7 +4009,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.abchina.com.cn",
     "search_hint": "百度搜「中国农业银行 2027校招 测试」；微信搜「中国农业银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -4389,7 +4032,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -4415,7 +4058,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "2f7fe5406a21",
@@ -4441,7 +4085,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.chinatelecom.com.cn/jobs",
     "search_hint": "百度搜「中国电信 2027校招 测试」；微信搜「中国电信招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -4464,7 +4108,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -4490,7 +4134,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "9d95a0141c9d",
@@ -4511,7 +4156,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.iguopin.com/job?keyword=%E4%B8%AD%E5%9B%BD%E7%94%B5%E7%A7%91",
     "search_hint": "国聘/Boss 搜「中国电科 测试 南京」。28所在 Boss 有软件测试员；50所校招在国聘",
     "source": "Boss直聘",
@@ -4534,7 +4179,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -4560,7 +4205,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "f08877c70f8f",
@@ -4580,7 +4226,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%AD%E7%A7%BB%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
     "search_hint": "百度搜「中国移动 2027校招 测试」；微信搜「中国移动招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -4603,7 +4249,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "社招",
@@ -4629,76 +4275,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "ac8ca3fddf48",
-    "company": "中国航发商用航空发动机",
-    "program": "2027届校园招聘",
-    "cohort": "2027届",
-    "batch": "正式批",
-    "role_type": "软件测试",
-    "positions": [
-      "测试技术岗"
-    ],
-    "locations": [
-      "上海"
-    ],
-    "provinces": [
-      "上海"
-    ],
-    "start_date": null,
-    "deadline": null,
-    "updated_at": "2026-08-23",
-    "apply_url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF",
-    "search_hint": "国聘搜「中国航发商用航空发动机 测试技术岗」；或搜「航发商发 2027校招」",
-    "source": "国聘网",
-    "industry": "央国企",
-    "scale": "中厂",
-    "owner": "央企",
-    "status": "open",
-    "description": "",
-    "responsibilities": [],
-    "requirements": [],
-    "skills": [],
-    "salary": "",
-    "sources": [
-      {
-        "type": "iguopin",
-        "url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF",
-        "found_at": "2026-08-23"
-      }
-    ],
-    "jd_source": "unknown",
-    "jd_raw_text": "",
-    "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
-    "normalized_job_name": "软件测试",
-    "job_category": "软件测试",
-    "recruitment_batch": "正式批",
-    "deadline_source": "",
-    "deadline_conflict": false,
-    "jd_reused_from": "",
-    "data_quality": {
-      "score": 25,
-      "level": "信息不足",
-      "has_jd": false,
-      "has_deadline": false,
-      "has_apply_url": true,
-      "has_official_source": false
-    },
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "unknown",
-    "job_domain_confidence": 0.0,
-    "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "483997b8da7b",
@@ -4719,7 +4297,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.supcon.com",
     "search_hint": "「/join」不一定能进职位。搜「中控技术 2027校招」；微信「中控招聘」",
     "source": "企业官网",
@@ -4742,7 +4320,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -4768,142 +4346,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "3bc3f42a96f8",
-    "company": "中数联物流科技（上海）",
-    "program": "社会招聘",
-    "cohort": "不限",
-    "batch": "社招",
-    "role_type": "软件测试",
-    "positions": [
-      "测试工程师"
-    ],
-    "locations": [
-      "上海"
-    ],
-    "provinces": [
-      "上海"
-    ],
-    "start_date": null,
-    "deadline": null,
-    "updated_at": "2026-08-23",
-    "apply_url": "https://www.iguopin.com/job/detail?id=192741106994121867",
-    "search_hint": "百度搜「中数联物流科技（上海） 2027校招 测试」；微信搜「中数联物流科技（上海）招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
-    "source": "国聘网",
-    "industry": "央国企",
-    "scale": "中厂",
-    "owner": "国企",
-    "status": "open",
-    "description": "【岗位职责】\n1.参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案；\n2.设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量；\n3.编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复；\n4.参与自动化测试框架与工具的建设，提升测试效率与覆盖率；\n5.对系统稳定性、性能、兼容性、安全性进行验证与优化；\n6.与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量；\n7.总结测试经验，推动测试流程与方法论的持续改进。\n\n【任职条件】\n1.本科及以上学历，计算机或相关专业优先；\n2.2年及以上软件测试经验，熟悉软件测试流程与方法论；\n3.熟悉功能测试、性能测试、安全测试等常见测试类型；\n4.掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）；\n5.熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证；\n6.熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）；\n7.良好的逻辑分析、问题定位与跨团队沟通能力。\n\n【优先条件】\n-主导或参与过大型Web/APP项目的测试工作；\n-有CI/CD流程下的自动化测试经验；\n-熟悉云平台、微服务、容器化环境下的测试方法；\n-有性能压测、可靠性测试、混沌测试的实际经验；\n-持有ISTQB、软件评测师、软件测试工程师等相关认证。",
-    "responsibilities": [
-      "参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案",
-      "设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量",
-      "编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复",
-      "参与自动化测试框架与工具的建设，提升测试效率与覆盖率",
-      "对系统稳定性、性能、兼容性、安全性进行验证与优化",
-      "与产品、开发、运维团队协作，推动测试结果闭环，提升整体研发交付质量",
-      "总结测试经验，推动测试流程与方法论的持续改进。",
-      "【任职条件】",
-      "本科及以上学历，计算机或相关专业优先",
-      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
-      "熟悉功能测试、性能测试、安全测试等常见测试类型",
-      "掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）"
-    ],
-    "requirements": [
-      "本科及以上学历，计算机或相关专业优先",
-      "2年及以上软件测试经验，熟悉软件测试流程与方法论",
-      "熟悉功能测试、性能测试、安全测试等常见测试类型",
-      "掌握至少一种自动化测试工具/框架（如Selenium、Appium、Postman、JMeter等）",
-      "熟悉SQL，具备数据库验证经验，理解接口测试与后端逻辑验证",
-      "熟悉版本管理、缺陷管理工具（Git、Jira、禅道等）",
-      "良好的逻辑分析、问题定位与跨团队沟通能力。",
-      "【优先条件】",
-      "主导或参与过大型Web/APP项目的测试工作",
-      "有CI/CD流程下的自动化测试经验",
-      "熟悉云平台、微服务、容器化环境下的测试方法",
-      "有性能压测、可靠性测试、混沌测试的实际经验"
-    ],
-    "skills": [
-      "接口测试",
-      "自动化测试",
-      "Selenium",
-      "Appium",
-      "JMeter",
-      "Postman",
-      "SQL",
-      "Git",
-      "CI/CD",
-      "用例设计",
-      "缺陷跟踪",
-      "性能测试"
-    ],
-    "salary": "面议",
-    "sources": [
-      {
-        "type": "iguopin",
-        "url": "https://www.iguopin.com/job/detail?id=192741106994121867",
-        "found_at": "2026-08-23"
-      },
-      {
-        "type": "iguopin",
-        "url": "https://www.iguopin.com/job?keyword=%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95",
-        "found_at": "2026-08-23"
-      }
-    ],
-    "jd_source": "iguopin",
-    "jd_raw_text": "",
-    "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
-    "normalized_job_name": "软件测试",
-    "job_category": "软件测试",
-    "recruitment_batch": "社招",
-    "deadline_source": "",
-    "deadline_conflict": false,
-    "jd_reused_from": "",
-    "data_quality": {
-      "score": 55,
-      "level": "基本完整",
-      "has_jd": true,
-      "has_deadline": false,
-      "has_apply_url": true,
-      "has_official_source": false
-    },
-    "core_skills": [
-      "SQL",
-      "Git",
-      "Selenium",
-      "Appium",
-      "JMeter",
-      "Postman",
-      "CI/CD",
-      "Docker",
-      "接口测试",
-      "自动化测试",
-      "性能测试",
-      "用例设计",
-      "缺陷跟踪"
-    ],
-    "core_responsibilities": [
-      "参与需求评审与设计评审，理解产品功能与业务逻辑，制定测试计划与测试方案",
-      "设计、执行功能测试、集成测试、回归测试、性能测试等，保障产品交付质量",
-      "编写并维护测试用例，输出测试报告，跟踪与推动缺陷的定位与修复",
-      "参与自动化测试框架与工具的建设，提升测试效率与覆盖率",
-      "对系统稳定性、性能、兼容性、安全性进行验证与优化"
-    ],
-    "education": "本科",
-    "major": [
-      "计算机"
-    ],
-    "experience": "",
-    "graduation_year": "",
-    "jd_source_url": "https://www.iguopin.com/job/detail?id=192741106994121867",
-    "jd_updated_at": "2026-08-23",
-    "job_domain": "software_testing",
-    "job_domain_confidence": 0.9,
-    "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "c0b92794e3ed",
@@ -4923,7 +4367,7 @@
     ],
     "start_date": "2026-07-12",
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://recruit.sinovatio.com",
     "search_hint": "打开 recruit.sinovatio.com，找校园招聘/学生通道",
     "source": "企业官网",
@@ -4946,7 +4390,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "提前批",
@@ -4972,76 +4416,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "12a712fb829b",
-    "company": "中新赛克",
-    "program": null,
-    "cohort": "2027届",
-    "batch": "实习",
-    "recruitment_batch": "实习",
-    "role_type": "软件测试",
-    "normalized_job_name": "软件测试",
-    "job_category": "软件测试",
-    "positions": [
-      "软件测试工程师"
-    ],
-    "locations": [
-      "南京"
-    ],
-    "provinces": [
-      "江苏"
-    ],
-    "start_date": "2026-07-12",
-    "deadline": null,
-    "deadline_source": "",
-    "deadline_conflict": false,
-    "updated_at": "2026-07-12",
-    "first_seen_at": "2026-07-12",
-    "last_seen_at": "2026-08-23",
-    "apply_url": "https://recruit.sinovatio.com",
-    "search_hint": "打开 recruit.sinovatio.com，找校园招聘/学生通道",
-    "source": "xixicc2027",
-    "sources": [
-      {
-        "type": "xixicc",
-        "url": "https://recruit.sinovatio.com",
-        "found_at": "2026-07-12"
-      }
-    ],
-    "jd_source": "unknown",
-    "jd_raw_text": "",
-    "jd_reused_from": "",
-    "industry": "其他",
-    "scale": "小厂",
-    "owner": "",
-    "status": "open",
-    "description": "",
-    "responsibilities": [],
-    "requirements": [],
-    "skills": [],
-    "salary": "",
-    "data_quality": {
-      "score": 25,
-      "level": "信息不足",
-      "has_jd": false,
-      "has_deadline": false,
-      "has_apply_url": true,
-      "has_official_source": false
-    },
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "software_testing",
-    "job_domain_confidence": 0.95,
-    "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "f244b17402bd",
@@ -5061,7 +4437,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%AD%E7%94%B5%E9%87%91%E4%BF%A1%20%E6%B5%8B%E8%AF%95&city=101190400",
     "search_hint": "百度搜「中电金信 2027校招 测试」；微信搜「中电金信招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -5084,7 +4460,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -5110,7 +4486,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "4edc3b5fcf22",
@@ -5130,7 +4507,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
     "search_hint": "百度搜「中节能大数据 2027校招 测试」；微信搜「中节能大数据招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联招聘",
@@ -5167,7 +4544,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -5206,7 +4583,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "b6acee3c3444",
@@ -5227,7 +4605,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://smics.zhiye.com/campus",
     "search_hint": "打开 smics.zhiye.com/campus；微信「中芯国际微招聘」。旧域名 campus.smics.com 打不开",
     "source": "企业官网",
@@ -5250,7 +4628,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -5276,7 +4654,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "b715286aa07a",
@@ -5296,7 +4675,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「云合智网 校招 嵌入式软件测试」；微信搜「云合智网招聘」",
     "source": "猎聘",
@@ -5319,7 +4698,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -5345,7 +4724,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "a1180af58c6d",
@@ -5365,7 +4745,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://xiaoyuan.zhaopin.com/",
     "search_hint": "百度搜「亚信科技 2027校招 测试」；微信搜「亚信科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联校园",
@@ -5373,45 +4753,10 @@
     "scale": "中厂",
     "owner": "私企",
     "status": "open",
-    "description": "参与产品需求评审，根据项目需求文档编写测试用例，执行功能测试、回归测试及兼容性测试。；对测试过程中发现的软件缺陷进行准确定位、详细记录，并跟踪Bug修复进展，协助开发人员复现及解决问题。；协助完成Web端或服务端的功能、性能及稳定性测试，并输出规范的测试报告。；根据项目特点，参与自动化测试脚本的编写或测试工具的优化工作（视能力而定）。",
-    "responsibilities": [
-      "参与产品需求评审，根据项目需求文档编写测试用例，执行功能测试、回归测试及兼容性测试。",
-      "对测试过程中发现的软件缺陷进行准确定位、详细记录，并跟踪Bug修复进展，协助开发人员复现及解决问题。",
-      "协助完成Web端或服务端的功能、性能及稳定性测试，并输出规范的测试报告。",
-      "根据项目特点，参与自动化测试脚本的编写或测试工具的优化工作（视能力而定）。",
-      "学历专业： 统招本科及以上学历，2027届应届毕业生，计算机科学、软件工程、信息技术或相关理工科专业。",
-      "知识储备： 了解软件测试的基本理论、流程及常用方法",
-      "熟悉SQL语句及Linux操作系统常用命令者优先。",
-      "编程能力： 掌握至少一门编程语言或脚本语言（如Java、Python、Shell等），有实际编码经验者优先。",
-      "软素质： 具备良好的逻辑分析能力与文档撰写能力，工作细致有耐心，善于发现细节问题",
-      "具备较强的团队协作与沟通能力。",
-      "有软件测试相关实习经验或参与过实际项目测试。",
-      "了解自动化测试框架（如Selenium、Pytest）或性能测试工具（如JMeter）。"
-    ],
-    "requirements": [
-      "学历专业： 统招本科及以上学历，2027届应届毕业生，计算机科学、软件工程、信息技术或相关理工科专业。",
-      "知识储备： 了解软件测试的基本理论、流程及常用方法",
-      "熟悉SQL语句及Linux操作系统常用命令者优先。",
-      "编程能力： 掌握至少一门编程语言或脚本语言（如Java、Python、Shell等），有实际编码经验者优先。",
-      "软素质： 具备良好的逻辑分析能力与文档撰写能力，工作细致有耐心，善于发现细节问题",
-      "具备较强的团队协作与沟通能力。",
-      "有软件测试相关实习经验或参与过实际项目测试。",
-      "了解自动化测试框架（如Selenium、Pytest）或性能测试工具（如JMeter）。",
-      "对AI相关业务有浓厚兴趣。",
-      "待完善在线简历",
-      "使用AI简历优化功能，快速提升简历质量~"
-    ],
-    "skills": [
-      "Python",
-      "自动化测试",
-      "Selenium",
-      "JMeter",
-      "SQL",
-      "Linux",
-      "Java",
-      "用例设计",
-      "性能测试"
-    ],
+    "description": "",
+    "responsibilities": [],
+    "requirements": [],
+    "skills": [],
     "salary": "1.5-2.5万·14薪",
     "sources": [
       {
@@ -5423,7 +4768,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "2027秋招",
@@ -5431,9 +4776,9 @@
     "deadline_conflict": false,
     "jd_reused_from": "",
     "data_quality": {
-      "score": 55,
-      "level": "基本完整",
-      "has_jd": true,
+      "score": 25,
+      "level": "信息不足",
+      "has_jd": false,
       "has_deadline": false,
       "has_apply_url": true,
       "has_official_source": false
@@ -5466,10 +4811,11 @@
     "graduation_year": "2027",
     "jd_source_url": "https://xiaoyuan.zhaopin.com/",
     "jd_updated_at": "2026-08-23",
-    "job_domain": "software_testing",
-    "job_domain_confidence": 0.9,
+    "job_domain": "unknown",
+    "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "84c2dbb5ca72",
@@ -5489,7 +4835,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%BA%AC%E9%9A%86%E7%A7%91%E6%8A%80%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
     "search_hint": "百度搜「京隆科技 2027校招 测试」；微信搜「京隆科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -5512,7 +4858,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "社招",
@@ -5538,7 +4884,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "973a4ecf1ecf",
@@ -5558,7 +4905,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%85%A8%E6%9E%90%E6%99%BA%E7%AE%97%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
     "search_hint": "百度搜「全析智算 2027校招 测试」；微信搜「全析智算招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -5581,7 +4928,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "2027秋招",
@@ -5607,7 +4954,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d9e9a738dc92",
@@ -5632,7 +4980,7 @@
     ],
     "start_date": "2026-07-09",
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://naura.zhiye.com",
     "search_hint": "打开 naura.zhiye.com（不要加 /campus，那是 404），搜「测试」",
     "source": "企业官网",
@@ -5655,7 +5003,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "提前批",
@@ -5681,7 +5029,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "77d5050bdaa0",
@@ -5701,7 +5050,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://elekta.cn/jobs/",
     "search_hint": "打开 elekta.cn/jobs；或搜「医科达 软件测试 应届」",
     "source": "猎聘",
@@ -5724,7 +5073,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -5750,7 +5099,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "9055115f100e",
@@ -5774,7 +5124,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
     "source": "企业官网",
@@ -5797,7 +5147,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -5823,7 +5173,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "07c33c5499d4",
@@ -5847,7 +5198,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
     "source": "Boss直聘",
@@ -5870,7 +5221,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "秋招",
@@ -5896,7 +5247,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "2d78cbf3cde1",
@@ -5923,9 +5275,9 @@
     "deadline": null,
     "deadline_source": "",
     "deadline_conflict": false,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
     "source": "Boss直聘",
@@ -5967,7 +5319,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "271c055065a3",
@@ -5989,7 +5342,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
     "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
     "source": "Boss直聘",
@@ -6012,7 +5365,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6038,7 +5391,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "494201c6a81b",
@@ -6058,7 +5412,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://jobs.huaqin.com",
     "search_hint": "打开 jobs.huaqin.com；微信搜「华勤招聘」→ 校园招聘",
     "source": "猎聘",
@@ -6081,7 +5435,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -6107,7 +5461,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "accc25be1f7c",
@@ -6127,7 +5482,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%8E%E8%8B%8F%E7%A7%91%E6%8A%80%20%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「华苏科技 2027校招 测试」；微信搜「华苏科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -6150,7 +5505,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6176,7 +5531,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5c1f78c5b7c8",
@@ -6196,7 +5552,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
     "search_hint": "百度搜「南京三坤软件 2027校招 测试」；微信搜「南京三坤软件招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联招聘",
@@ -6204,26 +5560,10 @@
     "scale": "小厂",
     "owner": "私企",
     "status": "open",
-    "description": "光影空间招聘\n南京维修师傅招聘信息\n甲醇dcs操作招聘\n铜仁工厂生产线设备公司招聘\n浙江源代码科技招聘\n光谷创新科技园招聘信息\n南京电商高端人才招聘\n运动装设计师招聘\n金碧物业长春市分公司招聘\n助产学招聘\n江苏国泰智造纺织科技有限公司\n灌云恒源水务有限公司\n绍兴柯桥胡氏转移印花有限公司\n曲阳县恒发置业管理有限公司\n河南东华国土数字科技有限公司\n东风乘用车科技（成都）有限公司\n宁波富耀电力信息咨询有限公司\n湖南龙行天下健康管理有限公司\n达州茂农信息科技有限公司\n金川开发区未来广告传媒设计部\n双休、入职缴纳五险一金\n岗位一：APP测试\n任职要求\n1、1年及以上APP软件测试经验，有项目迭代经验；\n2、熟悉APP测试流程、测试方法，能独立开展全流程测试工作；\n3、熟练编写测试用例、熟练使用禅道/Jira等缺陷管理工具；\n4、熟悉接口基础概念，会简单接口测试（抓包、看请求响应）优先；\n5、具备良好逻辑思维，细心严谨，能快速定位问题、解决问题；\n6、能配合版本迭代节奏，接受正常项目迭代。\n岗位二：接口测试\n任职要求：\n1.熟悉测试基本的技术和方法，包括测试分析、测试设计、测试执行、自动化测试\n2",
+    "description": "",
     "responsibilities": [],
-    "requirements": [
-      "1年及以上APP软件测试经验，有项目迭代经验",
-      "熟悉APP测试流程、测试方法，能独立开展全流程测试工作",
-      "熟练编写测试用例、熟练使用禅道/Jira等缺陷管理工具",
-      "熟悉接口基础概念，会简单接口测试（抓包、看请求响应）优先",
-      "具备良好逻辑思维，细心严谨，能快速定位问题、解决问题",
-      "能配合版本迭代节奏，接受正常项目迭代。",
-      "岗位二：接口测试"
-    ],
-    "skills": [
-      "Python",
-      "接口测试",
-      "自动化测试",
-      "SQL",
-      "Linux",
-      "用例设计",
-      "缺陷跟踪"
-    ],
+    "requirements": [],
+    "skills": [],
     "salary": "面议",
     "sources": [
       {
@@ -6235,7 +5575,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6243,9 +5583,9 @@
     "deadline_conflict": false,
     "jd_reused_from": "",
     "data_quality": {
-      "score": 55,
-      "level": "基本完整",
-      "has_jd": true,
+      "score": 25,
+      "level": "信息不足",
+      "has_jd": false,
       "has_deadline": false,
       "has_apply_url": true,
       "has_official_source": false
@@ -6275,7 +5615,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "f2422258e57d",
@@ -6295,7 +5636,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%8D%83%E4%B8%9A%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「南京千业 2027校招 测试」；微信搜「南京千业招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -6318,7 +5659,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6344,7 +5685,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "a8b93c9a334e",
@@ -6364,7 +5706,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%A4%A9%E6%8E%A7%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「南京天控 2027校招 测试」；微信搜「南京天控招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -6387,7 +5729,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6413,7 +5755,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "4447f4979221",
@@ -6433,7 +5776,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%AE%89%E5%B7%A5%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「南京安工信息 2027校招 测试」；微信搜「南京安工信息招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -6456,7 +5799,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6482,7 +5825,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "46e464b8b6cf",
@@ -6502,7 +5846,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E6%B5%B7%E6%B3%B0%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「南京海泰 2027校招 测试」；微信搜「南京海泰招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -6525,7 +5869,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6551,7 +5895,78 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
+  },
+  {
+    "id": "1216bb7e4dac",
+    "company": "南京熊猫电子",
+    "program": "校园招聘",
+    "cohort": "2027届",
+    "batch": "正式批",
+    "recruitment_batch": "正式批",
+    "role_type": "软件测试",
+    "normalized_job_name": "软件测试",
+    "job_category": "软件测试",
+    "positions": [
+      "测试工程师"
+    ],
+    "locations": [
+      "南京"
+    ],
+    "provinces": [
+      "江苏"
+    ],
+    "start_date": null,
+    "deadline": null,
+    "deadline_source": "",
+    "deadline_conflict": false,
+    "updated_at": "2026-08-24",
+    "first_seen_at": "2026-08-24",
+    "last_seen_at": "2026-08-24",
+    "apply_url": "https://www.panda.cn",
+    "search_hint": "官网 panda.cn 没有独立网申。搜「南京熊猫 2027校招 测试」；微信搜「熊猫电子招聘」或「CEC中电熊猫」",
+    "source": "智联校园",
+    "sources": [
+      {
+        "type": "zhaopin",
+        "url": "https://www.panda.cn",
+        "found_at": "2026-08-24"
+      }
+    ],
+    "jd_source": "unknown",
+    "jd_raw_text": "",
+    "jd_reused_from": "",
+    "jd_source_url": "",
+    "jd_updated_at": "",
+    "job_domain": "unknown",
+    "job_domain_confidence": 0.0,
+    "excluded": false,
+    "exclude_reason": "",
+    "industry": "央国企",
+    "scale": "中厂",
+    "owner": "国企",
+    "status": "open",
+    "description": "",
+    "responsibilities": [],
+    "requirements": [],
+    "skills": [],
+    "salary": "",
+    "data_quality": {
+      "score": 25,
+      "level": "信息不足",
+      "has_jd": false,
+      "has_deadline": false,
+      "has_apply_url": true,
+      "has_official_source": false
+    },
+    "core_skills": [],
+    "core_responsibilities": [],
+    "education": "",
+    "major": [],
+    "experience": "",
+    "graduation_year": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "c0db29a64e44",
@@ -6571,7 +5986,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "国企。搜「南京瑞迪水利 测试工程师」；微信搜「瑞迪水利招聘」",
     "source": "前程无忧",
@@ -6594,7 +6009,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6620,7 +6035,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e6a437e56076",
@@ -6640,7 +6056,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
     "search_hint": "百度搜「南京职数通 2027校招 测试」；微信搜「南京职数通招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联招聘",
@@ -6679,7 +6095,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6718,7 +6134,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "fea08c5b568c",
@@ -6738,7 +6155,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E8%87%BB%E8%9E%8D%E8%BD%AF%E4%BB%B6%20%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「南京臻融软件 2027校招 测试」；微信搜「南京臻融软件招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -6761,7 +6178,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -6787,7 +6204,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "23e2ebef691b",
@@ -6807,7 +6225,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.njcb.com.cn",
     "search_hint": "百度搜「南京银行 2027校招 测试」；微信搜「南京银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -6830,7 +6248,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -6856,7 +6274,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5aa82da2759a",
@@ -6877,7 +6296,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://zhaopin.sgcc.com.cn",
     "search_hint": "南瑞官网经常进不去。走国家电网招聘 zhaopin.sgcc.com.cn 选南瑞；或微信「南瑞招聘」",
     "source": "企业官网",
@@ -6900,7 +6319,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -6926,7 +6345,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "93e8dcae8f6d",
@@ -6947,7 +6367,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.10jqka.com.cn/campus.html",
     "search_hint": "打开 job.10jqka.com.cn/campus.html，搜「测试」",
     "source": "企业官网",
@@ -6970,7 +6390,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -6996,7 +6416,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "4ea0fbb9794f",
@@ -7017,7 +6438,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://jobs.bilibili.com/campus",
     "search_hint": "打开 jobs.bilibili.com/campus，搜「测试」",
     "source": "企业官网",
@@ -7040,7 +6461,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -7066,7 +6487,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "19c19cb9c6b9",
@@ -7087,7 +6509,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.sensetime.com/cn",
     "search_hint": "「/join」是 404。搜「商汤科技 校招」；微信「商汤招聘」",
     "source": "企业官网",
@@ -7110,7 +6532,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -7136,7 +6558,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "bd247b449355",
@@ -7157,7 +6580,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "job.ximalaya.com 打不开。搜「喜马拉雅 校招」；微信「喜马拉雅招聘」",
     "source": "企业官网",
@@ -7180,7 +6603,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -7206,7 +6629,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "2f7916d5fd32",
@@ -7233,7 +6657,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://zhaopin.sgcc.com.cn",
     "search_hint": "打开 zhaopin.sgcc.com.cn，单位选江苏/浙江/南瑞，关键词「测试」",
     "source": "企业官网",
@@ -7256,7 +6680,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -7282,7 +6706,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e70f1c595e93",
@@ -7302,7 +6727,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://xiaoyuan.zhaopin.com/",
     "search_hint": "百度搜「国电南自 2027校招 测试」；微信搜「国电南自招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联校园",
@@ -7330,7 +6755,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "2027秋招",
@@ -7360,7 +6785,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "fa05f8e85021",
@@ -7380,7 +6806,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "往年网申 2026guorui.zhaopin.com。搜「国睿科技 2027校招」或微信「国睿科技招聘」；邮箱 hr@glarun.com",
     "source": "前程无忧",
@@ -7403,7 +6829,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "实习",
@@ -7429,7 +6855,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "8456aaf115c3",
@@ -7449,7 +6876,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.iguopin.com/job?keyword=%E9%AA%8C%E8%AF%81%E6%B5%8B%E8%AF%95",
     "search_hint": "百度搜「国药奇贝德（上海） 2027校招 测试」；微信搜「国药奇贝德（上海）招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "国聘网",
@@ -7472,7 +6899,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "实习",
@@ -7498,7 +6925,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "7d26c2823ca3",
@@ -7518,7 +6946,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.agora.io/cn/careers",
     "search_hint": "打开 agora.io/cn/careers；打不开就搜「声网 Agora 校招 测试」",
     "source": "猎聘",
@@ -7541,7 +6969,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -7567,7 +6995,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d2e7447bfcf0",
@@ -7588,7 +7017,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
     "search_hint": "百度搜「外企德科 2027校招 测试」；微信搜「外企德科招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联招聘",
@@ -7632,7 +7061,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -7676,7 +7105,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "4898d57b8ce7",
@@ -7697,7 +7127,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.dahuatech.com/about/join.html",
     "search_hint": "打开 dahuatech.com/about/join.html，搜「测试」",
     "source": "企业官网",
@@ -7717,10 +7147,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -7746,7 +7176,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "3c9d74eafee2",
@@ -7789,7 +7220,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-07-02",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -7815,7 +7246,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "1138f45e4c3e",
@@ -7837,7 +7269,7 @@
     ],
     "start_date": "2026-07-15",
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "百度搜「天锐星通 2027校招 测试」；微信搜「天锐星通招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "xixicc2027",
@@ -7860,7 +7292,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "提前批",
@@ -7886,7 +7318,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "abeb89552392",
@@ -7906,7 +7339,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
     "search_hint": "百度搜「天阳科技 2027校招 测试」；微信搜「天阳科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联招聘",
@@ -7914,21 +7347,8 @@
     "scale": "中厂",
     "owner": "私企",
     "status": "open",
-    "description": "丰源管理招聘\n山东数学招聘\n普通逻辑教师招聘\n南京射频研发招聘网\n秦皇岛在线旅游招聘\n广州荔湾区蔬菜配送公司招聘信息\n多思教育招聘\n北京朝阳区财税公司招聘信息\n精雅思招聘\n人员录用和招聘评估\n巩义市精神文明建设促进中心\n胶州市永俊汽车配件厂（个体工商户）\n滑县留固镇康许摩托车行\n深圳亿泽工程实业有限公司\n重庆航谷创造网络科技有限公司\n漳州市龙文区禾恒商务信息咨询服务部\n义乌市雪奈尔日用品有限公司\n邵阳市国森家具销售有限公司\n东方板桥星人生活馆\n宁南县白鹤滩镇家乐超市\n1.全国项目驻场测试，主要负责功能、数据或接口等相关测试工作；\n2.统招本科学历及以上（学信网可查）；毕业满2年；计算机专业优先；\n3.热爱软件测试行业、有强力的自驱力，能够在测试岗位深入学习研究；\n4.有无经验均可，服从公司安排，接受公司人才培养发展战略，可接受本公司异地工作优先；\n福利待遇：\n上市公司、公司部分项目可提供住宿、定期体检、带薪年假；",
-    "responsibilities": [
-      "丰源管理招聘",
-      "山东数学招聘",
-      "普通逻辑教师招聘",
-      "南京射频研发招聘网",
-      "秦皇岛在线旅游招聘",
-      "广州荔湾区蔬菜配送公司招聘信息",
-      "多思教育招聘",
-      "北京朝阳区财税公司招聘信息",
-      "人员录用和招聘评估",
-      "巩义市精神文明建设促进中心",
-      "胶州市永俊汽车配件厂（个体工商户）",
-      "滑县留固镇康许摩托车行"
-    ],
+    "description": "",
+    "responsibilities": [],
     "requirements": [],
     "skills": [],
     "salary": "6000-8000元",
@@ -7942,7 +7362,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "2027秋招",
@@ -7950,9 +7370,9 @@
     "deadline_conflict": false,
     "jd_reused_from": "",
     "data_quality": {
-      "score": 55,
-      "level": "基本完整",
-      "has_jd": true,
+      "score": 25,
+      "level": "信息不足",
+      "has_jd": false,
       "has_deadline": false,
       "has_apply_url": true,
       "has_official_source": false
@@ -7977,7 +7397,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "db554de1ea09",
@@ -7999,7 +7420,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "campus.chery.cn 打不开。搜「奇瑞 2027校招」；微信「奇瑞招聘」",
     "source": "企业官网",
@@ -8022,7 +7443,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -8048,7 +7469,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "6f6af7406edc",
@@ -8068,7 +7490,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「姚记集团 2027校招 游戏测试」；微信搜「姚记招聘」",
     "source": "牛客网",
@@ -8091,7 +7513,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "游戏测试",
     "job_category": "游戏测试",
     "recruitment_batch": "正式批",
@@ -8117,7 +7539,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "6f2503f6331c",
@@ -8141,7 +7564,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.uniview.com/cn/about/join/",
     "search_hint": "打开 uniview.com/cn/about/join/，搜「测试」",
     "source": "企业官网",
@@ -8164,7 +7587,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -8190,7 +7613,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "993aceab8641",
@@ -8210,7 +7634,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.uniview.com/cn/about/join/",
     "search_hint": "打开 uniview.com/cn/about/join/，搜「测试」",
     "source": "智联校园",
@@ -8247,7 +7671,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -8282,7 +7706,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "d842c4265660",
@@ -8302,7 +7727,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%80%E6%95%B0%E4%B8%80%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101220100",
     "search_hint": "百度搜「安徽一数一人工智能 2027校招 测试」；微信搜「安徽一数一人工智能招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -8325,7 +7750,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "2027秋招",
@@ -8351,7 +7776,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "64ce4d61926f",
@@ -8371,7 +7797,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%AE%9E%E8%BF%9B%E6%99%BA%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「实进智 2027校招 测试」；微信搜「实进智招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -8394,7 +7820,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -8420,7 +7846,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "2ff41fd6a68c",
@@ -8463,7 +7890,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-07-11",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -8489,7 +7916,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "a76a2bee1ead",
@@ -8515,7 +7943,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.icbc.com.cn",
     "search_hint": "百度搜「工商银行 2027校招 测试」；微信搜「工商银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -8538,7 +7966,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -8564,7 +7992,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "752d6f7e6abe",
@@ -8586,7 +8015,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://join.fanruan.com",
     "search_hint": "百度搜「帆软 2027校招 测试」；微信搜「帆软招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -8609,7 +8038,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -8635,7 +8064,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "80b88a169fd4",
@@ -8655,7 +8085,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "没有稳定公开网申。搜「微创医疗机器人 2027校招 测试」；微信搜「微创机器人招聘」",
     "source": "猎聘",
@@ -8678,7 +8108,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -8704,7 +8134,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e4869df08cbd",
@@ -8724,7 +8155,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "「/join」打不开。搜「微医 校招 杭州 测试」",
     "source": "企业官网",
@@ -8747,7 +8178,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -8773,7 +8204,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "c9e40e7726c6",
@@ -8797,7 +8229,7 @@
     ],
     "start_date": "2026-07-07",
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.threatbook.cn",
     "search_hint": "「/about/joinus」是 404。搜「微步在线 校招」；微信「微步在线招聘」",
     "source": "企业官网",
@@ -8820,7 +8252,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -8846,7 +8278,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "6650f01824d9",
@@ -8866,7 +8299,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://careers.microsoft.com/students",
     "search_hint": "打开 careers.microsoft.com/students，地点苏州，搜 SDET / Software Engineer",
     "source": "企业官网",
@@ -8889,7 +8322,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -8915,7 +8348,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "c5f0a237b87f",
@@ -8935,7 +8369,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.kuaishou.com",
     "search_hint": "打开 campus.kuaishou.com，搜「测试开发」；杭州有测开岗",
     "source": "智联校园",
@@ -8976,7 +8410,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -9013,7 +8447,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "0bda88cd4b30",
@@ -9034,7 +8469,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.aispeech.com",
     "search_hint": "「/join」会跳回首页。搜「思必驰 校招」；微信「思必驰招聘」",
     "source": "企业官网",
@@ -9057,7 +8492,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -9083,7 +8518,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "b625e117601c",
@@ -9103,7 +8539,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.smartsenstech.com/",
     "search_hint": "打开 campus.smartsenstech.com → 校招职位，搜「系统软件测试」；微信搜「思特威招聘」",
     "source": "猎聘",
@@ -9126,7 +8562,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -9152,7 +8588,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5ffcbdfa6d0a",
@@ -9176,7 +8613,7 @@
     ],
     "start_date": "2026-07-11",
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://app.mokahr.com/campus-recruitment/3peakic/67894?locale=zh-CN",
     "search_hint": "打开 mokahr 思瑞浦校招页，搜「研发测试」",
     "source": "企业官网",
@@ -9199,7 +8636,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -9225,7 +8662,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "03c0ef546eff",
@@ -9246,7 +8684,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.hundsun.com",
     "search_hint": "打开 campus.hundsun.com，搜「测试」或「测试开发」；微信搜「恒生电子招聘」",
     "source": "牛客网",
@@ -9266,10 +8704,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -9295,7 +8733,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "8b165b20f293",
@@ -9315,7 +8754,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E6%85%A7%E5%8D%9A%E4%BA%91%E9%80%9A%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「慧博云通 2027校招 测试」；微信搜「慧博云通招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -9338,7 +8777,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -9364,7 +8803,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "7a901e019c26",
@@ -9384,7 +8824,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E6%89%AC%E8%85%BE%E5%88%9B%E6%96%B0%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
     "search_hint": "百度搜「扬腾创新 2027校招 测试」；微信搜「扬腾创新招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -9407,7 +8847,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "秋招",
@@ -9433,7 +8873,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "dacdeb137f9f",
@@ -9453,7 +8894,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E6%8B%93%E6%94%BB%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「拓攻 2027校招 测试」；微信搜「拓攻招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -9476,7 +8917,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -9502,7 +8943,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "0f57c52fb7d9",
@@ -9526,7 +8968,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.cmbchina.com",
     "search_hint": "百度搜「招商银行 2027校招 测试」；微信搜「招商银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -9549,7 +8991,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -9575,76 +9017,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
-  },
-  {
-    "id": "20e856b65ce3",
-    "company": "招银网络科技",
-    "program": "校园招聘",
-    "cohort": "2027届",
-    "batch": "校招",
-    "recruitment_batch": "2027秋招",
-    "role_type": "测试开发",
-    "normalized_job_name": "测试开发",
-    "job_category": "测试开发",
-    "positions": [
-      "测试技术开发工程师"
-    ],
-    "locations": [
-      "杭州"
-    ],
-    "provinces": [
-      "浙江"
-    ],
-    "start_date": null,
-    "deadline": null,
-    "deadline_source": "",
-    "deadline_conflict": false,
-    "updated_at": "2026-08-23",
-    "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
-    "apply_url": "https://cmbnt.cmbchina.com/",
-    "search_hint": "打开 cmbnt.cmbchina.com，搜「测试技术开发」",
-    "source": "Boss直聘",
-    "sources": [
-      {
-        "type": "boss",
-        "url": "https://cmbnt.cmbchina.com/",
-        "found_at": "2026-08-23"
-      }
-    ],
-    "jd_source": "unknown",
-    "jd_raw_text": "",
-    "jd_reused_from": "",
-    "industry": "银行/金融",
-    "scale": "中厂",
-    "owner": "私企",
-    "status": "open",
-    "description": "",
-    "responsibilities": [],
-    "requirements": [],
-    "skills": [],
-    "salary": "",
-    "data_quality": {
-      "score": 25,
-      "level": "信息不足",
-      "has_jd": false,
-      "has_deadline": false,
-      "has_apply_url": true,
-      "has_official_source": false
-    },
-    "core_skills": [],
-    "core_responsibilities": [],
-    "education": "",
-    "major": [],
-    "experience": "",
-    "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
-    "job_domain": "unknown",
-    "job_domain_confidence": 0.0,
-    "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "c4845e67bbd1",
@@ -9665,7 +9039,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://careers.ctrip.com",
     "search_hint": "打开 careers.ctrip.com，搜「测试」",
     "source": "企业官网",
@@ -9688,7 +9062,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -9714,7 +9088,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "720ffd269d73",
@@ -9737,7 +9112,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://v.wjx.cn/vm/QN6R03l.aspx",
     "search_hint": "目前是问卷星收集表。失效就搜「斯达半导体 校招」",
     "source": "校招日历",
@@ -9760,7 +9135,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -9786,7 +9161,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "79ea6e706102",
@@ -9807,7 +9183,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.h3c.com/campus",
     "search_hint": "打开 career.h3c.com/campus，搜「测试」",
     "source": "企业官网",
@@ -9830,7 +9206,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -9856,7 +9232,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "ae020f8f71c9",
@@ -9879,7 +9256,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://career.h3c.com/campus",
     "search_hint": "打开 career.h3c.com/campus，搜「测试」",
     "source": "Boss直聘",
@@ -9902,7 +9279,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "性能测试",
     "job_category": "性能测试",
     "recruitment_batch": "社招",
@@ -9928,7 +9305,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "81bcf830363a",
@@ -9948,7 +9326,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「易思维 2027校招 算法测试」；微信搜「易思维招聘」",
     "source": "猎聘",
@@ -9971,7 +9349,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -9997,7 +9375,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e5cf66e97191",
@@ -10018,7 +9397,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.youzan.com/campus",
     "search_hint": "打开 job.youzan.com/campus，搜「测试」",
     "source": "企业官网",
@@ -10041,7 +9420,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -10067,7 +9446,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5f42b045cfdf",
@@ -10088,7 +9468,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.longshine.com",
     "search_hint": "搜「朗新集团 校招」；微信「朗新招聘」",
     "source": "企业官网",
@@ -10111,7 +9491,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -10137,7 +9517,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "1f15784cd738",
@@ -10158,7 +9539,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "没有稳定公开网申。搜「术锐机器人 校招 测试」；微信搜「术锐招聘」",
     "source": "猎聘",
@@ -10181,7 +9562,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -10207,7 +9588,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d360b690e485",
@@ -10227,7 +9609,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「杭州兆华电子 校招 软件测试」；微信搜「兆华电子招聘」",
     "source": "智联校园",
@@ -10235,35 +9617,10 @@
     "scale": "小厂",
     "owner": "私企",
     "status": "open",
-    "description": "测试执行与协助：参与声像仪等仪器仪表类产品的算法功能、逻辑及性能测试与测试环境、数据集日常维护工作；基础测试验证：协助完成产品核心算法、业务策略、数据运算精度、场景适配性、稳定性等常规测试任务，覆盖常规工况、边界工况及异常工况；文档与记录：协助编写产品测试用例及测试报告，并负责测试样机的日常管理与维护；研发测试支持：配合研发团队，参与定制样机、手板件的前期研发测试与数据收集",
-    "responsibilities": [
-      "测试执行与协助：参与声像仪等仪器仪表类产品的算法功能、逻辑及性能测试与测试环境、数据集日常维护工作",
-      "基础测试验证：协助完成产品核心算法、业务策略、数据运算精度、场景适配性、稳定性等常规测试任务，覆盖常规工况、边界工况及异常工况",
-      "文档与记录：协助编写产品测试用例及测试报告，并负责测试样机的日常管理与维护",
-      "研发测试支持：配合研发团队，参与定制样机、手板件的前期研发测试与数据收集",
-      "流程优化参与：在测试过程中积极思考，协助团队发现测试盲区，参与测试方案与流程的改善。",
-      "【任职资格】",
-      "专业背景：本科及其以上学历，电子信息、自动化、通信工程、测控技术与仪器等相关专业",
-      "理论基础：具备扎实的模拟/数字电路基础，了解常用电子元器件特性及基本硬件设计原理，以及产品的算法应用逻辑",
-      "动手能力：对算法测试有浓厚兴趣，在校期间有电子设计竞赛、实验室项目或相关实习经验者优先",
-      "仪器认知：了解万用表、示波器、直流电源等常用电子测试仪器的基本原理，有实际操作基础者加分",
-      "综合素质：工作严谨细致，具备较强的逻辑分析能力与沟通表达能力",
-      "善于从用户角度思考问题，有较强的学习意愿和抗压能力"
-    ],
-    "requirements": [
-      "专业背景：本科及其以上学历，电子信息、自动化、通信工程、测控技术与仪器等相关专业",
-      "理论基础：具备扎实的模拟/数字电路基础，了解常用电子元器件特性及基本硬件设计原理，以及产品的算法应用逻辑",
-      "动手能力：对算法测试有浓厚兴趣，在校期间有电子设计竞赛、实验室项目或相关实习经验者优先",
-      "仪器认知：了解万用表、示波器、直流电源等常用电子测试仪器的基本原理，有实际操作基础者加分",
-      "综合素质：工作严谨细致，具备较强的逻辑分析能力与沟通表达能力",
-      "善于从用户角度思考问题，有较强的学习意愿和抗压能力",
-      "待完善在线简历",
-      "使用AI简历优化功能，快速提升简历质量~"
-    ],
-    "skills": [
-      "用例设计",
-      "性能测试"
-    ],
+    "description": "",
+    "responsibilities": [],
+    "requirements": [],
+    "skills": [],
     "salary": "7000-12000元·14薪",
     "sources": [
       {
@@ -10275,7 +9632,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -10283,9 +9640,9 @@
     "deadline_conflict": false,
     "jd_reused_from": "",
     "data_quality": {
-      "score": 40,
+      "score": 10,
       "level": "信息不足",
-      "has_jd": true,
+      "has_jd": false,
       "has_deadline": false,
       "has_apply_url": false,
       "has_official_source": false
@@ -10314,6 +9671,7 @@
     "job_domain_confidence": 0.95,
     "excluded": false,
     "exclude_reason": "",
+    "jd_status": "no_jd",
     "jd_source_url": ""
   },
   {
@@ -10335,7 +9693,7 @@
     ],
     "start_date": "2026-07-15",
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://joulwatt.zhiye.com/",
     "search_hint": "打开 joulwatt.zhiye.com，搜「测试开发」",
     "source": "企业官网",
@@ -10358,7 +9716,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -10384,7 +9742,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5cfa3a5b6983",
@@ -10431,7 +9790,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-07-09",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -10457,7 +9816,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "04c7c1be34fd",
@@ -10477,7 +9837,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.jac.com.cn",
     "search_hint": "「/join」是错误页。搜「江淮汽车 校招」；微信「江淮招聘」",
     "source": "企业官网",
@@ -10500,7 +9860,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -10526,7 +9886,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "3418bbd0852e",
@@ -10547,7 +9908,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.insigma.com.cn",
     "search_hint": "官网没有独立校招入口。搜「浙大网新 校招」",
     "source": "企业官网",
@@ -10570,7 +9931,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -10596,7 +9957,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "ca84a2aaaad7",
@@ -10616,7 +9978,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「浙江民泰商业银行 校招 测试」；微信搜「民泰银行招聘」",
     "source": "智联校园",
@@ -10654,7 +10016,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -10689,6 +10051,7 @@
     "job_domain_confidence": 0.95,
     "excluded": false,
     "exclude_reason": "",
+    "jd_status": "has_jd",
     "jd_source_url": ""
   },
   {
@@ -10710,7 +10073,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campushr.hikvision.com",
     "search_hint": "打开 campushr.hikvision.com，搜「测试」",
     "source": "企业官网",
@@ -10733,7 +10096,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -10759,7 +10122,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "ac4227a59c01",
@@ -10779,7 +10143,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.tuya.com",
     "search_hint": "打开 job.tuya.com → 校园招聘；官网 /career 是 404。微信「涂鸦招聘」",
     "source": "企业官网",
@@ -10787,22 +10151,9 @@
     "scale": "中厂",
     "owner": "",
     "status": "open",
-    "description": "岗位职责：1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；4、能推动AI智能穿戴设备测试经验摸索和沉淀；职位要求：1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；4、掌握Python等编程语言，熟悉机器学习和深度学习算法，具备一定的数学和统计学基础；5、熟悉自然语言处理技术，包括语义理解、对话管理；6、对智能家居熟悉，如：WiFi产品、蓝牙产品、蜂窝产品；7、很强的责任心，良好的沟通能力和表达能力，能承受一定的工作压力。\n\n岗位职责：\n\n1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；\n\n2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；\n\n3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；\n\n4、能推动AI智能穿戴设备测试经验摸索和沉淀；\n\n\n\n\n职位要求：\n\n1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；\n\n2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；\n\n3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；\n\n4、掌握Python等编程语言，熟悉机器学习和深度学习算法，具备一定的数学和统计学基础；\n\n5、熟悉自然语言处理技术，包括语义理解、对话管理；\n\n6、对智能家居熟悉，如：WiFi产品、蓝牙产品、蜂窝产品；\n\n7、很强的责任心，良好的沟通能力和表达能力，能承受一定的工作压力。\n\n允许3个月内投递3个职位，请选择适合的职位进行投递\n立即投递\n30 行/页\n1\n前往  页\n最新职位\nAI硬件产品经理（智慧屏&网关）\nAI产品经理（照明）\n嵌入式开发工程师\n客户质量工程师（CQE）\n嵌入式开发工程师（Linux）\nAI产品经理\n工艺工程师\n采购工程师\n了解涂鸦\n关于我们\n关于我们\n行业百科\n行业百科\n最新动态\n最新动态\n支持\n帮助中心\n帮助中心\n在线咨询\n在线咨询\n技术支持\n技术支持\n联系我们\n加入我们\n加入我们\nApp 商城\nApp 商城\nTuyaExpo\nTuyaExpo\n涂鸦智能\n浙公网安备33010602004238号浙ICP备14011795号\n关注“涂鸦招聘”\n了解更多\n了解更多\n隐私政策与cookies政策\n我们使用cookies以便您在我们网站上获得更好的体验，继续使用此网站，表明您同意我们的《隐私协议》\n好的",
-    "responsibilities": [
-      "岗位职责：1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；4、能推动AI智能穿戴设备测试经验摸索和沉淀；"
-    ],
-    "requirements": [
-      "职位要求：1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；4、掌握Python等编程语言，熟悉机器学习和深度学习算法，具备一定的数学和统计学基础；5、熟悉自然语言处理技术，包括语义理解、对话管理；6、对智能家居熟悉，如：WiFi产品、蓝牙产品、蜂窝产品；7、很强的责任心，良好的沟通能力和表达能力，能承受一定的工作压力。",
-      "岗位职责：",
-      "1、负责智能产品的软件测试，保障智能设备硬件、重点客户项目质量；",
-      "2、具备良好的问题分析和解决能力，了解自然语言处理技术，能够进行语音交互功能的测试和验证；",
-      "3、具有良好的沟通能力、团队协作精神和责任心，能够与研发、硬件等团队密切配合，共同推进项目进展；",
-      "4、能推动AI智能穿戴设备测试经验摸索和沉淀；",
-      "职位要求：",
-      "1、26届本科及以上学历，计算机科学、电子工程、人工智能等相关专业。有智能硬件或相关领域测试经验优先；",
-      "2、了解计算机视觉、自然语言处理、语音识别等领域的技术和应用；有AI智能穿戴设备测试经验优先；",
-      "3、掌握语音识别技术，如声学模型、语言模型、解码器等基础原理，并具备相关算法优化测试能力；"
-    ],
+    "description": "",
+    "responsibilities": [],
+    "requirements": [],
     "skills": [],
     "salary": "",
     "sources": [
@@ -10812,10 +10163,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "browser",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -10836,12 +10187,13 @@
     "major": [],
     "experience": "",
     "graduation_year": "",
-    "jd_source_url": "https://app.mokahr.com/campus-recruitment/tuya/147434?locale=zh-CN#/jobs?zhineng%5B0%5D=208986",
-    "jd_updated_at": "2026-08-23",
+    "jd_source_url": "",
+    "jd_updated_at": "",
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "64df5447c808",
@@ -10863,7 +10215,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://app.mokahr.com/campus-recruitment/manbang",
     "search_hint": "打开 mokahr 满帮校招页，搜「测试」",
     "source": "企业官网",
@@ -10886,7 +10238,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -10912,7 +10264,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e625e6017c74",
@@ -10933,7 +10286,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "job.made-in-china.com 打不开。搜「焦点科技 校招 南京」；微信「焦点科技招聘」",
     "source": "企业官网",
@@ -10956,7 +10309,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -10982,7 +10335,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "c04d7f56e927",
@@ -11002,7 +10356,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E7%9D%BF%E5%88%9B%E5%BE%AE%E7%BA%B3%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
     "search_hint": "百度搜「睿创微纳 2027校招 测试」；微信搜「睿创微纳招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -11025,7 +10379,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "社招",
@@ -11051,7 +10405,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "f6c1b13fd306",
@@ -11072,7 +10427,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.ustcinfo.com",
     "search_hint": "「/join」证书报错。搜「科大国创 校招」；微信「科大国创招聘」",
     "source": "企业官网",
@@ -11095,7 +10450,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -11121,7 +10476,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "65f3bb68455f",
@@ -11142,7 +10498,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://jobs.mihoyo.com",
     "search_hint": "打开 jobs.mihoyo.com 或 campus.mihoyo.com，搜「测试」",
     "source": "企业官网",
@@ -11165,7 +10521,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -11191,7 +10547,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "777889b13c6d",
@@ -11211,7 +10568,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91",
     "search_hint": "国聘已挂「秋招测试开发工程师-南京」。也可搜「绿盟科技 2027校招」；微信「绿盟招聘」",
     "source": "国聘网",
@@ -11234,7 +10591,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -11260,7 +10617,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "3a25bc813569",
@@ -11280,7 +10638,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E7%BD%91%E5%95%86%E9%93%B6%E8%A1%8C%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
     "search_hint": "百度搜「网商银行 2027校招 测试」；微信搜「网商银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -11303,7 +10661,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "2027秋招",
@@ -11329,7 +10687,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d99901d774c7",
@@ -11351,7 +10710,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.163.com",
     "search_hint": "打开 campus.163.com，搜「测试」；雷火另见 leihuo.163.com/campus",
     "source": "企业官网",
@@ -11374,7 +10733,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -11400,7 +10759,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "5ddeb376a075",
@@ -11420,7 +10780,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E8%80%81%E4%B9%A1%E9%B8%A1%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101220100",
     "search_hint": "百度搜「老乡鸡 2027校招 测试」；微信搜「老乡鸡招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -11443,7 +10803,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -11469,7 +10829,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "33a2f3f53d6b",
@@ -11491,7 +10852,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://casic.zhiye.com",
     "search_hint": "百度搜「航天科工 2027校招 测试」；微信搜「航天科工招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -11514,7 +10875,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -11540,7 +10901,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "d14d98215a93",
@@ -11561,7 +10923,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.suning.com",
     "search_hint": "官网可能 403。搜「苏宁易购 校招」；微信「苏宁招聘」",
     "source": "企业官网",
@@ -11584,7 +10946,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -11610,7 +10972,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "dde2dd0836ca",
@@ -11632,7 +10995,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.nio.com",
     "search_hint": "打开 campus.nio.com，搜「测试」",
     "source": "企业官网",
@@ -11655,7 +11018,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -11681,7 +11044,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "0bedce7543a4",
@@ -11701,7 +11065,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhipin.com/web/geek/job?query=%E8%AF%9A%E8%BF%88%E7%A7%91%E6%8A%80%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
     "search_hint": "百度搜「诚迈科技 2027校招 测试」；微信搜「诚迈科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "Boss直聘",
@@ -11724,7 +11088,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -11750,7 +11114,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "54084898860b",
@@ -11770,7 +11135,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
     "search_hint": "百度搜「赛迪软件测评 2027校招 测试」；微信搜「赛迪软件测评招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联招聘",
@@ -11817,7 +11182,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -11855,7 +11220,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "ac62f9542156",
@@ -11875,7 +11241,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「超云数字 南京 测试」；微信搜「超云招聘」",
     "source": "前程无忧",
@@ -11898,7 +11264,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "实习",
@@ -11924,7 +11290,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "baeb7cd1f599",
@@ -11945,7 +11312,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
     "search_hint": "百度搜「软通动力 2027校招 测试」；微信搜「软通动力招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "智联招聘",
@@ -11985,7 +11352,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -12025,7 +11392,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "has_jd"
   },
   {
     "id": "876eb7b6447f",
@@ -12046,7 +11414,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://www.lianlianpay.com",
     "search_hint": "「/join」是 404。搜「连连数字 校招」；微信「连连招聘」",
     "source": "企业官网",
@@ -12069,7 +11437,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -12095,7 +11463,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "c3bcabf51d33",
@@ -12116,7 +11485,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "campus.tuniu.com 打不开。搜「途牛 校招 南京」",
     "source": "企业官网",
@@ -12139,7 +11508,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -12165,7 +11534,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "914737f4b032",
@@ -12187,7 +11557,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus.kingdee.com",
     "search_hint": "打开 campus.kingdee.com，搜「测试」",
     "source": "企业官网",
@@ -12207,10 +11577,10 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "",
+    "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -12236,7 +11606,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "bd69fd8da191",
@@ -12256,7 +11627,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://cxmt.zhiye.com",
     "search_hint": "百度搜「长鑫存储 2027校招 测试」；微信搜「长鑫存储招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -12279,7 +11650,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -12305,7 +11676,8 @@
     "job_domain": "unknown",
     "job_domain_confidence": 0.0,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "7c8bf3c9ae18",
@@ -12326,7 +11698,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://jobs.sungrowpower.com",
     "search_hint": "打开 jobs.sungrowpower.com；官网 /join 是 404",
     "source": "企业官网",
@@ -12349,7 +11721,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -12375,7 +11747,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "3d3dace55062",
@@ -12395,7 +11768,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://jobs.sungrowpower.com",
     "search_hint": "打开 jobs.sungrowpower.com；官网 /join 是 404",
     "source": "Boss直聘",
@@ -12418,7 +11791,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "社招",
@@ -12444,7 +11817,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "4c3eba454077",
@@ -12467,7 +11841,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://campus-talent.alibaba.com/?lang=zh",
     "search_hint": "打开 campus-talent.alibaba.com，搜「测试开发」或「质量保障」",
     "source": "企业官网",
@@ -12490,7 +11864,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "测试开发",
     "job_category": "测试开发",
     "recruitment_batch": "正式批",
@@ -12516,7 +11890,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "e0cd99dfddcf",
@@ -12536,7 +11911,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「集益威半导体 2027校招 软件测试」；微信搜「集益威招聘」",
     "source": "猎聘",
@@ -12559,7 +11934,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -12585,7 +11960,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "69e0885021dd",
@@ -12605,7 +11981,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": "https://job.leapmotor.com",
     "search_hint": "百度搜「零跑汽车 2027校招 测试」；微信搜「零跑汽车招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
@@ -12628,7 +12004,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -12654,7 +12030,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "82b20ae7f699",
@@ -12674,7 +12051,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「麦科田 2027校招 软件测试」；微信搜「麦科田招聘」。南京江宁有校招软件测试岗",
     "source": "前程无忧",
@@ -12697,7 +12074,7 @@
     "jd_source": "unknown",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -12723,7 +12100,8 @@
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
-    "exclude_reason": ""
+    "exclude_reason": "",
+    "jd_status": "no_jd"
   },
   {
     "id": "9b6de8c629ae",
@@ -12747,7 +12125,7 @@
     ],
     "start_date": null,
     "deadline": null,
-    "updated_at": "2026-08-23",
+    "updated_at": "2026-08-24",
     "apply_url": null,
     "search_hint": "搜「龙旗科技 2027校招 软件测试」；微信搜「龙旗招聘」→ 校园招聘",
     "source": "智联校园",
@@ -12799,7 +12177,7 @@
     "jd_source": "zhaopin",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
-    "last_seen_at": "2026-08-23",
+    "last_seen_at": "2026-08-24",
     "normalized_job_name": "软件测试",
     "job_category": "软件测试",
     "recruitment_batch": "正式批",
@@ -12838,6 +12216,7 @@
     "job_domain_confidence": 0.95,
     "excluded": false,
     "exclude_reason": "",
+    "jd_status": "has_jd",
     "jd_source_url": ""
   }
 ]
