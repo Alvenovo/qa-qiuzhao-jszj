@@ -5,7 +5,7 @@
   "program": "中国交易与广告 2027校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -23,9 +23,9 @@
   "deadline": "2026-09-09",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://jobs.bytedance.com/campus/position?keywords=%E6%B5%8B%E8%AF%95",
   "search_hint": "打开 jobs.bytedance.com/campus，关键词「测试」",
   "source": "企业官网",
@@ -33,7 +33,7 @@
    {
     "type": "official",
     "url": "https://jobs.bytedance.com/campus/position?keywords=%E6%B5%8B%E8%AF%95",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -62,7 +62,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "游戏测试",
   "job_category": "游戏测试",
@@ -79,9 +79,9 @@
   "deadline": "2026-09-08",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.game.163.com/",
   "search_hint": "打开 campus.game.163.com，搜「测试」",
   "source": "企业官网",
@@ -89,7 +89,7 @@
    {
     "type": "official",
     "url": "https://campus.game.163.com/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -118,7 +118,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -137,9 +137,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.163.com",
   "search_hint": "打开 campus.163.com，搜「测试」；雷火另见 leihuo.163.com/campus",
   "source": "企业官网",
@@ -147,7 +147,7 @@
    {
     "type": "official",
     "url": "https://campus.163.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -176,7 +176,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -194,9 +194,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus-talent.alibaba.com/?lang=zh",
   "search_hint": "打开 campus-talent.alibaba.com，搜「测试开发」或「质量保障」",
   "source": "企业官网",
@@ -204,7 +204,7 @@
    {
     "type": "official",
     "url": "https://campus-talent.alibaba.com/?lang=zh",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -233,7 +233,7 @@
   "program": "2027校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "质量保障",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -251,9 +251,9 @@
   "deadline": "2026-09-07",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://talent.antgroup.com",
   "search_hint": "打开 talent.antgroup.com，校招搜「质量保障」或「测试开发」",
   "source": "企业官网",
@@ -261,7 +261,7 @@
    {
     "type": "official",
     "url": "https://talent.antgroup.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -290,7 +290,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -308,9 +308,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campushr.hikvision.com",
   "search_hint": "打开 campushr.hikvision.com，搜「测试」",
   "source": "企业官网",
@@ -318,7 +318,7 @@
    {
     "type": "official",
     "url": "https://campushr.hikvision.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -347,7 +347,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -365,9 +365,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.dahuatech.com/about/join.html",
   "search_hint": "打开 dahuatech.com/about/join.html，搜「测试」",
   "source": "企业官网",
@@ -375,7 +375,7 @@
    {
     "type": "official",
     "url": "https://www.dahuatech.com/about/join.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -404,7 +404,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -422,9 +422,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.10jqka.com.cn/campus.html",
   "search_hint": "打开 job.10jqka.com.cn/campus.html，搜「测试」",
   "source": "企业官网",
@@ -432,7 +432,7 @@
    {
     "type": "official",
     "url": "https://job.10jqka.com.cn/campus.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -461,7 +461,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -479,9 +479,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.h3c.com/campus",
   "search_hint": "打开 career.h3c.com/campus，搜「测试」",
   "source": "企业官网",
@@ -489,7 +489,7 @@
    {
     "type": "official",
     "url": "https://career.h3c.com/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -518,7 +518,7 @@
   "program": "2027秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -535,9 +535,9 @@
   "deadline": "2026-09-20",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://cmbnt.cmbchina.com/",
   "search_hint": "打开 cmbnt.cmbchina.com，搜「测试技术开发」",
   "source": "企业官网",
@@ -545,7 +545,7 @@
    {
     "type": "official",
     "url": "https://cmbnt.cmbchina.com/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -574,7 +574,7 @@
   "program": "社会招聘/校招通道",
   "cohort": "不限",
   "batch": "其他",
-  "recruitment_batch": "其他",
+  "recruitment_batch": "社招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -591,9 +591,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://app.mokahr.com/social-recruitment/high-flyer/140576",
   "search_hint": "打开 mokahr 高飞招聘页，搜「测试开发」",
   "source": "企业官网",
@@ -601,7 +601,7 @@
    {
     "type": "official",
     "url": "https://app.mokahr.com/social-recruitment/high-flyer/140576",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -630,7 +630,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -651,9 +651,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
   "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
   "source": "企业官网",
@@ -661,7 +661,7 @@
    {
     "type": "official",
     "url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -690,7 +690,7 @@
   "program": "2027届未来领军人才",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -709,9 +709,9 @@
   "deadline": "2026-08-29",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.zte.com.cn",
   "search_hint": "打开 job.zte.com.cn → 校园招聘，搜「测试」；微信搜「中兴通讯招聘」",
   "source": "企业官网",
@@ -719,7 +719,7 @@
    {
     "type": "official",
     "url": "https://job.zte.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -748,7 +748,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "提前批",
-  "recruitment_batch": "提前批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -765,9 +765,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://recruit.sinovatio.com",
   "search_hint": "打开 recruit.sinovatio.com，找校园招聘/学生通道",
   "source": "企业官网",
@@ -775,7 +775,7 @@
    {
     "type": "official",
     "url": "https://recruit.sinovatio.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -804,7 +804,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -823,9 +823,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://app.mokahr.com/campus-recruitment/manbang",
   "search_hint": "打开 mokahr 满帮校招页，搜「测试」",
   "source": "企业官网",
@@ -833,7 +833,7 @@
    {
     "type": "official",
     "url": "https://app.mokahr.com/campus-recruitment/manbang",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -862,7 +862,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -881,9 +881,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.threatbook.cn",
   "search_hint": "「/about/joinus」是 404。搜「微步在线 校招」；微信「微步在线招聘」",
   "source": "企业官网",
@@ -891,7 +891,7 @@
    {
     "type": "official",
     "url": "https://www.threatbook.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -920,7 +920,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -939,9 +939,9 @@
   "deadline": "2026-09-07",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://horizon.hotjob.cn",
   "search_hint": "打开 horizon.hotjob.cn，搜「测试」",
   "source": "企业官网",
@@ -949,7 +949,7 @@
    {
     "type": "official",
     "url": "https://horizon.hotjob.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -978,7 +978,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -998,9 +998,9 @@
   "deadline": "2027-06-01",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://talent.baidu.com",
   "search_hint": "打开 talent.baidu.com，切校园招聘搜「测试」",
   "source": "企业官网",
@@ -1008,7 +1008,7 @@
    {
     "type": "official",
     "url": "https://talent.baidu.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1037,7 +1037,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1057,9 +1057,9 @@
   "deadline": "2026-10-13",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.iflytek.com",
   "search_hint": "打开 campus.iflytek.com 或 iflytek.zhiye.com，搜「测试」",
   "source": "企业官网",
@@ -1067,7 +1067,7 @@
    {
     "type": "official",
     "url": "https://campus.iflytek.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1096,7 +1096,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1113,9 +1113,9 @@
   "deadline": "2026-10-13",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.didiglobal.com",
   "search_hint": "打开 campus.didiglobal.com，搜「测试」",
   "source": "企业官网",
@@ -1123,7 +1123,7 @@
    {
     "type": "official",
     "url": "https://campus.didiglobal.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1152,7 +1152,7 @@
   "program": "2027届信动力计划",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1172,9 +1172,9 @@
   "deadline": "2026-09-30",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://jobs.hisense.com",
   "search_hint": "打开 jobs.hisense.com → 校园招聘-信动力计划；微信「海信集团招聘」。旧链接 hisense.zhiye.com/campus 是 404",
   "source": "企业官网",
@@ -1182,7 +1182,7 @@
    {
     "type": "official",
     "url": "https://jobs.hisense.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1211,7 +1211,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1228,9 +1228,9 @@
   "deadline": "2026-09-16",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.edianyun.com",
   "search_hint": "「/campus」是 404。搜「易点云 2027校招 测试」；微信搜「易点云招聘」",
   "source": "三方校招日历",
@@ -1238,7 +1238,7 @@
    {
     "type": "calendar",
     "url": "https://www.edianyun.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1267,7 +1267,7 @@
   "program": "2027校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1284,9 +1284,9 @@
   "deadline": "2026-09-21",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "域名打不开。邮箱 hr@sepoch.cn；微信搜「箭元科技招聘」；搜「箭元 2027校招」",
   "source": "三方校招日历",
@@ -1294,7 +1294,7 @@
    {
     "type": "calendar",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1323,7 +1323,7 @@
   "program": "2027届提前批",
   "cohort": "2027届",
   "batch": "提前批",
-  "recruitment_batch": "提前批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1340,9 +1340,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://naura.zhiye.com",
   "search_hint": "打开 naura.zhiye.com（不要加 /campus，那是 404），搜「测试」",
   "source": "企业官网",
@@ -1350,7 +1350,7 @@
    {
     "type": "official",
     "url": "https://naura.zhiye.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1379,7 +1379,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1398,9 +1398,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://app.mokahr.com/campus-recruitment/3peakic/67894?locale=zh-CN",
   "search_hint": "打开 mokahr 思瑞浦校招页，搜「研发测试」",
   "source": "企业官网",
@@ -1408,7 +1408,7 @@
    {
     "type": "official",
     "url": "https://app.mokahr.com/campus-recruitment/3peakic/67894?locale=zh-CN",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1437,7 +1437,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -1455,9 +1455,9 @@
   "deadline": "2026-12-31",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.hr.xiaomi.com",
   "search_hint": "打开 campus.hr.xiaomi.com，搜「测试」",
   "source": "企业官网",
@@ -1465,7 +1465,7 @@
    {
     "type": "official",
     "url": "https://campus.hr.xiaomi.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1494,7 +1494,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1511,9 +1511,9 @@
   "deadline": "2026-08-25",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.sicarrier.com",
   "search_hint": "打开 career.sicarrier.com → 校园招聘；或微信搜「新凯来招聘」",
   "source": "三方校招日历",
@@ -1521,7 +1521,7 @@
    {
     "type": "calendar",
     "url": "https://career.sicarrier.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1550,7 +1550,7 @@
   "program": "星锐计划",
   "cohort": "2027届",
   "batch": "提前批",
-  "recruitment_batch": "提前批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1567,9 +1567,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "百度搜「天锐星通 2027校招 测试」；微信搜「天锐星通招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "xixicc2027",
@@ -1577,7 +1577,7 @@
    {
     "type": "xixicc",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1606,7 +1606,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -1624,9 +1624,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://joulwatt.zhiye.com/",
   "search_hint": "打开 joulwatt.zhiye.com，搜「测试开发」",
   "source": "企业官网",
@@ -1634,7 +1634,7 @@
    {
     "type": "official",
     "url": "https://joulwatt.zhiye.com/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1663,7 +1663,7 @@
   "program": "campus-2027",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -1680,9 +1680,9 @@
   "deadline": "2027-06-30",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.hirain.com",
   "search_hint": "hire.hirain.com 解析失败。搜「经纬恒润 校招」或微信「经纬恒润招聘」；国聘也能搜到",
   "source": "企业官网",
@@ -1690,7 +1690,7 @@
    {
     "type": "official",
     "url": "https://www.hirain.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1719,7 +1719,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -1737,9 +1737,9 @@
   "deadline": "2026-09-09",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.bosch.com.cn/careers/",
   "search_hint": "打开 bosch.com.cn/careers；搜「博世中国 校招 无锡 测试」",
   "source": "企业官网",
@@ -1747,7 +1747,7 @@
    {
     "type": "official",
     "url": "https://www.bosch.com.cn/careers/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1776,7 +1776,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1793,9 +1793,9 @@
   "deadline": "2026-09-11",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.ciqtek.com",
   "search_hint": "网申页 404。简历发 hr@ciqtek.com（无锡 hr-wx@ciqtek.com）；微信搜「国仪量子招聘」",
   "source": "校招日历",
@@ -1803,7 +1803,7 @@
    {
     "type": "calendar",
     "url": "https://www.ciqtek.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1832,7 +1832,7 @@
   "program": "2027校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1849,9 +1849,9 @@
   "deadline": "2026-10-30",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zh-jieli.com",
   "search_hint": "「/join」是 404。搜「杰理科技 校招」；微信「杰理科技招聘」",
   "source": "校招日历",
@@ -1859,7 +1859,7 @@
    {
     "type": "calendar",
     "url": "https://www.zh-jieli.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1888,7 +1888,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1906,9 +1906,9 @@
   "deadline": "2026-10-03",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://cksic.zhiye.com/campus",
   "search_hint": "打开 cksic.zhiye.com/campus，搜「测试」",
   "source": "企业官网",
@@ -1916,7 +1916,7 @@
    {
     "type": "official",
     "url": "https://cksic.zhiye.com/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -1945,7 +1945,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -1964,9 +1964,9 @@
   "deadline": "2027-06-30",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.dapustor.com",
   "search_hint": "搜「大普微电子 校招」；微信「大普微招聘」",
   "source": "校招日历",
@@ -1974,7 +1974,7 @@
    {
     "type": "calendar",
     "url": "https://www.dapustor.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2003,7 +2003,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2020,9 +2020,9 @@
   "deadline": "2026-10-31",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.htsc.com.cn",
   "search_hint": "打开 job.htsc.com.cn（证书可能报警，仍是官网）；搜「华泰证券 Fintech 校招 测试」",
   "source": "企业官网",
@@ -2030,7 +2030,7 @@
    {
     "type": "official",
     "url": "https://job.htsc.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2059,7 +2059,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2076,9 +2076,9 @@
   "deadline": "2026-09-30",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.honor.com",
   "search_hint": "打开 career.honor.com，切到校园招聘搜「测试」",
   "source": "企业官网",
@@ -2086,7 +2086,7 @@
    {
     "type": "official",
     "url": "https://career.honor.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2115,7 +2115,7 @@
   "program": "2027届校园招聘提前批",
   "cohort": "2027届",
   "batch": "提前批",
-  "recruitment_batch": "提前批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2132,9 +2132,9 @@
   "deadline": "2026-08-31",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "http://career.inspur.com/campus2026/campus.html",
   "search_hint": "官网常打不开。微信搜「浪潮招聘」→ 热招职位 → 校园招聘；或搜「浪潮 2027校招」",
   "source": "企业官网",
@@ -2142,7 +2142,7 @@
    {
     "type": "official",
     "url": "http://career.inspur.com/campus2026/campus.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2171,7 +2171,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2189,9 +2189,9 @@
   "deadline": "2026-09-01",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.espressif.com.cn/zh-hans/careers",
   "search_hint": "打开 espressif.com.cn → 加入我们；或搜「乐鑫科技 校招」",
   "source": "企业官网",
@@ -2199,7 +2199,7 @@
    {
     "type": "official",
     "url": "https://www.espressif.com.cn/zh-hans/careers",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2228,7 +2228,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2245,9 +2245,9 @@
   "deadline": "2026-09-25",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://momenta.jobs.feishu.cn",
   "search_hint": "打开 momenta.jobs.feishu.cn；官网 /career 是 404",
   "source": "校招日历",
@@ -2255,7 +2255,7 @@
    {
     "type": "calendar",
     "url": "https://momenta.jobs.feishu.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2284,7 +2284,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2301,9 +2301,9 @@
   "deadline": "2026-09-17",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "域名打不开。搜「武汉芯动科技 校招」或「INXHITEK 招聘」",
   "source": "校招日历",
@@ -2311,7 +2311,7 @@
    {
     "type": "calendar",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2340,7 +2340,7 @@
   "program": "2027届应届生招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2360,9 +2360,9 @@
   "deadline": "2026-10-17",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
   "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
   "source": "企业官网",
@@ -2370,7 +2370,7 @@
    {
     "type": "official",
     "url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2399,7 +2399,7 @@
   "program": "星核人才计划",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2416,9 +2416,9 @@
   "deadline": "2026-08-28",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "没有公开网申页。微信搜「群核科技招聘」→ 校园招聘 → 2027届校招",
   "source": "校招日历",
@@ -2426,7 +2426,7 @@
    {
     "type": "calendar",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2455,7 +2455,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -2473,9 +2473,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "campus.tuniu.com 打不开。搜「途牛 校招 南京」",
   "source": "企业官网",
@@ -2483,7 +2483,7 @@
    {
     "type": "official",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2512,7 +2512,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -2530,9 +2530,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "job.made-in-china.com 打不开。搜「焦点科技 校招 南京」；微信「焦点科技招聘」",
   "source": "企业官网",
@@ -2540,7 +2540,7 @@
    {
     "type": "official",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2569,7 +2569,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -2587,9 +2587,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.suning.com",
   "search_hint": "官网可能 403。搜「苏宁易购 校招」；微信「苏宁招聘」",
   "source": "企业官网",
@@ -2597,7 +2597,7 @@
    {
     "type": "official",
     "url": "https://campus.suning.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2626,7 +2626,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -2644,9 +2644,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://zhaopin.sgcc.com.cn",
   "search_hint": "南瑞官网经常进不去。走国家电网招聘 zhaopin.sgcc.com.cn 选南瑞；或微信「南瑞招聘」",
   "source": "企业官网",
@@ -2654,7 +2654,7 @@
    {
     "type": "official",
     "url": "https://zhaopin.sgcc.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2683,7 +2683,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2701,9 +2701,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.longshine.com",
   "search_hint": "搜「朗新集团 校招」；微信「朗新招聘」",
   "source": "企业官网",
@@ -2711,7 +2711,7 @@
    {
     "type": "official",
     "url": "https://www.longshine.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2740,7 +2740,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -2758,9 +2758,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.supcon.com",
   "search_hint": "「/join」不一定能进职位。搜「中控技术 2027校招」；微信「中控招聘」",
   "source": "企业官网",
@@ -2768,7 +2768,7 @@
    {
     "type": "official",
     "url": "https://www.supcon.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2797,7 +2797,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2818,9 +2818,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.uniview.com/cn/about/join/",
   "search_hint": "打开 uniview.com/cn/about/join/，搜「测试」",
   "source": "企业官网",
@@ -2828,7 +2828,7 @@
    {
     "type": "official",
     "url": "https://www.uniview.com/cn/about/join/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2857,7 +2857,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -2874,9 +2874,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.tuya.com",
   "search_hint": "打开 job.tuya.com → 校园招聘；官网 /career 是 404。微信「涂鸦招聘」",
   "source": "企业官网",
@@ -2884,7 +2884,7 @@
    {
     "type": "official",
     "url": "https://job.tuya.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2913,7 +2913,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -2931,9 +2931,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.youzan.com/campus",
   "search_hint": "打开 job.youzan.com/campus，搜「测试」",
   "source": "企业官网",
@@ -2941,7 +2941,7 @@
    {
     "type": "official",
     "url": "https://job.youzan.com/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -2970,7 +2970,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -2988,9 +2988,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.lianlianpay.com",
   "search_hint": "「/join」是 404。搜「连连数字 校招」；微信「连连招聘」",
   "source": "企业官网",
@@ -2998,7 +2998,7 @@
    {
     "type": "official",
     "url": "https://www.lianlianpay.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3027,7 +3027,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3044,9 +3044,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "「/join」打不开。搜「微医 校招 杭州 测试」",
   "source": "企业官网",
@@ -3054,7 +3054,7 @@
    {
     "type": "official",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3083,7 +3083,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -3101,9 +3101,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.insigma.com.cn",
   "search_hint": "官网没有独立校招入口。搜「浙大网新 校招」",
   "source": "企业官网",
@@ -3111,7 +3111,7 @@
    {
     "type": "official",
     "url": "https://www.insigma.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3140,7 +3140,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -3158,9 +3158,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.aispeech.com",
   "search_hint": "「/join」会跳回首页。搜「思必驰 校招」；微信「思必驰招聘」",
   "source": "企业官网",
@@ -3168,7 +3168,7 @@
    {
     "type": "official",
     "url": "https://www.aispeech.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3197,7 +3197,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3216,9 +3216,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.kingdee.com",
   "search_hint": "打开 campus.kingdee.com，搜「测试」",
   "source": "企业官网",
@@ -3226,7 +3226,7 @@
    {
     "type": "official",
     "url": "https://campus.kingdee.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3255,7 +3255,7 @@
   "program": "2027 Campus",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -3272,9 +3272,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://careers.microsoft.com/students",
   "search_hint": "打开 careers.microsoft.com/students，地点苏州，搜 SDET / Software Engineer",
   "source": "企业官网",
@@ -3282,7 +3282,7 @@
    {
     "type": "official",
     "url": "https://careers.microsoft.com/students",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3311,7 +3311,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3328,9 +3328,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.samsungcareers.com",
   "search_hint": "打开 samsungcareers.com，地区选中国/苏州，搜 Test 或「测试」",
   "source": "企业官网",
@@ -3338,7 +3338,7 @@
    {
     "type": "official",
     "url": "https://www.samsungcareers.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3367,7 +3367,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3387,9 +3387,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://v.wjx.cn/vm/QN6R03l.aspx",
   "search_hint": "目前是问卷星收集表。失效就搜「斯达半导体 校招」",
   "source": "校招日历",
@@ -3397,7 +3397,7 @@
    {
     "type": "calendar",
     "url": "https://v.wjx.cn/vm/QN6R03l.aspx",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3426,7 +3426,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3443,9 +3443,9 @@
   "deadline": "2026-08-23",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.happyelements.com/jobs",
   "search_hint": "打开 happyelements.com/jobs；打不开就搜「乐元素 校招」",
   "source": "校招日历",
@@ -3453,7 +3453,7 @@
    {
     "type": "calendar",
     "url": "https://www.happyelements.com/jobs",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3482,7 +3482,7 @@
   "program": "2027届全球校园招聘提前批",
   "cohort": "2027届",
   "batch": "提前批",
-  "recruitment_batch": "提前批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3499,9 +3499,9 @@
   "deadline": "2026-08-31",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.robosense.ai/about/joinus",
   "search_hint": "打开 robosense.ai/about/joinus；或搜「速腾聚创 mokahr」进入官方招聘系统",
   "source": "校招日历",
@@ -3509,7 +3509,7 @@
    {
     "type": "calendar",
     "url": "https://www.robosense.ai/about/joinus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3538,7 +3538,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -3555,9 +3555,9 @@
   "deadline": "2026-08-31",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://ctyun.hotjob.cn",
   "search_hint": "打开 ctyun.hotjob.cn，应聘类型选「2027届校园招聘」，搜「测试开发」；微信搜「中国电信天翼云招聘」",
   "source": "企业官网",
@@ -3565,7 +3565,7 @@
    {
     "type": "official",
     "url": "https://ctyun.hotjob.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3594,7 +3594,7 @@
   "program": "2027秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3611,9 +3611,9 @@
   "deadline": "2026-09-15",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.deeproute.cn",
   "search_hint": "打开 campus.deeproute.cn；或微信搜「元戎启行招聘」",
   "source": "校招日历",
@@ -3621,7 +3621,7 @@
    {
     "type": "calendar",
     "url": "https://campus.deeproute.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3650,7 +3650,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -3667,9 +3667,9 @@
   "deadline": "2026-09-15",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.transwarp.cn",
   "search_hint": "「/join」是 404。搜「星环科技 2027校招」或微信「星环科技招聘」",
   "source": "企业官网",
@@ -3677,7 +3677,7 @@
    {
     "type": "official",
     "url": "https://www.transwarp.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3706,7 +3706,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "渗透测试",
   "job_category": "渗透测试",
@@ -3724,9 +3724,9 @@
   "deadline": "2026-09-17",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.qycloud.com.cn",
   "search_hint": "官网没有独立校招页。搜「启云方 2027校招」或微信「启云方招聘」",
   "source": "校招日历",
@@ -3734,7 +3734,7 @@
    {
     "type": "calendar",
     "url": "https://www.qycloud.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3763,7 +3763,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3782,9 +3782,9 @@
   "deadline": "2026-10-04",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "semiconductor-test.com 不是招聘站。搜「上海精测半导体 校招」或「精测电子 招聘」",
   "source": "校招日历",
@@ -3792,7 +3792,7 @@
    {
     "type": "calendar",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3821,7 +3821,7 @@
   "program": "2027届应届生招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3840,9 +3840,9 @@
   "deadline": "2026-10-12",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "官网 403。搜「华芯程科技 校招」或微信「华芯程招聘」",
   "source": "校招日历",
@@ -3850,7 +3850,7 @@
    {
     "type": "calendar",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3879,7 +3879,7 @@
   "program": "2027校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3896,9 +3896,9 @@
   "deadline": "2026-11-14",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://talent.lenovo.com.cn/campus",
   "search_hint": "打开 talent.lenovo.com.cn/campus，搜「测试」",
   "source": "企业官网",
@@ -3906,7 +3906,7 @@
    {
     "type": "official",
     "url": "https://talent.lenovo.com.cn/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3935,7 +3935,7 @@
   "program": "2027拓疆者校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -3952,9 +3952,9 @@
   "deadline": "2026-12-31",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://we.dji.com/zh-CN/campus",
   "search_hint": "打开 we.dji.com/zh-CN/campus 或 careers.dji.com，搜「测试」",
   "source": "企业官网",
@@ -3962,7 +3962,7 @@
    {
     "type": "official",
     "url": "https://we.dji.com/zh-CN/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -3991,7 +3991,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4009,9 +4009,9 @@
   "deadline": "2026-08-23",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://careers.pddglobalhr.com/campus",
   "search_hint": "打开 careers.pddglobalhr.com/campus，搜「测试」或「质量保障」",
   "source": "企业官网",
@@ -4019,7 +4019,7 @@
    {
     "type": "official",
     "url": "https://careers.pddglobalhr.com/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4048,7 +4048,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4066,9 +4066,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://careers.ctrip.com",
   "search_hint": "打开 careers.ctrip.com，搜「测试」",
   "source": "企业官网",
@@ -4076,7 +4076,7 @@
    {
     "type": "official",
     "url": "https://careers.ctrip.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4105,7 +4105,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4123,9 +4123,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://jobs.bilibili.com/campus",
   "search_hint": "打开 jobs.bilibili.com/campus，搜「测试」",
   "source": "企业官网",
@@ -4133,7 +4133,7 @@
    {
     "type": "official",
     "url": "https://jobs.bilibili.com/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4162,7 +4162,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4180,9 +4180,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://jobs.mihoyo.com",
   "search_hint": "打开 jobs.mihoyo.com 或 campus.mihoyo.com，搜「测试」",
   "source": "企业官网",
@@ -4190,7 +4190,7 @@
    {
     "type": "official",
     "url": "https://jobs.mihoyo.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4219,7 +4219,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4237,9 +4237,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.sensetime.com/cn",
   "search_hint": "「/join」是 404。搜「商汤科技 校招」；微信「商汤招聘」",
   "source": "企业官网",
@@ -4247,7 +4247,7 @@
    {
     "type": "official",
     "url": "https://www.sensetime.com/cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4276,7 +4276,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4294,9 +4294,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "job.ximalaya.com 打不开。搜「喜马拉雅 校招」；微信「喜马拉雅招聘」",
   "source": "企业官网",
@@ -4304,7 +4304,7 @@
    {
     "type": "official",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4333,7 +4333,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -4351,9 +4351,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://smics.zhiye.com/campus",
   "search_hint": "打开 smics.zhiye.com/campus；微信「中芯国际微招聘」。旧域名 campus.smics.com 打不开",
   "source": "企业官网",
@@ -4361,7 +4361,7 @@
    {
     "type": "official",
     "url": "https://smics.zhiye.com/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4390,7 +4390,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4409,9 +4409,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.nio.com",
   "search_hint": "打开 campus.nio.com，搜「测试」",
   "source": "企业官网",
@@ -4419,7 +4419,7 @@
    {
     "type": "official",
     "url": "https://campus.nio.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4448,7 +4448,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -4466,9 +4466,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://jobs.sungrowpower.com",
   "search_hint": "打开 jobs.sungrowpower.com；官网 /join 是 404",
   "source": "企业官网",
@@ -4476,7 +4476,7 @@
    {
     "type": "official",
     "url": "https://jobs.sungrowpower.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4505,7 +4505,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4524,9 +4524,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "campus.chery.cn 打不开。搜「奇瑞 2027校招」；微信「奇瑞招聘」",
   "source": "企业官网",
@@ -4534,7 +4534,7 @@
    {
     "type": "official",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4563,7 +4563,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -4580,9 +4580,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.jac.com.cn",
   "search_hint": "「/join」是错误页。搜「江淮汽车 校招」；微信「江淮招聘」",
   "source": "企业官网",
@@ -4590,7 +4590,7 @@
    {
     "type": "official",
     "url": "https://www.jac.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4619,7 +4619,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4637,9 +4637,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.ustcinfo.com",
   "search_hint": "「/join」证书报错。搜「科大国创 校招」；微信「科大国创招聘」",
   "source": "企业官网",
@@ -4647,7 +4647,7 @@
    {
     "type": "official",
     "url": "https://www.ustcinfo.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4676,7 +4676,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -4695,9 +4695,9 @@
   "deadline": "2026-09-11",
   "deadline_source": "calendar",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.ciqtek.com",
   "search_hint": "网申页 404。简历发 hr@ciqtek.com（无锡 hr-wx@ciqtek.com）；微信搜「国仪量子招聘」",
   "source": "校招日历",
@@ -4705,7 +4705,7 @@
    {
     "type": "calendar",
     "url": "https://www.ciqtek.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4734,7 +4734,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -4753,9 +4753,9 @@
   "deadline": "2026-10-13",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.iflytek.com",
   "search_hint": "打开 campus.iflytek.com 或 iflytek.zhiye.com，搜「测试」",
   "source": "企业官网",
@@ -4763,7 +4763,7 @@
    {
     "type": "official",
     "url": "https://campus.iflytek.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4792,7 +4792,7 @@
   "program": "2027校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -4809,9 +4809,9 @@
   "deadline": "2026-09-25",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.hirain.com",
   "search_hint": "hire.hirain.com 解析失败。搜「经纬恒润 校招」或微信「经纬恒润招聘」；国聘也能搜到",
   "source": "企业官网",
@@ -4819,7 +4819,7 @@
    {
     "type": "official",
     "url": "https://www.hirain.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4848,7 +4848,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -4865,9 +4865,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91",
   "search_hint": "国聘已挂「秋招测试开发工程师-南京」。也可搜「绿盟科技 2027校招」；微信「绿盟招聘」",
   "source": "国聘网",
@@ -4875,7 +4875,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4904,7 +4904,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -4921,9 +4921,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF",
   "search_hint": "国聘搜「中国航发商用航空发动机 测试技术岗」；或搜「航发商发 2027校招」",
   "source": "国聘网",
@@ -4931,7 +4931,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job?keyword=%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -4977,9 +4977,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job?keyword=%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95",
   "search_hint": "百度搜「中数联物流科技（上海） 2027校招 测试」；微信搜「中数联物流科技（上海）招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "国聘网",
@@ -4987,7 +4987,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job?keyword=%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5033,9 +5033,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job?keyword=%E9%AA%8C%E8%AF%81%E6%B5%8B%E8%AF%95",
   "search_hint": "百度搜「国药奇贝德（上海） 2027校招 测试」；微信搜「国药奇贝德（上海）招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "国聘网",
@@ -5043,7 +5043,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job?keyword=%E9%AA%8C%E8%AF%81%E6%B5%8B%E8%AF%95",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5072,7 +5072,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -5096,9 +5096,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://zhaopin.sgcc.com.cn",
   "search_hint": "打开 zhaopin.sgcc.com.cn，单位选江苏/浙江/南瑞，关键词「测试」",
   "source": "企业官网",
@@ -5106,7 +5106,7 @@
    {
     "type": "official",
     "url": "https://zhaopin.sgcc.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5135,7 +5135,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -5154,9 +5154,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://casic.zhiye.com",
   "search_hint": "百度搜「航天科工 2027校招 测试」；微信搜「航天科工招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -5164,7 +5164,7 @@
    {
     "type": "official",
     "url": "https://casic.zhiye.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5193,7 +5193,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -5216,9 +5216,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.chinatelecom.com.cn/jobs",
   "search_hint": "百度搜「中国电信 2027校招 测试」；微信搜「中国电信招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -5226,7 +5226,7 @@
    {
     "type": "official",
     "url": "https://www.chinatelecom.com.cn/jobs",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5255,7 +5255,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -5278,9 +5278,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.abchina.com.cn",
   "search_hint": "百度搜「中国农业银行 2027校招 测试」；微信搜「中国农业银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -5288,7 +5288,7 @@
    {
     "type": "official",
     "url": "https://career.abchina.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5317,7 +5317,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -5340,9 +5340,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.icbc.com.cn",
   "search_hint": "百度搜「工商银行 2027校招 测试」；微信搜「工商银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -5350,7 +5350,7 @@
    {
     "type": "official",
     "url": "https://job.icbc.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5379,7 +5379,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -5400,9 +5400,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.cmbchina.com",
   "search_hint": "百度搜「招商银行 2027校招 测试」；微信搜「招商银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -5410,7 +5410,7 @@
    {
     "type": "official",
     "url": "https://career.cmbchina.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5439,7 +5439,7 @@
   "program": "Blue IT",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -5456,9 +5456,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.njcb.com.cn",
   "search_hint": "百度搜「南京银行 2027校招 测试」；微信搜「南京银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -5466,7 +5466,7 @@
    {
     "type": "official",
     "url": "https://job.njcb.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5513,9 +5513,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job?keyword=%E4%B8%AD%E5%9B%BD%E7%94%B5%E7%A7%91",
   "search_hint": "国聘/Boss 搜「中国电科 测试 南京」。28所在 Boss 有软件测试员；50所校招在国聘",
   "source": "Boss直聘",
@@ -5523,7 +5523,7 @@
    {
     "type": "boss",
     "url": "https://www.iguopin.com/job?keyword=%E4%B8%AD%E5%9B%BD%E7%94%B5%E7%A7%91",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5569,9 +5569,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E8%AF%9A%E8%BF%88%E7%A7%91%E6%8A%80%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「诚迈科技 2027校招 测试」；微信搜「诚迈科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -5579,7 +5579,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E8%AF%9A%E8%BF%88%E7%A7%91%E6%8A%80%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5625,9 +5625,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E6%85%A7%E5%8D%9A%E4%BA%91%E9%80%9A%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「慧博云通 2027校招 测试」；微信搜「慧博云通招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -5635,7 +5635,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E6%85%A7%E5%8D%9A%E4%BA%91%E9%80%9A%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5682,9 +5682,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
   "search_hint": "百度搜「软通动力 2027校招 测试」；微信搜「软通动力招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联招聘",
@@ -5692,7 +5692,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5738,9 +5738,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E6%8B%93%E6%94%BB%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「拓攻 2027校招 测试」；微信搜「拓攻招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -5748,7 +5748,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E6%8B%93%E6%94%BB%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5794,9 +5794,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%8E%E8%8B%8F%E7%A7%91%E6%8A%80%20%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「华苏科技 2027校招 测试」；微信搜「华苏科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -5804,7 +5804,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%8E%E8%8B%8F%E7%A7%91%E6%8A%80%20%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5850,9 +5850,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E6%B5%B7%E6%B3%B0%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「南京海泰 2027校招 测试」；微信搜「南京海泰招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -5860,7 +5860,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E6%B5%B7%E6%B3%B0%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5906,9 +5906,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%A4%A9%E6%8E%A7%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「南京天控 2027校招 测试」；微信搜「南京天控招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -5916,7 +5916,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%A4%A9%E6%8E%A7%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -5962,9 +5962,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%8D%83%E4%B8%9A%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「南京千业 2027校招 测试」；微信搜「南京千业招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -5972,7 +5972,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%8D%83%E4%B8%9A%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6018,9 +6018,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%80%E7%B1%B3OA%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「一米OA 2027校招 测试」；微信搜「一米OA招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -6028,7 +6028,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%80%E7%B1%B3OA%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6074,9 +6074,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%AE%89%E5%B7%A5%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「南京安工信息 2027校招 测试」；微信搜「南京安工信息招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -6084,7 +6084,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E5%8D%97%E4%BA%AC%E5%AE%89%E5%B7%A5%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6130,9 +6130,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%AE%9E%E8%BF%9B%E6%99%BA%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「实进智 2027校招 测试」；微信搜「实进智招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -6140,7 +6140,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E5%AE%9E%E8%BF%9B%E6%99%BA%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6186,9 +6186,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://xiaoyuan.zhaopin.com/",
   "search_hint": "百度搜「国电南自 2027校招 测试」；微信搜「国电南自招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联校园",
@@ -6196,7 +6196,7 @@
    {
     "type": "zhaopin",
     "url": "https://xiaoyuan.zhaopin.com/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6242,9 +6242,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://xiaoyuan.zhaopin.com/",
   "search_hint": "百度搜「亚信科技 2027校招 测试」；微信搜「亚信科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联校园",
@@ -6252,7 +6252,7 @@
    {
     "type": "zhaopin",
     "url": "https://xiaoyuan.zhaopin.com/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6298,9 +6298,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
   "search_hint": "百度搜「南京职数通 2027校招 测试」；微信搜「南京职数通招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联招聘",
@@ -6308,7 +6308,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6354,9 +6354,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
   "search_hint": "百度搜「南京三坤软件 2027校招 测试」；微信搜「南京三坤软件招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联招聘",
@@ -6364,7 +6364,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6410,9 +6410,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
   "search_hint": "百度搜「赛迪软件测评 2027校招 测试」；微信搜「赛迪软件测评招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联招聘",
@@ -6420,7 +6420,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6466,9 +6466,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
   "search_hint": "百度搜「天阳科技 2027校招 测试」；微信搜「天阳科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联招聘",
@@ -6476,7 +6476,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6523,9 +6523,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
   "search_hint": "百度搜「外企德科 2027校招 测试」；微信搜「外企德科招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联招聘",
@@ -6533,7 +6533,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6579,9 +6579,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
   "search_hint": "百度搜「中节能大数据 2027校招 测试」；微信搜「中节能大数据招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "智联招聘",
@@ -6589,7 +6589,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.zhaopin.com/sou/jl635/kw%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/p1",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6618,7 +6618,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -6637,9 +6637,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://join.fanruan.com",
   "search_hint": "百度搜「帆软 2027校招 测试」；微信搜「帆软招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -6647,7 +6647,7 @@
    {
     "type": "official",
     "url": "https://join.fanruan.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6676,7 +6676,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -6693,9 +6693,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.leapmotor.com",
   "search_hint": "百度搜「零跑汽车 2027校招 测试」；微信搜「零跑汽车招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -6703,7 +6703,7 @@
    {
     "type": "official",
     "url": "https://job.leapmotor.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6732,7 +6732,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "游戏测试",
   "job_category": "游戏测试",
@@ -6749,9 +6749,9 @@
   "deadline": "2026-10-30",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.163.com",
   "search_hint": "打开 campus.163.com，搜「测试」；雷火另见 leihuo.163.com/campus",
   "source": "企业官网",
@@ -6759,7 +6759,7 @@
    {
     "type": "official",
     "url": "https://campus.163.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6788,7 +6788,7 @@
   "program": "2027校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -6805,9 +6805,9 @@
   "deadline": "2026-09-30",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://careers.shopee.cn",
   "search_hint": "百度搜「Shopee研发中心 2027校招 测试」；微信搜「Shopee研发中心招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -6815,7 +6815,7 @@
    {
     "type": "official",
     "url": "https://careers.shopee.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6844,7 +6844,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -6861,9 +6861,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://cxmt.zhiye.com",
   "search_hint": "百度搜「长鑫存储 2027校招 测试」；微信搜「长鑫存储招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -6871,7 +6871,7 @@
    {
     "type": "official",
     "url": "https://cxmt.zhiye.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6900,7 +6900,7 @@
   "program": "2027全球校招",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -6917,9 +6917,9 @@
   "deadline": "2026-10-30",
   "deadline_source": "official",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.envision-group.com",
   "search_hint": "百度搜「远景能源 2027校招 测试」；微信搜「远景能源招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "企业官网",
@@ -6927,7 +6927,7 @@
    {
     "type": "official",
     "url": "https://www.envision-group.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -6956,7 +6956,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "秋招",
-  "recruitment_batch": "秋招",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -6973,9 +6973,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
   "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
   "source": "Boss直聘",
@@ -6983,7 +6983,7 @@
    {
     "type": "boss",
     "url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7030,9 +7030,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://job.zte.com.cn",
   "search_hint": "打开 job.zte.com.cn → 校园招聘，搜「测试」；微信搜「中兴通讯招聘」",
   "source": "Boss直聘",
@@ -7040,7 +7040,7 @@
    {
     "type": "boss",
     "url": "https://job.zte.com.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7089,9 +7089,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.h3c.com/campus",
   "search_hint": "打开 career.h3c.com/campus，搜「测试」",
   "source": "Boss直聘",
@@ -7099,7 +7099,7 @@
    {
     "type": "boss",
     "url": "https://career.h3c.com/campus",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7145,9 +7145,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E8%87%BB%E8%9E%8D%E8%BD%AF%E4%BB%B6%20%E6%B5%8B%E8%AF%95&city=101190100",
   "search_hint": "百度搜「南京臻融软件 2027校招 测试」；微信搜「南京臻融软件招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7155,7 +7155,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E8%87%BB%E8%9E%8D%E8%BD%AF%E4%BB%B6%20%E6%B5%8B%E8%AF%95&city=101190100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7201,9 +7201,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://cmbnt.cmbchina.com/",
   "search_hint": "打开 cmbnt.cmbchina.com，搜「测试技术开发」",
   "source": "Boss直聘",
@@ -7211,7 +7211,7 @@
    {
     "type": "boss",
     "url": "https://cmbnt.cmbchina.com/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7240,7 +7240,7 @@
   "program": "秋招校招生",
   "cohort": "2027届",
   "batch": "秋招",
-  "recruitment_batch": "秋招",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -7257,9 +7257,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E6%89%AC%E8%85%BE%E5%88%9B%E6%96%B0%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
   "search_hint": "百度搜「扬腾创新 2027校招 测试」；微信搜「扬腾创新招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7267,7 +7267,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E6%89%AC%E8%85%BE%E5%88%9B%E6%96%B0%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7313,9 +7313,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E7%BD%91%E5%95%86%E9%93%B6%E8%A1%8C%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
   "search_hint": "百度搜「网商银行 2027校招 测试」；微信搜「网商银行招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7323,7 +7323,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E7%BD%91%E5%95%86%E9%93%B6%E8%A1%8C%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7369,9 +7369,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E5%85%A8%E6%9E%90%E6%99%BA%E7%AE%97%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
   "search_hint": "百度搜「全析智算 2027校招 测试」；微信搜「全析智算招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7379,7 +7379,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E5%85%A8%E6%9E%90%E6%99%BA%E7%AE%97%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101210100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7427,9 +7427,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
   "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
   "source": "Boss直聘",
@@ -7437,7 +7437,7 @@
    {
     "type": "boss",
     "url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7483,9 +7483,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%AD%E7%A7%BB%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
   "search_hint": "百度搜「中国移动 2027校招 测试」；微信搜「中国移动招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7493,7 +7493,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%AD%E7%A7%BB%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7539,9 +7539,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E7%9D%BF%E5%88%9B%E5%BE%AE%E7%BA%B3%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
   "search_hint": "百度搜「睿创微纳 2027校招 测试」；微信搜「睿创微纳招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7549,7 +7549,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E7%9D%BF%E5%88%9B%E5%BE%AE%E7%BA%B3%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7595,9 +7595,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%BA%AC%E9%9A%86%E7%A7%91%E6%8A%80%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
   "search_hint": "百度搜「京隆科技 2027校招 测试」；微信搜「京隆科技招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7605,7 +7605,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E4%BA%AC%E9%9A%86%E7%A7%91%E6%8A%80%20%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91&city=101190400",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7651,9 +7651,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%AD%E7%94%B5%E9%87%91%E4%BF%A1%20%E6%B5%8B%E8%AF%95&city=101190400",
   "search_hint": "百度搜「中电金信 2027校招 测试」；微信搜「中电金信招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7661,7 +7661,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%AD%E7%94%B5%E9%87%91%E4%BF%A1%20%E6%B5%8B%E8%AF%95&city=101190400",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7709,9 +7709,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
   "search_hint": "打开 career.huawei.com 校园招聘，搜「测试」",
   "source": "Boss直聘",
@@ -7719,7 +7719,7 @@
    {
     "type": "boss",
     "url": "https://career.huawei.com/reccampportal/portal5/campus-recruitment.html",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7765,9 +7765,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%80%E6%95%B0%E4%B8%80%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101220100",
   "search_hint": "百度搜「安徽一数一人工智能 2027校招 测试」；微信搜「安徽一数一人工智能招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7775,7 +7775,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E4%B8%80%E6%95%B0%E4%B8%80%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101220100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7821,9 +7821,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://jobs.sungrowpower.com",
   "search_hint": "打开 jobs.sungrowpower.com；官网 /join 是 404",
   "source": "Boss直聘",
@@ -7831,7 +7831,7 @@
    {
     "type": "boss",
     "url": "https://jobs.sungrowpower.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7877,9 +7877,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.zhipin.com/web/geek/job?query=%E8%80%81%E4%B9%A1%E9%B8%A1%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101220100",
   "search_hint": "百度搜「老乡鸡 2027校招 测试」；微信搜「老乡鸡招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
   "source": "Boss直聘",
@@ -7887,7 +7887,7 @@
    {
     "type": "boss",
     "url": "https://www.zhipin.com/web/geek/job?query=%E8%80%81%E4%B9%A1%E9%B8%A1%20%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95&city=101220100",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7916,7 +7916,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -7934,9 +7934,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.hundsun.com",
   "search_hint": "打开 campus.hundsun.com，搜「测试」或「测试开发」；微信搜「恒生电子招聘」",
   "source": "牛客网",
@@ -7944,7 +7944,7 @@
    {
     "type": "nowcoder",
     "url": "https://campus.hundsun.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -7973,7 +7973,7 @@
   "program": "2027届秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "游戏测试",
   "job_category": "游戏测试",
@@ -7990,9 +7990,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「姚记集团 2027校招 游戏测试」；微信搜「姚记招聘」",
   "source": "牛客网",
@@ -8000,7 +8000,7 @@
    {
     "type": "nowcoder",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8029,7 +8029,7 @@
   "program": "2027秋季校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "游戏测试",
   "job_category": "游戏测试",
@@ -8046,9 +8046,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://careers.garena.com",
   "search_hint": "打开 careers.garena.com，搜 QA / 游戏测试；或走牛客「Garena 2027秋季校园招聘」",
   "source": "牛客网",
@@ -8056,7 +8056,7 @@
    {
     "type": "nowcoder",
     "url": "https://careers.garena.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8085,7 +8085,7 @@
   "program": "应届招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8102,9 +8102,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://elekta.cn/jobs/",
   "search_hint": "打开 elekta.cn/jobs；或搜「医科达 软件测试 应届」",
   "source": "猎聘",
@@ -8112,7 +8112,7 @@
    {
     "type": "liepin",
     "url": "https://elekta.cn/jobs/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8141,7 +8141,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8158,9 +8158,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.smartsenstech.com/",
   "search_hint": "打开 campus.smartsenstech.com → 校招职位，搜「系统软件测试」；微信搜「思特威招聘」",
   "source": "猎聘",
@@ -8168,7 +8168,7 @@
    {
     "type": "liepin",
     "url": "https://campus.smartsenstech.com/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8197,7 +8197,7 @@
   "program": "应届招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8214,9 +8214,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.agora.io/cn/careers",
   "search_hint": "打开 agora.io/cn/careers；打不开就搜「声网 Agora 校招 测试」",
   "source": "猎聘",
@@ -8224,7 +8224,7 @@
    {
     "type": "liepin",
     "url": "https://www.agora.io/cn/careers",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8253,7 +8253,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8270,9 +8270,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://jobs.huaqin.com",
   "search_hint": "打开 jobs.huaqin.com；微信搜「华勤招聘」→ 校园招聘",
   "source": "猎聘",
@@ -8280,7 +8280,7 @@
    {
     "type": "liepin",
     "url": "https://jobs.huaqin.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8309,7 +8309,7 @@
   "program": "应届招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8326,9 +8326,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "没有稳定公开网申。搜「微创医疗机器人 2027校招 测试」；微信搜「微创机器人招聘」",
   "source": "猎聘",
@@ -8336,7 +8336,7 @@
    {
     "type": "liepin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8365,7 +8365,7 @@
   "program": "应届招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "自动化测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8383,9 +8383,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "没有稳定公开网申。搜「术锐机器人 校招 测试」；微信搜「术锐招聘」",
   "source": "猎聘",
@@ -8393,7 +8393,7 @@
    {
     "type": "liepin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8422,7 +8422,7 @@
   "program": "应届招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8439,9 +8439,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「云合智网 校招 嵌入式软件测试」；微信搜「云合智网招聘」",
   "source": "猎聘",
@@ -8449,7 +8449,7 @@
    {
     "type": "liepin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8478,7 +8478,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8495,9 +8495,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「集益威半导体 2027校招 软件测试」；微信搜「集益威招聘」",
   "source": "猎聘",
@@ -8505,7 +8505,7 @@
    {
     "type": "liepin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8534,7 +8534,7 @@
   "program": "2027届校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8551,9 +8551,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「易思维 2027校招 算法测试」；微信搜「易思维招聘」",
   "source": "猎聘",
@@ -8561,7 +8561,7 @@
    {
     "type": "liepin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8590,7 +8590,7 @@
   "program": "南京校招",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8607,9 +8607,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「麦科田 2027校招 软件测试」；微信搜「麦科田招聘」。南京江宁有校招软件测试岗",
   "source": "前程无忧",
@@ -8617,7 +8617,7 @@
    {
     "type": "51job",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8663,9 +8663,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "往年网申 2026guorui.zhaopin.com。搜「国睿科技 2027校招」或微信「国睿科技招聘」；邮箱 hr@glarun.com",
   "source": "前程无忧",
@@ -8673,7 +8673,7 @@
    {
     "type": "51job",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8719,9 +8719,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "国企。搜「南京瑞迪水利 测试工程师」；微信搜「瑞迪水利招聘」",
   "source": "前程无忧",
@@ -8729,7 +8729,7 @@
    {
     "type": "51job",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8775,9 +8775,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「超云数字 南京 测试」；微信搜「超云招聘」",
   "source": "前程无忧",
@@ -8785,7 +8785,7 @@
    {
     "type": "51job",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8814,7 +8814,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8831,9 +8831,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.panda.cn",
   "search_hint": "官网 panda.cn 没有独立网申。搜「南京熊猫 2027校招 测试」；微信搜「熊猫电子招聘」或「CEC中电熊猫」",
   "source": "智联校园",
@@ -8841,7 +8841,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.panda.cn",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8870,7 +8870,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8891,9 +8891,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「龙旗科技 2027校招 软件测试」；微信搜「龙旗招聘」→ 校园招聘",
   "source": "智联校园",
@@ -8901,7 +8901,7 @@
    {
     "type": "zhaopin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8930,7 +8930,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -8947,9 +8947,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "国企。搜「上交所技术 校招 测试」；微信搜「上交所技术招聘」",
   "source": "智联校园",
@@ -8957,7 +8957,7 @@
    {
     "type": "zhaopin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -8986,7 +8986,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "测试开发",
   "normalized_job_name": "测试开发",
   "job_category": "测试开发",
@@ -9003,9 +9003,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://campus.kuaishou.com",
   "search_hint": "打开 campus.kuaishou.com，搜「测试开发」；杭州有测开岗",
   "source": "智联校园",
@@ -9013,7 +9013,7 @@
    {
     "type": "zhaopin",
     "url": "https://campus.kuaishou.com",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -9042,7 +9042,7 @@
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "正式批",
-  "recruitment_batch": "正式批",
+  "recruitment_batch": "2027秋招",
   "role_type": "软件测试",
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
@@ -9059,9 +9059,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「杭州兆华电子 校招 软件测试」；微信搜「兆华电子招聘」",
   "source": "智联校园",
@@ -9069,7 +9069,7 @@
    {
     "type": "zhaopin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -9115,9 +9115,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": null,
   "search_hint": "搜「浙江民泰商业银行 校招 测试」；微信搜「民泰银行招聘」",
   "source": "智联校园",
@@ -9125,7 +9125,7 @@
    {
     "type": "zhaopin",
     "url": null,
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -9171,9 +9171,9 @@
   "deadline": null,
   "deadline_source": "",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.uniview.com/cn/about/join/",
   "search_hint": "打开 uniview.com/cn/about/join/，搜「测试」",
   "source": "智联校园",
@@ -9181,7 +9181,7 @@
    {
     "type": "zhaopin",
     "url": "https://www.uniview.com/cn/about/join/",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -9228,9 +9228,9 @@
   "deadline": "2026-12-31",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=192741106994121867",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=192741106994121867",
   "source": "国聘网",
@@ -9238,7 +9238,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=192741106994121867",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",
@@ -9324,9 +9324,9 @@
   "deadline": "2026-09-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=209069781825880984",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=209069781825880984",
   "source": "国聘网",
@@ -9334,7 +9334,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=209069781825880984",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -9381,9 +9381,9 @@
   "deadline": "2026-11-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=211221953380354804",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=211221953380354804",
   "source": "国聘网",
@@ -9391,7 +9391,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=211221953380354804",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -9438,9 +9438,9 @@
   "deadline": "2026-09-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=210648585178450068",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=210648585178450068",
   "source": "国聘网",
@@ -9448,7 +9448,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=210648585178450068",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "unknown",
@@ -9494,9 +9494,9 @@
   "deadline": "2026-11-19",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=214735221260551523",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214735221260551523",
   "source": "国聘网",
@@ -9504,7 +9504,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=214735221260551523",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",
@@ -9571,9 +9571,9 @@
   "deadline": "2026-09-20",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=206208270786888464",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=206208270786888464",
   "source": "国聘网",
@@ -9581,7 +9581,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=206208270786888464",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",
@@ -9658,9 +9658,9 @@
   "deadline": "2026-10-27",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=211498495956224767",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=211498495956224767",
   "source": "国聘网",
@@ -9668,7 +9668,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=211498495956224767",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",
@@ -9733,9 +9733,9 @@
   "deadline": "2026-10-13",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=209501108060555405",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=209501108060555405",
   "source": "国聘网",
@@ -9743,7 +9743,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=209501108060555405",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",
@@ -9800,9 +9800,9 @@
   "deadline": "2026-10-04",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=208172611560014744",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=208172611560014744",
   "source": "国聘网",
@@ -9810,7 +9810,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=208172611560014744",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",
@@ -9875,9 +9875,9 @@
   "deadline": "2026-11-14",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=214172531672744956",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214172531672744956",
   "source": "国聘网",
@@ -9885,7 +9885,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=214172531672744956",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",
@@ -9943,9 +9943,9 @@
   "deadline": "2026-08-23",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-24",
-  "first_seen_at": "2026-08-24",
-  "last_seen_at": "2026-08-24",
+  "updated_at": "2026-08-25",
+  "first_seen_at": "2026-08-25",
+  "last_seen_at": "2026-08-25",
   "apply_url": "https://www.iguopin.com/job/detail?id=202085396790640652",
   "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=202085396790640652",
   "source": "国聘网",
@@ -9953,7 +9953,7 @@
    {
     "type": "iguopin",
     "url": "https://www.iguopin.com/job/detail?id=202085396790640652",
-    "found_at": "2026-08-24"
+    "found_at": "2026-08-25"
    }
   ],
   "jd_source": "iguopin",

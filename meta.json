@@ -1,12 +1,11 @@
 {
-  "updated_at": "2026-08-24 12:17",
-  "count": 164,
+  "updated_at": "2026-08-25 00:30",
+  "count": 167,
   "total_candidates": 173,
   "sources": [
     "本地岗位库",
     "国聘网",
     "xixicc2027",
-    "niuqizp校招日历",
     "牛客",
     "同公司补JD",
     "牛客",
@@ -35,9 +34,9 @@
     },
     {
       "name": "niuqizp校招日历",
-      "ok": true,
+      "ok": false,
       "count": 0,
-      "detail": "成功页面 19/19"
+      "detail": "成功页面 0/19"
     },
     {
       "name": "牛客",
@@ -103,7 +102,7 @@
       "name": "职位详情补全",
       "ok": true,
       "count": 1,
-      "detail": "尝试 19 个投递链接，耗时 57s"
+      "detail": "尝试 19 个投递链接，耗时 142s"
     },
     {
       "name": "同公司补JD",
@@ -112,7 +111,7 @@
       "detail": ""
     }
   ],
-  "note": "职责/薪资按 Boss/智联职位详情原文（登录态抓取）；日历岗无详情时仍为空",
+  "note": "江苏/浙江/安徽/上海，仅软件测试相关；jobs.json 仅 open+unknown，candidate_jobs 含全量历史",
   "jd_filled": 15,
   "salary_filled": 21,
   "jd_missing": 152,
@@ -121,7 +120,7 @@
     "unknown": 0,
     "expired": 2,
     "closed": 0,
-    "new_today": 6,
+    "new_today": 0,
     "excluded": 4
   }
 }
