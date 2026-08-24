@@ -226,18 +226,46 @@ def similar_position(a: dict[str, Any], b: dict[str, Any]) -> bool:
 
 
 def infer_batch(program: str | None, batch: str | None, cohort: str | None) -> str:
-    if batch and batch not in ("校招", "社招"):
-        return batch
+    # 招聘类型判断：宁可 unknown，也不能把无法确认的岗位默认当成校招。
+    # 明确校招 → 2027秋招；明确社招 → 社招；明确实习 → 实习；无法判断 → unknown。
     s = " ".join(filter(None, [program or "", batch or "", cohort or ""]))
-    if "提前" in s:
-        return "提前批"
+
+    # 实习优先级最高（与校招/社招互斥时以实习为准）
     if "实习" in s:
         return "实习"
-    if "社招" in s or "社会招聘" in s:
+
+    # 社招关键词
+    social_keywords = ["社招", "社会招聘", "社会人才", "Experienced Hire", "Experienced"]
+    if any(k in s for k in social_keywords):
         return "社招"
-    if "秋招" in s or "校招" in s or "校园" in s or "2027" in s:
+
+    # 提前批是批次阶段，需叠加校招语义才认定校招（见下方 campus 判断）
+    is_early = "提前" in s
+
+    # 校招语义关键词：必须出现明确的校招/秋招/校园/应届生等字样，单独的年份不算
+    campus_keywords = [
+        "校招", "秋招", "校园招聘", "校园", "应届生", "应届",
+        "2027届", "2027校招", "2027秋招", "2026届", "2026校招",
+    ]
+    has_campus = any(k in s for k in campus_keywords)
+
+    if has_campus:
         return "2027秋招"
-    return batch or "2027秋招"
+
+    # 提前批本身不含校招语义时，仅作为批次阶段保留；不因此误判为校招。
+    if is_early:
+        return "提前批"
+
+    # batch 字段为数据源明确标注的招聘类型时直接采用
+    if batch in ("校招", "秋招", "2027秋招"):
+        return "2027秋招"
+    if batch in ("社招", "社会招聘"):
+        return "社招"
+    if batch == "实习":
+        return "实习"
+
+    # 无法确认招聘类型，绝不默认成校招
+    return "unknown"
 
 
 # ---------------------------------------------------------------------------

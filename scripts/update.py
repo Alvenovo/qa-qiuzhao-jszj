@@ -1946,6 +1946,34 @@ def ensure_jd_fields(jobs: list[dict[str, Any]]) -> None:
         job.setdefault("jd_status", "pending")
 
 
+# 数据骤降保护阈值：本次展示数 < 上次展示数 * 此比例 -> 异常
+DATA_DROP_RATIO = 0.6
+
+
+def check_data_drop(display_count: int, meta_path: "Path") -> bool:
+    """检查本次展示岗位数是否相对上一版骤降。
+
+    返回 True 表示数据正常可写入；False 表示检测到异常骤降，应阻止覆盖。
+    自然过期（如 164 -> 150）不会触发；只有 164 -> 70 这种异常才会。
+    """
+    if not meta_path.exists():
+        return True  # 首次运行无历史基准，放行
+    try:
+        prev = json.loads(meta_path.read_text(encoding="utf-8"))
+    except Exception:
+        return True  # 上次 meta 损坏，无法比较，放行
+    prev_count = prev.get("count")
+    if not isinstance(prev_count, int) or prev_count <= 0:
+        return True
+    threshold = int(prev_count * DATA_DROP_RATIO)
+    if display_count < threshold:
+        print(f"[WARNING] 数据骤降保护：本次展示 {display_count} 条 < 上次 {prev_count} 条 × {DATA_DROP_RATIO}（阈值 {threshold}）", flush=True)
+        print("[WARNING] 检测到异常数据下降，可能数据源故障。已阻止覆盖 jobs.json/index.html/meta.json，保留上一份正常数据。", flush=True)
+        print("[WARNING] candidate_jobs.json 已写入历史档案，不会丢失。请人工核查数据源后重试。", flush=True)
+        return False
+    return True
+
+
 def write_site(jobs: list[dict[str, Any]], meta: dict[str, Any]) -> None:
     ensure_jd_fields(jobs)
     template = (ROOT / "site_template.html").read_text(encoding="utf-8")
@@ -2051,6 +2079,9 @@ def main() -> int:
             "excluded": excluded_display,
         },
     }
+    # 数据骤降保护：异常下降时阻止覆盖，保留上一份正常数据
+    if not check_data_drop(len(display), ROOT / "meta.json"):
+        return 2
     write_site(display, meta)
     render_readme(display, meta)
     print(f"[INFO] 历史档案 {len(all_jobs)} 条，展示 {len(display)} 条（open {open_n} / unknown {unknown_n} / expired {expired_n}）", flush=True)
