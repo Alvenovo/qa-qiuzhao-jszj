@@ -1,42 +1,42 @@
 [
  {
-  "id": "77f6b4a601ed",
-  "company": "绿盟科技集团股份有限公司",
+  "id": "f91b4c215d5b",
+  "company": "苏州华旃航天电器有限公司",
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "校招",
   "recruitment_batch": "2027秋招",
-  "role_type": "测试开发",
-  "normalized_job_name": "测试开发",
-  "job_category": "测试开发",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
   "positions": [
-   "秋招测试开发工程师-南京"
+   "供应商质量工程师"
   ],
   "locations": [
-   "南京"
+   "苏州"
   ],
   "provinces": [
    "江苏"
   ],
-  "start_date": "2026-08-21",
-  "deadline": "2026-11-19",
+  "start_date": "2026-08-24",
+  "deadline": "2027-08-31",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-21",
-  "first_seen_at": "2026-08-21",
-  "last_seen_at": "2026-08-21",
-  "apply_url": "https://www.iguopin.com/job/detail?id=214735221260551523",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214735221260551523",
+  "updated_at": "2026-08-23",
+  "first_seen_at": "2026-08-23",
+  "last_seen_at": "2026-08-23",
+  "apply_url": "https://www.iguopin.com/job/detail?id=214934069488649587",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214934069488649587",
   "source": "国聘网",
   "sources": [
    {
     "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=214735221260551523",
-    "found_at": "2026-08-21"
+    "url": "https://www.iguopin.com/job/detail?id=214934069488649587",
+    "found_at": "2026-08-23"
    }
   ],
-  "jd_source": "iguopin",
-  "jd_raw_text": "岗位职责：\n1、参与产品测试工作，包括测试需求分析、测试设计、测试用例编写、测试环境搭建与执行；\n2、深入分析、定位产品缺陷或问题，按流程完成跟踪管理闭环；\n3、自动化测试脚本的开发，提升测试效率；\n4、主动学习测试技术、工具和方法，并应用到测试工作中；\n任职要求：\n1、统招本科及以上学历，计算机或相关专业；\n2、具备团队合作和艰苦奋斗精神，良好的沟通和学习能力，较强的问题分析和解决能力；\n3、做事细致耐心，喜欢寻找软件问题并分析探究问题根源，享受和开发共同努力修复解决问题，在同行公司做过测试实习半年以上者优先；\n4、熟悉计算机网络，熟悉TCP/IP等网络协议原理，有CCNA认证者优先；\n5、熟悉Linux系统、数据库、Shell/Python编程语言，在学校或实习做过6个月以上系统开发者优先。\n6、 熟练使用主流AI工具，并具备用AI辅助完成项目开发、测试经验者优先",
+  "jd_source": "unknown",
+  "jd_raw_text": "",
   "jd_reused_from": "",
   "jd_source_url": "",
   "jd_updated_at": "",
@@ -44,32 +44,140 @@
   "job_domain_confidence": 0.0,
   "excluded": false,
   "exclude_reason": "",
-  "industry": "上市公司",
-  "scale": "中厂",
+  "industry": "国企",
+  "scale": "小厂",
   "owner": "",
   "status": "unknown",
-  "description": "岗位职责：\n1、参与产品测试工作，包括测试需求分析、测试设计、测试用例编写、测试环境搭建与执行；\n2、深入分析、定位产品缺陷或问题，按流程完成跟踪管理闭环；\n3、自动化测试脚本的开发，提升测试效率；\n4、主动学习测试技术、工具和方法，并应用到测试工作中；\n任职要求：\n1、统招本科及以上学历，计算机或相关专业；\n2、具备团队合作和艰苦奋斗精神，良好的沟通和学习能力，较强的问题分析和解决能力；\n3、做事细致耐心，喜欢寻找软件问题并分析探究问题根源，享受和开发共同努力修复解决问题，在同行公司做过测试实习半年以上者优先；\n4、熟悉计算机网络，熟悉TCP/IP等网络协议原理，有CCNA认证者优先；\n5、熟悉Linux系统、数据库、Shell/Python编程语言，在学校或实习做过6个月以上系统开发者优先。\n6、 熟练使用主流AI工具，并具备用AI辅助完成项目开发、测试经验者优先",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "9~12K",
+  "data_quality": {}
+ },
+ {
+  "id": "5d2d4a49b097",
+  "company": "苏州华旃航天电器有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
+  "positions": [
+   "质量工程师"
+  ],
+  "locations": [
+   "苏州"
+  ],
+  "provinces": [
+   "江苏"
+  ],
+  "start_date": "2026-08-24",
+  "deadline": "2027-08-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-08-23",
+  "first_seen_at": "2026-08-23",
+  "last_seen_at": "2026-08-23",
+  "apply_url": "https://www.iguopin.com/job/detail?id=214934069169882483",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214934069169882483",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=214934069169882483",
+    "found_at": "2026-08-23"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "9~12K",
+  "data_quality": {}
+ },
+ {
+  "id": "36ca354aeb4d",
+  "company": "上海航天科工电器研究院有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
+  "positions": [
+   "质量工程师"
+  ],
+  "locations": [
+   "上海"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-08-24",
+  "deadline": "2027-08-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-08-23",
+  "first_seen_at": "2026-08-23",
+  "last_seen_at": "2026-08-23",
+  "apply_url": "https://www.iguopin.com/job/detail?id=214934047913149811",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214934047913149811",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=214934047913149811",
+    "found_at": "2026-08-23"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "【岗位职责】 \n1.负责产品质量可靠性控制;\n2.负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改;\n3.根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环;\n4.实施主管领域范围的产品实现过程质量的监督和控制;\n5.针对现场质量问题及时反馈并组织培训;\n6.负责分管业务范围的质量改进;\n7.负责各类质量文件报告的编制",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "大厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "【岗位职责】 \n1.负责产品质量可靠性控制;\n2.负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改;\n3.根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环;\n4.实施主管领域范围的产品实现过程质量的监督和控制;\n5.针对现场质量问题及时反馈并组织培训;\n6.负责分管业务范围的质量改进;\n7.负责各类质量文件报告的编制",
   "responsibilities": [
-   "参与产品测试工作，包括测试需求分析、测试设计、测试用例编写、测试环境搭建与执行",
-   "深入分析、定位产品缺陷或问题，按流程完成跟踪管理闭环",
-   "自动化测试脚本的开发，提升测试效率",
-   "主动学习测试技术、工具和方法，并应用到测试工作中"
+   "负责产品质量可靠性控制",
+   "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
+   "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
+   "实施主管领域范围的产品实现过程质量的监督和控制",
+   "针对现场质量问题及时反馈并组织培训",
+   "负责分管业务范围的质量改进",
+   "负责各类质量文件报告的编制",
+   "【岗位职责】",
+   "负责产品质量可靠性控制",
+   "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
+   "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
+   "实施主管领域范围的产品实现过程质量的监督和控制"
   ],
-  "requirements": [
-   "统招本科及以上学历，计算机或相关专业",
-   "具备团队合作和艰苦奋斗精神，良好的沟通和学习能力，较强的问题分析和解决能力",
-   "做事细致耐心，喜欢寻找软件问题并分析探究问题根源，享受和开发共同努力修复解决问题，在同行公司做过测试实习半年以上者优先",
-   "熟悉计算机网络，熟悉TCP/IP等网络协议原理，有CCNA认证者优先",
-   "熟悉Linux系统、数据库、Shell/Python编程语言，在学校或实习做过6个月以上系统开发者优先。",
-   "熟练使用主流AI工具，并具备用AI辅助完成项目开发、测试经验者优先"
-  ],
-  "skills": [
-   "Python",
-   "自动化测试",
-   "Linux",
-   "用例设计"
-  ],
-  "salary": "面议",
+  "requirements": [],
+  "skills": [],
+  "salary": "",
   "data_quality": {}
  },
  {

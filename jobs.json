@@ -11065,18 +11065,27 @@
     "start_date": null,
     "deadline": null,
     "updated_at": "2026-08-25",
-    "apply_url": "https://casic.zhiye.com",
+    "apply_url": "https://www.iguopin.com/job/detail?id=214934047913149811",
     "search_hint": "百度搜「航天科工 2027校招 测试」；微信搜「航天科工招聘」；国聘网 iguopin.com 搜公司名+测试；Boss/智联搜「软件测试」并筛南京/杭州/上海/苏州/合肥",
     "source": "企业官网",
     "industry": "央国企",
     "scale": "大厂",
     "owner": "央企",
     "status": "open",
-    "description": "",
-    "responsibilities": [],
+    "description": "【岗位职责】 \n1.负责产品质量可靠性控制;\n2.负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改;\n3.根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环;\n4.实施主管领域范围的产品实现过程质量的监督和控制;\n5.针对现场质量问题及时反馈并组织培训;\n6.负责分管业务范围的质量改进;\n7.负责各类质量文件报告的编制",
+    "responsibilities": [
+      "负责产品质量可靠性控制",
+      "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
+      "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
+      "实施主管领域范围的产品实现过程质量的监督和控制",
+      "针对现场质量问题及时反馈并组织培训",
+      "负责分管业务范围的质量改进",
+      "负责各类质量文件报告的编制",
+      "【岗位职责】"
+    ],
     "requirements": [],
     "skills": [],
-    "salary": "",
+    "salary": "10000-10700元/月",
     "sources": [
       {
         "type": "official",
@@ -11084,7 +11093,7 @@
         "found_at": "2026-08-23"
       }
     ],
-    "jd_source": "unknown",
+    "jd_source": "official",
     "jd_raw_text": "",
     "first_seen_at": "2026-08-23",
     "last_seen_at": "2026-08-25",
@@ -11095,26 +11104,32 @@
     "deadline_conflict": false,
     "jd_reused_from": "",
     "data_quality": {
-      "score": 55,
-      "level": "基本完整",
-      "has_jd": false,
+      "score": 85,
+      "level": "较完整",
+      "has_jd": true,
       "has_deadline": false,
       "has_apply_url": true,
       "has_official_source": true
     },
     "core_skills": [],
-    "core_responsibilities": [],
+    "core_responsibilities": [
+      "负责产品质量可靠性控制",
+      "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
+      "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
+      "实施主管领域范围的产品实现过程质量的监督和控制",
+      "针对现场质量问题及时反馈并组织培训"
+    ],
     "education": "",
     "major": [],
     "experience": "",
     "graduation_year": "",
-    "jd_source_url": "",
-    "jd_updated_at": "",
+    "jd_source_url": "https://www.iguopin.com/job/detail?id=214934047913149811",
+    "jd_updated_at": "2026-08-25",
     "job_domain": "software_testing",
     "job_domain_confidence": 0.95,
     "excluded": false,
     "exclude_reason": "",
-    "jd_status": "no_jd"
+    "jd_status": "has_jd"
   },
   {
     "id": "d14d98215a93",
