@@ -1,5 +1,194 @@
 [
  {
+  "id": "aa4a9da8911d",
+  "company": "国核自仪系统工程有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试工程师"
+  ],
+  "locations": [
+   "上海",
+   "闵行"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-09-15",
+  "deadline": "2027-07-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-09-15",
+  "first_seen_at": "2026-09-15",
+  "last_seen_at": "2026-09-15",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218342572446189208",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218342572446189208",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=218342572446189208",
+    "found_at": "2026-09-15"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "岗位职责：\n测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。\n\n招聘专业：\n电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "岗位职责：\n测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。\n\n招聘专业：\n电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类",
+  "responsibilities": [
+   "测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。",
+   "电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类"
+  ],
+  "requirements": [],
+  "skills": [],
+  "salary": "面议",
+  "data_quality": {}
+ },
+ {
+  "id": "aa4a9da8911d",
+  "company": "国核自仪系统工程有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试工程师"
+  ],
+  "locations": [
+   "上海",
+   "闵行"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-09-15",
+  "deadline": "2027-07-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-09-15",
+  "first_seen_at": "2026-09-15",
+  "last_seen_at": "2026-09-15",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218345601572538004",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218345601572538004",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=218345601572538004",
+    "found_at": "2026-09-15"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "岗位职责：\n嵌入式产品全生命周期质量验证；测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试；缺陷跟踪闭环、测试报告输出；需求及设计评审，支持生产抽检与售后问题复现。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "岗位职责：\n嵌入式产品全生命周期质量验证；测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试；缺陷跟踪闭环、测试报告输出；需求及设计评审，支持生产抽检与售后问题复现。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "responsibilities": [
+   "嵌入式产品全生命周期质量验证",
+   "测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试",
+   "缺陷跟踪闭环、测试报告输出",
+   "需求及设计评审，支持生产抽检与售后问题复现。",
+   "电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类"
+  ],
+  "requirements": [],
+  "skills": [
+   "缺陷跟踪"
+  ],
+  "salary": "面议",
+  "data_quality": {}
+ },
+ {
+  "id": "675a351cc3dc",
+  "company": "国核自仪系统工程有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "自动化测试",
+  "normalized_job_name": "自动化测试",
+  "job_category": "自动化测试",
+  "positions": [
+   "自动化测试"
+  ],
+  "locations": [
+   "上海",
+   "闵行"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-09-15",
+  "deadline": "2027-07-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-09-15",
+  "first_seen_at": "2026-09-15",
+  "last_seen_at": "2026-09-15",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218343989969946267",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218343989969946267",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=218343989969946267",
+    "found_at": "2026-09-15"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "岗位职责：\n测试计划/用例/规程/报告编制；产品功能性能测试执行；自动化工器具开发。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "岗位职责：\n测试计划/用例/规程/报告编制；产品功能性能测试执行；自动化工器具开发。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "responsibilities": [
+   "测试计划/用例/规程/报告编制",
+   "产品功能性能测试执行",
+   "自动化工器具开发。",
+   "电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类"
+  ],
+  "requirements": [],
+  "skills": [
+   "性能测试"
+  ],
+  "salary": "面议",
+  "data_quality": {}
+ },
+ {
   "id": "60945ce72ec4",
   "company": "中国能源建设集团浙江省电力设计院有限公司",
   "program": "校园招聘",
