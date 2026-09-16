@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-15 17:11",
-  "count": 162,
-  "total_candidates": 202,
+  "updated_at": "2026-09-16 17:03",
+  "count": 161,
+  "total_candidates": 204,
   "sources": [
     "本地岗位库",
     "国聘网",
@@ -102,7 +102,7 @@
       "name": "职位详情补全",
       "ok": true,
       "count": 3,
-      "detail": "尝试 21 个投递链接，耗时 145s"
+      "detail": "尝试 21 个投递链接，耗时 153s"
     },
     {
       "name": "同公司补JD",
@@ -112,15 +112,15 @@
     }
   ],
   "note": "江苏/浙江/安徽/上海，仅软件测试相关；jobs.json 仅 open+unknown，candidate_jobs 含全量历史",
-  "jd_filled": 24,
-  "salary_filled": 30,
-  "jd_missing": 138,
+  "jd_filled": 25,
+  "salary_filled": 31,
+  "jd_missing": 136,
   "stats": {
     "open": 187,
     "unknown": 0,
-    "expired": 15,
+    "expired": 17,
     "closed": 0,
-    "new_today": 2,
-    "excluded": 25
+    "new_today": 1,
+    "excluded": 26
   }
 }

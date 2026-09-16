@@ -1,43 +1,42 @@
 [
  {
-  "id": "aa4a9da8911d",
-  "company": "国核自仪系统工程有限公司",
+  "id": "f65413bf77a2",
+  "company": "合肥开悦半导体科技有限公司",
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "校招",
   "recruitment_batch": "2027秋招",
-  "role_type": "软件测试",
-  "normalized_job_name": "软件测试",
-  "job_category": "软件测试",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
   "positions": [
-   "测试工程师"
+   "助理产品质量工程师"
   ],
   "locations": [
-   "上海",
-   "闵行"
+   "合肥"
   ],
   "provinces": [
-   "上海"
+   "安徽"
   ],
-  "start_date": "2026-09-15",
-  "deadline": "2027-07-31",
+  "start_date": "2026-09-16",
+  "deadline": "2026-11-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-09-15",
-  "first_seen_at": "2026-09-15",
-  "last_seen_at": "2026-09-15",
-  "apply_url": "https://www.iguopin.com/job/detail?id=218342572446189208",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218342572446189208",
+  "updated_at": "2026-09-16",
+  "first_seen_at": "2026-09-16",
+  "last_seen_at": "2026-09-16",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218469993572991159",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218469993572991159",
   "source": "国聘网",
   "sources": [
    {
     "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=218342572446189208",
-    "found_at": "2026-09-15"
+    "url": "https://www.iguopin.com/job/detail?id=218469993572991159",
+    "found_at": "2026-09-16"
    }
   ],
   "jd_source": "iguopin",
-  "jd_raw_text": "岗位职责：\n测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。\n\n招聘专业：\n电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类",
+  "jd_raw_text": "岗位职责：\n1、 协助负责半导体设备整机、模块的产品质量管控，跟踪生产、调试阶段质量异常；\n2、 收集设备装配、测试阶段质量问题，参与不良分析，记录问题闭环情况；\n3、 协助编制产品检验规范、质量记录表单；\n4、 跟进客户现场质量反馈，整理质量问题报告；\n5、 配合安环、质量体系落地执行。\n\n任职要求：\n1、本科及以上学历，微电子、工科类相关专业，专业课成绩优异者优先考虑；\n2、学习能力、沟通能力强，工作细致，思路清晰，具备独立工作分析和解决问题的能力；\n3、有较强的工作承压能力, 能够适应长期出差；\n4、拥有英文的听说读写能力，CET4考试425分及以上优先考虑。",
   "jd_reused_from": "",
   "jd_source_url": "",
   "jd_updated_at": "",
@@ -45,22 +44,98 @@
   "job_domain_confidence": 0.0,
   "excluded": false,
   "exclude_reason": "",
-  "industry": "国企",
+  "industry": "中外合资",
   "scale": "小厂",
   "owner": "",
   "status": "unknown",
-  "description": "岗位职责：\n测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。\n\n招聘专业：\n电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类",
+  "description": "岗位职责：\n1、 协助负责半导体设备整机、模块的产品质量管控，跟踪生产、调试阶段质量异常；\n2、 收集设备装配、测试阶段质量问题，参与不良分析，记录问题闭环情况；\n3、 协助编制产品检验规范、质量记录表单；\n4、 跟进客户现场质量反馈，整理质量问题报告；\n5、 配合安环、质量体系落地执行。\n\n任职要求：\n1、本科及以上学历，微电子、工科类相关专业，专业课成绩优异者优先考虑；\n2、学习能力、沟通能力强，工作细致，思路清晰，具备独立工作分析和解决问题的能力；\n3、有较强的工作承压能力, 能够适应长期出差；\n4、拥有英文的听说读写能力，CET4考试425分及以上优先考虑。",
   "responsibilities": [
-   "测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。",
-   "电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类"
+   "协助负责半导体设备整机、模块的产品质量管控，跟踪生产、调试阶段质量异常",
+   "收集设备装配、测试阶段质量问题，参与不良分析，记录问题闭环情况",
+   "协助编制产品检验规范、质量记录表单",
+   "跟进客户现场质量反馈，整理质量问题报告",
+   "配合安环、质量体系落地执行。"
   ],
-  "requirements": [],
+  "requirements": [
+   "本科及以上学历，微电子、工科类相关专业，专业课成绩优异者优先考虑",
+   "学习能力、沟通能力强，工作细致，思路清晰，具备独立工作分析和解决问题的能力",
+   "有较强的工作承压能力, 能够适应长期出差",
+   "拥有英文的听说读写能力，CET4考试425分及以上优先考虑。"
+  ],
   "skills": [],
   "salary": "面议",
   "data_quality": {}
  },
  {
-  "id": "aa4a9da8911d",
+  "id": "04557a51e7aa",
+  "company": "合肥开悦半导体科技有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "助理测试工程师"
+  ],
+  "locations": [
+   "合肥"
+  ],
+  "provinces": [
+   "安徽"
+  ],
+  "start_date": "2026-09-16",
+  "deadline": "2026-11-30",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-09-15",
+  "first_seen_at": "2026-09-15",
+  "last_seen_at": "2026-09-15",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218360085426996892",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218360085426996892",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=218360085426996892",
+    "found_at": "2026-09-15"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "岗位职责：\n1、负责厂内单元组件的安装指导、测试，及相关过程文件的输出；\n2、负责厂内设备的联调；\n3、负责现场的调整方案，熟悉常用电气元器件的选型、安装；\n4、负责单元测试程序的编写并进行测试，撰写测试报告；\n5、负责单元模组的安装指导，改进方案的提出、沟通执行。\n\n任职要求：\n1、硕士学历，工业自动化、电气自动化或机电一体化专业；\n2、熟练使用绘图软件绘制电气图；\n3、能接受较长时间的出差，动手能力强，有较强抗压能力，有过机器人、电气等比赛或项目经验，并取得一定成绩者优先考虑；\n4、有一定的沟通能力和执行力，责任心强，有很强的团队合作精神；\n5、拥有英文的听说读写能力，CET4考试425分及以上优先考虑。",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "中外合资",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "岗位职责：\n1、负责厂内单元组件的安装指导、测试，及相关过程文件的输出；\n2、负责厂内设备的联调；\n3、负责现场的调整方案，熟悉常用电气元器件的选型、安装；\n4、负责单元测试程序的编写并进行测试，撰写测试报告；\n5、负责单元模组的安装指导，改进方案的提出、沟通执行。\n\n任职要求：\n1、硕士学历，工业自动化、电气自动化或机电一体化专业；\n2、熟练使用绘图软件绘制电气图；\n3、能接受较长时间的出差，动手能力强，有较强抗压能力，有过机器人、电气等比赛或项目经验，并取得一定成绩者优先考虑；\n4、有一定的沟通能力和执行力，责任心强，有很强的团队合作精神；\n5、拥有英文的听说读写能力，CET4考试425分及以上优先考虑。",
+  "responsibilities": [
+   "负责厂内单元组件的安装指导、测试，及相关过程文件的输出",
+   "负责厂内设备的联调",
+   "负责现场的调整方案，熟悉常用电气元器件的选型、安装",
+   "负责单元测试程序的编写并进行测试，撰写测试报告",
+   "负责单元模组的安装指导，改进方案的提出、沟通执行。"
+  ],
+  "requirements": [
+   "硕士学历，工业自动化、电气自动化或机电一体化专业",
+   "熟练使用绘图软件绘制电气图",
+   "能接受较长时间的出差，动手能力强，有较强抗压能力，有过机器人、电气等比赛或项目经验，并取得一定成绩者优先考虑",
+   "有一定的沟通能力和执行力，责任心强，有很强的团队合作精神",
+   "拥有英文的听说读写能力，CET4考试425分及以上优先考虑。"
+  ],
+  "skills": [],
+  "salary": "12~18K",
+  "data_quality": {}
+ },
+ {
+  "id": "d38610791424",
   "company": "国核自仪系统工程有限公司",
   "program": "校园招聘",
   "cohort": "2027届",
@@ -80,24 +155,24 @@
    "上海"
   ],
   "start_date": "2026-09-15",
-  "deadline": "2027-07-31",
+  "deadline": "2026-09-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
   "updated_at": "2026-09-15",
   "first_seen_at": "2026-09-15",
   "last_seen_at": "2026-09-15",
-  "apply_url": "https://www.iguopin.com/job/detail?id=218345601572538004",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218345601572538004",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218322154557539986",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218322154557539986",
   "source": "国聘网",
   "sources": [
    {
     "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=218345601572538004",
+    "url": "https://www.iguopin.com/job/detail?id=218322154557539986",
     "found_at": "2026-09-15"
    }
   ],
   "jd_source": "iguopin",
-  "jd_raw_text": "岗位职责：\n嵌入式产品全生命周期质量验证；测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试；缺陷跟踪闭环、测试报告输出；需求及设计评审，支持生产抽检与售后问题复现。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "jd_raw_text": "岗位职责：\n嵌入式产品全生命周期质量验证；测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试；缺陷跟踪闭环、测试报告输出；需求及设计评审，支持生产抽检与售后问题复现。\n\n专业要求：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
   "jd_reused_from": "",
   "jd_source_url": "",
   "jd_updated_at": "",
@@ -109,7 +184,7 @@
   "scale": "小厂",
   "owner": "",
   "status": "unknown",
-  "description": "岗位职责：\n嵌入式产品全生命周期质量验证；测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试；缺陷跟踪闭环、测试报告输出；需求及设计评审，支持生产抽检与售后问题复现。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "description": "岗位职责：\n嵌入式产品全生命周期质量验证；测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试；缺陷跟踪闭环、测试报告输出；需求及设计评审，支持生产抽检与售后问题复现。\n\n专业要求：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
   "responsibilities": [
    "嵌入式产品全生命周期质量验证",
    "测试计划/用例编制、环境搭建、功能/性能/可靠性/兼容性测试",
@@ -125,7 +200,7 @@
   "data_quality": {}
  },
  {
-  "id": "675a351cc3dc",
+  "id": "2a612ab383bb",
   "company": "国核自仪系统工程有限公司",
   "program": "校园招聘",
   "cohort": "2027届",
@@ -145,24 +220,24 @@
    "上海"
   ],
   "start_date": "2026-09-15",
-  "deadline": "2027-07-31",
+  "deadline": "2026-09-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
   "updated_at": "2026-09-15",
   "first_seen_at": "2026-09-15",
   "last_seen_at": "2026-09-15",
-  "apply_url": "https://www.iguopin.com/job/detail?id=218343989969946267",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218343989969946267",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218320382027892370",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218320382027892370",
   "source": "国聘网",
   "sources": [
    {
     "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=218343989969946267",
+    "url": "https://www.iguopin.com/job/detail?id=218320382027892370",
     "found_at": "2026-09-15"
    }
   ],
   "jd_source": "iguopin",
-  "jd_raw_text": "岗位职责：\n测试计划/用例/规程/报告编制；产品功能性能测试执行；自动化工器具开发。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "jd_raw_text": "岗位职责：\n测试计划/用例/规程/报告编制；产品功能性能测试执行；自动化工器具开发。\n\n专业要求：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
   "jd_reused_from": "",
   "jd_source_url": "",
   "jd_updated_at": "",
@@ -174,7 +249,7 @@
   "scale": "小厂",
   "owner": "",
   "status": "unknown",
-  "description": "岗位职责：\n测试计划/用例/规程/报告编制；产品功能性能测试执行；自动化工器具开发。\n\n招聘专业：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
+  "description": "岗位职责：\n测试计划/用例/规程/报告编制；产品功能性能测试执行；自动化工器具开发。\n\n专业要求：\n电气自动化类、能源类、计算机科学与技术、电子科学与技术、测控类",
   "responsibilities": [
    "测试计划/用例/规程/报告编制",
    "产品功能性能测试执行",
@@ -189,90 +264,8 @@
   "data_quality": {}
  },
  {
-  "id": "60945ce72ec4",
-  "company": "中国能源建设集团浙江省电力设计院有限公司",
-  "program": "校园招聘",
-  "cohort": "2027届",
-  "batch": "校招",
-  "recruitment_batch": "2027秋招",
-  "role_type": "质量保障",
-  "normalized_job_name": "质量保障",
-  "job_category": "质量保障",
-  "positions": [
-   "质量工程师"
-  ],
-  "locations": [
-   "杭州",
-   "西湖"
-  ],
-  "provinces": [
-   "浙江"
-  ],
-  "start_date": "2026-09-14",
-  "deadline": "2027-06-30",
-  "deadline_source": "iguopin",
-  "deadline_conflict": false,
-  "updated_at": "2026-09-14",
-  "first_seen_at": "2026-09-14",
-  "last_seen_at": "2026-09-14",
-  "apply_url": "https://www.iguopin.com/job/detail?id=218200225267844649",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218200225267844649",
-  "source": "国聘网",
-  "sources": [
-   {
-    "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=218200225267844649",
-    "found_at": "2026-09-14"
-   }
-  ],
-  "jd_source": "iguopin",
-  "jd_raw_text": "【岗位职责】\n负责工程项目质量管理等工作。\n[任职条件]\n1.大学本科及以上学历。\n2.具备一定的学习理解、沟通协调、数据分析、文字表达等能力，熟练操作各类相关办公软件，设计类岗位要求入职后尽快熟练掌握AutoCAD等专业设计及绘图软件。\n3.具有较强的团队意识、责任意识，工作严谨、勤奋。\n4.具有良好的道德品行和职业素养，身体和心理健康状况良好。",
-  "jd_reused_from": "",
-  "jd_source_url": "",
-  "jd_updated_at": "",
-  "job_domain": "unknown",
-  "job_domain_confidence": 0.0,
-  "excluded": false,
-  "exclude_reason": "",
-  "industry": "国企",
-  "scale": "小厂",
-  "owner": "",
-  "status": "unknown",
-  "description": "【岗位职责】\n负责工程项目质量管理等工作。\n[任职条件]\n1.大学本科及以上学历。\n2.具备一定的学习理解、沟通协调、数据分析、文字表达等能力，熟练操作各类相关办公软件，设计类岗位要求入职后尽快熟练掌握AutoCAD等专业设计及绘图软件。\n3.具有较强的团队意识、责任意识，工作严谨、勤奋。\n4.具有良好的道德品行和职业素养，身体和心理健康状况良好。",
-  "responsibilities": [
-   "负责工程项目质量管理等工作。",
-   "[任职条件]",
-   "大学本科及以上学历。",
-   "具备一定的学习理解、沟通协调、数据分析、文字表达等能力，熟练操作各类相关办公软件，设计类岗位要求入职后尽快熟练掌握AutoCAD等专业设计及绘图软件。",
-   "具有较强的团队意识、责任意识，工作严谨、勤奋。",
-   "具有良好的道德品行和职业素养，身体和心理健康状况良好。",
-   "【岗位职责】",
-   "负责工程项目质量管理等工作。",
-   "[任职条件]",
-   "大学本科及以上学历。",
-   "具备一定的学习理解、沟通协调、数据分析、文字表达等能力，熟练操作各类相关办公软件，设计类岗位要求入职后尽快熟练掌握AutoCAD等专业设计及绘图软件。",
-   "具有较强的团队意识、责任意识，工作严谨、勤奋。"
-  ],
-  "requirements": [
-   "大学本科及以上学历。",
-   "具备一定的学习理解、沟通协调、数据分析、文字表达等能力，熟练操作各类相关办公软件，设计类岗位要求入职后尽快熟练掌握AutoCAD等专业设计及绘图软件。",
-   "具有较强的团队意识、责任意识，工作严谨、勤奋。",
-   "具有良好的道德品行和职业素养，身体和心理健康状况良好。",
-   "【岗位职责】",
-   "负责工程项目质量管理等工作。",
-   "[任职条件]",
-   "大学本科及以上学历。",
-   "具备一定的学习理解、沟通协调、数据分析、文字表达等能力，熟练操作各类相关办公软件，设计类岗位要求入职后尽快熟练掌握AutoCAD等专业设计及绘图软件。",
-   "具有较强的团队意识、责任意识，工作严谨、勤奋。",
-   "具有良好的道德品行和职业素养，身体和心理健康状况良好。"
-  ],
-  "skills": [],
-  "salary": "面议",
-  "data_quality": {}
- },
- {
-  "id": "3598da6abc5f",
-  "company": "合肥墨研涡旋科技有限公司",
+  "id": "d38610791424",
+  "company": "国核自仪系统工程有限公司",
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "校招",
@@ -281,33 +274,34 @@
   "normalized_job_name": "软件测试",
   "job_category": "软件测试",
   "positions": [
-   "装配测试工"
+   "测试工程师"
   ],
   "locations": [
-   "合肥"
+   "上海",
+   "闵行"
   ],
   "provinces": [
-   "安徽"
+   "上海"
   ],
-  "start_date": "2026-10-01",
-  "deadline": "2026-12-09",
+  "start_date": "2026-09-15",
+  "deadline": "2026-09-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-09-14",
-  "first_seen_at": "2026-09-14",
-  "last_seen_at": "2026-09-14",
-  "apply_url": "https://www.iguopin.com/job/detail?id=217730564554229285",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=217730564554229285",
+  "updated_at": "2026-09-15",
+  "first_seen_at": "2026-09-15",
+  "last_seen_at": "2026-09-15",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218319519293114006",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218319519293114006",
   "source": "国聘网",
   "sources": [
    {
     "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=217730564554229285",
-    "found_at": "2026-09-14"
+    "url": "https://www.iguopin.com/job/detail?id=218319519293114006",
+    "found_at": "2026-09-15"
    }
   ],
   "jd_source": "iguopin",
-  "jd_raw_text": "工作职责：\n1、主要是完成设备工装调试、产品装配或测试任务； 2、处理当班加工的不合格品； 3、按照设备安全操作规程、6S管理规程保证现场6S。\n任职要求：\n1、能够识别机械图纸，会使用卡尺、百分表等简单检测量具； 2、具有一定的学习能力。",
+  "jd_raw_text": "岗位职责：\n测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。\n\n专业要求：\n电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类",
   "jd_reused_from": "",
   "jd_source_url": "",
   "jd_updated_at": "",
@@ -319,16 +313,12 @@
   "scale": "小厂",
   "owner": "",
   "status": "unknown",
-  "description": "工作职责：\n1、主要是完成设备工装调试、产品装配或测试任务； 2、处理当班加工的不合格品； 3、按照设备安全操作规程、6S管理规程保证现场6S。\n任职要求：\n1、能够识别机械图纸，会使用卡尺、百分表等简单检测量具； 2、具有一定的学习能力。",
+  "description": "岗位职责：\n测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。\n\n专业要求：\n电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类",
   "responsibilities": [
-   "主要是完成设备工装调试、产品装配或测试任务",
-   "处理当班加工的不合格品",
-   "按照设备安全操作规程、6S管理规程保证现场6S。"
+   "测试需求分析、方案设计、环境搭建、测试执行、文档编制、问题跟踪。",
+   "电气自动化类、能源动力类、计算机科学与技术、电子科学与技术、测控类"
   ],
-  "requirements": [
-   "能够识别机械图纸，会使用卡尺、百分表等简单检测量具",
-   "具有一定的学习能力。"
-  ],
+  "requirements": [],
   "skills": [],
   "salary": "面议",
   "data_quality": {}
