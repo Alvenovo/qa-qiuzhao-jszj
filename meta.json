@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18 16:45",
+  "updated_at": "2026-09-19 16:31",
   "count": 162,
   "total_candidates": 209,
   "sources": [
@@ -23,7 +23,7 @@
     {
       "name": "国聘网",
       "ok": true,
-      "count": 10,
+      "count": 7,
       "detail": "职位详情含原文职责/薪资"
     },
     {
@@ -101,13 +101,13 @@
     {
       "name": "职位详情补全",
       "ok": true,
-      "count": 4,
-      "detail": "尝试 24 个投递链接，耗时 185s"
+      "count": 3,
+      "detail": "尝试 23 个投递链接，耗时 151s"
     },
     {
       "name": "同公司补JD",
       "ok": true,
-      "count": 1,
+      "count": 0,
       "detail": ""
     }
   ],
@@ -120,7 +120,7 @@
     "unknown": 0,
     "expired": 20,
     "closed": 0,
-    "new_today": 1,
+    "new_today": 0,
     "excluded": 27
   }
 }
