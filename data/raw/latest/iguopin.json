@@ -593,63 +593,6 @@
   "data_quality": {}
  },
  {
-  "id": "6be776c74263",
-  "company": "国药奇贝德（上海）工程技术有限公司",
-  "program": "校园招聘",
-  "cohort": "2027届",
-  "batch": "校招",
-  "recruitment_batch": "2027秋招",
-  "role_type": "软件测试",
-  "normalized_job_name": "软件测试",
-  "job_category": "软件测试",
-  "positions": [
-   "验证测试员"
-  ],
-  "locations": [
-   "上海",
-   "奉贤"
-  ],
-  "provinces": [
-   "上海"
-  ],
-  "start_date": "2026-07-13",
-  "deadline": "2026-09-30",
-  "deadline_source": "iguopin",
-  "deadline_conflict": false,
-  "updated_at": "2026-07-13",
-  "first_seen_at": "2026-07-13",
-  "last_seen_at": "2026-07-13",
-  "apply_url": "https://www.iguopin.com/job/detail?id=209069781825880984",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=209069781825880984",
-  "source": "国聘网",
-  "sources": [
-   {
-    "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=209069781825880984",
-    "found_at": "2026-07-13"
-   }
-  ],
-  "jd_source": "iguopin",
-  "jd_raw_text": "1.制药、生物工程、生物技术等相关专业；\n2.娴熟办公软件的应用能力，能进行长文档的编辑； \n3.积极主动的做事能力和勤快的做事态度； \n4.对于杂乱复杂的文档有缜密细致的逻辑管理能力； \n5.执行医药厂房设施、空调系统、水系统、冷库、孵房的安装、运行、性能确认的相关测试并填写记录； \n6.执行温控类设备验证，如配液罐系统、培养箱、稳定性箱、干热柜等温度分布并填写记录； \n执行工艺用气的测试，如氮气、压缩气体（油分、水分、露点、粒子、微生物等）。",
-  "jd_reused_from": "",
-  "jd_source_url": "",
-  "jd_updated_at": "",
-  "job_domain": "unknown",
-  "job_domain_confidence": 0.0,
-  "excluded": false,
-  "exclude_reason": "",
-  "industry": "国企",
-  "scale": "小厂",
-  "owner": "",
-  "status": "unknown",
-  "description": "1.制药、生物工程、生物技术等相关专业；\n2.娴熟办公软件的应用能力，能进行长文档的编辑； \n3.积极主动的做事能力和勤快的做事态度； \n4.对于杂乱复杂的文档有缜密细致的逻辑管理能力； \n5.执行医药厂房设施、空调系统、水系统、冷库、孵房的安装、运行、性能确认的相关测试并填写记录； \n6.执行温控类设备验证，如配液罐系统、培养箱、稳定性箱、干热柜等温度分布并填写记录； \n执行工艺用气的测试，如氮气、压缩气体（油分、水分、露点、粒子、微生物等）。",
-  "responsibilities": [],
-  "requirements": [],
-  "skills": [],
-  "salary": "100~120元/天",
-  "data_quality": {}
- },
- {
   "id": "77f6b4a601ed",
   "company": "绿盟科技集团股份有限公司",
   "program": "校园招聘",
@@ -1220,6 +1163,63 @@
    "用例设计"
   ],
   "salary": "面议",
+  "data_quality": {}
+ },
+ {
+  "id": "6be776c74263",
+  "company": "国药奇贝德（上海）工程技术有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "验证测试员"
+  ],
+  "locations": [
+   "上海",
+   "奉贤"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-07-13",
+  "deadline": "2026-09-30",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-13",
+  "first_seen_at": "2026-07-13",
+  "last_seen_at": "2026-07-13",
+  "apply_url": "https://www.iguopin.com/job/detail?id=209069781825880984",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=209069781825880984",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=209069781825880984",
+    "found_at": "2026-07-13"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "1.制药、生物工程、生物技术等相关专业；\n2.娴熟办公软件的应用能力，能进行长文档的编辑； \n3.积极主动的做事能力和勤快的做事态度； \n4.对于杂乱复杂的文档有缜密细致的逻辑管理能力； \n5.执行医药厂房设施、空调系统、水系统、冷库、孵房的安装、运行、性能确认的相关测试并填写记录； \n6.执行温控类设备验证，如配液罐系统、培养箱、稳定性箱、干热柜等温度分布并填写记录； \n执行工艺用气的测试，如氮气、压缩气体（油分、水分、露点、粒子、微生物等）。",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "1.制药、生物工程、生物技术等相关专业；\n2.娴熟办公软件的应用能力，能进行长文档的编辑； \n3.积极主动的做事能力和勤快的做事态度； \n4.对于杂乱复杂的文档有缜密细致的逻辑管理能力； \n5.执行医药厂房设施、空调系统、水系统、冷库、孵房的安装、运行、性能确认的相关测试并填写记录； \n6.执行温控类设备验证，如配液罐系统、培养箱、稳定性箱、干热柜等温度分布并填写记录； \n执行工艺用气的测试，如氮气、压缩气体（油分、水分、露点、粒子、微生物等）。",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "100~120元/天",
   "data_quality": {}
  },
  {
@@ -2352,8 +2352,8 @@
   "data_quality": {}
  },
  {
-  "id": "36ca354aeb4d",
-  "company": "上海航天科工电器研究院有限公司",
+  "id": "b8dfd0cd58d8",
+  "company": "江苏永鼎股份有限公司",
   "program": "校园招聘",
   "cohort": "2027届",
   "batch": "校招",
@@ -2362,33 +2362,34 @@
   "normalized_job_name": "质量保障",
   "job_category": "质量保障",
   "positions": [
-   "质量工程师"
+   "质量工程师（光缆）"
   ],
   "locations": [
-   "上海"
+   "苏州",
+   "吴江"
   ],
   "provinces": [
-   "上海"
+   "江苏"
   ],
-  "start_date": "2026-08-24",
-  "deadline": "2027-08-31",
+  "start_date": "2026-09-02",
+  "deadline": "2026-11-30",
   "deadline_source": "iguopin",
   "deadline_conflict": false,
-  "updated_at": "2026-08-23",
-  "first_seen_at": "2026-08-23",
-  "last_seen_at": "2026-08-23",
-  "apply_url": "https://www.iguopin.com/job/detail?id=214934047913149811",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214934047913149811",
+  "updated_at": "2026-09-02",
+  "first_seen_at": "2026-09-02",
+  "last_seen_at": "2026-09-02",
+  "apply_url": "https://www.iguopin.com/job/detail?id=216427175409091079",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=216427175409091079",
   "source": "国聘网",
   "sources": [
    {
     "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=214934047913149811",
-    "found_at": "2026-08-23"
+    "url": "https://www.iguopin.com/job/detail?id=216427175409091079",
+    "found_at": "2026-09-02"
    }
   ],
   "jd_source": "iguopin",
-  "jd_raw_text": "【岗位职责】 \n1.负责产品质量可靠性控制;\n2.负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改;\n3.根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环;\n4.实施主管领域范围的产品实现过程质量的监督和控制;\n5.针对现场质量问题及时反馈并组织培训;\n6.负责分管业务范围的质量改进;\n7.负责各类质量文件报告的编制",
+  "jd_raw_text": "【工作内容】\n1、产品工序检测判定：负责光缆生产全工序产品质量检测工作，严格依据检验规程、技术规范及质量标准，完成产品各项性能指标检测，规范落实检测操作，确保检测方式合规、测试数据真实准确，独立完成产品检验结果判定。\n2、质量异常管控上报：全程把控工序检测质量，及时排查、发现产品质量异常问题，第一时间做好反馈与上报跟进，配合开展质量问题复盘与整改落地，严控产品不良流出，保障产线产品质量稳定。\n【任职要求】\n1、本科及以上学历，电缆工程、电子信息工程、 通信工程、质量管理与检测技术等相关专业。\n2、经培训后熟练掌握光缆各生产工序的产品检测指标与质量标准；熟悉各类光缆检测设备、工装器具的规范操作与使用方法；严格按照技术文件完成检测作业，保障检测精度与结果真实性；熟练使用办公自动化工具，具备相关岗位实习经验者优先。\n3、具备良好的沟通协调能力与问题反馈意识，学习接受能力强，踏实肯干、能吃苦耐劳，工作严谨细致、责任心强；能够适配生产现场工作节奏，可接受12小时两班倒者优先。",
   "jd_reused_from": "",
   "jd_source_url": "",
   "jd_updated_at": "",
@@ -2396,28 +2397,41 @@
   "job_domain_confidence": 0.0,
   "excluded": false,
   "exclude_reason": "",
-  "industry": "国企",
-  "scale": "大厂",
+  "industry": "民营企业",
+  "scale": "小厂",
   "owner": "",
   "status": "unknown",
-  "description": "【岗位职责】 \n1.负责产品质量可靠性控制;\n2.负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改;\n3.根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环;\n4.实施主管领域范围的产品实现过程质量的监督和控制;\n5.针对现场质量问题及时反馈并组织培训;\n6.负责分管业务范围的质量改进;\n7.负责各类质量文件报告的编制",
+  "description": "【工作内容】\n1、产品工序检测判定：负责光缆生产全工序产品质量检测工作，严格依据检验规程、技术规范及质量标准，完成产品各项性能指标检测，规范落实检测操作，确保检测方式合规、测试数据真实准确，独立完成产品检验结果判定。\n2、质量异常管控上报：全程把控工序检测质量，及时排查、发现产品质量异常问题，第一时间做好反馈与上报跟进，配合开展质量问题复盘与整改落地，严控产品不良流出，保障产线产品质量稳定。\n【任职要求】\n1、本科及以上学历，电缆工程、电子信息工程、 通信工程、质量管理与检测技术等相关专业。\n2、经培训后熟练掌握光缆各生产工序的产品检测指标与质量标准；熟悉各类光缆检测设备、工装器具的规范操作与使用方法；严格按照技术文件完成检测作业，保障检测精度与结果真实性；熟练使用办公自动化工具，具备相关岗位实习经验者优先。\n3、具备良好的沟通协调能力与问题反馈意识，学习接受能力强，踏实肯干、能吃苦耐劳，工作严谨细致、责任心强；能够适配生产现场工作节奏，可接受12小时两班倒者优先。",
   "responsibilities": [
-   "负责产品质量可靠性控制",
-   "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
-   "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
-   "实施主管领域范围的产品实现过程质量的监督和控制",
-   "针对现场质量问题及时反馈并组织培训",
-   "负责分管业务范围的质量改进",
-   "负责各类质量文件报告的编制",
-   "【岗位职责】",
-   "负责产品质量可靠性控制",
-   "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
-   "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
-   "实施主管领域范围的产品实现过程质量的监督和控制"
+   "产品工序检测判定：负责光缆生产全工序产品质量检测工作，严格依据检验规程、技术规范及质量标准，完成产品各项性能指标检测，规范落实检测操作，确保检测方式合规、测试数据真实准确，独立完成产品检验结果判定。",
+   "质量异常管控上报：全程把控工序检测质量，及时排查、发现产品质量异常问题，第一时间做好反馈与上报跟进，配合开展质量问题复盘与整改落地，严控产品不良流出，保障产线产品质量稳定。",
+   "【任职要求】",
+   "本科及以上学历，电缆工程、电子信息工程、 通信工程、质量管理与检测技术等相关专业。",
+   "经培训后熟练掌握光缆各生产工序的产品检测指标与质量标准",
+   "熟悉各类光缆检测设备、工装器具的规范操作与使用方法",
+   "严格按照技术文件完成检测作业，保障检测精度与结果真实性",
+   "熟练使用办公自动化工具，具备相关岗位实习经验者优先。",
+   "具备良好的沟通协调能力与问题反馈意识，学习接受能力强，踏实肯干、能吃苦耐劳，工作严谨细致、责任心强",
+   "能够适配生产现场工作节奏，可接受12小时两班倒者优先。",
+   "【工作内容】",
+   "产品工序检测判定：负责光缆生产全工序产品质量检测工作，严格依据检验规程、技术规范及质量标准，完成产品各项性能指标检测，规范落实检测操作，确保检测方式合规、测试数据真实准确，独立完成产品检验结果判定。"
   ],
-  "requirements": [],
+  "requirements": [
+   "本科及以上学历，电缆工程、电子信息工程、 通信工程、质量管理与检测技术等相关专业。",
+   "经培训后熟练掌握光缆各生产工序的产品检测指标与质量标准",
+   "熟悉各类光缆检测设备、工装器具的规范操作与使用方法",
+   "严格按照技术文件完成检测作业，保障检测精度与结果真实性",
+   "熟练使用办公自动化工具，具备相关岗位实习经验者优先。",
+   "具备良好的沟通协调能力与问题反馈意识，学习接受能力强，踏实肯干、能吃苦耐劳，工作严谨细致、责任心强",
+   "能够适配生产现场工作节奏，可接受12小时两班倒者优先。",
+   "【工作内容】",
+   "产品工序检测判定：负责光缆生产全工序产品质量检测工作，严格依据检验规程、技术规范及质量标准，完成产品各项性能指标检测，规范落实检测操作，确保检测方式合规、测试数据真实准确，独立完成产品检验结果判定。",
+   "质量异常管控上报：全程把控工序检测质量，及时排查、发现产品质量异常问题，第一时间做好反馈与上报跟进，配合开展质量问题复盘与整改落地，严控产品不良流出，保障产线产品质量稳定。",
+   "【任职要求】",
+   "本科及以上学历，电缆工程、电子信息工程、 通信工程、质量管理与检测技术等相关专业。"
+  ],
   "skills": [],
-  "salary": "",
+  "salary": "9~12K",
   "data_quality": {}
  },
  {
@@ -2569,6 +2583,131 @@
   "data_quality": {}
  },
  {
+  "id": "36ca354aeb4d",
+  "company": "上海航天科工电器研究院有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
+  "positions": [
+   "质量工程师"
+  ],
+  "locations": [
+   "上海"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-08-24",
+  "deadline": "2027-08-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-08-23",
+  "first_seen_at": "2026-08-23",
+  "last_seen_at": "2026-08-23",
+  "apply_url": "https://www.iguopin.com/job/detail?id=214934047913149811",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214934047913149811",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=214934047913149811",
+    "found_at": "2026-08-23"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "【岗位职责】 \n1.负责产品质量可靠性控制;\n2.负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改;\n3.根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环;\n4.实施主管领域范围的产品实现过程质量的监督和控制;\n5.针对现场质量问题及时反馈并组织培训;\n6.负责分管业务范围的质量改进;\n7.负责各类质量文件报告的编制",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "大厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "【岗位职责】 \n1.负责产品质量可靠性控制;\n2.负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改;\n3.根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环;\n4.实施主管领域范围的产品实现过程质量的监督和控制;\n5.针对现场质量问题及时反馈并组织培训;\n6.负责分管业务范围的质量改进;\n7.负责各类质量文件报告的编制",
+  "responsibilities": [
+   "负责产品质量可靠性控制",
+   "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
+   "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
+   "实施主管领域范围的产品实现过程质量的监督和控制",
+   "针对现场质量问题及时反馈并组织培训",
+   "负责分管业务范围的质量改进",
+   "负责各类质量文件报告的编制",
+   "【岗位职责】",
+   "负责产品质量可靠性控制",
+   "负责分管业务范围内的不合格信息分析，对不合格信息跟踪督导整改",
+   "根据归零要求,组织实施质量归零，确保内外部归零措施的落实与闭环",
+   "实施主管领域范围的产品实现过程质量的监督和控制"
+  ],
+  "requirements": [],
+  "skills": [],
+  "salary": "",
+  "data_quality": {}
+ },
+ {
+  "id": "5d2d4a49b097",
+  "company": "苏州华旃航天电器有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
+  "positions": [
+   "质量工程师"
+  ],
+  "locations": [
+   "苏州"
+  ],
+  "provinces": [
+   "江苏"
+  ],
+  "start_date": "2026-08-24",
+  "deadline": "2027-08-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-08-23",
+  "first_seen_at": "2026-08-23",
+  "last_seen_at": "2026-08-23",
+  "apply_url": "https://www.iguopin.com/job/detail?id=214934069169882483",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214934069169882483",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=214934069169882483",
+    "found_at": "2026-08-23"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "9~12K",
+  "data_quality": {}
+ },
+ {
   "id": "d900eb53563d",
   "company": "合肥波林新材料股份有限公司",
   "program": "校园招聘",
@@ -2634,62 +2773,6 @@
   ],
   "skills": [],
   "salary": "7~10K·13薪",
-  "data_quality": {}
- },
- {
-  "id": "5d2d4a49b097",
-  "company": "苏州华旃航天电器有限公司",
-  "program": "校园招聘",
-  "cohort": "2027届",
-  "batch": "校招",
-  "recruitment_batch": "2027秋招",
-  "role_type": "质量保障",
-  "normalized_job_name": "质量保障",
-  "job_category": "质量保障",
-  "positions": [
-   "质量工程师"
-  ],
-  "locations": [
-   "苏州"
-  ],
-  "provinces": [
-   "江苏"
-  ],
-  "start_date": "2026-08-24",
-  "deadline": "2027-08-31",
-  "deadline_source": "iguopin",
-  "deadline_conflict": false,
-  "updated_at": "2026-08-23",
-  "first_seen_at": "2026-08-23",
-  "last_seen_at": "2026-08-23",
-  "apply_url": "https://www.iguopin.com/job/detail?id=214934069169882483",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=214934069169882483",
-  "source": "国聘网",
-  "sources": [
-   {
-    "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=214934069169882483",
-    "found_at": "2026-08-23"
-   }
-  ],
-  "jd_source": "unknown",
-  "jd_raw_text": "",
-  "jd_reused_from": "",
-  "jd_source_url": "",
-  "jd_updated_at": "",
-  "job_domain": "unknown",
-  "job_domain_confidence": 0.0,
-  "excluded": false,
-  "exclude_reason": "",
-  "industry": "国企",
-  "scale": "小厂",
-  "owner": "",
-  "status": "unknown",
-  "description": "",
-  "responsibilities": [],
-  "requirements": [],
-  "skills": [],
-  "salary": "9~12K",
   "data_quality": {}
  },
  {
@@ -2812,70 +2895,6 @@
   "requirements": [],
   "skills": [],
   "salary": "面议",
-  "data_quality": {}
- },
- {
-  "id": "51d151668c45",
-  "company": "江苏德优镁轻合金科技有限公司",
-  "program": "社会招聘",
-  "cohort": "2027届",
-  "batch": "校招",
-  "recruitment_batch": "社招",
-  "role_type": "质量保障",
-  "normalized_job_name": "质量保障",
-  "job_category": "质量保障",
-  "positions": [
-   "QA质量工程师"
-  ],
-  "locations": [
-   "常州",
-   "溧阳"
-  ],
-  "provinces": [
-   "江苏"
-  ],
-  "start_date": "2026-08-15",
-  "deadline": "2026-11-12",
-  "deadline_source": "iguopin",
-  "deadline_conflict": false,
-  "updated_at": "2026-08-15",
-  "first_seen_at": "2026-08-15",
-  "last_seen_at": "2026-08-15",
-  "apply_url": "https://www.iguopin.com/job/detail?id=213849464400511889",
-  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=213849464400511889",
-  "source": "国聘网",
-  "sources": [
-   {
-    "type": "iguopin",
-    "url": "https://www.iguopin.com/job/detail?id=213849464400511889",
-    "found_at": "2026-08-15"
-   }
-  ],
-  "jd_source": "iguopin",
-  "jd_raw_text": "岗位职责：\n1、主导 ISO9001 等质量管理体系的搭建、运行监控、文件编制（手册/程序/SOP）及内外部审核应对，确保体系适宜性与有效性。\n2、监控研发、生产或服务全流程合规性，组织技术评审与过程审计，纠正违规操作并阻止不合格品流转。\n3、针对重大质量事故或客诉，主导根因分析（8D/5Why），制定纠正预防措施（CAPA）并跟踪闭环验证。\n任职要求：\n1、熟悉 ISO 质量体系、掌握 QC 七大手法、FMEA、SPC、8D 报告及数据分析工具。\n2、极强的原则性（敢于叫停违规）、跨部门沟通协调能力及系统性逻辑思维。‌‌",
-  "jd_reused_from": "",
-  "jd_source_url": "",
-  "jd_updated_at": "",
-  "job_domain": "unknown",
-  "job_domain_confidence": 0.0,
-  "excluded": false,
-  "exclude_reason": "",
-  "industry": "民营企业",
-  "scale": "小厂",
-  "owner": "",
-  "status": "unknown",
-  "description": "岗位职责：\n1、主导 ISO9001 等质量管理体系的搭建、运行监控、文件编制（手册/程序/SOP）及内外部审核应对，确保体系适宜性与有效性。\n2、监控研发、生产或服务全流程合规性，组织技术评审与过程审计，纠正违规操作并阻止不合格品流转。\n3、针对重大质量事故或客诉，主导根因分析（8D/5Why），制定纠正预防措施（CAPA）并跟踪闭环验证。\n任职要求：\n1、熟悉 ISO 质量体系、掌握 QC 七大手法、FMEA、SPC、8D 报告及数据分析工具。\n2、极强的原则性（敢于叫停违规）、跨部门沟通协调能力及系统性逻辑思维。‌‌",
-  "responsibilities": [
-   "主导 ISO9001 等质量管理体系的搭建、运行监控、文件编制（手册/程序/SOP）及内外部审核应对，确保体系适宜性与有效性。",
-   "监控研发、生产或服务全流程合规性，组织技术评审与过程审计，纠正违规操作并阻止不合格品流转。",
-   "针对重大质量事故或客诉，主导根因分析（8D/5Why），制定纠正预防措施（CAPA）并跟踪闭环验证。"
-  ],
-  "requirements": [
-   "熟悉 ISO 质量体系、掌握 QC 七大手法、FMEA、SPC、8D 报告及数据分析工具。",
-   "极强的原则性（敢于叫停违规）、跨部门沟通协调能力及系统性逻辑思维。‌‌"
-  ],
-  "skills": [],
-  "salary": "7~12K",
   "data_quality": {}
  },
  {
@@ -3090,6 +3109,70 @@
   ],
   "skills": [],
   "salary": "6000-15000",
+  "data_quality": {}
+ },
+ {
+  "id": "51d151668c45",
+  "company": "江苏德优镁轻合金科技有限公司",
+  "program": "社会招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "社招",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
+  "positions": [
+   "QA质量工程师"
+  ],
+  "locations": [
+   "常州",
+   "溧阳"
+  ],
+  "provinces": [
+   "江苏"
+  ],
+  "start_date": "2026-08-15",
+  "deadline": "2026-11-12",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-08-15",
+  "first_seen_at": "2026-08-15",
+  "last_seen_at": "2026-08-15",
+  "apply_url": "https://www.iguopin.com/job/detail?id=213849464400511889",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=213849464400511889",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=213849464400511889",
+    "found_at": "2026-08-15"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "岗位职责：\n1、主导 ISO9001 等质量管理体系的搭建、运行监控、文件编制（手册/程序/SOP）及内外部审核应对，确保体系适宜性与有效性。\n2、监控研发、生产或服务全流程合规性，组织技术评审与过程审计，纠正违规操作并阻止不合格品流转。\n3、针对重大质量事故或客诉，主导根因分析（8D/5Why），制定纠正预防措施（CAPA）并跟踪闭环验证。\n任职要求：\n1、熟悉 ISO 质量体系、掌握 QC 七大手法、FMEA、SPC、8D 报告及数据分析工具。\n2、极强的原则性（敢于叫停违规）、跨部门沟通协调能力及系统性逻辑思维。‌‌",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "民营企业",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "岗位职责：\n1、主导 ISO9001 等质量管理体系的搭建、运行监控、文件编制（手册/程序/SOP）及内外部审核应对，确保体系适宜性与有效性。\n2、监控研发、生产或服务全流程合规性，组织技术评审与过程审计，纠正违规操作并阻止不合格品流转。\n3、针对重大质量事故或客诉，主导根因分析（8D/5Why），制定纠正预防措施（CAPA）并跟踪闭环验证。\n任职要求：\n1、熟悉 ISO 质量体系、掌握 QC 七大手法、FMEA、SPC、8D 报告及数据分析工具。\n2、极强的原则性（敢于叫停违规）、跨部门沟通协调能力及系统性逻辑思维。‌‌",
+  "responsibilities": [
+   "主导 ISO9001 等质量管理体系的搭建、运行监控、文件编制（手册/程序/SOP）及内外部审核应对，确保体系适宜性与有效性。",
+   "监控研发、生产或服务全流程合规性，组织技术评审与过程审计，纠正违规操作并阻止不合格品流转。",
+   "针对重大质量事故或客诉，主导根因分析（8D/5Why），制定纠正预防措施（CAPA）并跟踪闭环验证。"
+  ],
+  "requirements": [
+   "熟悉 ISO 质量体系、掌握 QC 七大手法、FMEA、SPC、8D 报告及数据分析工具。",
+   "极强的原则性（敢于叫停违规）、跨部门沟通协调能力及系统性逻辑思维。‌‌"
+  ],
+  "skills": [],
+  "salary": "7~12K",
   "data_quality": {}
  },
  {
