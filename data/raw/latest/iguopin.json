@@ -2829,6 +2829,62 @@
   "data_quality": {}
  },
  {
+  "id": "63c6f0543c91",
+  "company": "亚普汽车部件股份有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
+  "positions": [
+   "质量工程师岗"
+  ],
+  "locations": [
+   "安庆"
+  ],
+  "provinces": [
+   "安徽"
+  ],
+  "start_date": "2026-09-10",
+  "deadline": "2027-08-31",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-09-10",
+  "first_seen_at": "2026-09-10",
+  "last_seen_at": "2026-09-10",
+  "apply_url": "https://www.iguopin.com/job/detail?id=217641250138883539",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=217641250138883539",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=217641250138883539",
+    "found_at": "2026-09-10"
+   }
+  ],
+  "jd_source": "unknown",
+  "jd_raw_text": "",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "上市公司",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "",
+  "responsibilities": [],
+  "requirements": [],
+  "skills": [],
+  "salary": "面议",
+  "data_quality": {}
+ },
+ {
   "id": "f473a8d18192",
   "company": "河南飞龙（芜湖）汽车零部件有限公司",
   "program": "社会招聘",
@@ -3104,6 +3160,73 @@
   ],
   "skills": [],
   "salary": "6000-15000",
+  "data_quality": {}
+ },
+ {
+  "id": "f65413bf77a2",
+  "company": "合肥开悦半导体科技有限公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "质量保障",
+  "normalized_job_name": "质量保障",
+  "job_category": "质量保障",
+  "positions": [
+   "助理产品质量工程师"
+  ],
+  "locations": [
+   "合肥"
+  ],
+  "provinces": [
+   "安徽"
+  ],
+  "start_date": "2026-09-16",
+  "deadline": "2026-11-30",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-09-16",
+  "first_seen_at": "2026-09-16",
+  "last_seen_at": "2026-09-16",
+  "apply_url": "https://www.iguopin.com/job/detail?id=218469993572991159",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=218469993572991159",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=218469993572991159",
+    "found_at": "2026-09-16"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "岗位职责：\n1、 协助负责半导体设备整机、模块的产品质量管控，跟踪生产、调试阶段质量异常；\n2、 收集设备装配、测试阶段质量问题，参与不良分析，记录问题闭环情况；\n3、 协助编制产品检验规范、质量记录表单；\n4、 跟进客户现场质量反馈，整理质量问题报告；\n5、 配合安环、质量体系落地执行。\n\n任职要求：\n1、本科及以上学历，微电子、工科类相关专业，专业课成绩优异者优先考虑；\n2、学习能力、沟通能力强，工作细致，思路清晰，具备独立工作分析和解决问题的能力；\n3、有较强的工作承压能力, 能够适应长期出差；\n4、拥有英文的听说读写能力，CET4考试425分及以上优先考虑。",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "中外合资",
+  "scale": "小厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "岗位职责：\n1、 协助负责半导体设备整机、模块的产品质量管控，跟踪生产、调试阶段质量异常；\n2、 收集设备装配、测试阶段质量问题，参与不良分析，记录问题闭环情况；\n3、 协助编制产品检验规范、质量记录表单；\n4、 跟进客户现场质量反馈，整理质量问题报告；\n5、 配合安环、质量体系落地执行。\n\n任职要求：\n1、本科及以上学历，微电子、工科类相关专业，专业课成绩优异者优先考虑；\n2、学习能力、沟通能力强，工作细致，思路清晰，具备独立工作分析和解决问题的能力；\n3、有较强的工作承压能力, 能够适应长期出差；\n4、拥有英文的听说读写能力，CET4考试425分及以上优先考虑。",
+  "responsibilities": [
+   "协助负责半导体设备整机、模块的产品质量管控，跟踪生产、调试阶段质量异常",
+   "收集设备装配、测试阶段质量问题，参与不良分析，记录问题闭环情况",
+   "协助编制产品检验规范、质量记录表单",
+   "跟进客户现场质量反馈，整理质量问题报告",
+   "配合安环、质量体系落地执行。"
+  ],
+  "requirements": [
+   "本科及以上学历，微电子、工科类相关专业，专业课成绩优异者优先考虑",
+   "学习能力、沟通能力强，工作细致，思路清晰，具备独立工作分析和解决问题的能力",
+   "有较强的工作承压能力, 能够适应长期出差",
+   "拥有英文的听说读写能力，CET4考试425分及以上优先考虑。"
+  ],
+  "skills": [],
+  "salary": "面议",
   "data_quality": {}
  }
 ]
