@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-18 16:33",
-  "count": 157,
+  "updated_at": "2026-10-19 17:35",
+  "count": 156,
   "total_candidates": 236,
   "sources": [
     "本地岗位库",
@@ -23,7 +23,7 @@
     {
       "name": "国聘网",
       "ok": true,
-      "count": 10,
+      "count": 8,
       "detail": "职位详情含原文职责/薪资"
     },
     {
@@ -112,13 +112,13 @@
     }
   ],
   "note": "江苏/浙江/安徽/上海，仅软件测试相关；jobs.json 仅 open+unknown，candidate_jobs 含全量历史",
-  "jd_filled": 41,
-  "salary_filled": 45,
+  "jd_filled": 40,
+  "salary_filled": 44,
   "jd_missing": 116,
   "stats": {
-    "open": 198,
+    "open": 196,
     "unknown": 0,
-    "expired": 38,
+    "expired": 40,
     "closed": 0,
     "new_today": 0,
     "excluded": 43
