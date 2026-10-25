@@ -178,6 +178,72 @@
   "data_quality": {}
  },
  {
+  "id": "9e2b88ddd9c6",
+  "company": "中国航发商用航空发动机有限责任公司",
+  "program": "校园招聘",
+  "cohort": "2027届",
+  "batch": "校招",
+  "recruitment_batch": "2027秋招",
+  "role_type": "软件测试",
+  "normalized_job_name": "软件测试",
+  "job_category": "软件测试",
+  "positions": [
+   "测试技术岗"
+  ],
+  "locations": [
+   "上海",
+   "浦东"
+  ],
+  "provinces": [
+   "上海"
+  ],
+  "start_date": "2026-07-28",
+  "deadline": "2026-11-30",
+  "deadline_source": "iguopin",
+  "deadline_conflict": false,
+  "updated_at": "2026-07-28",
+  "first_seen_at": "2026-07-28",
+  "last_seen_at": "2026-07-28",
+  "apply_url": "https://www.iguopin.com/job/detail?id=211221953380354804",
+  "search_hint": "国聘职位详情：https://www.iguopin.com/job/detail?id=211221953380354804",
+  "source": "国聘网",
+  "sources": [
+   {
+    "type": "iguopin",
+    "url": "https://www.iguopin.com/job/detail?id=211221953380354804",
+    "found_at": "2026-07-28"
+   }
+  ],
+  "jd_source": "iguopin",
+  "jd_raw_text": "一、需求专业：\n航空宇航推进、力学、机械工程、动力工程及工程热物理、材料科学与工程、船舶与海洋工程、仪器科学与技术、转子动力学、力学、航空宇航推进与工程（强度方向）、机械设计、\n声学、振动与噪声、仪器仪表专业\n\n二、工作内容：\n1、从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作\n2、开展稳态测试数据分析及排故\n3、协助完成强度测试技术研究工作",
+  "jd_reused_from": "",
+  "jd_source_url": "",
+  "jd_updated_at": "",
+  "job_domain": "unknown",
+  "job_domain_confidence": 0.0,
+  "excluded": false,
+  "exclude_reason": "",
+  "industry": "国企",
+  "scale": "中厂",
+  "owner": "",
+  "status": "unknown",
+  "description": "一、需求专业：\n航空宇航推进、力学、机械工程、动力工程及工程热物理、材料科学与工程、船舶与海洋工程、仪器科学与技术、转子动力学、力学、航空宇航推进与工程（强度方向）、机械设计、\n声学、振动与噪声、仪器仪表专业\n\n二、工作内容：\n1、从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作\n2、开展稳态测试数据分析及排故\n3、协助完成强度测试技术研究工作",
+  "responsibilities": [
+   "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作",
+   "开展稳态测试数据分析及排故",
+   "协助完成强度测试技术研究工作",
+   "航空宇航推进、力学、机械工程、动力工程及工程热物理、材料科学与工程、船舶与海洋工程、仪器科学与技术、转子动力学、力学、航空宇航推进与工程（强度方向）、机械设计",
+   "声学、振动与噪声、仪器仪表专业",
+   "从事测试设计、测试硬件结构设计及强度仿真、系统方案设计及硬件安装技术支持、强度测试等相关工作",
+   "开展稳态测试数据分析及排故",
+   "协助完成强度测试技术研究工作"
+  ],
+  "requirements": [],
+  "skills": [],
+  "salary": "15~30K",
+  "data_quality": {}
+ },
+ {
   "id": "6769e055067a",
   "company": "中国联合重型燃气轮机技术有限公司",
   "program": "校园招聘",

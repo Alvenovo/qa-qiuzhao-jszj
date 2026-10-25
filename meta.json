@@ -1,11 +1,12 @@
 {
-  "updated_at": "2026-10-24 16:38",
+  "updated_at": "2026-10-25 16:58",
   "count": 156,
   "total_candidates": 236,
   "sources": [
     "本地岗位库",
     "国聘网",
     "xixicc2027",
+    "niuqizp校招日历",
     "牛客",
     "同公司补JD",
     "牛客",
@@ -23,7 +24,7 @@
     {
       "name": "国聘网",
       "ok": true,
-      "count": 9,
+      "count": 10,
       "detail": "职位详情含原文职责/薪资"
     },
     {
@@ -34,9 +35,9 @@
     },
     {
       "name": "niuqizp校招日历",
-      "ok": false,
+      "ok": true,
       "count": 0,
-      "detail": "成功页面 0/19"
+      "detail": "成功页面 19/19"
     },
     {
       "name": "牛客",
@@ -102,7 +103,7 @@
       "name": "职位详情补全",
       "ok": true,
       "count": 3,
-      "detail": "尝试 23 个投递链接，耗时 172s"
+      "detail": "尝试 23 个投递链接，耗时 195s"
     },
     {
       "name": "同公司补JD",
